@@ -132,6 +132,8 @@ def run():
         require(bool(x.get('gates')),f'Compatibility missing evidence gate:{x["combination"]}')
     for p in list(ROOT.glob('*.md'))+chapters+sorted((ROOT/'reference').glob('*.md')):
         check_links(p)
+    check_links(REPO/'docs/index.html')
+    require((REPO/'docs/.nojekyll').exists(),'Static Pages marker absent')
     for p in (ROOT/'site').rglob('*.html'):
         counts['html_pages']+=1
         check_links(p)

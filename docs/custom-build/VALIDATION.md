@@ -13,7 +13,7 @@ physical assembly was performed.
 - `python3 docs/custom-build/tools/build.py`: passed; **22 navigable pages** and
   a complete print edition, with local assets, responsive layout and print CSS.
 - `python3 docs/custom-build/tools/check.py`: passed with **zero errors**;
-  **1,259 local links**, **93 image references**, all **263 upstream PDF indices**
+  **1,260 local links**, **93 image references**, all **263 upstream PDF indices**
   covered once, purchase dispositions and omitted stock parts checked, exact
   source filenames checked against pinned repository/archive inventories,
   asset hashes/licenses checked, and all four configuration examples confirmed
@@ -58,13 +58,24 @@ These failures are recorded rather than treated as passing runs.
 The actual new fork is [obnauticus/Voron-2](https://github.com/obnauticus/Voron-2),
 branch `Voron2.4`, derived from upstream commit
 `a192410e27ea345644ae5c4b29b4c9c40cbe1a73`.
-Remote guide push and Pages deployment are pending at this local-report stage;
-the publication record will be updated only after verification.
+The first complete guide push was verified at
+[`772e80b1752706e63a07fdd9aff8f9bb6e0cea50`](https://github.com/obnauticus/Voron-2/commit/772e80b1752706e63a07fdd9aff8f9bb6e0cea50).
+Its [Pages deployment](https://github.com/obnauticus/Voron-2/actions/runs/37896359601)
+completed successfully. The served index and PDF downloaded over HTTPS and
+matched the local files' SHA-256 hashes. Subsequent documentation edits must
+repeat the applicable build/export/check commands before pushing.
+
+The live [HTML guide](https://obnauticus.com/Voron-2/custom-build/site/) and
+[PDF](https://obnauticus.com/Voron-2/custom-build/site/custom-build-guide.pdf)
+use this account's existing Pages domain. Pages publishes `Voron2.4` and `/docs`;
+repository visibility and account domain configuration were not changed.
 
 The initial guide push was rejected because the existing OAuth grant lacks
 permission to create an active Actions workflow. The workflow is retained as
 an inactive example; publication uses the checked committed `/docs` output.
 No broader authorization grant or account-domain change was requested.
+This branch-publication process serves committed output; GitHub's successful
+deployment is separate from the locally executed custom documentation checks.
 
 ## Limits of these results
 

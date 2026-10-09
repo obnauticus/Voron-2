@@ -1,5 +1,8 @@
 # LDO Voron 2.4R2 — integrated custom assembly guide
 
+[Published HTML guide](https://obnauticus.com/Voron-2/custom-build/site/) ·
+[Complete printable PDF](https://obnauticus.com/Voron-2/custom-build/site/custom-build-guide.pdf)
+
 **Unofficial derivative, prepared 2026-10-09. Readiness: documentation complete
 with hardware verification gates; not a physically validated machine configuration.**
 

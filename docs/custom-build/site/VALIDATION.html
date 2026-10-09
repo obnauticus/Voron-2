@@ -28,7 +28,7 @@ physical assembly was performed.</p>
 <li><code>python3 docs/custom-build/tools/build.py</code>: passed; <strong>22 navigable pages</strong> and
   a complete print edition, with local assets, responsive layout and print CSS.</li>
 <li><code>python3 docs/custom-build/tools/check.py</code>: passed with <strong>zero errors</strong>;
-  <strong>1,259 local links</strong>, <strong>93 image references</strong>, all <strong>263 upstream PDF indices</strong>
+  <strong>1,260 local links</strong>, <strong>93 image references</strong>, all <strong>263 upstream PDF indices</strong>
   covered once, purchase dispositions and omitted stock parts checked, exact
   source filenames checked against pinned repository/archive inventories,
   asset hashes/licenses checked, and all four configuration examples confirmed
@@ -69,12 +69,22 @@ These failures are recorded rather than treated as passing runs.</p>
 <p>The actual new fork is <a href="https://github.com/obnauticus/Voron-2">obnauticus/Voron-2</a>,
 branch <code>Voron2.4</code>, derived from upstream commit
 <code>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</code>.
-Remote guide push and Pages deployment are pending at this local-report stage;
-the publication record will be updated only after verification.</p>
+The first complete guide push was verified at
+<a href="https://github.com/obnauticus/Voron-2/commit/772e80b1752706e63a07fdd9aff8f9bb6e0cea50"><code>772e80b1752706e63a07fdd9aff8f9bb6e0cea50</code></a>.
+Its <a href="https://github.com/obnauticus/Voron-2/actions/runs/37896359601">Pages deployment</a>
+completed successfully. The served index and PDF downloaded over HTTPS and
+matched the local files' SHA-256 hashes. Subsequent documentation edits must
+repeat the applicable build/export/check commands before pushing.</p>
+<p>The live <a href="https://obnauticus.com/Voron-2/custom-build/site/">HTML guide</a> and
+<a href="https://obnauticus.com/Voron-2/custom-build/site/custom-build-guide.pdf">PDF</a>
+use this account's existing Pages domain. Pages publishes <code>Voron2.4</code> and <code>/docs</code>;
+repository visibility and account domain configuration were not changed.</p>
 <p>The initial guide push was rejected because the existing OAuth grant lacks
 permission to create an active Actions workflow. The workflow is retained as
 an inactive example; publication uses the checked committed <code>/docs</code> output.
-No broader authorization grant or account-domain change was requested.</p>
+No broader authorization grant or account-domain change was requested.
+This branch-publication process serves committed output; GitHub's successful
+deployment is separate from the locally executed custom documentation checks.</p>
 <h2 id="limits-of-these-results">Limits of these results</h2>
 <p>Static links, screenshots, PDF layout and consistency checks do not prove
 physical assembly compatibility, electrical ratings, protective-earth safety,

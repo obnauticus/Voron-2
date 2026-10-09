@@ -3,8 +3,8 @@
 ## Unofficial integrated LDO custom build guide
 
 **[Start the illustrated custom guide](docs/custom-build/index.md)** ·
-[Generated static HTML](docs/custom-build/site/index.html) ·
-[Printable PDF](docs/custom-build/site/custom-build-guide.pdf) ·
+[Published HTML guide](https://obnauticus.com/Voron-2/custom-build/site/) ·
+[Printable PDF](https://obnauticus.com/Voron-2/custom-build/site/custom-build-guide.pdf) ·
 [Build and validation instructions](docs/custom-build/README.md)
 
 This fork adds a chronological guide for a provisional 350-class LDO kit with
