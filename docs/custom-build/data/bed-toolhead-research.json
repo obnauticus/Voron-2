@@ -1,0 +1,937 @@
+{
+  "schema_version": 1,
+  "status": "Documentation research; unpowered physical fit not verified",
+  "retrieved_at": "2026-10-09T06:22:35+00:00",
+  "purchase_ids": [
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08"
+  ],
+  "sources": [
+    {
+      "id": "mrw350",
+      "url": "https://mandalaroseworks.com/products/voron-350-ultraflat-bed",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "9e8f262530183978c7ac60105acf771c298ce0d12a79dcb513608070fe8ab76d",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/mrw350.html",
+      "note": "355x355x9 nominal; standard or top embedded magbed; purchased variant unverified. M5x0.8 fuse/sensor holes."
+    },
+    {
+      "id": "mrw-kinematic-product",
+      "url": "https://mandalaroseworks.com/products/matched-height-kinematic-kit",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "56eea44d0c76325687e3b44b89ca4d8c4874e720095e096b88bb7f775026108b",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/kinematic.html",
+      "note": "Package list differs from PDF in M3 length and M2 head style. Excludes approximately 130mm center extrusion."
+    },
+    {
+      "id": "mrw-kinematic-pdf",
+      "url": "https://cdn.shopify.com/s/files/1/0608/5135/5901/files/Matched_Height_Kinematic_Installation_Instructions_-_Internally_Threaded_Balls.pdf?v=1657158885",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": "PDF metadata: created/modified 2022-04-08 20:40:58 UTC",
+      "sha256": "ff56419b66ec20d32bb5f6968667ccb22778ca8261e004428ba04d58198dcd8e",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/mrw-kinematic.pdf",
+      "pdf_mapping": [
+        {
+          "pdf_index": 0,
+          "printed_page": null,
+          "label": "Unnumbered inventory and magnet warning",
+          "visually_inspected": false
+        },
+        {
+          "pdf_index": 1,
+          "printed_page": null,
+          "label": "Unnumbered exploded stacks and stock V2.4/Trident layouts",
+          "visually_inspected": true
+        }
+      ]
+    },
+    {
+      "id": "mrw-wings",
+      "url": "https://mandalaroseworks.com/products/voron-wings",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "f9699fda5c1fa4230c00c56b5733e018a3c2b54d209e3ac88beaf2e501c1187d",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/wings.html",
+      "note": "Current set is two pieces; sizes 250/300/350. 4 M4 bolts+4 M4Tnuts; no screw length specified. Product linked photographs inspected privately, no redistribution."
+    },
+    {
+      "id": "mrw-wings-variant-data",
+      "url": "https://mandalaroseworks.com/products/voron-wings.json",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "a7b010b342a64a5b833d7378b925c9ded76a88618822b52ba372e083c4fd7291",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/wings.json"
+    },
+    {
+      "id": "mrw-beta-observations",
+      "url": "https://cdn.shopify.com/s/files/1/0608/5135/5901/files/My_observation_of_Mandala_Rose_Works_Voron_pre-production-kinematics.pdf?v=1639838120",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": "Pre-production tester observations; four unnumbered pages",
+      "sha256": "89c2b73cb03ebac432726586a0a5b857be93d1190f371a24e5f4267d8bad08e2",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/mrw-beta.pdf",
+      "note": "Historical evidence only, not Wings or this final hardware; did not inherit its 15mm Z loss, heater choice, endstop changes or dimensions."
+    },
+    {
+      "id": "west3d-rapido2f",
+      "url": "https://west3d.com/products/phaetus-rapido-2-fiber-hot-end-hotend-uhf-pt1000",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "5bb658f55d978e852ca9259156483decdcb258cc06cdb9ad1dc468228924cf94",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/west3d-rapido.html",
+      "note": "Current SKU PHA2167RAPBLU UHF Plus/PT1000; listing not proof of delivery."
+    },
+    {
+      "id": "stealthburner-repo",
+      "url": "https://github.com/VoronDesign/Voron-Stealthburner/tree/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "version": null,
+      "sha256": "1342dd0d72987781ee60bded4607019c290d6628473715916806f10318366dbb",
+      "license": "GPL-3.0 repository; preserve attribution",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/stealthburner/README.md"
+    },
+    {
+      "id": "stealthburner-manual",
+      "url": "https://github.com/VoronDesign/Voron-Stealthburner/blob/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b/Manual/Assembly_Manual_SB.pdf",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "version": "2023-07-07",
+      "sha256": "9cea9b533c114658a22c59d51c0766e6b2e51d5b4584277c873858b392e87cb4",
+      "license": "GPL-3.0 repository; preserve attribution",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/stealthburner/Manual/Assembly_Manual_SB.pdf",
+      "pdf_mapping": [
+        {
+          "pdf_index": 10,
+          "printed_page": 11,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 11,
+          "printed_page": 12,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 12,
+          "printed_page": 13,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 13,
+          "printed_page": 14,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 14,
+          "printed_page": 15,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 15,
+          "printed_page": 16,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 16,
+          "printed_page": 17,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 18,
+          "printed_page": 19,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 19,
+          "printed_page": 20,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 21,
+          "printed_page": 22,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 22,
+          "printed_page": 23,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 24,
+          "printed_page": 25,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 25,
+          "printed_page": 26,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 27,
+          "printed_page": 28,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 28,
+          "printed_page": 29,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 30,
+          "printed_page": 31,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 31,
+          "printed_page": 32,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 32,
+          "printed_page": 33,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 33,
+          "printed_page": 34,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 40,
+          "printed_page": 41,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 41,
+          "printed_page": 42,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 52,
+          "printed_page": 53,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 53,
+          "printed_page": 54,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 54,
+          "printed_page": 55,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 55,
+          "printed_page": 56,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 66,
+          "printed_page": 67,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        }
+      ],
+      "note": "71 PDF pages; printed page=index+1. Additional page text read. Rendered diagrams retained scratch only."
+    },
+    {
+      "id": "stealthburner-rapido-v2",
+      "url": "https://github.com/VoronDesign/Voron-Stealthburner/blob/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b/STLs/Stealthburner/Printheads/phaetus_rapido_v2/README.md",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "version": null,
+      "sha256": "aafdc6020b3b3a3d94c42d78b70770e85b538f9baa25fdc3d3316b026bcedb23",
+      "license": "GPL-3.0 repository; preserve attribution",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/stealthburner/STLs/Stealthburner/Printheads/phaetus_rapido_v2/README.md",
+      "note": "Explicit High Flow mount. Three linked heatsink/wire-routing figures privately inspected. No assertion that HF parts fit UHF."
+    },
+    {
+      "id": "phaetus-rapido2f-repo",
+      "url": "https://github.com/Phaetus/Rapido-2F/tree/7401934e28d56844ba4f311e9d588b1e4d0510dd",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+      "version": null,
+      "sha256": "8c4d1a31bffe51d54a701fa47def2a76c812c414c979ba2c3fe195d5ebe0bfb1",
+      "license": "Models personal use only; commercial use prohibited; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/rapido-2f/README.md"
+    },
+    {
+      "id": "phaetus-rapido2f-manual",
+      "url": "https://github.com/Phaetus/Rapido-2F/blob/7401934e28d56844ba4f311e9d588b1e4d0510dd/Instructions%20Sheet/Rapido%20Hotend%202%20Instruction%20Sheet.pdf",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+      "version": "Rapido Hotend 2 Assembly Instruction, 2023",
+      "sha256": "1a89929f4760af5ec7a225a7bd71f0ffeee8edf5c300031147aa935fd03622aa",
+      "license": "Copyright 2023 Phaetus; all rights reserved; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/rapido-2f/Instructions Sheet/Rapido Hotend 2 Instruction Sheet.pdf",
+      "pdf_mapping": [
+        {
+          "pdf_index": 0,
+          "printed_page": null,
+          "label": "Cover"
+        },
+        {
+          "pdf_index": 7,
+          "printed_page": "07",
+          "label": "Heatbreak/support assembly",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 10,
+          "printed_page": "10",
+          "label": "UHF nozzle assembly"
+        },
+        {
+          "pdf_index": 12,
+          "printed_page": "12",
+          "label": "Hot-tightening"
+        },
+        {
+          "pdf_index": 13,
+          "printed_page": "12",
+          "label": "Thermal grease; duplicated printed page 12"
+        },
+        {
+          "pdf_index": 14,
+          "printed_page": "13",
+          "label": "Copyright"
+        }
+      ],
+      "note": "15 pages; most pages printed=index except cover, duplicate printed12 at PDFidx13. Actual electrical rating and delivered 2F revision not established."
+    },
+    {
+      "id": "phaetus-rapido2f-cad",
+      "url": "https://github.com/Phaetus/Rapido-2F/blob/7401934e28d56844ba4f311e9d588b1e4d0510dd/Product%20Model/Rapido%202F.stp",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+      "version": null,
+      "sha256": "acf694696a8a783eaded95ad3df0229f18a88b23efecfbad00aa4400dd305e19",
+      "license": "Models personal use only; commercial use prohibited; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/rapido-2f/Product Model/Rapido 2F.stp",
+      "note": "Downloaded actual product STEP; not rendered by CAD engine. Combined UHF toolhead dimensional validation unresolved."
+    },
+    {
+      "id": "phaetus-rapido2f-adaptors",
+      "url": "https://github.com/Phaetus/Rapido-2F/blob/7401934e28d56844ba4f311e9d588b1e4d0510dd/Product%20Adaptor%20Models/voron%202.4-Rapido%202.zip",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+      "version": "Archive members dated 2023-12-11",
+      "sha256": "d4a42ab670dbc980ccad7212d991d45025ae0d115cc4c84cd795492fece812fe",
+      "license": "Models personal use only; commercial use prohibited; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/rapido-2f/Product Adaptor Models/voron 2.4-Rapido 2.zip",
+      "note": "Archive includes HF/UHF front and rear. Legacy unflagged GBK filename bytes may extract garbled. UHF front lower bound extends 8.49mm relative HF front; rear bounding spans match but hashes differ. No physical combined fit validation."
+    },
+    {
+      "id": "cartographer-cad-repo",
+      "url": "https://github.com/Cartographer3D/cartographer-probe/tree/bf01749f16f239b5310aaf03e96b18e9dfb9b832",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "bf01749f16f239b5310aaf03e96b18e9dfb9b832",
+      "version": null,
+      "sha256": "59060bdbc9b6a56894715eb7680b59c88c9c60342d3421fd78b58d38f215f24c",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/cartographer-probe/README.md",
+      "note": "Product page CAD link followed. V4 Standard STEP and 6mm/9mm CNC files exist; no reuse license found in repo."
+    },
+    {
+      "id": "cartographer-v4-standard-cad",
+      "url": "https://github.com/Cartographer3D/cartographer-probe/blob/bf01749f16f239b5310aaf03e96b18e9dfb9b832/STEP/Cartographer%20Probes/V4/Cartographer%20V4%20-%20Standard.step",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "bf01749f16f239b5310aaf03e96b18e9dfb9b832",
+      "version": null,
+      "sha256": "7496da4afc02fd3bfe8eec6fcdee32f5b6c41682f26b159305d24595222e6111",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/cartographer-probe/STEP/Cartographer Probes/V4/Cartographer V4 - Standard.step"
+    },
+    {
+      "id": "cartographer-cnc-6mm-cad",
+      "url": "https://github.com/Cartographer3D/cartographer-probe/blob/bf01749f16f239b5310aaf03e96b18e9dfb9b832/STEP/Cartographer%20CNC%20Mount/6mm%20CNC.step",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "bf01749f16f239b5310aaf03e96b18e9dfb9b832",
+      "version": null,
+      "sha256": "df1f4c5b05d26113d62ce4371d1b5f7afd2de1597a4be8457cbd8d3d4899d1dd",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/cartographer-probe/STEP/Cartographer CNC Mount/6mm CNC.step"
+    },
+    {
+      "id": "cartographer-cnc-product",
+      "url": "https://cartographer3d.com/products/cartographer3d-cnc-stealthburner-mount",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "fc8d3af0562f3d112d0523c30ad0ef8b25773794c01dca07acf5786df253565f",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/cnc-product.html",
+      "note": "6mm,6mm with8.5mm UHF extenders,9mm with extenders. 9mm incompatible MGN9. 6mm fits MGN9/MGN12 per maker. 1 carriage,2clamps+bolts,2M3x6BHCS advertised."
+    },
+    {
+      "id": "cartographer-cnc-install",
+      "url": "https://docs.cartographer3d.com/cartographer-cnc-mount/installation.md",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "4a2d87671d1826a3d1a3b6c560ddf12a2a10bd7918ef39cd878f4bc9483f7626",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/cnc-install.md",
+      "note": "Three installation figures rendered/viewed privately: 4M3x8SHCS rail,2M3x6BHCS clamp,2M2x10BHCS/SHCS switch,2M3x6BHCS standard probe. Text: early rail hardware uses M3x8BHCS; UHF can require extenders."
+    },
+    {
+      "id": "cartographer-hardware-setup",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation.md",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "75b2ebbc88408e7d7d24d5d699989928caf54746ed7e3d1a03ea6c1dc6e891af",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/probe-install.md",
+      "note": "2.6-3mm coil above nozzle; level; no metal above coil keepout; stock USB cable not chain-rated; direct USB advised; older CAN pin warnings not extrapolated to V4."
+    },
+    {
+      "id": "cartographer-faq",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/faq.md",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": "Page labels last update 2024-12-17; retrieved current",
+      "sha256": "bbe340924d1dfaa6f748ea77fd4b6eb7d5888c1136176a49a145b6617d8ab38b",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "research_local_path": "/tmp/voron-bed-toolhead/carto-faq.md",
+      "note": "Embedded magnet beds cause mesh errors; uniform magnetic sheets acceptable. Firmware/macros in dated FAQ not adopted as current software authority."
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/bed-kinematic-stacks.svg",
+      "sha256": "dbe2e243d2c2feabbaad79a20f809a42185c8ad1c84d34d99a4fd583827247f0",
+      "creator": "Original unofficial guide diagram",
+      "license": "GPL-3.0 (guide repository license)",
+      "provenance": "Drawn from manufacturer-documented contact types / measured-height requirement; no traced vendor image",
+      "dimensional": false,
+      "redistributed_third_party_asset": false
+    },
+    {
+      "path": "assets/toolhead-probe-height.svg",
+      "sha256": "29abc0a4c8dce7da5d8e7ad8a4b7570f42121e551c801d39e03541248f9ea915",
+      "creator": "Original unofficial guide diagram",
+      "license": "GPL-3.0 (guide repository license)",
+      "provenance": "Drawn from manufacturer-documented contact types / measured-height requirement; no traced vendor image",
+      "dimensional": false,
+      "redistributed_third_party_asset": false
+    }
+  ],
+  "interactions": [
+    {
+      "id": "bed-system",
+      "status": "conditionally compatible",
+      "hardware_revision": "MRW350 standard/magbed unverified; matched-height kit delivered revision and 350 Wings unverified",
+      "evidence": [
+        "mrw350",
+        "mrw-kinematic-product",
+        "mrw-wings"
+      ],
+      "reason": "Manufacturer designed Wings for Ultraflat+matched-height. Physical support map, third-seat attachment and fasteners unresolved.",
+      "gates": [
+        "B1",
+        "B2",
+        "B3",
+        "B5"
+      ]
+    },
+    {
+      "id": "embedded-magnet-bed-cartographer-scan",
+      "status": "incompatible",
+      "hardware_revision": "MRW embedded top Magbed if delivered, Cartographer V4 scan",
+      "evidence": [
+        "mrw350",
+        "cartographer-faq"
+      ],
+      "reason": "Manufacturer states embedded magnets cause mesh issues. Actual purchased bed variant unknown.",
+      "gates": [
+        "B1",
+        "T4"
+      ]
+    },
+    {
+      "id": "plain-bed-uniform-sheet-cartographer",
+      "status": "conditionally compatible",
+      "hardware_revision": "MRW plain350 if delivered, uniform magnetic sheet, Cartographer V4",
+      "evidence": [
+        "cartographer-faq"
+      ],
+      "reason": "Manufacturer accepts uniform magnetic sheets; installed surface and repeatable probing not physically validated.",
+      "gates": [
+        "B1",
+        "B5",
+        "T4"
+      ]
+    },
+    {
+      "id": "cnc6mm-mgn12-liveidler6mm",
+      "status": "conditionally compatible",
+      "hardware_revision": "Cartographer CNC6mm purchased variant unknown, provisional V2.4R2 MGN12, Vitalii live-idler6mm purchase verified",
+      "evidence": [
+        "cartographer-cnc-product",
+        "cartographer-cnc-6mm-cad"
+      ],
+      "reason": "Nominal rail/belt compatibility advertised; complete mixed gantry/shaft/clearance validation remains unresolved.",
+      "gates": [
+        "T1"
+      ]
+    },
+    {
+      "id": "cnc9mm-mgn9",
+      "status": "incompatible",
+      "hardware_revision": "Cartographer CNC9mm with MGN9",
+      "evidence": [
+        "cartographer-cnc-product"
+      ],
+      "reason": "Explicit manufacturer exclusion; not selected main build path.",
+      "gates": [
+        "T1"
+      ]
+    },
+    {
+      "id": "rapido2fuhf-sb-cw2-cnc-v4",
+      "status": "unresolved",
+      "hardware_revision": "Purchased Rapido2F UHFPT1000 actual revision unknown, CW2 if confirmed, CNC variant/extenders unknown, V4Standard",
+      "evidence": [
+        "phaetus-rapido2f-adaptors",
+        "stealthburner-rapido-v2",
+        "cartographer-cnc-install",
+        "cartographer-v4-standard-cad"
+      ],
+      "reason": "Exact manufacturer UHF candidate exists but no verified combined duct, fan shell, CW2, nozzle/coil/extender fit. HF STL excluded.",
+      "gates": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "B5"
+      ]
+    },
+    {
+      "id": "hotend-load-temperature-input",
+      "status": "unresolved",
+      "hardware_revision": "Rapido2F heater revision, Leviathan/Nitehawk revision unknown",
+      "evidence": [
+        "phaetus-rapido2f-manual",
+        "west3d-rapido2f"
+      ],
+      "reason": "Purchased title confirms reported PT1000/UHF only; load/startup current and board route must be resolved by electronics research. No heat commissioned.",
+      "gates": [
+        "T3"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "B1",
+      "evidence_needed": "Identify MRW350 exact SKU/variant, magnet arrangement, actual dimensions, heater option and top/underside hole photos",
+      "affected_steps": "Bed adhesive/surface assembly; Cartographer scanning",
+      "blocks": "assembly and calibration"
+    },
+    {
+      "id": "B2",
+      "evidence_needed": "Count technical package contents and revision-matched paper instructions; resolve M3 lengths/M2 head type; resolve Wings 2x unit and pieces per set",
+      "affected_steps": "Kinematic seats and installed/surplus counts",
+      "blocks": "assembly"
+    },
+    {
+      "id": "B3",
+      "evidence_needed": "Manufacturer Wings size/revision map of three contact positions, pin blocks, third-seat support and mounting screws; physical plate/frame/deck/DIN hole and dry-fit measurements. Finished gantry/nozzle/belt envelope remains B5/M10.",
+      "affected_steps": "Early support/frame/deck/DIN mapping, then Wings/frame/balls final assembly",
+      "blocks": "assembly"
+    },
+    {
+      "id": "B4",
+      "evidence_needed": "Exact heater label/install sheet, voltage/power/sensor, fuse selection, M5 attachment hardware and PE method, compatible surface ownership",
+      "affected_steps": "Adhesion, thermal safety and heater route",
+      "blocks": "assembly and electrical commissioning"
+    },
+    {
+      "id": "B5",
+      "evidence_needed": "Measured bed top height, complete UHF nozzle/coil position, manual full-envelope clearance record with intended removable surface",
+      "affected_steps": "Ztravel/XYreach limits and powered motion",
+      "blocks": "electrical commissioning and calibration"
+    },
+    {
+      "id": "T1",
+      "evidence_needed": "Motor/gears/extruder identification; carriage width/revision and Xrail type; belt capture/fasteners/endstop hardware and mixed-gantry alignment",
+      "affected_steps": "CW2/carriage assembly and belt/endstop fastening",
+      "blocks": "assembly"
+    },
+    {
+      "id": "T2",
+      "evidence_needed": "Exact manufacturer-supported UHF cartridge and SB/CW2 shell fit; candidate CAD comparison plus cold physical fit and duct alignment",
+      "affected_steps": "Printing/assembly of UHF cartridge",
+      "blocks": "assembly"
+    },
+    {
+      "id": "T3",
+      "evidence_needed": "Delivered exact 2F revision,label,instructions,nozzle,PT1000 and heater specs; revision-matched support/mount screws",
+      "affected_steps": "Hotend assembly and load handoff",
+      "blocks": "assembly and electrical commissioning"
+    },
+    {
+      "id": "T4",
+      "evidence_needed": "V4Standard and CNCextender variant identification; measured coil2.6-3mm above tip; actual offsets, keepout and full envelope clearance",
+      "affected_steps": "Probe installation and probing",
+      "blocks": "assembly and calibration"
+    }
+  ],
+  "printed_parts": [
+    {
+      "filename": "STLs/Clockwork2/Direct_Drive/main_body.stl",
+      "quantity": 1,
+      "status": "required if CW2 confirmed",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": "T1",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Clockwork2/Direct_Drive/motor_plate.stl",
+      "quantity": 1,
+      "status": "required if CW2 confirmed",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": "T1",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Clockwork2/Direct_Drive/[a]_guidler_a.stl",
+      "quantity": 1,
+      "status": "required if CW2 confirmed",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": "T1",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Clockwork2/Direct_Drive/[a]_guidler_b.stl",
+      "quantity": 1,
+      "status": "required if CW2 confirmed",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": "T1",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Clockwork2/Direct_Drive/[a]_latch.stl",
+      "quantity": 1,
+      "status": "required if CW2 confirmed",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": "T1",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Clockwork2/Direct_Drive/[a]_latch_shuttle.stl",
+      "quantity": 1,
+      "status": "required if CW2 confirmed",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": "T1",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Stealthburner/[a]_stealthburner_main_body.stl",
+      "quantity": 1,
+      "status": "conditional UHF fit",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": "T2",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Stealthburner/Printheads/phaetus_rapido_v2/stealthburner_printhead_rapido_v2_front.stl",
+      "quantity": 0,
+      "status": "omit; HF mount not verified for purchased UHF",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": "T2",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Stealthburner/Printheads/phaetus_rapido_v2/stealthburner_printhead_rapido_v2_rear_cw2.stl",
+      "quantity": 0,
+      "status": "omit; HF mount not verified for purchased UHF",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": "T2",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Clockwork2/cable_door_for_pcb.stl",
+      "quantity": null,
+      "status": "unresolved board/umbilical variant",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": "T1",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Clockwork2/[a]_pcb_spacer.stl",
+      "quantity": null,
+      "status": "unresolved board/umbilical variant",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": "T1",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Clockwork2/chain_anchor_2hole.stl",
+      "quantity": null,
+      "status": "unresolved board/umbilical variant",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": "T1",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Clockwork2/chain_anchor_3hole.stl",
+      "quantity": null,
+      "status": "unresolved board/umbilical variant",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": "T1",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Stealthburner/[o]_stealthburner_LED_carrier.stl",
+      "quantity": 1,
+      "status": "optional lighting",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": null,
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Stealthburner/[c]_stealthburner_LED_diffuser.stl",
+      "quantity": 1,
+      "status": "optional lighting",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": null,
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Stealthburner/[o]_stealthburner_LED_diffuser_mask.stl",
+      "quantity": 1,
+      "status": "optional lighting",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": null,
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Tools/SB_5015_Cutting_Tool_A.stl",
+      "quantity": 1,
+      "status": "optional fan tool",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": null,
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "STLs/Tools/SB_5015_Cutting_Tool_B.stl",
+      "quantity": 1,
+      "status": "optional fan tool",
+      "source": "stealthburner-repo",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "gate": null,
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "voron 2.4-Rapido 2/uhf\u524d.stl",
+      "quantity": 1,
+      "status": "unresolved exact combined UHF fit",
+      "source": "phaetus-rapido2f-adaptors",
+      "commit": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+      "gate": "T2",
+      "included_by_ldo": "unverified"
+    },
+    {
+      "filename": "voron 2.4-Rapido 2/uhf \u540e.stl",
+      "quantity": 1,
+      "status": "unresolved exact combined UHF fit",
+      "source": "phaetus-rapido2f-adaptors",
+      "commit": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+      "gate": "T2",
+      "included_by_ldo": "unverified"
+    }
+  ],
+  "crosswalk": [
+    {
+      "upstream_printed_pages": [
+        52,
+        60
+      ],
+      "pdf_indices": [
+        51,
+        59
+      ],
+      "action": "REPLACE",
+      "replacement": "chapters/05-bed.md",
+      "notes": "Stock plate/fourspacers/fourbolt mount replaced; PE/fuse/cable principles retained; B1-B5."
+    },
+    {
+      "upstream_printed_pages": [
+        146,
+        147
+      ],
+      "pdf_indices": [
+        145,
+        146
+      ],
+      "action": "KEEP separate toolhead manual, REPLACE custom interfaces",
+      "replacement": "chapters/06-toolhead.md",
+      "notes": "SB/CW2 if confirmed; CNC carriage+2FUHF+V4; T1-T4."
+    },
+    {
+      "supplement": "Stealthburner2023-07-07",
+      "printed_pages": [
+        58,
+        63
+      ],
+      "pdf_indices": [
+        57,
+        62
+      ],
+      "action": "REPLACE / OMIT",
+      "replacement": "chapters/06-toolhead.md",
+      "notes": "Stock plasticcarriage/Omron removed; CNC/V4 instead."
+    },
+    {
+      "upstream_printed_pages": [
+        158,
+        161
+      ],
+      "pdf_indices": [
+        157,
+        160
+      ],
+      "action": "OMIT conditional on verified virtual Zhoming",
+      "replacement": "software chapter",
+      "notes": "No stock nozzle Zpin in planned Cartographer path."
+    }
+  ],
+  "missing_requirements": [
+    {
+      "item": "Compatible new bed heater, sensor, thermal fuse, magnetic sheet/buildsurface if plain plate",
+      "status": "required-but-not-confirmed-owned",
+      "gate": "B4"
+    },
+    {
+      "item": "Dedicated PElead, appropriate M5attachment terminal/hardware and bed cable strainrelief",
+      "status": "required-but-not-confirmed-owned",
+      "gate": "B4"
+    },
+    {
+      "item": "Thirdseat ~130mm extrusion or manufacturer-supported Wings layout support",
+      "status": "conditional-required-but-not-confirmed-owned",
+      "gate": "B3"
+    },
+    {
+      "item": "2F UHF validated printed cartridge/frontrear and matching shell",
+      "status": "required-but-not-confirmed-owned",
+      "gate": "T2"
+    },
+    {
+      "item": "CNC8.5mm UHF extenders and suitable fasteners",
+      "status": "conditional-required-but-not-confirmed-owned",
+      "gate": "T4"
+    },
+    {
+      "item": "Exact boardrevision mounts and umbilical cable relief",
+      "status": "required-but-not-confirmed-owned",
+      "gate": "T1"
+    },
+    {
+      "item": "Silicone nozzle brush/location",
+      "status": "optional-not-confirmed-owned; manual initial cleaning permitted",
+      "gate": "T4"
+    }
+  ],
+  "limitations": [
+    "Thirdparty vendor imagery inspected privately only; source reuse not assumed.",
+    "No physical assembly, firmware flashing, movement or heating performed.",
+    "No combined CAD clearance model rendered; manufacturer figures inspected and actual dimensional dryfit gates remain.",
+    "Beta-test observed Zloss and old Zpin dimensions not used as machine settings."
+  ],
+  "validation": {
+    "checks": [
+      "JSON parse",
+      "SVG XML parse",
+      "owned chapter internal path existence",
+      "manufacturer diagram visual inspection",
+      "source hash calculation"
+    ],
+    "physical_validation": false,
+    "combined_cad_fit_validation": false
+  }
+}

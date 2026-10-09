@@ -1,0 +1,48 @@
+# NON-DEPLOYABLE CONDITIONAL ALTERNATE. EVERY LINE COMMENTED INTENTIONALLY.
+# Use ONLY if actual hardware is ORIGINAL Nitehawk SB, not SB V2.
+# Target: original SB RP2040 USB; manufacturer Katapult offset 16KiB.
+# Source: MotorDynamicsLab/Nitehawk-SB
+# commit be93526b948d3339c755cb32116baef221ce1a8d
+# Firmware/Klipper Configs/nitehawk-sb.cfg
+# Exact PCB revision must still be matched to its schematic (E1).
+# Original board has no documented V2 downstream USB port in this workflow.
+# Cartographer would use an independently verified direct host USB cable.
+# Prerequisites: E1 board; E2 Rapido electrical path; E4 probe wiring; E6 motion.
+#
+# [mcu nhk]
+# serial: <MEASURE_ACTUAL_ORIGINAL_NITEHAWK_USB_DEVICE_PATH>
+# restart_method: command
+#
+# [extruder]
+# step_pin: nhk:gpio23
+# dir_pin: <VERIFY_SIGN_FOR_nhk:gpio24>
+# enable_pin: !nhk:gpio25
+# heater_pin: nhk:gpio9
+# sensor_pin: nhk:gpio29
+# sensor_type: PT1000
+# pullup_resistor: 2200
+# rotation_distance: <MEASURE_ACTUAL_EXTRUDER>
+# gear_ratio: <VERIFY_ACTUAL_GEARS>
+# microsteps: <APPROVED_DRIVER_VALUE>
+# nozzle_diameter: <IDENTIFY_INCLUDED_NOZZLE>
+# filament_diameter: <VERIFY_INTENDED_FILAMENT>
+# min_temp: <APPROVED_LIMIT>
+# max_temp: <APPROVED_LIMIT>
+# control: <VALIDATED_CONTROL_METHOD>
+# Leave heater unplugged until exact original-board electrical ratings and
+# Rapido cold/startup current satisfy E2; V2 rating alone is not approval.
+#
+# [tmc2209 extruder]
+# uart_pin: nhk:gpio0
+# tx_pin: nhk:gpio1
+# sense_resistor: 0.100
+# run_current: <VERIFY_MOTOR_AND_BOARD_THERMAL_LIMIT>
+#
+# Endstop route depends on actual mount and cable:
+# [stepper_x]
+# endstop_pin: <VERIFY_PULLUP_POLARITY_FOR_nhk:gpio13>
+# [stepper_y]
+# endstop_pin: <VERIFY_PULLUP_POLARITY_FOR_nhk:gpio12>
+#
+# [verify_heater extruder]
+# Preserve Klipper defaults. No stock thermistor, PID, offset or power values.

@@ -1,0 +1,962 @@
+{
+  "schema_version": 1,
+  "retrieved_at": "2026-10-09",
+  "readiness": "gated documentation; no physical assembly or commissioning validation",
+  "actual_board_revisions": {
+    "leviathan": null,
+    "nitehawk": null,
+    "cartographer_firmware": null
+  },
+  "research_source_commits": {
+    "nh-v2": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+    "leviathan": "878c3c4893ea353552c957f574509f9890e1e37a",
+    "nh-original": "be93526b948d3339c755cb32116baef221ce1a8d",
+    "carto-plugin": "06e016905cc3d209ceb543afd59a580bcabc44be",
+    "carto-firmware": "e5c2b17dbe04ec1f747af5d81b2215949a0a9f8e",
+    "klipper": "461c4e3722c3a897fba1c6b3f0780a5315043842"
+  },
+  "sources": [
+    {
+      "id": "E-LDO-WIRING",
+      "title": "LDO Rev D wiring guide",
+      "url": "https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_d",
+      "retrieved_at": "2026-10-09",
+      "version": "Wiki updated-at 2026-07-14T12:16:08.113Z",
+      "commit": null,
+      "sha256": "247da4a7cbffb34dda26bb2f81c85f30b5af9be1926a0336738ec1de7c6f0af6",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/wiring-rev-d.html",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_d",
+      "license": "all rights reserved (LDO page metadata alr)"
+    },
+    {
+      "id": "E-LDO-ERRATA",
+      "title": "LDO historical Rapido/Octopus errata",
+      "url": "https://docs.ldomotors.com/en/voron/voron2/kit-errata",
+      "retrieved_at": "2026-10-09",
+      "version": "Wiki updated-at 2022-12-06T18:56:51.614Z",
+      "commit": null,
+      "sha256": "9c4c04f99113064a274a3b952d611ceb8d41c3466ad3e2f65d938fdef54879d4",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/errata.html",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2/kit-errata",
+      "license": "all rights reserved (LDO page metadata alr)"
+    },
+    {
+      "id": "E-NHV2-DOC",
+      "title": "LDO Nitehawk SB V2 documentation",
+      "url": "https://docs.ldomotors.com/en/Toolboard/nitehawk-sb-v2",
+      "retrieved_at": "2026-10-09",
+      "version": "2026-07-10T05:45:15.178Z",
+      "commit": null,
+      "sha256": "1ad306dfd340b4fa21f50a21322ed87b035d6ed9ecceab3302773944f38609ee",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/nitehawk-sb-v2.html",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.ldomotors.com/en/Toolboard/nitehawk-sb-v2",
+      "license": "all rights reserved (LDO page metadata alr)"
+    },
+    {
+      "id": "E-NH-DOC",
+      "title": "LDO original Nitehawk SB documentation",
+      "url": "https://docs.ldomotors.com/en/Toolboard/nitehawk-sb",
+      "retrieved_at": "2026-10-09",
+      "version": "2025-10-09T07:39:02.074Z",
+      "commit": null,
+      "sha256": "7de961603b9d4d378a5711397637f50b917a846a55d25e08dada392a98409788",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/nh-original.html",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.ldomotors.com/en/Toolboard/nitehawk-sb",
+      "license": "all rights reserved (LDO page metadata alr)"
+    },
+    {
+      "id": "E-NHV2-SCHEM",
+      "title": "Nitehawk SB V2.0.0 schematic",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB-V2/blob/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Hardware/Nitehawk-SB_V2.0.0/Nitehawk-SB_V2.0.0_Schematics.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "SB V2.0, 2025-11-06, sheet 1/1",
+      "commit": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "sha256": "011498814f027f7f4c4e7d6ea22e77a4462657032a6eb85d457db63ea2bc49ac",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "local_research_file": "/tmp/voron-electronics/Nitehawk-SB_V2.0.0_Schematics.pdf",
+      "redistributed": false,
+      "reuse_terms": "no license file established in pinned repository tree; linked only, no reuse permission inferred",
+      "printed_pages": [],
+      "pdf_indices_zero_based": null,
+      "visual_inspection": {
+        "pdf_indices": [
+          0
+        ],
+        "areas": [
+          "downstream USB P8/F1 pin-to-net mapping and keyed connector diagram compared",
+          "heater Q1/P3 and 24V power path"
+        ],
+        "method": "PyMuPDF render plus original connector figure view_image; no geometry inferred from text alone"
+      },
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Nitehawk-SB-V2/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Hardware/Nitehawk-SB_V2.0.0/Nitehawk-SB_V2.0.0_Schematics.pdf",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree"
+    },
+    {
+      "id": "E-NHV2-PINOUT",
+      "title": "Nitehawk V2 pinout photograph",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB-V2/blob/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Images/nhsbv2_pcb_pinout.jpg",
+      "retrieved_at": "2026-10-09",
+      "version": "photograph labeled V2.0.0",
+      "commit": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "sha256": "f9f1a90ec87d71f4fd502738eb705afa2afd5555128a711d7aebe7ea58d681ce",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "local_research_file": "/tmp/voron-electronics/nhsbv2_pcb_pinout.jpg",
+      "redistributed": false,
+      "reuse_terms": "no license file established in pinned repository tree; linked only, no reuse permission inferred",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": {
+        "method": "view_image",
+        "checked": [
+          "P8 photographed orientation versus schematic numbering",
+          "PH2.0 TH0, XY endstop, PROBE",
+          "XT30 combined USB/power"
+        ]
+      },
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Nitehawk-SB-V2/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Images/nhsbv2_pcb_pinout.jpg",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree"
+    },
+    {
+      "id": "E-NHV2-FW",
+      "title": "Nitehawk V2 firmware target figure",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB-V2/blob/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Images/make_menuconfig.png",
+      "retrieved_at": "2026-10-09",
+      "version": "G0B1/12MHz/8KiB/USB PA11-PA12",
+      "commit": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "sha256": "a4ba1b675520a4f7907c521ab9e421ac09b6c01457ed62c2cc775b8cc3b939c1",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "local_research_file": "/tmp/voron-electronics/make_menuconfig.png",
+      "redistributed": false,
+      "reuse_terms": "no license file established in pinned repository tree; linked only, no reuse permission inferred",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": {
+        "method": "view_image",
+        "checked": [
+          "MCU",
+          "clock",
+          "offset",
+          "USB pins"
+        ]
+      },
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Nitehawk-SB-V2/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Images/make_menuconfig.png",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree"
+    },
+    {
+      "id": "E-NHV2-CFG",
+      "title": "Nitehawk V2 configuration",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB-V2/blob/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Configs/nitehawk-sbv2.cfg",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "commit": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "sha256": "d9cf287e2cdde57841d1ddc8a30bf933231ad044607046c66a6f84a718eb7449",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "local_research_file": "/tmp/voron-electronics/nitehawk-sbv2.cfg",
+      "redistributed": false,
+      "reuse_terms": "no license file established in pinned repository tree; linked only, no reuse permission inferred",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Nitehawk-SB-V2/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Configs/nitehawk-sbv2.cfg",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree"
+    },
+    {
+      "id": "E-NH-CFG",
+      "title": "Original Nitehawk configuration",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB/blob/be93526b948d3339c755cb32116baef221ce1a8d/Firmware/Klipper%20Configs/nitehawk-sb.cfg",
+      "retrieved_at": "2026-10-09",
+      "version": "original RP2040 family",
+      "commit": "be93526b948d3339c755cb32116baef221ce1a8d",
+      "sha256": "f64090f4aed6f4467e98b7413538dc2ba24fa5b341839921197fb9afd31946c6",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "local_research_file": "/tmp/voron-electronics/nh-original-nitehawk-sb.cfg",
+      "redistributed": false,
+      "reuse_terms": "no license file established in pinned repository tree; linked only, no reuse permission inferred",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Nitehawk-SB/be93526b948d3339c755cb32116baef221ce1a8d/Firmware/Klipper%20Configs/nitehawk-sb.cfg",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree"
+    },
+    {
+      "id": "E-NH-PINOUT",
+      "title": "Original Nitehawk pinout photograph",
+      "url": "https://docs.ldomotors.com/nitehawk/nhsb_pcb_pinout.png",
+      "retrieved_at": "2026-10-09",
+      "version": "photographed V1.4; not proof of actual board",
+      "commit": null,
+      "sha256": "8dc20dde15498621161751e8b4188bda7c11e0bd887d64c49a3b25620c94a4e6",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/nh-original-pinout.png",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": {
+        "method": "view_image",
+        "checked": [
+          "original RP2040 gpio heater/sensor",
+          "XH versus V2 PH connector distinction",
+          "no downstream USB shown"
+        ]
+      },
+      "retrieved_content_url": "https://docs.ldomotors.com/nitehawk/nhsb_pcb_pinout.png",
+      "license": "all rights reserved (LDO page metadata alr)"
+    },
+    {
+      "id": "E-LEV-MANUAL",
+      "title": "Leviathan V1.3 manual",
+      "url": "https://github.com/MotorDynamicsLab/Leviathan/blob/878c3c4893ea353552c957f574509f9890e1e37a/Manual/Leviathan_V1.3_Manual.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "2025-07-09",
+      "commit": "878c3c4893ea353552c957f574509f9890e1e37a",
+      "sha256": "e64a191ec1c6f2f9d7dd744446acd592b5734a5cb23135e5b2e13d62768e1872",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "local_research_file": "/tmp/voron-electronics/Leviathan_V1.3_Manual.pdf",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "pdf_indices_zero_based": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        11
+      ],
+      "visual_inspection": {
+        "pdf_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          11
+        ],
+        "method": "PyMuPDF render; view_image pin assignment page and USB firmware page",
+        "checked": [
+          "STM32H743 25MHz",
+          "max heater output 180W/7.5A",
+          "DC bed max 240W/10A",
+          "CAN socket 24V orientation",
+          "128KiB USB firmware diagram"
+        ]
+      },
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Leviathan/878c3c4893ea353552c957f574509f9890e1e37a/Manual/Leviathan_V1.3_Manual.pdf",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-LEV-SCHEM",
+      "title": "Leviathan V1.3 schematic",
+      "url": "https://github.com/MotorDynamicsLab/Leviathan/blob/878c3c4893ea353552c957f574509f9890e1e37a/Schematic/Leviathan_V1.3.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "V1.3",
+      "commit": "878c3c4893ea353552c957f574509f9890e1e37a",
+      "sha256": "246807b76a461ac47fea54f6da296d5925a84ef4eee83c0dba50a6a1d0831563",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "local_research_file": "/tmp/voron-electronics/Leviathan_V1.3.pdf",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Leviathan/878c3c4893ea353552c957f574509f9890e1e37a/Schematic/Leviathan_V1.3.pdf",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-LEV-FW",
+      "title": "Leviathan V1.3 firmware target figure",
+      "url": "https://github.com/MotorDynamicsLab/Leviathan/blob/878c3c4893ea353552c957f574509f9890e1e37a/Media/klipper_usb_V1.3.jpg",
+      "retrieved_at": "2026-10-09",
+      "version": "H743/25MHz/128KiB/USB",
+      "commit": "878c3c4893ea353552c957f574509f9890e1e37a",
+      "sha256": "3e179b92cc9540b8cb3256396dca6a30816380bae6e7874802c330aacbcfbb10",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "local_research_file": "/tmp/voron-electronics/klipper_usb_V1.3.jpg",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": {
+        "method": "view_image",
+        "checked": [
+          "revision-dependent USB target"
+        ]
+      },
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Leviathan/878c3c4893ea353552c957f574509f9890e1e37a/Media/klipper_usb_V1.3.jpg",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-LEV-CFG-CONFLICT",
+      "title": "Generic Leviathan cfg with older firmware header",
+      "url": "https://github.com/MotorDynamicsLab/Leviathan/blob/878c3c4893ea353552c957f574509f9890e1e37a/Klipper_config/voron2_leviathan.cfg",
+      "retrieved_at": "2026-10-09",
+      "version": "F446/12MHz/no-bootloader header conflicts with V1.3 manual",
+      "commit": "878c3c4893ea353552c957f574509f9890e1e37a",
+      "sha256": "6822cacc53b417fad39046b06a2c3cec91d8fbc5dc60f8f217e0226487e2932d",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "local_research_file": "/tmp/voron-electronics/voron2_leviathan.cfg",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Leviathan/878c3c4893ea353552c957f574509f9890e1e37a/Klipper_config/voron2_leviathan.cfg",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-LEV-GUIDE",
+      "title": "LDO Leviathan V1.3 guide",
+      "url": "https://www.ldomotion.com/guides/voron-leviathan-v1-3",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned live HTML; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "b0a32a8cbb8b7e60a0eb198fbdb15015816c5e00f55c29ea47deadf18dff6a7e",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/leviathan-v13.html",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://www.ldomotion.com/guides/voron-leviathan-v1-3",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-SETUP",
+      "title": "Cartographer new-plugin Klipper setup",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/klipper-setup.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "84486b6d9135d1540d692b4ff40fcb8974f9fe6e622994d4abc733b591093e63",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/carto-klipper.md",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/klipper-setup.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-WIRING",
+      "title": "Cartographer USB/CAN wiring",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation/wiring-diagrams.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "2d38bd1d43965ca7df5e78c64de52016226d2805fe1fd3e3abf9ef36b92afac6",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/carto-wiring.md",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation/wiring-diagrams.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-HARDWARE",
+      "title": "Cartographer hardware setup",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "75b2ebbc88408e7d7d24d5d699989928caf54746ed7e3d1a03ea6c1dc6e891af",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/carto-hardware.md",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-FAQ",
+      "title": "Cartographer FAQ",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/faq.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "bbe340924d1dfaa6f748ea77fd4b6eb7d5888c1136176a49a145b6617d8ab38b",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/carto-faq.md",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/faq.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-SCAN-CAL",
+      "title": "Cartographer new-plugin scan calibration",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/scan-calibration.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "36e08faf1b109ee056648756614dd06d840e3beac7d1e3e79e6b8bfdebad2324",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/carto-scan-cal.md",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/scan-calibration.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-TOUCH-CAL",
+      "title": "Cartographer Survey Touch calibration",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "064d46857e1f9a99ebe95031c9817b507b21b868df9243c63d4fb22c5eaf0d48",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/carto-touch-cal.md",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-TOUCH",
+      "title": "Cartographer Touch feature limitations",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/features/touch.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "a7ff86f16be240919f797cc0549f0f44b2ebdc160dedac2d8fa798622623b08c",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/carto-touch.md",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/features/touch.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-FW-DOC",
+      "title": "Cartographer firmware selection",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/firmware.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "6c5b6d3521a2715e7e0abb34e6733792e29e79373040e4ab5b4129fdf5ed6154",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/carto-fw-docs.md",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/firmware.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-MODES",
+      "title": "Cartographer Scan vs Touch explanatory page",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/classic-vs-survey-touch.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "9637b30082e39f4a2392621e8c66af0072f30e2b9108134f49fd1833ff2d84e6",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/carto-modes.md",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/classic-vs-survey-touch.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-PLUGIN",
+      "title": "New Cartographer plugin source",
+      "url": "https://github.com/Cartographer3D/cartographer3d-plugin/blob/06e016905cc3d209ceb543afd59a580bcabc44be/pyproject.toml",
+      "retrieved_at": "2026-10-09",
+      "version": "current-generation source snapshot; installed package unknown",
+      "commit": "06e016905cc3d209ceb543afd59a580bcabc44be",
+      "sha256": "2972e0e6236074a47ffcc1fa390a2b981ffde15c3096ae7f4ddd5acf0b82386e",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "local_research_file": "/tmp/voron-electronics/carto-plugin-pyproject.toml",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/Cartographer3D/cartographer3d-plugin/06e016905cc3d209ceb543afd59a580bcabc44be/pyproject.toml",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-CARTO-FW-BINARY",
+      "title": "Cartographer V4 Survey USB Full firmware candidate",
+      "url": "https://github.com/Cartographer3D/cartographer_firmware/blob/e5c2b17dbe04ec1f747af5d81b2215949a0a9f8e/firmware/v4/firmware/6.1.0/CartographerV4_6.1.0_USB_full_8kib_offset.bin",
+      "retrieved_at": "2026-10-09",
+      "version": "6.1.0; V4 USB Full, Katapult 8KiB-offset image; hashed not flashed",
+      "commit": "e5c2b17dbe04ec1f747af5d81b2215949a0a9f8e",
+      "sha256": "5e3352293fd0d1baf28ee87b9317cd740cd9b1b3e53401a8f992f883f97a83ef",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "local_research_file": "/tmp/voron-electronics/carto-firmware-CartographerV4_6.1.0_USB_full_8kib_offset.bin",
+      "redistributed": false,
+      "reuse_terms": "no license file established in pinned repository tree; linked only, no reuse permission inferred",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/Cartographer3D/cartographer_firmware/e5c2b17dbe04ec1f747af5d81b2215949a0a9f8e/firmware/v4/firmware/6.1.0/CartographerV4_6.1.0_USB_full_8kib_offset.bin",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree"
+    },
+    {
+      "id": "E-KLIPPER-CONFIG",
+      "title": "Klipper configuration reference",
+      "url": "https://github.com/Klipper3d/klipper/blob/461c4e3722c3a897fba1c6b3f0780a5315043842/docs/Config_Reference.md",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "commit": "461c4e3722c3a897fba1c6b3f0780a5315043842",
+      "sha256": "30a0c4870aee68787932aeda3e28abcdca49a0a95def21659b6667380ebcf6d3",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "local_research_file": "/tmp/voron-electronics/klipper-Config_Reference.md",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/Klipper3d/klipper/461c4e3722c3a897fba1c6b3f0780a5315043842/docs/Config_Reference.md",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-KLIPPER-CHECKS",
+      "title": "Klipper configuration checks",
+      "url": "https://github.com/Klipper3d/klipper/blob/461c4e3722c3a897fba1c6b3f0780a5315043842/docs/Config_checks.md",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "commit": "461c4e3722c3a897fba1c6b3f0780a5315043842",
+      "sha256": "65618f7fbc29eb1d51adc1b80d74886955dda024fdc8717349f5fe616a11a440",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "local_research_file": "/tmp/voron-electronics/klipper-Config_checks.md",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/Klipper3d/klipper/461c4e3722c3a897fba1c6b3f0780a5315043842/docs/Config_checks.md",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-VORON-STARTUP",
+      "title": "Voron official startup documentation",
+      "url": "https://docs.vorondesign.com/build/startup/",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned HTML; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "1323dd42fde6d67523515a4854b9d75c9c41f97d65715d5c3b23b733c130bf74",
+      "hash_scope": "exact retrieved page bytes",
+      "local_research_file": "/tmp/voron-electronics/voron-startup.html",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.vorondesign.com/build/startup/",
+      "license": "unknown; linked only"
+    }
+  ],
+  "interactions": [
+    {
+      "id": "F-USB-NH",
+      "hardware_revision": "Nitehawk SB V2.0.0 \u2192 Cartographer V4 Standard USB",
+      "status": "conditionally compatible",
+      "evidence": [
+        "E-NHV2-DOC",
+        "E-NHV2-SCHEM",
+        "E-NHV2-PINOUT",
+        "E-CARTO-WIRING"
+      ],
+      "finding": "Manufacturer provides downstream USB device capability, 5V P8/F1 path and signals; exact 5-to-4 pin harness/power rating not confirmed. Direct host USB is proposed primary.",
+      "gate": "E4",
+      "physically_tested": false
+    },
+    {
+      "id": "F-ORIGINAL-NH-USB",
+      "hardware_revision": "Original Nitehawk SB family \u2192 downstream USB assumption",
+      "status": "incompatible",
+      "evidence": [
+        "E-NH-DOC",
+        "E-NH-PINOUT"
+      ],
+      "finding": "V2 downstream-USB hardware and pin map cannot be applied to original SB; use independently verified direct host USB.",
+      "gate": "E1",
+      "physically_tested": false
+    },
+    {
+      "id": "F-NH-CAN",
+      "hardware_revision": "Original SB and SB V2",
+      "status": "incompatible",
+      "evidence": [
+        "E-NH-DOC",
+        "E-NHV2-DOC"
+      ],
+      "finding": "Nitehawk protocol is USB, not CAN. Combined power/data connector is not a CAN port.",
+      "gate": "E4",
+      "physically_tested": false
+    },
+    {
+      "id": "G-HEATER",
+      "hardware_revision": "Reported Rapido2 Fiber UHF PT1000, actual revision unknown \u2192 NH SB V2.0.0",
+      "status": "unresolved",
+      "evidence": [
+        "E-NHV2-DOC",
+        "E-NHV2-SCHEM",
+        "E-LDO-ERRATA"
+      ],
+      "finding": "4.5A maximum continuous HE0 limit is known, purchased heater startup/load and complete current path are not; no heater enable permitted. Historical Octopus swap does not apply.",
+      "gate": "E2",
+      "physically_tested": false
+    },
+    {
+      "id": "G-PT1000",
+      "hardware_revision": "Reported Rapido2 Fiber PT1000 \u2192 confirmed NH V2.0.0 TH0",
+      "status": "conditionally compatible",
+      "evidence": [
+        "E-NHV2-DOC",
+        "E-NHV2-CFG",
+        "E-KLIPPER-CONFIG"
+      ],
+      "finding": "Documented PB12 ADC/2200 ohm pullup can be configured as PT1000; actual sensor, connector and cold readings must be verified.",
+      "gate": "E1",
+      "physically_tested": false
+    },
+    {
+      "id": "F-LEV-FIRMWARE",
+      "hardware_revision": "Leviathan V1.3 H743 versus older generic F446 cfg",
+      "status": "incompatible",
+      "evidence": [
+        "E-LEV-MANUAL",
+        "E-LEV-FW",
+        "E-LEV-CFG-CONFLICT"
+      ],
+      "finding": "Generic F446/12MHz/no-bootloader firmware header does not apply to V1.3 H743/25MHz/128KiB manufacturer USB diagram.",
+      "gate": "E1",
+      "physically_tested": false
+    },
+    {
+      "id": "H-GENERATION",
+      "hardware_revision": "Cartographer V4 Standard Survey6.1.0/new plugin candidate",
+      "status": "conditionally compatible",
+      "evidence": [
+        "E-CARTO-SETUP",
+        "E-CARTO-FW-DOC",
+        "E-CARTO-PLUGIN",
+        "E-CARTO-FW-BINARY"
+      ],
+      "finding": "Current documentation family matches Survey/new-plugin workflow; actual installed version/interface and exact released pair require validation, no physical test. Classic/original-plugin [scanner] workflow remains omitted.",
+      "gate": "E5",
+      "physically_tested": false
+    },
+    {
+      "id": "H-EMBEDDED-MAGNETS",
+      "hardware_revision": "MRW350 unknown magnet variant \u2192 Cartographer V4 scan",
+      "status": "unresolved",
+      "evidence": [
+        "E-CARTO-FAQ",
+        "E-CARTO-TOUCH"
+      ],
+      "finding": "If MRW plate has embedded magnets, current scan path is incompatible. Touch mesh is marked unimplemented and is not a workaround. Uniform magnetic sheet differs; actual bed variant unknown.",
+      "gate": "E7",
+      "physically_tested": false
+    }
+  ],
+  "gates": [
+    {
+      "id": "E1",
+      "title": "Actual kit/PCB/MCU/PSU identity",
+      "status": "unresolved",
+      "evidence_needed": "Photos of mainboard/toolboard/fan adapter silkscreen and MCU; PSU labels/selectors; actual fuse/harness labels; kit packing list, separate from current store listing",
+      "blocks": [
+        "assembly wiring",
+        "firmware selection"
+      ],
+      "chapter": "chapters/07-wiring.md"
+    },
+    {
+      "id": "E2",
+      "title": "Rapido2 Fiber heater startup and entire electrical path",
+      "status": "unresolved",
+      "evidence_needed": "Exact hotend revision/voltage/rated current/cold resistance/startup/peak documentation; PCB continuous/pulsed rating; MOSFET, terminal, umbilical/contact, wire, fuse and PSU shared-load ratings",
+      "blocks": [
+        "hotend heater wiring",
+        "heater commissioning"
+      ],
+      "chapter": "chapters/07-wiring.md"
+    },
+    {
+      "id": "E3",
+      "title": "MRW bed heater/thermal protection/mains circuit",
+      "status": "unresolved",
+      "evidence_needed": "Exact bed variant and heater/sensor options; voltage/power/physical bond instructions; thermal fuse data/mounting; SSR/heatsink and fuse ratings; PE lug procedure; qualified inspection",
+      "blocks": [
+        "bed wiring",
+        "power-on approval",
+        "bed heater commissioning"
+      ],
+      "chapter": "chapters/07-wiring.md"
+    },
+    {
+      "id": "E4",
+      "title": "Cartographer interface and actual cable",
+      "status": "unresolved",
+      "evidence_needed": "V4 Standard marking/firmware interface; cable/contact identities; oriented probe/host or downstream P8 pin-to-pin mapping; supply voltage and usable current; chain/umbilical bend/strain requirements",
+      "blocks": [
+        "probe wiring",
+        "probe energization"
+      ],
+      "chapter": "chapters/07-wiring.md"
+    },
+    {
+      "id": "E5",
+      "title": "Board and Cartographer firmware/driver generation",
+      "status": "unresolved",
+      "evidence_needed": "Actual board bootloader/firmware and host Klipper versions; compatible released new-plugin/Survey pair; exact binary/hash and installed plugin version/commit; no legacy sections/macros",
+      "blocks": [
+        "firmware configuration",
+        "Z homing",
+        "probing/calibration"
+      ],
+      "chapter": "chapters/08-software.md"
+    },
+    {
+      "id": "E6",
+      "title": "Rigid joint squaring and powered motion prerequisites",
+      "status": "unresolved",
+      "evidence_needed": "Manual gantry square and smooth full-Z travel; individual motor/corner map and actual motor-current ratings; physical X/Y endstop mount/state; conservative measured travel envelope",
+      "blocks": [
+        "powered motion",
+        "Z homing",
+        "QGL"
+      ],
+      "chapter": "chapters/09-commissioning.md"
+    },
+    {
+      "id": "E7",
+      "title": "Magnetic bed/probe geometry and measured envelope",
+      "status": "unresolved",
+      "evidence_needed": "MRW magnet arrangement (embedded magnets fail current scan path), installed spring sheet, measured probe/nozzle offsets and 2.6-3mm coil/nozzle relationship, safe central reference, QGL points, nozzle/coil reachable mesh bounds",
+      "blocks": [
+        "scan calibration",
+        "Z homing",
+        "QGL",
+        "mesh",
+        "first print"
+      ],
+      "chapter": "chapters/08-software.md"
+    }
+  ],
+  "additional_requirements": [
+    {
+      "item": "Approved MRW-compatible bed heater and magnetic/spring-steel surface",
+      "classification": "required but not confirmed owned",
+      "quantity": null,
+      "gate": "E3"
+    },
+    {
+      "item": "Correct thermal fuse, attachment materials and approved bed PE lug/hardware",
+      "classification": "required but not confirmed owned",
+      "quantity": null,
+      "gate": "E3"
+    },
+    {
+      "item": "Rated SSR/heatsink, inlet/branch fuses and approved mains harness appropriate to actual bed",
+      "classification": "required but not confirmed owned",
+      "quantity": null,
+      "gate": "E3"
+    },
+    {
+      "item": "Approved direct host USB-to-Cartographer V4 Standard cable/strain relief",
+      "classification": "required but not confirmed owned",
+      "quantity": 1,
+      "gate": "E4"
+    },
+    {
+      "item": "Exact downstream USB P8-to-Sherlock cable if that route is chosen",
+      "classification": "conditional requirement; not confirmed owned",
+      "quantity": 1,
+      "gate": "E4"
+    },
+    {
+      "item": "Heater ferrules/connector contacts fitting actual wires and board",
+      "classification": "required but not confirmed owned",
+      "quantity": null,
+      "gate": "E2"
+    },
+    {
+      "item": "Nitehawk static discharge links and revision-correct fan adapter",
+      "classification": "kit contents to verify; not confirmed owned",
+      "quantity": null,
+      "gate": "E1"
+    },
+    {
+      "item": "CAN interface and approved cable/termination if USB is not chosen",
+      "classification": "conditional alternate; not purchased evidence",
+      "quantity": null,
+      "gate": "E4"
+    },
+    {
+      "item": "Nozzle brush/purge bucket",
+      "classification": "optional convenience, omitted from primary path",
+      "quantity": 0,
+      "gate": null
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/electronics-connectivity.svg",
+      "sha256": "15cce0b150cf70ccf5e05fb3e5ca80ecf72e6487ec1ac34e79b30c040c68b724",
+      "creator": "Custom guide contributors",
+      "type": "original logical/process schematic, no dimensional or connector orientation authority",
+      "license": "GPL-3.0",
+      "third_party_pixels": false,
+      "sources_used_for_facts": [
+        "E-NHV2-DOC",
+        "E-CARTO-SETUP",
+        "E-CARTO-TOUCH"
+      ]
+    },
+    {
+      "path": "assets/electronics-workflow.svg",
+      "sha256": "585b4ebd0e1e226a53f638ba4ba3c6817cdb6d58dc6ddd1e1073da5617b53776",
+      "creator": "Custom guide contributors",
+      "type": "original logical/process schematic, no dimensional or connector orientation authority",
+      "license": "GPL-3.0",
+      "third_party_pixels": false,
+      "sources_used_for_facts": [
+        "E-NHV2-DOC",
+        "E-CARTO-SETUP",
+        "E-CARTO-TOUCH"
+      ]
+    }
+  ],
+  "omitted_stock": {
+    "Omron_inductive_probe": "omit for selected Cartographer path",
+    "stock_nozzle_Z_switch": "omit for selected Cartographer path",
+    "Klicky_or_TAP": "not purchased; omit contradictory configuration",
+    "Octopus_Rapido_errata_swap": "not applicable to identified Leviathan/Nitehawk path"
+  },
+  "validation_performed": [
+    "Leviathan V1.3 printed pp.5-9 and12 rendered/inspected",
+    "NHV2.0.0 schematic USB P8/F1 and official pinout/firmware diagram inspected",
+    "Original NH photograph inspected; documented RP2040 mapping checked separately",
+    "V4 firmware candidate binary SHA256 calculated, not executed or flashed",
+    "All cfg examples intentionally commented, unset measured fields",
+    "Both original electronics SVGs rendered with ImageMagick and visually inspected; label/connection clearance corrected"
+  ],
+  "not_performed": [
+    "printer energization",
+    "firmware flashing",
+    "physical motion",
+    "heater commissioning",
+    "hardware assembly validation",
+    "candidate firmware/plugin physical compatibility test"
+  ],
+  "repository_license_audit": [
+    {
+      "repository_url": "https://github.com/MotorDynamicsLab/Leviathan",
+      "commit": "878c3c4893ea353552c957f574509f9890e1e37a",
+      "license": "GPL-3.0",
+      "inspection": "pinned recursive Git tree checked for LICENSE, LICENCE, COPYING; license contents read independently when present",
+      "redistributed_assets": false,
+      "license_url": "https://github.com/MotorDynamicsLab/Leviathan/blob/878c3c4893ea353552c957f574509f9890e1e37a/LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "repository_url": "https://github.com/MotorDynamicsLab/Nitehawk-SB-V2",
+      "commit": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree",
+      "inspection": "pinned recursive Git tree checked for LICENSE, LICENCE, COPYING; license contents read independently when present",
+      "redistributed_assets": false
+    },
+    {
+      "repository_url": "https://github.com/MotorDynamicsLab/Nitehawk-SB",
+      "commit": "be93526b948d3339c755cb32116baef221ce1a8d",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree",
+      "inspection": "pinned recursive Git tree checked for LICENSE, LICENCE, COPYING; license contents read independently when present",
+      "redistributed_assets": false
+    },
+    {
+      "repository_url": "https://github.com/Cartographer3D/cartographer3d-plugin",
+      "commit": "06e016905cc3d209ceb543afd59a580bcabc44be",
+      "license": "GPL-3.0",
+      "inspection": "pinned recursive Git tree checked for LICENSE, LICENCE, COPYING; license contents read independently when present",
+      "redistributed_assets": false,
+      "license_url": "https://github.com/Cartographer3D/cartographer3d-plugin/blob/06e016905cc3d209ceb543afd59a580bcabc44be/LICENSE",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "repository_url": "https://github.com/Cartographer3D/cartographer_firmware",
+      "commit": "e5c2b17dbe04ec1f747af5d81b2215949a0a9f8e",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree",
+      "inspection": "pinned recursive Git tree checked for LICENSE, LICENCE, COPYING; license contents read independently when present",
+      "redistributed_assets": false
+    },
+    {
+      "repository_url": "https://github.com/Klipper3d/klipper",
+      "commit": "461c4e3722c3a897fba1c6b3f0780a5315043842",
+      "license": "GPL-3.0",
+      "inspection": "pinned recursive Git tree checked for LICENSE, LICENCE, COPYING; license contents read independently when present",
+      "redistributed_assets": false,
+      "license_url": "https://github.com/Klipper3d/klipper/blob/461c4e3722c3a897fba1c6b3f0780a5315043842/COPYING",
+      "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    }
+  ],
+  "sources_fetch_failures_resolved": [
+    {
+      "url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/hardware-setup.md",
+      "result": "HTTP 200 content was Page Not Found; not used as evidence",
+      "replacement": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation.md"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440" role="img" aria-labelledby="title desc">
+<title id="title">Three matched-height kinematic contact types</title>
+<desc id="desc">Original explanatory schematic, not a dimensioned assembly drawing. A ball seats in a chamfered magnet on the 15 millimeter base, another rests on a flat magnet on the 12 millimeter base, and the third sits between two pins above a flat magnet. Attach bases before magnets. Wings locations and fastening remain a verification gate.</desc>
+<defs><style>text{font-family:Arial,sans-serif;fill:#15283f} .h{font-size:23px;font-weight:bold}.t{font-size:18px}.sm{font-size:16px}.base{fill:#d5e2f0;stroke:#203e60;stroke-width:3}.mag{fill:#e9b259;stroke:#9c651e;stroke-width:3}.ball{fill:#edf2f7;stroke:#203e60;stroke-width:3}.guide{stroke:#73859b;stroke-width:2;stroke-dasharray:5 5}</style></defs>
+<rect width="960" height="440" fill="#fff"/>
+<text x="24" y="35" class="h">ADD · Three different contacts, one matched-height set</text>
+<text x="24" y="64" class="sm">Original schematic · no printer coordinates or fastener dimensions implied</text>
+<g transform="translate(24 90)">
+<text x="0" y="22" class="h">Chamfered seat</text>
+<line class="guide" x1="110" x2="110" y1="55" y2="250"/>
+<circle cx="110" cy="99" r="35" class="ball"/>
+<path d="M45 145H85L110 164L135 145H175V186H45Z" class="mag"/>
+<rect x="39" y="194" width="142" height="58" rx="7" class="base"/>
+<text x="27" y="284" class="t">15 mm base in source</text>
+<text x="0" y="310" class="sm">Chamfered magnet + cover</text>
+</g>
+<g transform="translate(340 90)">
+<text x="0" y="22" class="h">Flat seat</text>
+<line class="guide" x1="110" x2="110" y1="55" y2="250"/>
+<circle cx="110" cy="99" r="35" class="ball"/>
+<rect x="45" y="145" width="130" height="28" rx="3" class="mag"/>
+<rect x="39" y="194" width="142" height="48" rx="7" class="base"/>
+<text x="27" y="284" class="t">12 mm base in source</text>
+<text x="0" y="310" class="sm">Flat magnet + cover</text>
+</g>
+<g transform="translate(654 90)">
+<text x="0" y="22" class="h">Pin seat</text>
+<line class="guide" x1="110" x2="110" y1="55" y2="250"/>
+<circle cx="110" cy="99" r="35" class="ball"/>
+<circle cx="73" cy="145" r="14" class="ball"/><circle cx="147" cy="145" r="14" class="ball"/>
+<rect x="65" y="168" width="90" height="14" rx="3" class="mag"/>
+<rect x="39" y="194" width="142" height="48" rx="7" class="base"/>
+<text x="20" y="284" class="t">Two pins + flat magnet</text>
+<text x="0" y="310" class="sm">Confirm location-block direction</text>
+</g>
+<rect x="24" y="412" width="912" height="4" fill="#ca5b25"/>
+<text x="24" y="437" class="sm">B2 / B3: bases attach BEFORE magnets. Confirm Wings support map before assigning contacts.</text>
+</svg>

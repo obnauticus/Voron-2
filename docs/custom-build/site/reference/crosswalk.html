@@ -1,0 +1,454 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stock-to-custom page and step crosswalk · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="../chapters/01-inventory.html">1. Inventory and evidence</a></li><li><a  href="../chapters/02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="../chapters/03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="../chapters/04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="../chapters/05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="../chapters/06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="../chapters/07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="../chapters/08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="../chapters/09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="../chapters/10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="compatibility.html">Compatibility register</a></li><li><a  href="configuration.html">Non-deployable configuration examples</a></li><li><a aria-current="page" href="crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="printed-parts.html">Printed-parts matrix</a></li><li><a  href="questions.html">Unresolved questions and verification gates</a></li><li><a  href="sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#stock-to-custom-page-and-step-crosswalk">Stock-to-custom page and step crosswalk</a></li>
+</ul>
+</div>
+</details><h1 id="stock-to-custom-page-and-step-crosswalk">Stock-to-custom page and step crosswalk</h1>
+<p>Pinned manual: 2023-07-04, upstream commit a192410e27ea345644ae5c4b29b4c9c40cbe1a73. Every PDF leaf is covered exactly once. Printed pages and zero-based PDF indices are recorded separately; final index 262 is an unnumbered back cover. REPLACE and OMIT instructions are not active in the custom path.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Printed stock pages</th>
+<th>PDF indices</th>
+<th>Phase / stock step</th>
+<th>Action</th>
+<th>Custom replacement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–11</td>
+<td>0–10</td>
+<td>Inventory/print preparation; Intro, safety, print settings, hardware naming</td>
+<td>KEEP</td>
+<td><a href="../chapters/02-preparation.html">Procedure</a>; Identify actual kit before size-dependent printing; no private receipts.</td>
+</tr>
+<tr>
+<td>12–19</td>
+<td>11–18</td>
+<td>Frame; Cube and adjustable bed-support preparation</td>
+<td>KEEP</td>
+<td><a href="../chapters/03-frame-z.html">Procedure</a>; 8 cube A pieces; 4 vertical B; bed supports remain adjustable before F1.</td>
+</tr>
+<tr>
+<td>20–20</td>
+<td>19–19</td>
+<td>Frame/bed layout; Stock 130mm bed support spacing</td>
+<td>REPLACE</td>
+<td><a href="../chapters/03-frame-z.html">Procedure</a>; F1 requires B2/B3 cold Wings map and deck/DIN-hole agreement before fixing supports.</td>
+</tr>
+<tr>
+<td>21–21</td>
+<td>20–20</td>
+<td>Frame; Square frame</td>
+<td>KEEP</td>
+<td><a href="../chapters/03-frame-z.html">Procedure</a>; Compare faces/diagonals before rails and after bed attachments.</td>
+</tr>
+<tr>
+<td>22–27</td>
+<td>21–26</td>
+<td>Z rails; Overview, rail preparation and four Z rails</td>
+<td>KEEP</td>
+<td><a href="../chapters/03-frame-z.html">Procedure</a>; Secure carriage stops; verify actual rail lubrication and spacing.</td>
+</tr>
+<tr>
+<td>28–29</td>
+<td>27–28</td>
+<td>Deck/DIN rails; Stock deck and DIN fastening</td>
+<td>KEEP / ADD gate</td>
+<td><a href="../chapters/03-frame-z.html">Procedure</a>; F1 closes before final deck: DIN hardware anchors into bed supports; F2 panel thickness discrepancy.</td>
+</tr>
+<tr>
+<td>30–31</td>
+<td>29–30</td>
+<td>Lower Z drives; Orientation and heatsets</td>
+<td>KEEP</td>
+<td><a href="../chapters/03-frame-z.html">Procedure</a>; Retained plastic reduction drives only.</td>
+</tr>
+<tr>
+<td>32–47</td>
+<td>31–46</td>
+<td>Lower Z drives; Four stock reduction drives, short loops and feet</td>
+<td>KEEP</td>
+<td><a href="../chapters/03-frame-z.html">Procedure</a>; 4 9mm20T shaft pulleys;4 6mm16T motor pulleys;4 6mm188 loops;8 spacer substitution.</td>
+</tr>
+<tr>
+<td>48–50</td>
+<td>47–49</td>
+<td>Upper Z drives; Plastic upper Z idlers/tensioners</td>
+<td>REPLACE</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; Purchase12,9mm top-adjusted CNC; gateM2 frame hardware.</td>
+</tr>
+<tr>
+<td>51–51</td>
+<td>50–50</td>
+<td>Interlude; Historical page</td>
+<td>OMIT</td>
+<td><a href="../chapters/01-inventory.html">Procedure</a>; No assembly operation.</td>
+</tr>
+<tr>
+<td>52–60</td>
+<td>51–59</td>
+<td>Bed; Stock plate, adhesive heater/fuse, four-point screws and pass-through</td>
+<td>REPLACE</td>
+<td><a href="../chapters/05-bed.html">Procedure</a>; 06/07/08 integrated; new heater/surface ownership unconfirmed; B1-B5 before affected step.</td>
+</tr>
+<tr>
+<td>61–61</td>
+<td>60–60</td>
+<td>Interlude; Historical page</td>
+<td>OMIT</td>
+<td><a href="../chapters/01-inventory.html">Procedure</a>; No assembly operation.</td>
+</tr>
+<tr>
+<td>62–63</td>
+<td>61–62</td>
+<td>A/B geometry; Functional A/B orientation</td>
+<td>KEEP</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; Stock topology reference only, not CNC fastener plan.</td>
+</tr>
+<tr>
+<td>64–80</td>
+<td>63–79</td>
+<td>A/B drives/front idlers; Plastic heatsets, smooth idler stacks, motor mounts</td>
+<td>REPLACE</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; 09/11 official PDF1.0; support-bearing shaft engagementM4; opposite single idler levels.</td>
+</tr>
+<tr>
+<td>81–81</td>
+<td>80–80</td>
+<td>Interlude; Historical page</td>
+<td>OMIT</td>
+<td><a href="../chapters/01-inventory.html">Procedure</a>; No assembly operation.</td>
+</tr>
+<tr>
+<td>82–87</td>
+<td>81–86</td>
+<td>Gantry rear support; Rear E, A/B attachment and chain supports</td>
+<td>REPLACE / ADD</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; Retain extrusion geometry; CNC screws gated; backers/routing before obstructing ends.</td>
+</tr>
+<tr>
+<td>88–88</td>
+<td>87–87</td>
+<td>Y rails; Underside MGN9 rails</td>
+<td>KEEP / ADD</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; 02 on opposite top surfaces; LDO second-from-end mounting hole note conditional actual rail.</td>
+</tr>
+<tr>
+<td>89–95</td>
+<td>88–94</td>
+<td>Y/front gantry attachments; C extrusions/front plastic idlers and upper clips</td>
+<td>REPLACE</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; CNC fasteners/orientationM5; #10/#11 upper-clamp allocationM8.</td>
+</tr>
+<tr>
+<td>96–100</td>
+<td>95–99</td>
+<td>Live XY joints; Plastic XY stacks</td>
+<td>REPLACE</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; 14 PDF1.1; spring/live-shaft levels; M3x3 versusM3x4 retention conflict.</td>
+</tr>
+<tr>
+<td>101–101</td>
+<td>100–100</td>
+<td>X rail; Single front MGN12 on D</td>
+<td>KEEP / ADD</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; 02 rear backerM3; carriage retained rail type verified.</td>
+</tr>
+<tr>
+<td>102–106</td>
+<td>101–105</td>
+<td>X gantry attachment; Stock XY mounting hardware/endstop nut provisions</td>
+<td>REPLACE</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; Use confirmed CNC mounts; M6 STEP support export/actual PCB; no stock bolt transfer.</td>
+</tr>
+<tr>
+<td>107–107</td>
+<td>106–106</td>
+<td>Interlude; Historical page</td>
+<td>OMIT</td>
+<td><a href="../chapters/01-inventory.html">Procedure</a>; No assembly operation.</td>
+</tr>
+<tr>
+<td>108–109</td>
+<td>107–108</td>
+<td>Z suspension; Gantry location overview</td>
+<td>KEEP</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; Supported gantry and independent Z belt widths.</td>
+</tr>
+<tr>
+<td>110–116</td>
+<td>109–115</td>
+<td>Z joints/bottom capture; Stock spherical joints, lower clips, Hall magnet</td>
+<td>REPLACE / OMIT</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; 13 complete rigid joint/bottom capture; separate #10 bottoms surplus; drawingM7.</td>
+</tr>
+<tr>
+<td>117–117</td>
+<td>116–116</td>
+<td>Z tensioning preparation; Plastic top adjuster extension</td>
+<td>REPLACE</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; Use12 documented adjusters; no stock four-turn preparation.</td>
+</tr>
+<tr>
+<td>118–121</td>
+<td>117–120</td>
+<td>Z belt routing; Four loops and captures</td>
+<td>KEEP / REPLACE</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; Keep inward teeth topology; replace capture hardwareM8, verify all9mm planes.</td>
+</tr>
+<tr>
+<td>122–122</td>
+<td>121–121</td>
+<td>Gantry square; Square gantry</td>
+<td>KEEP / ADD</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; Manual alignment and supported whole-Z binding checkM9 before power/QGL.</td>
+</tr>
+<tr>
+<td>123–123</td>
+<td>122–122</td>
+<td>Interlude; Historical page</td>
+<td>OMIT</td>
+<td><a href="../chapters/01-inventory.html">Procedure</a>; No assembly operation.</td>
+</tr>
+<tr>
+<td>124–127</td>
+<td>123–126</td>
+<td>A/B belt topology; A/B path drawings</td>
+<td>KEEP</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; Stock reference topology only; verified CNC belt planes before threading.</td>
+</tr>
+<tr>
+<td>128–128</td>
+<td>127–127</td>
+<td>XY tensioners; Plastic idler four-turn prep</td>
+<td>REPLACE</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; CNC front idler range; not stock adjustment counts.</td>
+</tr>
+<tr>
+<td>129–131</td>
+<td>128–130</td>
+<td>Bare X carriage/belt start; Stock printed carriage halves/capture</td>
+<td>REPLACE</td>
+<td><a href="../chapters/06-toolhead.html">Procedure</a>; T1 bare CNC carriage preparation executed during04 before belts;6mm width and rail screws.</td>
+</tr>
+<tr>
+<td>132–138</td>
+<td>131–137</td>
+<td>A/B belt routing; Separate belt routes and stock access-bolt tip</td>
+<td>KEEP / REPLACE</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; Preserve topology; do not remove CNC pins/retainers to imitate stock access step.</td>
+</tr>
+<tr>
+<td>139–141</td>
+<td>138–140</td>
+<td>Carriage belt capture; Stock clamp/pivot fasteners</td>
+<td>REPLACE</td>
+<td><a href="../chapters/06-toolhead.html">Procedure</a>; T1 two CNC clamps/correct hardware; no stock M3x30 through plastic.</td>
+</tr>
+<tr>
+<td>142–142</td>
+<td>141–141</td>
+<td>Belt inspection; Rubbing check</td>
+<td>KEEP / ADD</td>
+<td><a href="../chapters/04-motion.html">Procedure</a>; M10 complete backer/CNC/bed/toolhead/cable sweep and measured safe envelope.</td>
+</tr>
+<tr>
+<td>143–145</td>
+<td>142–144</td>
+<td>Stock Z probe/Hall magnets; Omron retention, stock probe height, Hall magnet</td>
+<td>OMIT</td>
+<td><a href="../chapters/06-toolhead.html">Procedure</a>; 05 Cartographer V4 measured heightT4, no contradictory stock probing.</td>
+</tr>
+<tr>
+<td>146–147</td>
+<td>145–146</td>
+<td>StealthBurner; Separate toolhead manual</td>
+<td>KEEP / REPLACE</td>
+<td><a href="../chapters/06-toolhead.html">Procedure</a>; Pinned SB/CW2 core; exact03 FiberUHF candidateT2/T3; no HF duct substitution.</td>
+</tr>
+<tr>
+<td>148–151</td>
+<td>147–150</td>
+<td>Electronics/host mounts; Stock electronics location and Pi bracket</td>
+<td>REPLACE</td>
+<td><a href="../chapters/07-wiring.html">Procedure</a>; Actual Leviathan/NH revisionsE1 determine integrated host/mount architecture.</td>
+</tr>
+<tr>
+<td>152–152</td>
+<td>151–151</td>
+<td>5V PSU; Stock separate 5V PSU</td>
+<td>OMIT</td>
+<td><a href="../chapters/07-wiring.html">Procedure</a>; LDO board-specific host power; prevent dual supply/backfeed.</td>
+</tr>
+<tr>
+<td>153–155</td>
+<td>152–154</td>
+<td>PSU/controller mounting; PSU frame and controller brackets</td>
+<td>KEEP / REPLACE</td>
+<td><a href="../chapters/07-wiring.html">Procedure</a>; Keep confirmed PSU support; use actual Leviathan bracketE1.</td>
+</tr>
+<tr>
+<td>156–157</td>
+<td>155–156</td>
+<td>Inlet/SSR; Stock separate switch inlet/SSR arrangement</td>
+<td>REPLACE</td>
+<td><a href="../chapters/07-wiring.html">Procedure</a>; Actual combined LDO inlet and MRW heater circuitE3; qualified mains installation.</td>
+</tr>
+<tr>
+<td>158–161</td>
+<td>157–160</td>
+<td>Stock nozzle Z endstop; Pin/PCB Z endstop assembly</td>
+<td>OMIT</td>
+<td><a href="../chapters/08-software.html">Procedure</a>; Selected Cartographer virtual Z home after E5/E7; parts surplus.</td>
+</tr>
+<tr>
+<td>162–164</td>
+<td>161–163</td>
+<td>X/Y endstops; Stock pod/PCB mounting</td>
+<td>REPLACE</td>
+<td><a href="../chapters/06-toolhead.html">Procedure</a>; Retain physical X/Y functions; T1 X switch +M6 Vitalii compatible Y support.</td>
+</tr>
+<tr>
+<td>165–172</td>
+<td>164–171</td>
+<td>Electronics bay attachment; Stock AC distribution/5V/supports</td>
+<td>REPLACE / OMIT</td>
+<td><a href="../chapters/07-wiring.html">Procedure</a>; Verified board mounts/circuit; no separate5V PSU assumed; no stock Octopus pinout.</td>
+</tr>
+<tr>
+<td>173–173</td>
+<td>172–172</td>
+<td>Interlude; Historical page</td>
+<td>OMIT</td>
+<td><a href="../chapters/01-inventory.html">Procedure</a>; No assembly operation.</td>
+</tr>
+<tr>
+<td>174–178</td>
+<td>173–177</td>
+<td>Controller targets/pinout; Octopus MCU/driver/jumpers</td>
+<td>REPLACE</td>
+<td><a href="../chapters/08-software.html">Procedure</a>; E1 exact PCB; LeviathanV1.3H743 differs genericF446; SB and SBV2 separate.</td>
+</tr>
+<tr>
+<td>179–179</td>
+<td>178–178</td>
+<td>Interlude; Historical page</td>
+<td>OMIT</td>
+<td><a href="../chapters/01-inventory.html">Procedure</a>; No assembly operation.</td>
+</tr>
+<tr>
+<td>180–193</td>
+<td>179–192</td>
+<td>Power/bed/controller wiring; Stock AC/DC/SSR/sensor routes</td>
+<td>REPLACE / KEEP safety</td>
+<td><a href="../chapters/07-wiring.html">Procedure</a>; E2/E3 exact heaters/PT1000/fuse/PE; original diagram is not this board pinout.</td>
+</tr>
+<tr>
+<td>194–204</td>
+<td>193–203</td>
+<td>Cable routing; Chains, strain relief and stock toolhead harness</td>
+<td>KEEP / REPLACE</td>
+<td><a href="../chapters/07-wiring.html">Procedure</a>; Preserve loose flex routing; new USB pathsE4 and backer/CNC bridgesM3/M6; nonchain-rated probe cable excluded.</td>
+</tr>
+<tr>
+<td>205–209</td>
+<td>204–208</td>
+<td>Motors/hotend/probe/fans; Octopus direct hotend/thermistor/probe wiring</td>
+<td>REPLACE</td>
+<td><a href="../chapters/07-wiring.html">Procedure</a>; NH exact revision; USB notCAN;4.5A V2 continuous does not establish Rapido startup fit.</td>
+</tr>
+<tr>
+<td>210–213</td>
+<td>209–212</td>
+<td>Skirt preparation; Printed support removal, inserts and fans</td>
+<td>KEEP</td>
+<td><a href="../chapters/10-panels-first-print.html">Procedure</a>; Actual350 and fan voltagesP2.</td>
+</tr>
+<tr>
+<td>214–216</td>
+<td>213–215</td>
+<td>Stock LCD; Mini12864 assembly</td>
+<td>REPLACE / OMIT</td>
+<td><a href="../chapters/10-panels-first-print.html">Procedure</a>; Conditional actual LDO DSI touchscreen option; no stock display installed first.</td>
+</tr>
+<tr>
+<td>217–219</td>
+<td>216–218</td>
+<td>Skirts; Frame attachment</td>
+<td>KEEP</td>
+<td><a href="../chapters/10-panels-first-print.html">Procedure</a>; Use selected350 parts and serviceable fittings.</td>
+</tr>
+<tr>
+<td>220–221</td>
+<td>219–220</td>
+<td>Stock LCD/EXP; LCD placement and ribbon cables</td>
+<td>REPLACE / OMIT</td>
+<td><a href="../chapters/10-panels-first-print.html">Procedure</a>; Actual displayE1/P2; no EXP assumption forDSI.</td>
+</tr>
+<tr>
+<td>222–233</td>
+<td>221–232</td>
+<td>Skirts and bottom panel; Retained panels/fans/hinges</td>
+<td>KEEP</td>
+<td><a href="../chapters/10-panels-first-print.html">Procedure</a>; Guard mains/service covers; do not crush PE/cables.</td>
+</tr>
+<tr>
+<td>234–236</td>
+<td>233–235</td>
+<td>Z belt covers; Retained belt covers</td>
+<td>KEEP / ADD option</td>
+<td><a href="../chapters/10-panels-first-print.html">Procedure</a>; Conditional LDO LED wire cover; maintain top tensioner access.</td>
+</tr>
+<tr>
+<td>237–237</td>
+<td>236–236</td>
+<td>Interlude; Historical page</td>
+<td>OMIT</td>
+<td><a href="../chapters/01-inventory.html">Procedure</a>; No assembly operation.</td>
+</tr>
+<tr>
+<td>238–249</td>
+<td>237–248</td>
+<td>Panels/doors; Foam clips magnets hinges</td>
+<td>KEEP</td>
+<td><a href="../chapters/10-panels-first-print.html">Procedure</a>; ThicknessP2 and final travel/cable sweep.</td>
+</tr>
+<tr>
+<td>250–256</td>
+<td>249–255</td>
+<td>Exhaust; Stock fan/filter housing</td>
+<td>OMIT / REPLACE</td>
+<td><a href="../chapters/10-panels-first-print.html">Procedure</a>; Fan not confirmed owned; LDO cover+stockgrill, no unrelated filter upgrade.</td>
+</tr>
+<tr>
+<td>257–259</td>
+<td>256–258</td>
+<td>Spool and filament; Spool holder/PTFE retainer</td>
+<td>KEEP</td>
+<td><a href="../chapters/10-panels-first-print.html">Procedure</a>; Check retained inlet route with omitted exhaust and probe/cable clearance.</td>
+</tr>
+<tr>
+<td>260–261</td>
+<td>259–260</td>
+<td>Startup/calibration; Generic next steps/help</td>
+<td>REPLACE / ADD</td>
+<td><a href="../chapters/09-commissioning.html">Procedure</a>; Detailed prepower, individualmotors/endstops, gated controlled heat and currentCartographer sequence.</td>
+</tr>
+<tr>
+<td>262–262 + unnumbered cover</td>
+<td>261–262</td>
+<td>Closing attribution; Closing page and unnumbered back cover</td>
+<td>KEEP</td>
+<td><a href="../chapters/10-panels-first-print.html">Procedure</a>; Upstream attribution preserved; index262 back cover has no printed page.</td>
+</tr>
+</tbody>
+</table></div>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

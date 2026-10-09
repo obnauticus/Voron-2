@@ -1,0 +1,188 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Compatibility register · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="../chapters/01-inventory.html">1. Inventory and evidence</a></li><li><a  href="../chapters/02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="../chapters/03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="../chapters/04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="../chapters/05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="../chapters/06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="../chapters/07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="../chapters/08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="../chapters/09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="../chapters/10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a aria-current="page" href="compatibility.html">Compatibility register</a></li><li><a  href="configuration.html">Non-deployable configuration examples</a></li><li><a  href="crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="printed-parts.html">Printed-parts matrix</a></li><li><a  href="questions.html">Unresolved questions and verification gates</a></li><li><a  href="sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#compatibility-register">Compatibility register</a></li>
+</ul>
+</div>
+</details><h1 id="compatibility-register">Compatibility register</h1>
+<p>Statuses apply to the exact named combination. Advertised nominal fit is not physical validation. All actual delivered PCB/product revisions remain unverified unless explicitly identified. No combined machine arrangement is claimed physically tested.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Combination</th>
+<th>Status</th>
+<th>Hardware revision</th>
+<th>Evidence / reason</th>
+<th>Gates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bed-system</td>
+<td>conditionally compatible</td>
+<td>MRW350 standard/magbed unverified; matched-height kit delivered revision and 350 Wings unverified</td>
+<td>Manufacturer designed Wings for Ultraflat+matched-height. Physical support map, third-seat attachment and fasteners unresolved. Sources: mrw350, mrw-kinematic-product, mrw-wings</td>
+<td>B1; B2; B3; B5</td>
+</tr>
+<tr>
+<td>embedded-magnet-bed-cartographer-scan</td>
+<td>incompatible</td>
+<td>MRW embedded top Magbed if delivered, Cartographer V4 scan</td>
+<td>Manufacturer states embedded magnets cause mesh issues. Actual purchased bed variant unknown. Sources: mrw350, cartographer-faq</td>
+<td>B1; T4</td>
+</tr>
+<tr>
+<td>plain-bed-uniform-sheet-cartographer</td>
+<td>conditionally compatible</td>
+<td>MRW plain350 if delivered, uniform magnetic sheet, Cartographer V4</td>
+<td>Manufacturer accepts uniform magnetic sheets; installed surface and repeatable probing not physically validated. Sources: cartographer-faq</td>
+<td>B1; B5; T4</td>
+</tr>
+<tr>
+<td>cnc6mm-mgn12-liveidler6mm</td>
+<td>conditionally compatible</td>
+<td>Cartographer CNC6mm purchased variant unknown, provisional V2.4R2 MGN12, Vitalii live-idler6mm purchase verified</td>
+<td>Nominal rail/belt compatibility advertised; complete mixed gantry/shaft/clearance validation remains unresolved. Sources: cartographer-cnc-product, cartographer-cnc-6mm-cad</td>
+<td>T1</td>
+</tr>
+<tr>
+<td>cnc9mm-mgn9</td>
+<td>incompatible</td>
+<td>Cartographer CNC9mm with MGN9</td>
+<td>Explicit manufacturer exclusion; not selected main build path. Sources: cartographer-cnc-product</td>
+<td>T1</td>
+</tr>
+<tr>
+<td>rapido2fuhf-sb-cw2-cnc-v4</td>
+<td>unresolved</td>
+<td>Purchased Rapido2F UHFPT1000 actual revision unknown, CW2 if confirmed, CNC variant/extenders unknown, V4Standard</td>
+<td>Exact manufacturer UHF candidate exists but no verified combined duct, fan shell, CW2, nozzle/coil/extender fit. HF STL excluded. Sources: phaetus-rapido2f-adaptors, stealthburner-rapido-v2, cartographer-cnc-install, cartographer-v4-standard-cad</td>
+<td>T1; T2; T3; T4; B5</td>
+</tr>
+<tr>
+<td>hotend-load-temperature-input</td>
+<td>unresolved</td>
+<td>Rapido2F heater revision, Leviathan/Nitehawk revision unknown</td>
+<td>Purchased title confirms reported PT1000/UHF only; load/startup current and board route must be resolved by electronics research. No heat commissioned. Sources: phaetus-rapido2f-manual, west3d-rapido2f</td>
+<td>T3</td>
+</tr>
+<tr>
+<td>F-USB-NH</td>
+<td>conditionally compatible</td>
+<td>Nitehawk SB V2.0.0 → Cartographer V4 Standard USB</td>
+<td>Manufacturer provides downstream USB device capability, 5V P8/F1 path and signals; exact 5-to-4 pin harness/power rating not confirmed. Direct host USB is proposed primary. Sources: E-NHV2-DOC, E-NHV2-SCHEM, E-NHV2-PINOUT, E-CARTO-WIRING</td>
+<td>E4</td>
+</tr>
+<tr>
+<td>F-ORIGINAL-NH-USB</td>
+<td>incompatible</td>
+<td>Original Nitehawk SB family → downstream USB assumption</td>
+<td>V2 downstream-USB hardware and pin map cannot be applied to original SB; use independently verified direct host USB. Sources: E-NH-DOC, E-NH-PINOUT</td>
+<td>E1</td>
+</tr>
+<tr>
+<td>F-NH-CAN</td>
+<td>incompatible</td>
+<td>Original SB and SB V2</td>
+<td>Nitehawk protocol is USB, not CAN. Combined power/data connector is not a CAN port. Sources: E-NH-DOC, E-NHV2-DOC</td>
+<td>E4</td>
+</tr>
+<tr>
+<td>G-HEATER</td>
+<td>unresolved</td>
+<td>Reported Rapido2 Fiber UHF PT1000, actual revision unknown → NH SB V2.0.0</td>
+<td>4.5A maximum continuous HE0 limit is known, purchased heater startup/load and complete current path are not; no heater enable permitted. Historical Octopus swap does not apply. Sources: E-NHV2-DOC, E-NHV2-SCHEM, E-LDO-ERRATA</td>
+<td>E2</td>
+</tr>
+<tr>
+<td>G-PT1000</td>
+<td>conditionally compatible</td>
+<td>Reported Rapido2 Fiber PT1000 → confirmed NH V2.0.0 TH0</td>
+<td>Documented PB12 ADC/2200 ohm pullup can be configured as PT1000; actual sensor, connector and cold readings must be verified. Sources: E-NHV2-DOC, E-NHV2-CFG, E-KLIPPER-CONFIG</td>
+<td>E1</td>
+</tr>
+<tr>
+<td>F-LEV-FIRMWARE</td>
+<td>incompatible</td>
+<td>Leviathan V1.3 H743 versus older generic F446 cfg</td>
+<td>Generic F446/12MHz/no-bootloader firmware header does not apply to V1.3 H743/25MHz/128KiB manufacturer USB diagram. Sources: E-LEV-MANUAL, E-LEV-FW, E-LEV-CFG-CONFLICT</td>
+<td>E1</td>
+</tr>
+<tr>
+<td>H-GENERATION</td>
+<td>conditionally compatible</td>
+<td>Cartographer V4 Standard Survey6.1.0/new plugin candidate</td>
+<td>Current documentation family matches Survey/new-plugin workflow; actual installed version/interface and exact released pair require validation, no physical test. Classic/original-plugin [scanner] workflow remains omitted. Sources: E-CARTO-SETUP, E-CARTO-FW-DOC, E-CARTO-PLUGIN, E-CARTO-FW-BINARY</td>
+<td>E5</td>
+</tr>
+<tr>
+<td>H-EMBEDDED-MAGNETS</td>
+<td>unresolved</td>
+<td>MRW350 unknown magnet variant → Cartographer V4 scan</td>
+<td>If MRW plate has embedded magnets, current scan path is incompatible. Touch mesh is marked unimplemented and is not a workaround. Uniform magnetic sheet differs; actual bed variant unknown. Sources: E-CARTO-FAQ, E-CARTO-TOUCH</td>
+<td>E7</td>
+</tr>
+<tr>
+<td>Independent 6mm XY / 9mm Z paths</td>
+<td>conditionally compatible</td>
+<td>AB PDF1.0; XY PDF1.1; Z tensioner unversioned; actual kit unverified</td>
+<td>See the cited chapter and gate for the physical evidence still required. Sources: vitalii-ab-assembly, vitalii-xy-assembly, vitalii-z-tension-product, motion-upstream-manual-reference</td>
+<td>M1</td>
+</tr>
+<tr>
+<td>A/B double-shear mounts and purchased LDO motor shafts</td>
+<td>unresolved</td>
+<td>Actual motors unknown; AB document1.0</td>
+<td>See the cited chapter and gate for the physical evidence still required. Sources: vitalii-ab-assembly, vitalii-ab-product</td>
+<td>M4</td>
+</tr>
+<tr>
+<td>A/B, front, live XY, backers and CNC carriage belt geometry</td>
+<td>unresolved</td>
+<td>AB1.0/front1.0/XY1.1 documents; carriage variant unknown</td>
+<td>See the cited chapter and gate for the physical evidence still required. Sources: vitalii-ab-assembly, vitalii-front-assembly, vitalii-xy-assembly, backer-design-readme</td>
+<td>M5; M10</td>
+</tr>
+<tr>
+<td>Rigid joints plus separate bottom CNC clamps at same interface</td>
+<td>incompatible</td>
+<td>Rigid-joint product unversioned; CNC clamp product unversioned</td>
+<td>Rigid product replaces entire joint and lower clamp; two separately purchased bottom pieces surplus. Sources: vitalii-z-joint-product, vitalii-z-clamp-product</td>
+<td>M7; M8</td>
+</tr>
+<tr>
+<td>Two #10 rear top clamps and two #11 front upper clamps</td>
+<td>conditionally compatible</td>
+<td>Actual clamp geometry/packages unknown</td>
+<td>See the cited chapter and gate for the physical evidence still required. Sources: vitalii-z-clamp-product, vitalii-front-product, vitalii-ab-product</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Backers and single-front-MGN12 X / underside-MGN9 Y</td>
+<td>conditionally compatible</td>
+<td>Base R2 rail arrangement; ordered backers unknown</td>
+<td>See the cited chapter and gate for the physical evidence still required. Sources: backer-design-readme, west3d-titanium-product, motion-upstream-manual-reference</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Rigid joints and actual four Z rail carriages</td>
+<td>unresolved</td>
+<td>Product unversioned; actual rail carriage revision unverified</td>
+<td>See the cited chapter and gate for the physical evidence still required. Sources: vitalii-z-joint-product</td>
+<td>M7; M9</td>
+</tr>
+<tr>
+<td>Live XY and actual LDO endstop PCB</td>
+<td>unresolved</td>
+<td>XY PDF1.1; actual PCB unverified</td>
+<td>See the cited chapter and gate for the physical evidence still required. Sources: vitalii-xy-support-cad, vitalii-xy-assembly</td>
+<td>M6</td>
+</tr>
+</tbody>
+</table></div>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

@@ -1,0 +1,60 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2. Printed parts and preparation · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="01-inventory.html">1. Inventory and evidence</a></li><li><a aria-current="page" href="02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="../reference/compatibility.html">Compatibility register</a></li><li><a  href="../reference/configuration.html">Non-deployable configuration examples</a></li><li><a  href="../reference/crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="../reference/hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="../reference/inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="../reference/printed-parts.html">Printed-parts matrix</a></li><li><a  href="../reference/questions.html">Unresolved questions and verification gates</a></li><li><a  href="../reference/sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#2-printed-parts-and-preparation">2. Printed parts and preparation</a><ul>
+<li><a href="#p1-print-only-parts-with-a-resolved-interface">P1 — print only parts with a resolved interface</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="2-printed-parts-and-preparation">2. Printed parts and preparation</h1>
+<p><strong>Prerequisites:</strong> I1 size gate; parts inventory; disconnected hardware.
+<strong>Tools:</strong> calibrated ABS printer or PIF parts, deburring tools, insert soldering
+tool, hex drivers 1.5–4 mm (ball ends for access, straight ends for final fastening),
+calipers, square, straightedge, lubricant approved by the rail manufacturer,
+threadlocker compatible with metal joints. Keep solvent/threadlocker off plastics.</p>
+<h2 id="p1-print-only-parts-with-a-resolved-interface">P1 — print only parts with a resolved interface</h2>
+<p><strong>Parts and quantities:</strong> the <a href="../reference/printed-parts.html">printed-parts matrix</a>
+enumerates filenames, planned quantities, pinned sources and dispositions. Quantity
+suffixes describe piece counts, not the number of download files. Core printed
+parts are retained; CNC-replaced files are explicitly omitted. Do not print every
+file under <code>STLs/</code>: that includes other sizes and alternate boards.</p>
+<p><img alt="STOCK REFERENCE: upstream printing guidance, printed p4/PDF index3" loading="lazy" src="../assets/stock-p004.png"/></p>
+<ol>
+<li>Use upstream p4: ABS, 0.2 mm layers, forced 0.4 mm extrusion width, 40% infill,
+   four walls and five top/bottom layers. Use Grid, Gyroid, Honeycomb, Triangle
+   or Cubic infill. Honor a component's own documented guidance where different.</li>
+<li>Print the four Z drives, retained skirts/panel mounts and rail alignment tools
+   first. Sort mirrored A/B parts into two of each; do not substitute an MGN9
+   X carriage for the R2 MGN12 design.</li>
+<li>Audit LDO-provided parts against the actual carton. The Rev D supplement lists
+   brackets, DIN clips, spacers and a clear PETG LED diffuser as provided, but
+   its Nitehawk references target original SB. Verify V2 parts against its own
+   repository before assuming the old cover/adapter mount fits.</li>
+<li><strong>OMIT</strong> plastic A/B drives, front-idler stacks, XY-joint halves, stock Z upper
+   tensioners, all four stock Z-joint assemblies (upper/lower print types) and
+   all stock Z belt clips; CNC subassemblies
+   supply the resolved replacement functions. <strong>OMIT</strong> stock inductive probe
+   retention and nozzle Z-endstop printing for this path.</li>
+<li><strong>STOP before printing the UHF hotend housing/duct.</strong> The official standard
+   Rapido v2 housing is HF. Follow T1/T2 in <a href="06-toolhead.html">toolhead</a> to verify
+   the Fiber UHF adapter and airflow/nozzle geometry with the CNC mount.</li>
+<li><strong>STOP before printing the replacement XY endstop support.</strong> The Vitalii
+   download contains STEP models rather than print-ready STL instructions.
+   Resolve PCB revision, dimensions, export and fit at M6 in <a href="04-motion.html">motion</a>.</li>
+<li>Test inserts on the retained practice print. Install the inserts shown in
+   the relevant stock figure only in retained plastic parts; threaded CNC holes
+   do not accept stock heatset inserts. Clear the built-in skirt supports
+   shown on upstream p211. Ensure bearing/rail interfaces are free of debris.</li>
+</ol>
+<p>Completion: print list marked obtained/printed/blocked; no incompatible stock
+part prepared for installation; fasteners counted by type and length, not just
+diameter. The matrix's <code>included_by_ldo</code> designation is a BOM claim until counted.</p>
+<p>Sources: original manual pp4–10,31; <a href="https://docs.ldomotors.com/en/voron/voron2/printed_part_guide_rev_d">LDO Rev D print supplement</a>,
+<a href="https://github.com/MotorDynamicsLab/LDOVoron2/tree/8270e8cf6c7ba29a7fd11d143c287bd3af576934">LDO supplement repository</a>.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

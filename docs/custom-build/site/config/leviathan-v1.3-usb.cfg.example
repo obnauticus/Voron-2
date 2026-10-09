@@ -1,0 +1,57 @@
+# NON-DEPLOYABLE REVIEW WORKSHEET. EVERY LINE IS COMMENTED INTENTIONALLY.
+# Target: physically confirmed Leviathan V1.3; STM32H743, 25 MHz crystal.
+# Manufacturer USB/Katapult diagram shows 128 KiB bootloader, USB PA11/PA12.
+# Actual installed bootloader must be identified before selecting a build.
+# Source: MotorDynamicsLab/Leviathan 878c3c4893ea353552c957f574509f9890e1e37a
+# Manual/Leviathan_V1.3_Manual.pdf, version 2025-07-09, printed pp.5-9,12.
+# Generic voron2_leviathan.cfg F446/12MHz/no-bootloader header conflicts;
+# it is not a firmware instruction for this H743 board.
+# Prerequisites: E1 hardware identification, E3 bed circuit, E6 motion review.
+# The NH toolboard owns the proposed extruder heater; no alternate hotend
+# connection to the mainboard is approved by this worksheet.
+#
+# [mcu]
+# serial: <MEASURE_ACTUAL_LEVIATHAN_USB_DEVICE_PATH>
+# restart_method: command
+#
+# [printer]
+# kinematics: corexy
+# max_velocity: <APPROVED_INITIAL_VALUE>
+# max_accel: <APPROVED_INITIAL_VALUE>
+# max_z_velocity: <APPROVED_INITIAL_VALUE>
+# max_z_accel: <APPROVED_INITIAL_VALUE>
+#
+# Import and review the exact-revision motion pin map; measure directions,
+# currents, rotation distances and travel before constructing those sections.
+# Do not leave stock Omron/nozzle-switch fields active in stepper_z.
+#
+# [heater_bed]
+# heater_pin: PG11
+# sensor_type: <IDENTIFY_ACTUAL_MRW_HEATER_SENSOR_MODEL>
+# sensor_pin: <SELECT_DOCUMENTED_CONNECTED_TH_INPUT>
+# pullup_resistor: 2200
+# min_temp: <APPROVED_SENSOR_AND_HEATER_LIMIT>
+# max_temp: <APPROVED_BED_HEATER_AND_SURFACE_LIMIT>
+# control: <VALIDATED_CONTROL_METHOD>
+# max_power: <ONLY_AFTER_FULL_CURRENT_AND_THERMAL_PATH_APPROVAL>
+# Do not put mains on PG11 or the DC bed terminal. A rated SSR control input
+# can be connected only according to the approved exact bed circuit.
+# No stock Generic3950/Semitec assumption, PID values or fuse ratings supplied.
+#
+# [verify_heater heater_bed]
+# Preserve Klipper defaults; change only for documented, reviewed reasons.
+#
+# [quad_gantry_level]
+# gantry_corners:
+#     <MEASURE_ACTUAL_GANTRY_SUPPORT_MIN_X>, <MEASURE_ACTUAL_GANTRY_SUPPORT_MIN_Y>
+#     <MEASURE_ACTUAL_GANTRY_SUPPORT_MAX_X>, <MEASURE_ACTUAL_GANTRY_SUPPORT_MAX_Y>
+# points:
+#     <MEASURE_SAFE_PROBE_POINT_FOR_CORNER_1>
+#     <MEASURE_SAFE_PROBE_POINT_FOR_CORNER_2>
+#     <MEASURE_SAFE_PROBE_POINT_FOR_CORNER_3>
+#     <MEASURE_SAFE_PROBE_POINT_FOR_CORNER_4>
+# speed: <VALIDATED_CONSERVATIVE_VALUE>
+# horizontal_move_z: <MEASURE_SAFE_CLEARANCE>
+# retries: <REVIEWED_LIMIT>
+# retry_tolerance: <MEASURED_REASONABLE_TOLERANCE>
+# Rigid joints must be square and free throughout Z before any QGL.

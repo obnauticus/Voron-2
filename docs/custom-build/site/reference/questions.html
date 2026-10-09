@@ -1,0 +1,213 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unresolved questions and verification gates · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="../chapters/01-inventory.html">1. Inventory and evidence</a></li><li><a  href="../chapters/02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="../chapters/03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="../chapters/04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="../chapters/05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="../chapters/06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="../chapters/07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="../chapters/08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="../chapters/09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="../chapters/10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="compatibility.html">Compatibility register</a></li><li><a  href="configuration.html">Non-deployable configuration examples</a></li><li><a  href="crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="printed-parts.html">Printed-parts matrix</a></li><li><a aria-current="page" href="questions.html">Unresolved questions and verification gates</a></li><li><a  href="sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#unresolved-questions-and-verification-gates">Unresolved questions and verification gates</a></li>
+</ul>
+</div>
+</details><h1 id="unresolved-questions-and-verification-gates">Unresolved questions and verification gates</h1>
+<p>All gates are open at publication because no delivered-hardware inspection or physical measurement was supplied. Close only with the precise evidence, then update the manifest, affected chapter and validation record. Continue independent work; stop before the affected operation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Evidence needed</th>
+<th>Affected operation / block</th>
+<th>Procedure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B1</td>
+<td>Identify MRW350 exact SKU/variant, magnet arrangement, actual dimensions, heater option and top/underside hole photos</td>
+<td>Bed adhesive/surface assembly; Cartographer scanning; assembly and calibration</td>
+<td><a href="../chapters/05-bed.html">Before step</a></td>
+</tr>
+<tr>
+<td>B2</td>
+<td>Count technical package contents and revision-matched paper instructions; resolve M3 lengths/M2 head type; resolve Wings 2x unit and pieces per set</td>
+<td>Kinematic seats and installed/surplus counts; assembly</td>
+<td><a href="../chapters/05-bed.html">Before step</a></td>
+</tr>
+<tr>
+<td>B3</td>
+<td>Manufacturer Wings size/revision map of three contact positions, pin blocks, third-seat support and mounting screws; physical plate/frame/deck/DIN hole and dry-fit measurements. Finished gantry/nozzle/belt envelope remains B5/M10.</td>
+<td>Early support/frame/deck/DIN mapping, then Wings/frame/balls final assembly; assembly</td>
+<td><a href="../chapters/05-bed.html">Before step</a></td>
+</tr>
+<tr>
+<td>B4</td>
+<td>Exact heater label/install sheet, voltage/power/sensor, fuse selection, M5 attachment hardware and PE method, compatible surface ownership</td>
+<td>Adhesion, thermal safety and heater route; assembly and electrical commissioning</td>
+<td><a href="../chapters/05-bed.html">Before step</a></td>
+</tr>
+<tr>
+<td>B5</td>
+<td>Measured bed top height, complete UHF nozzle/coil position, manual full-envelope clearance record with intended removable surface</td>
+<td>Ztravel/XYreach limits and powered motion; electrical commissioning and calibration</td>
+<td><a href="../chapters/05-bed.html">Before step</a></td>
+</tr>
+<tr>
+<td>T1</td>
+<td>Motor/gears/extruder identification; carriage width/revision and Xrail type; belt capture/fasteners/endstop hardware and mixed-gantry alignment</td>
+<td>CW2/carriage assembly and belt/endstop fastening; assembly</td>
+<td><a href="../chapters/06-toolhead.html">Before step</a></td>
+</tr>
+<tr>
+<td>T2</td>
+<td>Exact manufacturer-supported UHF cartridge and SB/CW2 shell fit; candidate CAD comparison plus cold physical fit and duct alignment</td>
+<td>Printing/assembly of UHF cartridge; assembly</td>
+<td><a href="../chapters/06-toolhead.html">Before step</a></td>
+</tr>
+<tr>
+<td>T3</td>
+<td>Delivered exact 2F revision,label,instructions,nozzle,PT1000 and heater specs; revision-matched support/mount screws</td>
+<td>Hotend assembly and load handoff; assembly and electrical commissioning</td>
+<td><a href="../chapters/06-toolhead.html">Before step</a></td>
+</tr>
+<tr>
+<td>T4</td>
+<td>V4Standard and CNCextender variant identification; measured coil2.6-3mm above tip; actual offsets, keepout and full envelope clearance</td>
+<td>Probe installation and probing; assembly and calibration</td>
+<td><a href="../chapters/06-toolhead.html">Before step</a></td>
+</tr>
+<tr>
+<td>E1</td>
+<td>Photos of mainboard/toolboard/fan adapter silkscreen and MCU; PSU labels/selectors; actual fuse/harness labels; kit packing list, separate from current store listing</td>
+<td>assembly wiring; firmware selection; assembly wiring; firmware selection</td>
+<td><a href="../chapters/07-wiring.html">Before step</a></td>
+</tr>
+<tr>
+<td>E2</td>
+<td>Exact hotend revision/voltage/rated current/cold resistance/startup/peak documentation; PCB continuous/pulsed rating; MOSFET, terminal, umbilical/contact, wire, fuse and PSU shared-load ratings</td>
+<td>hotend heater wiring; heater commissioning; hotend heater wiring; heater commissioning</td>
+<td><a href="../chapters/07-wiring.html">Before step</a></td>
+</tr>
+<tr>
+<td>E3</td>
+<td>Exact bed variant and heater/sensor options; voltage/power/physical bond instructions; thermal fuse data/mounting; SSR/heatsink and fuse ratings; PE lug procedure; qualified inspection</td>
+<td>bed wiring; power-on approval; bed heater commissioning; bed wiring; power-on approval; bed heater commissioning</td>
+<td><a href="../chapters/07-wiring.html">Before step</a></td>
+</tr>
+<tr>
+<td>E4</td>
+<td>V4 Standard marking/firmware interface; cable/contact identities; oriented probe/host or downstream P8 pin-to-pin mapping; supply voltage and usable current; chain/umbilical bend/strain requirements</td>
+<td>probe wiring; probe energization; probe wiring; probe energization</td>
+<td><a href="../chapters/07-wiring.html">Before step</a></td>
+</tr>
+<tr>
+<td>E5</td>
+<td>Actual board bootloader/firmware and host Klipper versions; compatible released new-plugin/Survey pair; exact binary/hash and installed plugin version/commit; no legacy sections/macros</td>
+<td>firmware configuration; Z homing; probing/calibration; firmware configuration; Z homing; probing/calibration</td>
+<td><a href="../chapters/08-software.html">Before step</a></td>
+</tr>
+<tr>
+<td>E6</td>
+<td>Manual gantry square and smooth full-Z travel; individual motor/corner map and actual motor-current ratings; physical X/Y endstop mount/state; conservative measured travel envelope</td>
+<td>powered motion; Z homing; QGL; powered motion; Z homing; QGL</td>
+<td><a href="../chapters/09-commissioning.html">Before step</a></td>
+</tr>
+<tr>
+<td>E7</td>
+<td>MRW magnet arrangement (embedded magnets fail current scan path), installed spring sheet, measured probe/nozzle offsets and 2.6-3mm coil/nozzle relationship, safe central reference, QGL points, nozzle/coil reachable mesh bounds</td>
+<td>scan calibration; Z homing; QGL; mesh; first print; scan calibration; Z homing; QGL; mesh; first print</td>
+<td><a href="../chapters/08-software.html">Before step</a></td>
+</tr>
+<tr>
+<td>M1</td>
+<td>Identify revisions, actual bag counts and independent 6mm XY / 9mm Z widths.</td>
+<td>Assembly of affected CNC subassembly; Assembly of affected CNC subassembly</td>
+<td><a href="../chapters/04-motion.html">Before step</a></td>
+</tr>
+<tr>
+<td>M2</td>
+<td>Obtain frame mounting drawing/fasteners and verify Z-idler alignment and top driver access.</td>
+<td>Z tensioner mounting; Z tensioner mounting</td>
+<td><a href="../chapters/04-motion.html">Before step</a></td>
+</tr>
+<tr>
+<td>M3</td>
+<td>Check backer build-size variant, measured lengths/holes/thickness, T-nuts and routing clearance.</td>
+<td>Backer mounting and closing gantry ends; Backer mounting and closing gantry ends</td>
+<td><a href="../chapters/04-motion.html">Before step</a></td>
+</tr>
+<tr>
+<td>M4</td>
+<td>Measure actual A/B shaft; prove support-race engagement, pulley plane and approved motor screws.</td>
+<td>Motor mounting and belt loading; Motor mounting and belt loading</td>
+<td><a href="../chapters/04-motion.html">Before step</a></td>
+</tr>
+<tr>
+<td>M5</td>
+<td>Confirm CNC/extrusion and rail mount screws, orientation and combined belt planes with backers.</td>
+<td>Final CNC gantry attachment; Final CNC gantry attachment</td>
+<td><a href="../chapters/04-motion.html">Before step</a></td>
+</tr>
+<tr>
+<td>M6</td>
+<td>Identify actual X/Y PCB; obtain matching printable export, inserts/screws and bump trigger fit.</td>
+<td>Endstop mounting and XY homing; Endstop mounting and XY homing</td>
+<td><a href="../chapters/04-motion.html">Before step</a></td>
+</tr>
+<tr>
+<td>M7</td>
+<td>Obtain rigid-joint installation drawing, orientation, screw-to-hole assignment and approved rail fit.</td>
+<td>Rigid-joint fastening and cutting Z belts; Rigid-joint fastening and cutting Z belts</td>
+<td><a href="../chapters/04-motion.html">Before step</a></td>
+</tr>
+<tr>
+<td>M8</td>
+<td>Count clamps and prove proposed front/rear top allocation by hole/tooth width and screw fit.</td>
+<td>Z belt capture; Z belt capture</td>
+<td><a href="../chapters/04-motion.html">Before step</a></td>
+</tr>
+<tr>
+<td>M9</td>
+<td>Supported hand inspection through safe Z travel for binding, carriage lift and belt tracking.</td>
+<td>Powered Z and quad gantry leveling; Powered Z and quad gantry leveling</td>
+<td><a href="../chapters/04-motion.html">Before step</a></td>
+</tr>
+<tr>
+<td>M10</td>
+<td>Full hand XYZ travel check with final carriage/toolhead/bed/cables and measured safe envelope.</td>
+<td>Powered XY and software travel limits; Powered XY and software travel limits</td>
+<td><a href="../chapters/04-motion.html">Before step</a></td>
+</tr>
+<tr>
+<td>I1</td>
+<td>Actual kit label/packing list; measure all extrusion lengths and identify kit size, LDO revision/batch, options. Do not commit private receipt.</td>
+<td>Size-dependent printing, belts and assembly; Size-dependent printing, belts and assembly</td>
+<td><a href="../chapters/01-inventory.html">Before step</a></td>
+</tr>
+<tr>
+<td>P1</td>
+<td>Resolve filenames/interface before printing any UHF hotend, endstop or PCB mount; count LDO supplied parts.</td>
+<td>Affected printed part preparation; Affected printed part preparation</td>
+<td><a href="../chapters/02-preparation.html">Before step</a></td>
+</tr>
+<tr>
+<td>F1</td>
+<td>Verified Wings/kinematic three-point layout, frame attachments and cable route; do not fix bed supports at stock spacing. Verify fixed deck/DIN holes align with resolved support positions before closing deck; obtain documented replacement layout if not.</td>
+<td>Bed support fastening, final deck/DIN installation and passthrough location; Bed support fastening, final deck/DIN installation and passthrough location</td>
+<td><a href="../chapters/03-frame-z.html">Before step</a></td>
+</tr>
+<tr>
+<td>F2</td>
+<td>Measure shipped deck thickness; resolve FAQ 4mm vs RevD BOM 3mm discrepancy and select clips.</td>
+<td>Deck clip selection and mounting; Deck clip selection and mounting</td>
+<td><a href="../chapters/03-frame-z.html">Before step</a></td>
+</tr>
+<tr>
+<td>P2</td>
+<td>Panel thickness, skirt size, actual inlet/display/fan voltage and supplied mounts.</td>
+<td>Electronics enclosure closure and display wiring; Electronics enclosure closure and display wiring</td>
+<td><a href="../chapters/10-panels-first-print.html">Before step</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>Assembly gaps block only affected subassemblies. Missing board/load/cable/fuse/PE evidence blocks electrical commissioning; missing offsets and travel checks blocks calibration. A software limit is not evidence of safe electrical hardware.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

@@ -1,0 +1,246 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>04 — Modified Z suspension, gantry and belts · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="01-inventory.html">1. Inventory and evidence</a></li><li><a  href="02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a aria-current="page" href="04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="../reference/compatibility.html">Compatibility register</a></li><li><a  href="../reference/configuration.html">Non-deployable configuration examples</a></li><li><a  href="../reference/crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="../reference/hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="../reference/inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="../reference/printed-parts.html">Printed-parts matrix</a></li><li><a  href="../reference/questions.html">Unresolved questions and verification gates</a></li><li><a  href="../reference/sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#04-modified-z-suspension-gantry-and-belts">04 — Modified Z suspension, gantry and belts</a><ul>
+<li><a href="#m1-verify-the-motion-parts-before-assembling-their-stacks">M1 — Verify the motion parts before assembling their stacks</a></li>
+<li><a href="#install-the-upper-z-tensioners-before-closing-the-top-frame">Install the upper Z tensioners before closing the top frame</a></li>
+<li><a href="#prepare-the-gantry-rails-and-titanium-backers-while-slots-remain-open">Prepare the gantry rails and titanium backers while slots remain open</a></li>
+<li><a href="#assemble-the-ab-double-shear-drives-and-front-idlers">Assemble the A/B double-shear drives and front idlers</a></li>
+<li><a href="#assemble-the-revision-11-live-idler-xy-joints-and-endstop-support">Assemble the revision 1.1 live-idler XY joints and endstop support</a></li>
+<li><a href="#join-the-gantry-extrusions-to-the-modified-corners">Join the gantry extrusions to the modified corners</a></li>
+<li><a href="#allocate-the-clamps-and-install-rigid-z-joints-before-suspension">Allocate the clamps and install rigid Z joints before suspension</a></li>
+<li><a href="#route-the-z-belts-square-by-hand-then-route-ab-belts">Route the Z belts, square by hand, then route A/B belts</a></li>
+<li><a href="#evidence-and-readiness-of-the-combined-motion-system">Evidence and readiness of the combined motion system</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="04-modified-z-suspension-gantry-and-belts">04 — Modified Z suspension, gantry and belts</h1>
+<p>This chapter installs purchases <strong>02, 09, 10, 11, 12, 13 and 14</strong> before the gantry is suspended. The planning target is a 350-class, single-front-MGN12-X / underside-MGN9-Y Voron 2.4R2 gantry. That geometry is documented by the pinned upstream manual; it still has to match the parts in the box. None of the combined CNC/backer/carriage arrangements below has been physically validated on this printer.</p>
+<p><strong>KEEP</strong> the frame, rail preparation and four lower Z reduction drives from the preceding chapter. <strong>REPLACE</strong> the stock upper Z idlers, A/B drive frames, front idlers, XY joints, Z joints and relevant belt clamps. <strong>OMIT</strong> their printed counterparts from the initial build. <strong>ADD</strong> the titanium backers while extrusion slots are accessible. Keep the frame open and leave the top panel off: the purchased Z tensioners adjust from above.</p>
+<p><img alt="Original schematic: dependency order for the modified motion assembly; not a dimensional drawing" loading="lazy" src="../assets/motion-sequence.svg"/></p>
+<h2 id="m1-verify-the-motion-parts-before-assembling-their-stacks">M1 — Verify the motion parts before assembling their stacks</h2>
+<p><strong>Gate M1, blocks the affected subassembly only.</strong> Compare the machined parts with the product-linked manufacturer PDFs, not only the store photographs. Record actual revisions, bag contents and belt widths. The governing documents retrieved on 2026-10-09 are <a href="https://cdn.shopify.com/s/files/1/0680/6224/9145/files/6mm_2.4_AB.pdf">A/B revision 1.0</a>, <a href="https://cdn.shopify.com/s/files/1/0680/6224/9145/files/6mm_Front_Idlers_2.4.pdf">front-idler revision 1.0</a>, <a href="https://cdn.shopify.com/s/files/1/0680/6224/9145/files/6mm_LI_XY_Joints.pdf?v=1757048653e">live-XY revision 1.1</a>, and <a href="https://cdn.shopify.com/s/files/1/0680/6224/9145/files/Z_Tensioners_Assembly_Instruction.pdf?v=1752685029">Z tensioners, unversioned</a>. Hashes, page mappings and conflicts are in <a href="../data/motion-research.json">motion research</a>.</p>
+<p>The purchased <strong>XY joints are the 6 mm version</strong>. The A/B linked manual is also for 6 mm belts. The Z tensioner manufacturer independently specifies <strong>9 mm Z belts</strong>. The stock manual agrees: printed p.131 (PDF index 130) specifies 6 mm A/B belts, while p.111 (index 110) specifies 9 mm Z belts. Measure the kit belts and each pulley running width; do not infer Z width from XY width. A 9 mm Cartographer carriage variant would conflict with this 6 mm XY path unless the actual manufacturer documentation establishes a different arrangement.</p>
+<p>The live manufacturer pages and assembly PDFs disagree in several places:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subassembly</th>
+<th>Evidence to reconcile before use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A/B pair</td>
+<td>PDF package table says seven F695 bearings; its diagrams require seven <strong>per drive</strong>, including the shaft support bearing. The live product listing offers fourteen. Confirm fourteen are in the purchased bearing variant.</td>
+</tr>
+<tr>
+<td>Front idlers</td>
+<td>Live page lists four M3 slot nuts, M3x16 and M3x10 mounting bolts and four clamps; PDF lists two roll-in nuts and different internal fasteners, with clamps marked add-on. Count the shipped hardware and identify its revision.</td>
+</tr>
+<tr>
+<td>Live XY</td>
+<td>PDF package table says eight ultra-low M3x3 bearing-retention screws, but procedure says M3x4. Live product text also gives differing counts. Ask for a revision-matched retention specification; do not choose a screw length by guessing.</td>
+</tr>
+<tr>
+<td>Rigid Z joints</td>
+<td>Store gives hardware quantities but no linked assembly drawing. Obtain the screw-to-hole assignment and approved gantry/rail fit from the supplied instructions or manufacturer before fastening.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Tools for this chapter:</strong> quality straight hex drivers matching actual screws, two drivers for the Z tensioner axle, calipers, square, ruler/tape, needle-nose pliers or tweezers, supported work surface, rail stops/tape, four equal-height gantry supports and temporary retaining straps. Use medium threadlocker only on the metal screw joints where the relevant Vitalii PDF recommends it. Keep it out of bearings. No manufacturer torque values were found; none are invented here.</p>
+<h2 id="install-the-upper-z-tensioners-before-closing-the-top-frame">Install the upper Z tensioners before closing the top frame</h2>
+<p><strong>Prerequisites:</strong> squared frame, Z rails and lower Z drives completed; M1 confirms nine-millimetre Z belts and matching tensioners. The top must remain accessible. <strong>REPLACE</strong> upstream printed pp.48–50 (PDF indices 47–49), including their M5x30 / printed-idler hardware, with purchase <strong>12</strong>.</p>
+<p><strong>Parts:</strong> one purchased set contains four preassembled tensioners and eight M5x25 button-head screws according to the live <a href="https://vitalii3d.com/products/z-tensioners-for-voron-v2-4">product page</a>. The PDF lists four tensioner blocks, two left and two right fixed blocks, four 9 mm GT2 idlers, four 20 mm threaded pins, eight 0.8 mm M5 shims, eight M3x6, four M5x16 and eight M5x25 screws. Treat those internal pieces as contents of the four assemblies, not an additional set. Confirm the M5x16 frame attachment and mating T-nuts from revision-matched instructions before installation; the PDF does not depict attachment to a full frame.</p>
+<p><strong>Gate M2, blocks mounting these tensioners.</strong> Confirm the left/right corner orientation, mating frame holes/T-nuts and frame-attachment screw length against the supplied product revision. A stock plastic-idler screw is not a substitute. Check that the idler plane aligns with the lower Z-drive pulley and that a straight driver reaches the top adjuster without colliding with frame braces or later panels.</p>
+<ol>
+<li>Inspect the four preassembled units rather than unnecessarily dismantling them. Each idler should rotate freely. The PDF's assembly leaf 4 (printed “4”, index 3) shows <strong>one 0.8 mm shim on each side of the idler</strong>, inside the tensioner fork.</li>
+<li>If a unit was supplied loose, insert one M3x6 into the threaded axle (leaf 3/index 2), place the shim–idler–shim assembly in the fork (leaf 4/index 3), then secure the axle from the opposite side with the second M3x6 while holding the first with another driver (leaf 5 also printed “4”, index 4).</li>
+<li>Join each movable block to its matching fixed block with two M5x25 screws as shown on printed p.6 (index 5). Keep sufficient adjuster engagement; the stock instruction to back a plastic adjuster out and turn it four turns is <strong>omitted</strong> for these CNC units.</li>
+<li>After M2 is cleared, attach the two left and two right assemblies in their confirmed top corners. Start with usable adjustment in both directions. Do not use the listing's promotional suggestion of overtightening as a belt-tension instruction.</li>
+</ol>
+<p><strong>Completion check:</strong> four idlers turn freely; all four belt planes align with their lower drive; no screw bottoms out; adjusters remain accessible from above. Leave the nine-millimetre Z belts uncut until the suspension and clamp gates are cleared.</p>
+<h2 id="prepare-the-gantry-rails-and-titanium-backers-while-slots-remain-open">Prepare the gantry rails and titanium backers while slots remain open</h2>
+<p><strong>Prerequisites:</strong> M1 confirmed gantry rail types; unassembled Y and X extrusions; purchase <strong>02</strong> available. <strong>KEEP</strong> stock rail alignment/preparation on printed p.24 (index 23), p.88 (index 87) and p.101 (index 100). Rail carriages must remain on their rails and be restrained whenever an assembly is inverted. <strong>ADD</strong> three backers before the CNC ends and chain supports obstruct their slots.</p>
+<p><strong>Parts:</strong> one purchased three-pack, planned installation three pieces; actual ordered build-size variant is unknown. <a href="https://west3d.com/products/titanium-backers-for-voron-2-4-trident-3-pack">West3D</a> describes approximately 3.2 mm thickness, twenty-two M3x8 flat-head screws and ten M3x6 flat-head screws, with approximately thirty M3 T-nuts required separately. Do not claim those T-nuts were purchased. The number actually installed equals the appropriate holes in the delivered backers, not the number of screws in the bag.</p>
+<p><strong>Gate M3, blocks backer attachment and gantry end closure.</strong> Confirm the ordered 350 build-size variant, actual strip lengths, thickness, countersinks, hole spacing and extrusion-slot clearance. The 350 variant name is a printer-size choice, not proof that the physical strip is exactly 350 mm long. Confirm T-nut type fits the actual extrusion and rail screws; account for each occupied hole. Select any cable-bridge clearance part only after confirming the actual chain/umbilical arrangement.</p>
+<p><img alt="Original non-dimensional placement schematic: backers opposite the actual rails" loading="lazy" src="../assets/motion-backers.svg"/></p>
+<ol>
+<li>Clean/lubricate and mount the two Y MGN9 rails to the <strong>undersides</strong> of their extrusions using the stock rail hardware and alignment procedure. Work from the centre outward as the manual directs; restrain both carriages.</li>
+<li>Install each Y backer on the <strong>top</strong> of its extrusion, opposite the underside rail. The <a href="https://github.com/tanaes/whopping_Voron_mods/blob/62268ed817878e54d6a1186882060aa8368d4f0f/extrusion_backers/README.md#installation">designer's pinned installation instructions</a> specify M3x8 flat-head screws for Y.</li>
+<li>Install the single MGN12 X rail on the <strong>front</strong> face as stock p.101 shows. Attach its backer to the <strong>rear</strong> face, using the documented M3x6 flat-head screws. Do not put this backer on top: the source explicitly warns that this is the wrong compensating side for a single front MGN12 rail.</li>
+<li>Seat each countersunk screw without bowing the extrusion, check engagement and slide each rail carriage through its length. Check access for CNC fasteners and endstop wiring before adding end units. Do not drill/tap a purchased prefinished titanium strip unless its manufacturer explicitly requires that operation.</li>
+</ol>
+<p><strong>Completion check:</strong> all three backers are opposite their respective rails; screw heads are seated; rail travel is smooth; no fastener reaches a rail race or obstructs the mating CNC unit. Candidate designer chain bridges are <code>XY_cable_chain_bridge-3hole-3mm_backer.stl</code> and <code>XY_cable_chain_bridge-Igus-3mm_backer.stl</code> at the pinned source; their 3 mm naming does not establish fit to an approximately 3.2 mm purchased backer. They remain unresolved until the actual routing is selected and clearance is checked.</p>
+<h2 id="assemble-the-ab-double-shear-drives-and-front-idlers">Assemble the A/B double-shear drives and front idlers</h2>
+<p><strong>REPLACE</strong> stock pp.64–80 (indices 63–79) with purchases <strong>09</strong> and <strong>11</strong>. Those pages remain stock belt-topology and motor-orientation references; their plastic-frame fasteners and stackups are not instructions for the machined parts.</p>
+<p><strong>A/B parts for the pair, after M1:</strong> four plates, four precision threaded pins, twelve 1 mm M5 shims, two 10 mm M5 sleeves, six 20 mm M3 sleeves, six cup shims, eight M3x8 flat-head screws, six M3x35 cap screws, four ultra-flat M3x4 bearing-retention screws and fourteen F695 bearings. The bearing count is a diagram-derived requirement for both complete double-shear drives, subject to the package-table conflict above. Retain two kit XY motors and two 20-tooth pulleys only after proving their fit.</p>
+<p><strong>Gate M4, blocks motor installation and belt loading.</strong> Measure each A/B motor's exposed shaft from its mounting face. With the motor plate, pulley and upper support bearing in their documented positions, prove that the shaft actually engages the support bearing's inner race and turns without bottoming, axial preload or radial misalignment. A customer review's “35 mm minimum” is a research lead, not a dimensional specification from the manufacturer. Obtain the actual required shaft/plate/pulley dimensions if the fit cannot be established. Do not substitute motors silently or claim double-shear operation with an unengaged shaft. Confirm motor-to-plate screws and thread engagement; the CNC PDF does not specify these installation screws or a numeric pulley height.</p>
+<ol>
+<li>Match the A and B top/bottom plates to PDF leaf 2/index 1. Starting with the illustrated right-hand drive, attach its two threaded pins to the lower plate with M3x8 flat-head screws (leaf 3/index 2).</li>
+<li>On the two-level smooth-idler pin, stack bottom to top: <strong>1 mm shim → F695 flange down → F695 flange up → 1 mm shim → 1 mm shim → F695 flange down → F695 flange up → 1 mm shim</strong> (leaf 4/index 3). On the one-level pin: <strong>10 mm M5 sleeve → 1 mm shim → F695 flange down → F695 flange up → 1 mm shim</strong> (leaf 5/index 4).</li>
+<li>Insert three 20 mm M3 sleeves; bring the upper plate down squarely and hold it with the three M3x35/cup-shim fasteners (leaf 6/index 5). Secure the pin ends with the illustrated M3x8 flat-head screws (leaf 7/index 6).</li>
+<li><strong>Before the next step:</strong> the manufacturer warns that only a little force is needed on the support-bearing retainers. Seat the seventh F695 in the support recess and capture it with the two ultra-flat M3x4 screws as leaf 8/index 7 shows. Do not clamp its inner race or distort the bearing.</li>
+<li>Build the other drive using leaf 10/index 9: its single bearing pair occupies the <strong>lower</strong> belt level. It is not a second identical stack. Rotate all idlers freely, then perform M4's motor/pulley fit check. Motor leads should have bend room and clear the moving belts.</li>
+</ol>
+<p><strong>Front-idler parts for the pair, after M1:</strong> two Part A plates, two Part B plates, two tensioning forks, two side pieces, two pins, four F695 bearings, four 1 mm M5 shims, two 10 mm M5 sleeves, four M3x5 flat-head screws, four M3x45 cap screws and eight M3x6 button-head screws, as PDF leaf 2/index 1 shows. Confirm its revision-dependent extrusion screws/T-nuts and clamp supply separately.</p>
+<ol>
+<li>On each pin stack: <strong>10 mm M5 sleeve → 1 mm shim → F695 flange down → F695 flange up → 1 mm shim</strong> (front PDF leaf 3/index 2). Fit into the tensioning fork and retain with two M3x5 flat-head screws (leaf 4/index 3).</li>
+<li>Place the fork between its Part A/Part B plates and fit the two M3x45 adjustment screws (leaf 6/index 5). Add the side piece with four M3x6 screws (leaf 7/index 6), following the PDF's medium-threadlocker recommendation for the indicated metal joints.</li>
+<li>Assemble both idlers the same way; install the <strong>left unit upside down</strong> relative to the right as leaf 9/index 8 shows. Check free rotation across the intended adjustment range.</li>
+<li><strong>Gate M5, blocks final gantry attachment:</strong> confirm CNC-to-extrusion mounting screw lengths and slot-nut arrangement for the actual revision. Preserve stock extrusion alignment and flush-end references on pp.85–95, but do not transfer plastic hardware dimensions where the CNC drawings do not establish them. Dry-fit all four corner units with backers present; verify their upper/lower belt planes, clamp access and rail clearances together.</li>
+</ol>
+<p><strong>Completion check:</strong> both drive assemblies have the correct opposite single-idler level; both shaft supports genuinely engage; front idlers have the documented opposite orientation; every idler spins freely; no screw, backer or extrusion lip touches a belt plane.</p>
+<h2 id="assemble-the-revision-11-live-idler-xy-joints-and-endstop-support">Assemble the revision 1.1 live-idler XY joints and endstop support</h2>
+<p><strong>Prerequisites:</strong> M1's bearing-retention conflict cleared, X rail/backer installed and Y rails restrained. <strong>REPLACE</strong> stock pp.96–100 (indices 95–99) and their printed XY joints with purchase <strong>14</strong>. Mounting hardware on pp.103–106 also becomes revision-specific.</p>
+<p><strong>Parts from the revision 1.1 PDF for one purchased left/right set:</strong> four machined plates; two press-fit toothed idler shafts; two separate stainless pins; eight F695 bearings; four 1 mm M5 shims; two 20 mm M3 sleeves; four 8 mm M5 sleeves; four springs; four M3x8 flat-head screws; two M3x30 flat-head screws; six M5x10 flat-head mounting screws; eight M3x8 button-head mounting screws; eight ultra-low bearing-retention screws whose length is unresolved by the conflicting PDF text. Keep each spring and sleeve with its associated stack. Do not press the purchased idlers off their shafts.</p>
+<ol>
+<li>Match the <strong>right lower plate</strong> to XY PDF leaf 3/index 2. Once the retention-length gate is cleared, fit its flanged shaft-support bearing without overtightening the two retainers. Fix the separate threaded pin with M3x8 as leaf 4/index 3 shows.</li>
+<li>On that smooth-idler pin, bottom to top: <strong>1 mm shim → F695 flange down → F695 flange up → 1 mm shim → 8 mm M5 sleeve → spring</strong> (leaf 5/index 4). On the adjacent rotating shaft axis fit <strong>spring → 8 mm M5 sleeve → press-fit toothed-idler shaft</strong> (leaf 6/index 5), seated in the lower support bearing.</li>
+<li>Insert the 20 mm M3 sleeve, position the top plate and start M3x30 without fully tightening (leaf 7/index 6). Align the top, secure the pin with M3x8, tighten M3x30, and fit the upper shaft-support bearing retainers (leaf 8/index 7). Observe the manufacturer's low-force warning.</li>
+<li>Build the left joint using the <strong>reversed vertical levels</strong> in leaf 10/index 9, not by making an identical right joint. Both smooth and toothed idlers must turn freely after retaining the bearings.</li>
+<li>Set aside the completed left and right joints for the gantry-extrusion steps immediately below. Mount them to the X extrusion and Y carriages only after M5 establishes the revision-specific screws. Use the PDF's listed hardware where confirmed; do not install stock M5x40 plastic-idler bolts. Leave alignment fasteners adjustable until the gantry is manually squared.</li>
+</ol>
+<p><strong>Gate M6, blocks endstop installation and XY homing.</strong> Identify the actual LDO X/Y endstop PCB, connector orientation and mounting-hole pattern. Vitalii's linked <a href="https://cdn.shopify.com/s/files/1/0680/6224/9145/files/Live_Shaft_XY.zip?v=1779734631">supporting-parts archive</a> contains <strong>STEP CAD only</strong>, not printable STLs: <code>Endstop_PCB_Mount_heat_inserts.step</code>, <code>2x_PCB_Spacer.step</code>, <code>Endstop_Bump.step</code>, <code>Endstop_Bump_Deep.step</code>. No print orientation, fastener/insert specification or reuse license was found. Obtain/select a matching printable export and approved hardware after checking the actual PCB and its trigger position. The deeper bump is an unresolved alternative, not an additional mandatory part. STEP filenames establish what was supplied; no geometric STEP fit validation was possible with the available tools.</p>
+<p><strong>KEEP</strong> separate X and Y endstop functions for this build; <strong>REPLACE</strong> the stock printed PCB/pod mount procedure on pp.162–164 (indices 161–163) with the confirmed CNC-compatible support. The stock right-XY-joint's probe-wire channel and stock Hall magnet pockets are not present by assumption. Do not tape a PCB into the belt path. Cartographer changes Z sensing, not automatically X/Y switches.</p>
+<p>The selected <strong>X authority is the physical switch on the CNC carriage</strong>, after
+T1 verifies its bracket, cable and trigger target. The selected <strong>Y authority is
+the confirmed Vitalii-compatible Y switch/PCB support</strong>, after M6 verifies its
+rear trigger geometry. If a combined LDO XY PCB is retained for Y, leave its
+X channel unused and omit that duplicate X configuration. Confirm the carriage
+X-switch bump on the right live joint and Y trigger at the rear before homing;
+the supplied STEP models do not establish those interfaces by themselves.</p>
+<p><strong>Completion check:</strong> both assembled joints turn freely; left/right belt levels differ as drawn; shaft bearings are retained without drag. Once mounted in the following gantry steps, the endstop support must clear the backer, belts and carriage through travel. Homing remains blocked until M6 is cleared and wiring/configuration agrees.</p>
+<h2 id="join-the-gantry-extrusions-to-the-modified-corners">Join the gantry extrusions to the modified corners</h2>
+<p><strong>Prerequisites:</strong> rails/backers prepared above, four CNC corners assembled, M4 and M5 cleared. <strong>Parts:</strong> two remaining <strong>C</strong> extrusions for the Y beams, one <strong>E</strong> rear crossmember, one <strong>D</strong> moving X beam, two MGN9 Y rail/carriages and one MGN12 X rail/carriage. These letter assignments follow the actual manual's p.13 reference, p.85 rear crossmember, p.88 Y beams and p.101 X beam. Match their lengths to the confirmed kit-size/batch cut list; the manual drawings do not provide a universal 350-kit cut list. Use the verified CNC mounting screws and mating slot nuts from M5, not a new copy of the stock plastic parts' hardware.</p>
+<p><strong>KEEP</strong> the outer printer frame's already installed M5x16 blind-joint screws from the preceding frame chapter. The gantry steps below use the corner plates and extrusion slot nuts, not a second set of frame blind joints. For comparison, the stock rear assembly on pp.85–87 uses eight M5 slot nuts/M5x10 button-head screws; stock pp.91–95 uses M5x16 in its gantry-corner and upper-clamp interfaces. Those stock dimensions are <strong>not verified CNC replacement screw lengths</strong>.</p>
+<ol>
+<li>Lay the <strong>E rear crossmember</strong> between the two completed A/B drives, with <strong>B at rear left and A at rear right when viewed from the front</strong>, as p.83/index 82 identifies. Stage the appropriate CNC slot nuts before covering the extrusion ends. Seat the crossmember in the plate interfaces without twisting either corner, then start its M5-interface fasteners only after M5 confirms their actual specification. The views on pp.85–87 show this rear crossmember relationship.</li>
+<li>Bring the two <strong>C Y beams</strong> forward from those rear corners, parallel to one another. Their MGN9 rails remain on the <strong>undersides</strong>, with backers on top. Stage the extrusion nuts needed for both CNC-corner attachment and the eventual Z belt captures before access closes; pp.89–90 show why both sides of the stock slots need early access. Determine the CNC count/position from M5/M8 rather than copying a stock plastic clamp's nut order.</li>
+<li>Fit the front-idler units to the front ends of the C beams: front-left inverted relative to front-right, as the manufacturer front-idler PDF specifies. Seat all four C-beam ends at their confirmed CNC datum surfaces. Compare the resulting rear-E / two-C U-shaped assembly to the stock layout on p.94. Check equal diagonals and parallel Y rails; leave alignment fasteners adjustable. Install upper clamps only after M8 is cleared.</li>
+</ol>
+<p><img alt="Stock reference, upstream printed p.94 / PDF index 93: E rear crossmember and two C Y beams; the displayed plastic corners are replaced by CNC" loading="lazy" src="../assets/stock-p094.png"/></p>
+<ol start="4">
+<li>Prepare the moving <strong>D X beam</strong> with its MGN12 rail facing the printer front, its titanium backer behind and its carriage restrained. Fit the completed left and right live XY joints to the D-beam ends as p.103's arrangement shows. The revision 1.1 XY PDF lists six M5x10 flat-head and eight M3x8 button-head mounting screws; their assignment to the actual D beam and actual Y carriages must be established at M5. <strong>REPLACE</strong>, rather than copy, the stock p.104 M5x10/M5x16/M5x30 button-head stack and washers.</li>
+<li>Tilt the completed D-beam/live-joint assembly into the U-shaped gantry and align each joint to its Y carriage, following the access concept on p.106/index 105. Support it while engaging the confirmed CNC-to-carriage screws. Do not use the stock “two bolts only” instruction or M3x16 length for the CNC part: the actual PCB support must be reconciled at M6. Move X slowly through Y travel, checking parallelism and that the joints do not lift or distort either carriage. Final squaring happens on supported suspension before belt tension is applied.</li>
+</ol>
+<p><strong>Completion check:</strong> one E rear beam, two C side beams and one moving D X beam are present; A is rear right, B rear left; both Y rails face downward and the X rail faces forward; corners meet their verified mounting datums; rail carriages move without a forced fit; the assembled gantry is square before tightening the remaining alignment fasteners.</p>
+<h2 id="allocate-the-clamps-and-install-rigid-z-joints-before-suspension">Allocate the clamps and install rigid Z joints before suspension</h2>
+<p><strong>REPLACE</strong> stock printed pp.110–116 (indices 109–115) with purchase <strong>13</strong>. <strong>OMIT</strong> stock upper/lower Z-joint plastic parts, spherical joint stack and separate lower belt clips. <a href="https://vitalii3d.com/products/rigid-fixed-z-joints-for-voron">Vitalii's rigid-joint page</a> explicitly says the complete stock joint and <strong>bottom belt clamp</strong> are replaced. A lower purchased CNC clamp must not be stacked onto that integrated lower function.</p>
+<p><strong>Parts:</strong> one purchased rigid-joint set is four joints, sixteen M3x8, four M3x14 and four M5x14 screws according to the listing. The actual head types and screw-to-hole assignments need revision-matched installation evidence; the store BOM alone is insufficient. Four equal-height supports and temporary straps are essential while the gantry is unpowered.</p>
+<p><strong>Gate M7, blocks rigid-joint fastening and cutting Z belts.</strong> Obtain the actual product installation drawing or supplied instructions confirming: rail carriage compatibility, orientation, which supplied screws mount each interface, integrated belt-capture geometry, allowed adjustment and fastener engagement. Confirm that the machined corners can be squared without forcing the four rail carriages into misalignment. No rigid-joint installation PDF/CAD was linked on the retrieved product page.</p>
+<p><img alt="Original allocation schematic, explicitly a conditional plan for clamps rather than a verified assembly drawing" loading="lazy" src="../assets/motion-clamps.svg"/></p>
+<p>Purchase <strong>10</strong> is one four-piece set, <strong>not four upper clamps</strong>: <a href="https://vitalii3d.com/products/voron-v2-cnc-belt-clamps">the manufacturer lists</a> two <strong>M5+M5 top</strong> clamps and two <strong>M5+M3 bottom</strong> clamps. Purchase <strong>11</strong> separately lists four machined clamps. The proposed disposition uses the separately purchased tops at the rear and the front-idler clamps at the front, retaining every purchase in the manifest:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Piece source</th>
+<th>Conditional planned installation</th>
+<th>Planned surplus if verified</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#13 rigid joints</td>
+<td>Four complete rail/gantry joints with four integrated lower belt-capture functions</td>
+<td>No redundant stock joint or lower clip installed</td>
+</tr>
+<tr>
+<td>#10 top clamps</td>
+<td>Two at the rear A/B upper capture interfaces</td>
+<td>Zero</td>
+</tr>
+<tr>
+<td>#10 bottom clamps</td>
+<td>Zero: rigid joints occupy the lower function</td>
+<td>Two</td>
+</tr>
+<tr>
+<td>#11 clamps, if all four shipped</td>
+<td>Two at the front upper capture interfaces</td>
+<td>Two</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Gate M8, blocks belt capture.</strong> This allocation is <strong>conditionally compatible</strong>, not fit-tested. Physically verify tooth width for nine-millimetre Z belts, hole spacing, upper/rear/front plate interface, stock extrusion-slot access and screw engagement; reconcile the front-PDF “add-on” note with the delivered package. If a #10 top does not fit a rear CNC drive, do not force it or silently replace it: update the disposition and obtain a documented matching clamp. Actual installed quantities remain unset until checked.</p>
+<p>After M7/M8 are cleared, seat the four rigid joints against their matched Z carriages with their approved screws, align the gantry on equal-height supports, and capture one end of each nine-millimetre Z belt in its integrated lower interface. Keep belt teeth engaged in the confirmed serrations. Hoist the gantry past the uprights with help, using straps as stock p.114 (index 113) recommends. Finalize the joint/gantry interfaces only while the gantry is square and supported. Preserve access to the upper clamps.</p>
+<p><strong>Completion check:</strong> there are exactly four lower and four upper Z capture locations; no redundant bottom clamp; all four carriages sit naturally on their rails; all joints are secure without a forced twist. Surplus pieces are bagged and labelled by purchase ID.</p>
+<h2 id="route-the-z-belts-square-by-hand-then-route-ab-belts">Route the Z belts, square by hand, then route A/B belts</h2>
+<p><strong>Prerequisites:</strong> M1–M5, M7 and M8 cleared for the affected assembly; gantry securely supported. M6 continues to block endstop mounting/homing but does not prevent independent bare-gantry preparation. Before the A/B belting step, complete the <strong>bare CNC carriage identification, rail mounting and belt-capture preparation</strong> in <a href="06-toolhead.html">the toolhead chapter</a>, with its six-millimetre variant confirmed. The Rapido, extruder and ducts can be fitted later; do not build a stock carriage or require a complete hotend simply to thread the belts. <strong>KEEP</strong> the functional Z loops in stock pp.118–121 (indices 117–120) and stacked CoreXY topology pp.125–127 / pp.132–138 (indices 124–126 / 131–137). These are stock reference drawings, not pictures of the modified CNC assembly.</p>
+<p><img alt="Stock Z-loop reference, upstream printed p.118 / PDF index 117; CNC lower capture and upper tensioner replace displayed plastic parts" loading="lazy" src="../assets/stock-p118.png"/></p>
+<p><img alt="Stock Z-loop continuation, upstream printed p.119 / PDF index 118; verify the actual CNC belt plane before capture" loading="lazy" src="../assets/stock-p119.png"/></p>
+<ol>
+<li>Route each nine-millimetre Z belt from its confirmed lower capture around the lower Z-drive pulley and upper purchased tensioner idler, then back to its confirmed upper capture. Keep <strong>teeth inward</strong> around the toothed elements, no twists, and the two vertical runs parallel. The rendered diagrams on pp.118–119 show the loop. Check alignment before securing the upper end; retain service slack, fold excess clear of travel and secure it as p.120 depicts. Repeat four times.</li>
+<li>Bring all four supports to equal height and manually square the gantry. Stock p.122 (index 121) uses the rear drive stops to square X relative to Y; CNC housings must first provide matched contact geometry. Check with a square and diagonals as well. Adjust mounting alignment rather than using rigid joints or high belt tension to force the frame square.</li>
+<li><strong>Gate M9, blocks powered Z motion and quad gantry leveling.</strong> With the gantry retained against falling and motors disconnected from powered control, slowly inspect its usable Z travel by supporting it at all four corners. Move without forcing a corner to lead. Stop for binding, carriage lift, unequal belt tracking or a twisted rail. Recheck at low, middle and high positions. Re-align rails/joints and recheck; a QGL macro cannot repair binding from rigid joints. Keep temporary support until the belts safely support the gantry.</li>
+<li>Set the front CNC XY tensioners within their confirmed adjustment range. <strong>OMIT</strong> stock p.128's printed-adjuster four-turn preparation. Capture the first ends of the two six-millimetre A/B belts using the <strong>confirmed CNC carriage</strong> procedure; <strong>REPLACE</strong> stock pp.129–131 and pp.139–141's printed carriage hardware with that procedure. Do not assemble stock printed belt-capture halves first.</li>
+<li>Trace belt <strong>A</strong> through the full upper/lower plane shown on pp.126 and 132–135, and belt <strong>B</strong> through its separate plane on pp.127 and 136–138. At every smooth F695 pair the smooth back contacts the idler; the toothed surface contacts the motor pulley/live toothed idler. Follow both paths with a finger or pointer before cutting. The manual's topology avoids a crossed-belt arrangement; do not add a crossing to imitate another CoreXY design.</li>
+</ol>
+<p><img alt="Stock A-belt topology, upstream printed p.126 / PDF index 125; functional route only, displayed stock assemblies are replaced" loading="lazy" src="../assets/stock-p126.png"/></p>
+<p><img alt="Stock B-belt topology, upstream printed p.127 / PDF index 126; functional route only, check CNC levels and carriage capture" loading="lazy" src="../assets/stock-p127.png"/></p>
+<ol start="6">
+<li>Do not remove a CNC structural pin or bearing retainer to follow the stock tip about removing M3x40. Use tweezers and leave accessible covers off until belting is complete. Verify belt-plane heights at A/B pulleys, front idlers, live joints and carriage captures <strong>as one system</strong>. No numeric CNC pulley height was documented. Cut only after adequate carriage engagement and tensioner reserve are established; equal stock path lengths do not prove identical CNC path lengths without this check.</li>
+<li>Secure carriage captures with their verified hardware and bring A/B tension into balance without bearing drag. Retain excess until final travel is confirmed. Follow p.142's inspection purpose: neither belt may rub a housing, backer, screw or extrusion.</li>
+<li><strong>Gate M10, blocks XY powered motion and setting software travel limits.</strong> By hand, sweep the bare carriage to all four XY corners with gantry low, middle and high; then repeat with the completed UHF toolhead, bed, probe and routed cable installed. Check front-idler/toolhead clearance, live-joint/endstop bump engagement, rear backer and PCB clearance, shaft-support clearances, nine-millimetre Z runs and top adjuster access. Record the physically safe travel envelope; “350 class” does not establish usable 350 × 350 travel after these modifications.</li>
+</ol>
+<p><strong>Completion check:</strong> all four Z loops track without twist, four upper/lower captures are correctly assigned, both A/B paths stay in their separate planes, all axes move smoothly by hand, and every interference/travel boundary is recorded for commissioning. <strong>Do not issue motion commands while using this documentation check.</strong></p>
+<h2 id="evidence-and-readiness-of-the-combined-motion-system">Evidence and readiness of the combined motion system</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Interaction</th>
+<th>Status for this actual build</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6 mm XY joints / 6 mm A/B PDF / 9 mm Z tensioners</td>
+<td>Conditionally compatible</td>
+<td>Documented widths agree with separate stock paths; actual kit belts and carriage variant still require M1.</td>
+</tr>
+<tr>
+<td>A/B mounts / purchased LDO motor shafts</td>
+<td>Unresolved</td>
+<td>Actual shaft length, support engagement and CNC motor-fastener specification absent; M4.</td>
+</tr>
+<tr>
+<td>A/B + front + live XY + CNC carriage + backers</td>
+<td>Unresolved</td>
+<td>Subassemblies have official PDFs, but no evidence validates this exact combined belt-plane and full-travel geometry; M5/M10.</td>
+</tr>
+<tr>
+<td>Rigid joints / separate lower CNC clamps</td>
+<td>Incompatible at the same lower interface</td>
+<td>Rigid joints replace the lower clamp; #10 bottom pair is surplus.</td>
+</tr>
+<tr>
+<td>Proposed two rear + two front upper clamps</td>
+<td>Conditionally compatible</td>
+<td>Exact allocation preserves #10 top pair but hole/tooth fit and #11 package contents need M8.</td>
+</tr>
+<tr>
+<td>Backers / front MGN12 X + underside MGN9 Y</td>
+<td>Conditionally compatible</td>
+<td>Correct documented compensating sides; ordered length, nuts and obstruction clearance remain M3.</td>
+</tr>
+<tr>
+<td>Rigid joints / four Z rails</td>
+<td>Unresolved</td>
+<td>Product advertises printed/CNC gantry compatibility; actual orientation, fastener assignment and freedom through travel need M7/M9.</td>
+</tr>
+<tr>
+<td>Live XY / actual LDO endstop board</td>
+<td>Unresolved</td>
+<td>Supporting archive offers CAD candidates, but actual board/printed exports/hardware and physical trigger position need M6.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Manufacturer subassembly diagrams were rendered and visually inspected in research. Their reuse terms were not established, so this guide links to them and uses clearly labelled original schematics. Static research and documentation checks do not validate physical assembly or prove the combined machine safe to operate.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

@@ -1,0 +1,176 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>05 · UltraFlat bed, kinematic supports and Wings · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="01-inventory.html">1. Inventory and evidence</a></li><li><a  href="02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a aria-current="page" href="05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="../reference/compatibility.html">Compatibility register</a></li><li><a  href="../reference/configuration.html">Non-deployable configuration examples</a></li><li><a  href="../reference/crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="../reference/hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="../reference/inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="../reference/printed-parts.html">Printed-parts matrix</a></li><li><a  href="../reference/questions.html">Unresolved questions and verification gates</a></li><li><a  href="../reference/sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#05-ultraflat-bed-kinematic-supports-and-wings">05 · UltraFlat bed, kinematic supports and Wings</a><ul>
+<li><a href="#prerequisites-parts-and-tools">Prerequisites, parts and tools</a></li>
+<li><a href="#b1-identify-the-plate-before-bonding-anything">B1 · Identify the plate before bonding anything</a></li>
+<li><a href="#b2-inventory-and-protect-the-kinematic-parts">B2 · Inventory and protect the kinematic parts</a></li>
+<li><a href="#b3-dry-fit-wings-and-confirm-the-three-point-map">B3 · Dry-fit Wings and confirm the three-point map</a></li>
+<li><a href="#install-the-supports-and-balls">Install the supports and balls</a></li>
+<li><a href="#b4-heater-sensor-fuse-earth-and-surface">B4 · Heater, sensor, fuse, earth and surface</a></li>
+<li><a href="#b5-establish-the-actual-bed-and-travel-envelope">B5 · Establish the actual bed and travel envelope</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="05-ultraflat-bed-kinematic-supports-and-wings">05 · UltraFlat bed, kinematic supports and Wings</h1>
+<p>Build the purchased bed system once, as a unit. <strong>REPLACE</strong> the stock plate and four screw/spacer supports in the V2.4R2 manual, printed pp. 52–60 (PDF indices 51–59), with purchases <strong>06</strong>, <strong>07</strong> and <strong>08</strong>. <strong>KEEP</strong> independent protective earth, thermal protection and cable passthrough requirements. <strong>OMIT</strong> the stock M4 thumb-nut spacers and four plate-mount screws. <strong>ADD</strong> three matched-height kinematic contacts and the two-piece Wings arrangement after its mounting map is verified.</p>
+<p>This chapter has a usable mechanical preparation path, with deliberate stops at unresolved hardware interfaces. The purchased bed variant and the Wings support map have not been physically verified. The frame and unpowered gantry may proceed independently while these gates remain open.</p>
+<h2 id="prerequisites-parts-and-tools">Prerequisites, parts and tools</h2>
+<p>For the early B1–B3 dry fit in chapter 03, the frame is square and both bed support extrusions are <strong>loosely positioned</strong>; leave the deck unfastened. A gantry or toolhead is not required for that support/frame/deck mapping. For later bed installation, preserve deck access and support any installed gantry away from the bed area. Secure the bed support extrusions only after the three-point mounting map is verified. Mains and DC power are disconnected. Keep the purchased stock LDO plate intact as surplus if it arrives with bonded components.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Part</th>
+<th align="right">Purchased quantity</th>
+<th>Planned installed quantity / disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>06</strong> MRW Voron 350 UltraFlat plate</td>
+<td align="right">1 plate</td>
+<td>1; exact standard/magbed/heater variant unverified</td>
+</tr>
+<tr>
+<td><strong>07</strong> matched-height kinematic kit</td>
+<td align="right">1 set</td>
+<td>3 balls and 3 different seats; verify package below</td>
+</tr>
+<tr>
+<td><strong>08</strong> MRW Voron Wings</td>
+<td align="right">Reported <strong>“2x”</strong>, unit unresolved</td>
+<td>Plan <strong>2 individual Wings</strong>, equivalent to 1 current retail set; actual surplus remains unknown</td>
+</tr>
+<tr>
+<td>Wings-to-frame hardware</td>
+<td align="right">Current retail set lists 4 M4 bolts and 4 M4 T-nuts for 2020</td>
+<td>4 of each if the delivered set agrees; bolt length is not stated on the product page</td>
+</tr>
+<tr>
+<td>Heater, bed sensor, thermal fuse, suitable build surface</td>
+<td align="right">Variants/ownership unverified</td>
+<td>Required; match the final plate and mains voltage before acquisition or installation</td>
+</tr>
+<tr>
+<td>Dedicated PE lead, terminal, bed cable restraint, protective sleeve/grommet</td>
+<td align="right">Kit inclusion and fit unverified</td>
+<td>Required; inventory separately from purchases</td>
+</tr>
+<tr>
+<td>Additional support for the third kinematic seat</td>
+<td align="right">Not reported purchased</td>
+<td>Confirm whether Wings layout uses the ~130 mm center extrusion explicitly excluded from the kinematic kit</td>
+</tr>
+</tbody>
+</table></div>
+<p>Use metric hex drivers matched to the actual fasteners, calipers, ruler, square, lint-free cloth, the adhesive maker's specified cleaner, a soft nonmagnetic bed support, appropriate crimp tools and a multimeter. A low-range torque tool is needed only if the actual manufacturers specify a torque; none is invented here. Do not drill the purchased plate to make an assumed mounting map fit.</p>
+<h2 id="b1-identify-the-plate-before-bonding-anything">B1 · Identify the plate before bonding anything</h2>
+<blockquote>
+<p><strong>Verification gate B1 — blocks bed surface installation and scan commissioning.</strong> Read the label and inspect the top, underside and mounting holes. Record the exact plate variant, installed magnet arrangement, heater option and sensor. The current MRW350 listing describes a <strong>355 × 355 × 9 mm</strong> plate, with standard and embedded-magnet versions; these are product specifications, not measurements of the delivered item. A 350 bed does not establish the kit's extrusion size.</p>
+<p><strong>If this is the embedded-magnet Magbed, Cartographer scan meshing is manufacturer-incompatible.</strong> Cartographer explicitly warns that localized embedded magnets distort a mesh; it accepts a uniform magnetic sheet. Stop that probing combination and obtain a documented resolution for the purchased hardware. Do not treat Touch as an established workaround, remove magnets, replace the bed, or change probes silently. If it is a plain plate with a continuous suitable sheet, that combination is <strong>conditionally compatible</strong>, pending physical checks and calibration. <a href="https://mandalaroseworks.com/products/voron-350-ultraflat-bed">MRW350</a>, <a href="https://docs.cartographer3d.com/cartographer-probe/faq.md">Cartographer FAQ</a>.</p>
+</blockquote>
+<ol>
+<li>Photograph only technical labels and hole layouts for local verification. Record measurements in the manifest without publishing order or address material.</li>
+<li>Mark the working top and underside. Identify the <strong>Trident side-mount holes used by Wings</strong>, the three ball attachment holes, PE attachment and sensor/fuse attachment points from the delivered drawing. The MRW listing identifies M5×0.8 sensor/fuse holes; the stock manual's M3 fuse/PE hardware cannot be copied into those holes.</li>
+<li>Lay the unmodified LDO bed aside. If its heater or magnetic sheet is already bonded, classify it as surplus with bonded components. A new compatible heater/surface is <strong>required-but-not-confirmed-owned</strong> until the inventory proves otherwise; this guide does not instruct adhesive removal and reuse.</li>
+</ol>
+<p>Completion check: the plate's actual variant, hole map, heater, surface and sensor are individually identified; B1 is closed only with that evidence.</p>
+<h2 id="b2-inventory-and-protect-the-kinematic-parts">B2 · Inventory and protect the kinematic parts</h2>
+<blockquote>
+<p><strong>Manufacturer warning before unpacking:</strong> keep magnets separated. Letting them snap together can shatter them. Keep fingers and nearby ferrous tools clear. The manufacturer PDF's exploded figures were inspected; they show that the <strong>bases attach before the magnets and covers</strong>. <a href="https://cdn.shopify.com/s/files/1/0608/5135/5901/files/Matched_Height_Kinematic_Installation_Instructions_-_Internally_Threaded_Balls.pdf?v=1657158885">Matched-height installation PDF, first and second unnumbered pages</a>.</p>
+</blockquote>
+<p>The linked PDF, created April 8, 2022, lists the following. Count the delivered parts against this list; the product page differs on M3 screw length and M2 head style.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Kinematic set contents in the PDF</th>
+<th align="right">Pieces per set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flat-magnet base / chamfered-magnet base / pin base</td>
+<td align="right">1 / 1 / 1</td>
+</tr>
+<tr>
+<td>Internally threaded balls / pins / magnet covers</td>
+<td align="right">3 / 2 / 2</td>
+</tr>
+<tr>
+<td>Flat magnets / chamfered magnet, rated 150°C in the source</td>
+<td align="right">2 / 1</td>
+</tr>
+<tr>
+<td>M3×10 ball bolts</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>M3×6 BHCS / M3×8 BHCS</td>
+<td align="right">8 / 2</td>
+</tr>
+<tr>
+<td>M4 T-nuts / M4×8 SHCS</td>
+<td align="right">3 / 3</td>
+</tr>
+<tr>
+<td>Hammerhead M5 T-nut / M2×4 cap screws</td>
+<td align="right">1 / 2</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>Verification gate B2 — blocks seat assembly.</strong> Match the supplied paper instructions to the delivered set. Resolve any M3 length or M2 head-style mismatch before fastening; use screw engagement and recess fit to confirm the actual variant. Count Wings as pieces <strong>and</strong> sets. A current retail Wings set contains two pieces. “2x” could mean two pieces or four pieces: do not mark two leftovers until packaging proves two full sets were delivered.</p>
+</blockquote>
+<p><img alt="Original schematic of the three distinct matched-height contact stacks; no printer positions are implied" loading="lazy" src="../assets/bed-kinematic-stacks.svg"/></p>
+<p>The original schematic explains contact types, not a Wings installation drawing. The source's stock V2.4 diagram places pin, chamfered and flat seats differently from its Trident diagram. Wings changes the attachment holes, so the stock V2.4 support coordinates are not a substitute for the next gate.</p>
+<h2 id="b3-dry-fit-wings-and-confirm-the-three-point-map">B3 · Dry-fit Wings and confirm the three-point map</h2>
+<blockquote>
+<p><strong>Verification gate B3 — blocks final frame attachments and ball installation.</strong> Obtain the delivered Wings size, its instructions or manufacturer confirmation of the three seat positions, the pin-block orientation, the third seat attachment, and seat-to-Wing screw/thread engagement for this 350-class frame. Check the actual Trident hole positions in this plate against both outriggers. The product photographs show a chamfered seat on one Wing and a pin seat on the other, but do not provide a dimensioned installation map or fastener lengths. They cannot establish which direction is the machine's front. <a href="https://mandalaroseworks.com/products/voron-wings">Wings product and installation photographs</a>.</p>
+</blockquote>
+<ol>
+<li>Place the two Wings on the support extrusions with their attachment faces seated squarely; point the arms outward beneath the matching side mounting holes. Keep the four supplied M4 bolts loose during this <strong>dry fit</strong>. Do not add a fourth kinematic contact.</li>
+<li>Place the three <strong>different</strong> seat bases in the confirmed layout. The chamfered assembly uses the source's 15 mm base; the simple flat assembly uses its 12 mm base. The pin assembly uses two pins, a flat magnet and its location blocks. Do not exchange base heights to correct alignment.</li>
+<li>Identify whether the third seat requires the excluded center extrusion, its end attachments or another delivered manufacturer-supported feature. Add the actual requirement to the missing-parts list. Do not print the temporary extrusion suggested by the old product page as an assumed permanent heated structural member.</li>
+<li>Rest the plate on temporary supports, not bare magnets. Check all three ball locations, heater coverage, wire exits and deck access together. Check that the installed bed can expand in plane through the designed contacts; cable restraint must not tether it rigidly to the frame.</li>
+<li>The stock manual printed p. 60 (PDF index 59) gives a <strong>stock</strong> 38 mm front setback. Use it only as a reference comparison. Record the support position and proposed plate setback from the verified mounting map. Confirm that the deck/DIN attachment holes agree before returning to chapter 03 to fasten them. Finished gantry, belt and nozzle/probe clearance checks occur later at B5/M10; the early dry fit does not establish the final usable envelope.</li>
+</ol>
+<p>The Wings listing warns that 350-size arms can twist weaker support extrusions under edge loading and discusses a crossbrace/1515 reinforcement. That is a check for this assembly, <strong>not proof that an unpurchased brace is required</strong>. Record deflection during later controlled probing; do not add an unrelated bed modification by default.</p>
+<p>Early completion check: three support positions and attachments are recorded, frame/Wing/plate holes align without force, the deck/DIN attachment map agrees, and additional support hardware is present. This closes the support-mapping prerequisite for chapter 03. Belt and toolhead clearances remain open under B5/M10 until those assemblies exist.</p>
+<h2 id="install-the-supports-and-balls">Install the supports and balls</h2>
+<p>Proceed only after B2 and B3 close. Use the delivered manufacturer's diagram for screw locations; no torque or unspecified bolt length is supplied by this guide.</p>
+<ol>
+<li>Fasten the confirmed seat bases to their frame/Wing attachments <strong>before inserting magnets</strong>. Confirm each T-nut rotates/seats correctly or each threaded Wing hole has the confirmed engagement. Keep all three bases in their matched orientation.</li>
+<li>Assemble the chamfered magnet and cover on the 15 mm base; the flat magnet and cover on the 12 mm base; the two pins, location blocks and remaining flat magnet on the pin base. Keep the magnets apart until retained. The PDF shows four M3×6 cover screws per covered seat and the pin assembly's two M3×8 and two M2×4 fasteners; compare actual instructions before using that older hardware callout.</li>
+<li>Fit one internally threaded ball at each of the three confirmed plate holes, with its attachment screw seated in the plate's top recess. In the PDF these are three M3×10 bolts. Verify that no head stands above the printing plane and that screws do not bottom before retaining the balls.</li>
+<li>Lower the supported plate onto all three contacts without impact. Each ball must land on its assigned contact; the plate must not rest on the Wings, extrusions, cables or a fourth unintended point. The three contact types provide location while allowing thermal expansion; do not add stock “tighten one / leave three loose” screws across them.</li>
+</ol>
+<p>Completion check: all three contacts seat and the plate is stable, no magnet is chipped, covers and pins are retained, and the three planned balls and seats are accounted for. Actual unused T-nuts/bolts from the kit remain documented surplus rather than hidden in the BOM.</p>
+<h2 id="b4-heater-sensor-fuse-earth-and-surface">B4 · Heater, sensor, fuse, earth and surface</h2>
+<blockquote>
+<p><strong>Verification gate B4 — blocks adhesive application and heater commissioning.</strong> Identify heater manufacturer, voltage, rated power, dimensions, adhesive, sensor type and lead insulation; establish a fuse compatible with that heater and wiring; identify a suitable thermal-fuse temperature/rating and attachment method. Confirm PE terminal/thread/hardware for the MRW plate. The stock manual's thermal-fuse and PE drawings are <strong>principles</strong>, not authorization to reuse its fasteners on an M5-tapped plate. Electrical approval belongs to the wiring chapter; software cannot certify mains safety.</p>
+</blockquote>
+<ol>
+<li>Dry-position the heater on the underside with all ball, PE and fuse holes accessible. Keep leads clear of all contact seats and frame attachments. Apply only after its own installation instructions and B4 establish bonding preparation, position and cure. Do not cover the attachment features or trap a wire beneath a support.</li>
+<li>Install the sensor in the heater or plate location documented for the delivered combination. Mount the thermal fuse with the intended thermal contact and electrical insulation, in series with the bed-heater circuit. Preserve an independent protective-earth bond to the metal plate; a magnetic ball contact is not a PE conductor.</li>
+<li>Fit a dedicated PE lead and appropriate ring terminal at the verified attachment; use bare-metal contact and retention according to the actual electrical hardware. The stock manual p. 57 (PDF index 56) calls for <strong>1 mm²/AWG18 or larger PE</strong>. Treat that as a minimum reference while checking local requirements and the actual circuit. Conduct continuity testing in the pre-power checklist.</li>
+<li>For a plain plate, fit only the confirmed suitable continuous magnetic sheet/build surface, after cleaning and adhesive preparation. For an embedded-magnet plate, preserve the manufacturer's warning that magnet screws can shatter magnets when overtightened. Do not remove or retighten them as a routine assembly step.</li>
+<li>Route heater, sensor and PE leads through the deck opening with edge protection and restraint. Provide a gentle free section from the plate to the stationary restraint so it can expand; no tension may reach the sensor/fuse or ball contacts. Keep mains/heater wiring appropriately isolated from signal wiring.</li>
+</ol>
+<p>Completion check: correct heater/sensor labels are recorded; fuse and PE attachments are independent; all wires have mechanical protection; adhesive cure is complete; B1 compatibility remains satisfied. Do not energize the heater here.</p>
+<h2 id="b5-establish-the-actual-bed-and-travel-envelope">B5 · Establish the actual bed and travel envelope</h2>
+<p>After completing the mechanical bed installation and cable protection above,
+continue to <a href="06-toolhead.html">toolhead assembly</a>, then return here for B5 and
+chapter 04's M10 full-travel check <strong>before any powered motion</strong>. Record B5 as
+open while the toolhead is absent; do not hold up independent toolhead assembly.</p>
+<blockquote>
+<p><strong>Verification gate B5 — blocks powered Z movement and final travel limits.</strong> Measure the actual top-of-bed height with the intended removable print surface installed and the finished UHF toolhead in place. Combined matched-height seats, 9 mm nominal plate, Wings and UHF nozzle change the envelope. A purchased “350” plate does not guarantee 350 mm X/Y/Z travel.</p>
+</blockquote>
+<p>With motors disconnected and the gantry safely supported, inspect reachable corners, Z belts, bed leads, carriage, probe, nozzle and lower gantry components throughout the conservative mechanical envelope. Move only as the unpowered gantry procedure permits. Record nozzle and probe access to the bed edges, the lowest safe gantry position and lost top/bottom Z clearance. Keep measured machine limits unset until later commissioning verifies them.</p>
+<p>Bed installation is complete when the actual plate variant, installed Wings count, three-contact map and heater/surface disposition are recorded, and the assembly is secure and free to expand. The final envelope check is complete only after returning from chapter 06 with the finished toolhead and recording the measured bed height and B5/M10 clearances. Every unresolved item retains its gate.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

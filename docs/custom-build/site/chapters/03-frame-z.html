@@ -1,0 +1,171 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3. Frame, Z rails, deck and Z reduction drives · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="01-inventory.html">1. Inventory and evidence</a></li><li><a  href="02-preparation.html">2. Printed parts and preparation</a></li><li><a aria-current="page" href="03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="../reference/compatibility.html">Compatibility register</a></li><li><a  href="../reference/configuration.html">Non-deployable configuration examples</a></li><li><a  href="../reference/crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="../reference/hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="../reference/inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="../reference/printed-parts.html">Printed-parts matrix</a></li><li><a  href="../reference/questions.html">Unresolved questions and verification gates</a></li><li><a  href="../reference/sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#3-frame-z-rails-deck-and-z-reduction-drives">3. Frame, Z rails, deck and Z reduction drives</a><ul>
+<li><a href="#frame-keep-with-a-bed-support-gate">Frame — KEEP with a bed-support gate</a><ul>
+<li><a href="#f1-settle-the-wings-support-layout-before-fixing-bed-extrusions">F1 — settle the Wings support layout before fixing bed extrusions</a></li>
+</ul>
+</li>
+<li><a href="#z-rails-and-deck-keep-measure-the-actual-panel">Z rails and deck — KEEP, measure the actual panel</a><ul>
+<li><a href="#f2-panel-thickness-differs-between-the-supplementary-documents">F2 — panel thickness differs between the supplementary documents</a></li>
+</ul>
+</li>
+<li><a href="#four-lower-z-reduction-drives-keep">Four lower Z reduction drives — KEEP</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="3-frame-z-rails-deck-and-z-reduction-drives">3. Frame, Z rails, deck and Z reduction drives</h1>
+<p><strong>Prerequisites:</strong> I1 size gate closed; retained Z-drive prints prepared; rails
+identified. Keep the printer disconnected throughout this chapter.
+<strong>Tools:</strong> flat reference surface, square, ruler/calipers, 2.5/3/4 mm drivers,
+rail guides, rail lubricant, metal-compatible threadlocker and insert tool.</p>
+<h2 id="frame-keep-with-a-bed-support-gate">Frame — KEEP with a bed-support gate</h2>
+<p><strong>Parts, provisional 350:</strong> ten A extrusions 470 mm (eight for cube, two bed
+supports), four B 530 mm, M5x16 BHCS (16 blind-joint screws for eight frame A
+pieces; four for the bed brackets), four bed corner brackets, four M5x10 BHCS
+and four M5 T-nuts at the bracket/frame interfaces. The kit's C/D/E extrusions
+belong to the gantry. These dimensions are the Rev D BOM lead, not shipped proof.</p>
+<p><img alt="STOCK REFERENCE: extrusion sorting, p13/index12" loading="lazy" src="../assets/stock-p013.png"/></p>
+<ol>
+<li>Sort and label extrusions as p13 shows. Confirm tapped ends and access holes.
+   Test-fit roll-in nuts now: LDO warns that extrusion/nut tolerances may make
+   preloading necessary. Remove burrs without damaging rail seating surfaces.</li>
+<li>Start M5x16 BHCS in both ends of eight frame A pieces, p14. Leave the heads
+   proud enough to enter the adjoining slots. Assemble blind joints by inserting
+   heads into slots and tightening through the access holes, p10/p15.</li>
+<li>On the flat surface, join two A pieces and a B vertical as p15 shows; add
+   the remaining bottom-square A pieces and four B verticals, p16. Keep the
+   access holes usable. Fit the upper four A pieces, p17. Check the faces and
+   diagonals before final tightening. No torque is specified here.</li>
+</ol>
+<p><img alt="STOCK REFERENCE: blind joints and lower frame, p15/index14" loading="lazy" src="../assets/stock-p015.png"/>
+<img alt="STOCK REFERENCE: upper frame, p17/index16" loading="lazy" src="../assets/stock-p017.png"/></p>
+<h3 id="f1-settle-the-wings-support-layout-before-fixing-bed-extrusions">F1 — settle the Wings support layout before fixing bed extrusions</h3>
+<p><strong>REPLACE</strong> stock p20's 130 mm support-spacing instruction with the resolved
+MRW/Wings layout in <a href="05-bed.html">bed</a>. The stock drawing uses two front-to-back
+supports and stock mounting holes; Wings use different plate holes. Do not lock
+those supports at the stock positions or drill the deck until B2/B3 is closed.
+After loosely fitting the supports in step 4 below, perform
+<a href="05-bed.html">bed identification and the B2/B3 cold support dry-fit</a> before
+final deck/DIN installation; heater installation remains later.
+The deck/DIN screws anchor into these supports, so verify that their fixed deck
+holes agree with the resolved support spacing. If they do not, obtain a documented
+replacement deck layout before fastening. Do not improvise slots or lock the
+supports against the Wings layout merely to reuse the stock holes.</p>
+<ol start="4">
+<li>Prepare the two bed A extrusions with corner brackets, four M5x16 BHCS in
+   total, p18. Insert the four M5 T-nuts in the frame and loosely fit the four
+   M5x10 bracket screws, p19. LDO substitutes its 1 mm brass precision spacer
+   for the stock M5 shim <strong>only at retained stock interfaces</strong>. Keep these bed
+   supports adjustable until the bed support geometry is verified.</li>
+<li>Square all six frame faces and compare diagonals, p21. Correct twist while
+   the frame is unloaded. Record measured diagonals locally. Recheck after the
+   bed-support gate and final bed-support tightening.</li>
+</ol>
+<p>Completion: cube square and untwisted, blind joints accessible, supports labeled
+provisional if their gate is open; no CNC assembly received stock spacer assumptions.</p>
+<h2 id="z-rails-and-deck-keep-measure-the-actual-panel">Z rails and deck — KEEP, measure the actual panel</h2>
+<p><strong>Parts:</strong> four MGN9 Z rails/carriages (400 mm in the provisional BOM); M3x8
+SHCS and M3 roll-in nuts at the alternating mounting holes shown on p25, one
+of each per occupied hole (count actual rail holes before taking hardware); two
+MGN9 guides; one deck panel, two DIN rails, four M5 T-nuts/four M5x10 BHCS;
+eight deck supports selected for the actual panel thickness.</p>
+<h3 id="f2-panel-thickness-differs-between-the-supplementary-documents">F2 — panel thickness differs between the supplementary documents</h3>
+<p>The FAQ/print supplement says 4 mm deck; the retrieved Rev D BOM calls the deck
+3 mm and the bottom panel 4 mm. Measure the shipped deck. Use
+<code>deck_support_4mm_x8.stl</code> only for 4 mm; use the 3 mm file for 3 mm. This is
+a source discrepancy, not permission to force the wrong clips onto a panel.</p>
+<ol>
+<li>Follow rail preparation p24 and the rail maker's lubrication instructions.
+   Secure carriage stops before changing orientation. Never slide the carriage
+   off to clean the rail or let its ball bearings escape.</li>
+<li>Center each Z rail on the inner vertical face with the MGN9 guides, p25.
+   Keep approximately 3 mm clearance above the bottom frame as shown. Install
+   screws center-outward in the selected alternating holes. Keep the rail flat;
+   do not use a screw to draw a bent rail onto the extrusion.</li>
+<li>Mirror all four rails inward as p27 shows. Test each carriage over its whole
+   safe rail length by hand; it must not catch or change resistance abruptly.
+   Leave temporary rail stops installed until rigid Z joints retain the carriages.</li>
+</ol>
+<p><img alt="STOCK REFERENCE: centered Z rail, p25/index24" loading="lazy" src="../assets/stock-p025.png"/></p>
+<ol start="4">
+<li><strong>STOP here if F1 is open:</strong> keep the deck removable and unfastened; do not
+   close the lower assembly around an unresolved support layout. Bench assembly
+   of the lower Z drives may continue independently. Before the deck obstructs
+   access, preload the verified bed-support nuts and
+   install the chosen deck support clips. Fit the deck with its notch toward
+   the back, p28. Keep bed-wire pass-through accessible to the final bed cable
+   route; do not apply stock p60's wire-hole coordinate to the Wings assembly.</li>
+<li>With carriages positively secured, invert the frame to fit DIN rails beneath
+   the deck. Align four M5 T-nuts to the four holes, attach rails with four
+   M5x10 BHCS, p29. Keep the slot openings accessible for electronics service.</li>
+</ol>
+<p><img alt="STOCK REFERENCE: deck notch and DIN rail mount, p29/index28" loading="lazy" src="../assets/stock-p029.png"/></p>
+<p>Completion: four smooth captive carriages, panel supported without sag, deck
+notch rearward and bed/cable access retained. Do not install the stock bed.</p>
+<h2 id="four-lower-z-reduction-drives-keep">Four lower Z reduction drives — KEEP</h2>
+<p><strong>Parts, totals for four:</strong> two each mirrored drive main/retainer/motor
+mount/baseplate/tensioner print; four 5×60 mm shafts, four 20T <strong>9 mm</strong> shaft
+pulleys, four 80T <strong>6 mm</strong> reduction pulleys, twelve 625 bearings, eight M5
+spacers, four 188 mm × 6 mm closed loops, four Z motors, four 16T <strong>6 mm</strong>
+motor pulleys, four M5 nuts, twenty-four M3x40 SHCS for main housings,
+twelve M3x8 SHCS for retainers, twelve M3x8 SHCS for motor mounts (three
+per motor in p39), eight M5x40 SHCS, eight M5x10 BHCS and sixteen M5 T-nuts for frame
+attachments, four rubber feet/four M5x16 BHCS. Check the actual retained print
+against the figure before issuing screws; do not transfer these
+counts to CNC A/B mounts.</p>
+<ol>
+<li>Install inserts in the retained plastic Z-drive parts as p31 shows. Make
+   two A and two mirrored B drives; do not reverse them to avoid cable exits.</li>
+<li>Position the 20T/9 mm pulley on the 5×60 shaft as p32 shows: the drawing's
+   33 mm dimension is from the long exposed shaft end to the outer pulley flange
+   face on that side, not the hub or tooth centre. One set screw meets the D-flat.
+   Use the specified metal threadlocker
+   on set screws, keeping it away from plastic and bearings.</li>
+</ol>
+<p><img alt="STOCK REFERENCE: Z shaft pulley position, p32/index31" loading="lazy" src="../assets/stock-p032.png"/>
+<img alt="STOCK REFERENCE: 625/spacer/80T stack, p33/index32" loading="lazy" src="../assets/stock-p033.png"/></p>
+<ol start="3">
+<li>Build the 625/spacer/80T assembly in the exact p33 order. LDO's 1 mm brass
+   precision spacer replaces the stock M5 shim at this retained interface.
+   Use one spacer on each side of the middle 625 bearing (two per drive).
+   Compare the side view; all three 625 bearings per drive must sit in their
+   intended pockets. Set screws must not rub the housing.</li>
+<li>Place the 188 mm closed loop in the body <strong>before</strong> closing it, p34–35.
+   Align the shaft/bearing assembly to p35. Close the main housing with six
+   M3x40 SHCS per drive, p36. Fit the retainer and M5 nut with three M3x8
+   SHCS, p37. Verify the closed loop remains captured and turns smoothly.</li>
+</ol>
+<p><img alt="STOCK REFERENCE: six housing screws, p36/index35" loading="lazy" src="../assets/stock-p036.png"/></p>
+<ol start="5">
+<li>Fit each motor's 16T/6 mm pulley, p38. These four motors are the only place
+   this build uses 16T motor pulleys. Align its tooth plane with the 80T pulley
+   and closed loop; pulley hub orientation may differ with the actual motor.
+   Set one screw on the flat and secure both. Mount the motor in the orientation
+   on p39 so its cable exits clear the frame. Engage the closed loop before
+   closing the stock lower-drive tensioning latch.</li>
+<li>Support and invert the frame, p40–41. Preload four M5 nuts per drive as
+   illustrated; fit two M5x40 SHCS. Fit the two M5x10 BHCS loosely at the base,
+   p42–43, close the lower drive latch, p44, then secure frame screws and the
+   foot with M5x16 BHCS, p45. Recheck drive location after latch closure, p46.</li>
+<li>Repeat opposing and mirrored corners, p47. Turn each drive gently by hand
+   and check closed-loop alignment and free shaft rotation. Label all four
+   motor cables by their physical corners without assuming software Z order.</li>
+</ol>
+<p><img alt="STOCK REFERENCE: lower-drive frame attachment, p41/index40" loading="lazy" src="../assets/stock-p041.png"/>
+<img alt="STOCK REFERENCE: mirrored lower drives, p47/index46" loading="lazy" src="../assets/stock-p047.png"/></p>
+<p><strong>REPLACE</strong> upper Z idler/tensioner assembly pp48–50 with purchase 12 at the
+start of <a href="04-motion.html">motion</a>. Retain the lower reduction latch just assembled:
+it tensions the short 6 mm loop; the new upper unit tensions the long 9 mm Z belt.</p>
+<p>Completion: four correctly mirrored lower drives, short loops free and aligned,
+rail stops retained, no stock upper tensioner built, gantry not yet suspended.</p>
+<p>Sources: original manual pp10,13–50 (all printed page numbers; PDF index = p−1),
+<a href="https://docs.ldomotors.com/en/voron/voron2/build-faq">LDO FAQ</a>,
+<a href="https://docs.ldomotors.com/en/voron/voron2/350_BOM/Rev_D">LDO Rev D BOM</a>.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

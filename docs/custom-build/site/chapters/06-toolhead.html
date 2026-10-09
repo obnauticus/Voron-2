@@ -1,0 +1,203 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="01-inventory.html">1. Inventory and evidence</a></li><li><a  href="02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a aria-current="page" href="06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="../reference/compatibility.html">Compatibility register</a></li><li><a  href="../reference/configuration.html">Non-deployable configuration examples</a></li><li><a  href="../reference/crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="../reference/hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="../reference/inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="../reference/printed-parts.html">Printed-parts matrix</a></li><li><a  href="../reference/questions.html">Unresolved questions and verification gates</a></li><li><a  href="../reference/sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#06-rapido-2-fiber-uhf-stealthburner-and-cartographer">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a><ul>
+<li><a href="#prerequisites-parts-and-tools">Prerequisites, parts and tools</a></li>
+<li><a href="#t1-confirm-the-extruder-carriage-and-endstop-interfaces">T1 · Confirm the extruder, carriage and endstop interfaces</a><ul>
+<li><a href="#bare-cnc-carriage-and-belt-capture-perform-during-the-gantry-chapter">Bare CNC carriage and belt capture — perform during the gantry chapter</a></li>
+</ul>
+</li>
+<li><a href="#t2-select-an-actual-uhf-cartridge-before-printing-it">T2 · Select an actual UHF cartridge before printing it</a></li>
+<li><a href="#assemble-the-confirmed-clockwork-2-core">Assemble the confirmed Clockwork 2 core</a></li>
+<li><a href="#t3-install-the-exact-2f-uhf-hotend-and-cooling-cartridge">T3 · Install the exact 2F UHF hotend and cooling cartridge</a></li>
+<li><a href="#assemble-fans-lighting-and-attach-the-toolhead">Assemble fans, lighting and attach the toolhead</a></li>
+<li><a href="#t4-mount-and-measure-cartographer-v4">T4 · Mount and measure Cartographer V4</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="06-rapido-2-fiber-uhf-stealthburner-and-cartographer">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</h1>
+<p><strong>KEEP</strong> the separate StealthBurner/Clockwork 2 assembly sequence when the delivered extruder hardware confirms that baseline. <strong>REPLACE</strong> the stock plastic X carriage with purchase <strong>04</strong>, the stock hotend/cartridge with purchase <strong>03</strong> and a validated UHF cartridge, and the stock Omron probe with purchase <strong>05</strong>. <strong>OMIT</strong> TAP, Klicky, Omron mounting and their macros from this path. <strong>ADD</strong> the Cartographer mounting-height, coil-clearance and cable checks below.</p>
+<p>The V2.4R2 manual printed pp. 146–147 (PDF indices 145–146) directs toolhead assembly to the separate manual. This chapter follows <a href="https://github.com/VoronDesign/Voron-Stealthburner/tree/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b">StealthBurner commit 8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</a>, <a href="https://github.com/VoronDesign/Voron-Stealthburner/blob/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b/Manual/Assembly_Manual_SB.pdf">assembly manual version 2023-07-07</a>. Its printed page equals zero-based PDF index plus one. UHF-specific interfaces are gated rather than represented as tested.</p>
+<h2 id="prerequisites-parts-and-tools">Prerequisites, parts and tools</h2>
+<p>For the <strong>bare-carriage procedure</strong>, begin with the X rail and backer installed and the gantry's belt routes accessible. Perform that procedure when the gantry chapter calls for it, before the bed or complete toolhead exists. For <strong>final toolhead/probe installation and the full travel envelope</strong>, the gantry and identified bed geometry must be available. Power is disconnected throughout. No printed stock hotend cartridge is assembled for later replacement.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Quantity / disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>03</strong> Rapido 2 Fiber / 2F, UHF/PT1000</td>
+<td>1 hotend; exact hardware revision, voltage, heater rating, sensor and nozzle remain to verify</td>
+</tr>
+<tr>
+<td><strong>04</strong> Cartographer CNC mount</td>
+<td>1 carriage, 2 belt clamps/bolts, 2 M3×6 BHCS for probe listed in current package; ordered belt width and extenders unknown</td>
+</tr>
+<tr>
+<td><strong>05</strong> Cartographer V4 AIO Standard</td>
+<td>1 probe; confirm complete assembly, revision and interface</td>
+</tr>
+<tr>
+<td>Clockwork 2 NEMA14 motor and BMG-type drive/idler/tension hardware</td>
+<td>1 set from the kit <strong>if verified</strong>; do not assume kit receipt established it</td>
+</tr>
+<tr>
+<td>CW2 printed main body, motor plate, guidler A/B, latch, latch shuttle</td>
+<td>1 each; exact filenames below</td>
+</tr>
+<tr>
+<td>UHF front and rear cartridge</td>
+<td>1 each <strong>conditional</strong> on T2; no HF substitute</td>
+</tr>
+<tr>
+<td>StealthBurner main body, 4010 heatsink fan, 5015 blower</td>
+<td>1 each, voltage/version verified before connection</td>
+</tr>
+<tr>
+<td>PTFE filament guide</td>
+<td>1 cut piece, measured against the finished CW2/cartridge</td>
+</tr>
+<tr>
+<td>Nitehawk board mounts, cable door and strain relief</td>
+<td>Actual SB or SB V2-specific parts; resolve in wiring chapter</td>
+</tr>
+<tr>
+<td>UHF probe extenders and appropriate longer fasteners</td>
+<td>Conditional requirement after measurement; not confirmed purchased</td>
+</tr>
+</tbody>
+</table></div>
+<p>Tools: soldering iron/heatset tip, suitable metric hex drivers, calipers, flush cutters/file for built-in supports and fan preparation, light bearing grease per Voron sourcing guidance, and a probe-height gauge. For any hotend support-screw disturbance, have the manufacturer's actual torque tool and instructions first. Hot-tightening is deferred until electrical and heater gates close.</p>
+<h2 id="t1-confirm-the-extruder-carriage-and-endstop-interfaces">T1 · Confirm the extruder, carriage and endstop interfaces</h2>
+<blockquote>
+<p><strong>Verification gate T1 — blocks final printed parts and rail/belt fastening.</strong> Identify the delivered extruder motor/gears, X rail/block, CNC carriage revision and belt-width variant. Purchase 14 is documented as <strong>6 mm XY</strong>; the carriage must capture that same belt width. The listing supports the 6 mm carriage on MGN9 or MGN12, while its 9 mm carriage is incompatible with MGN9. Neither fact proves this delivery. Confirm the conventional Voron belt path with all Vitalii subassemblies; do not reverse it to resemble another gantry. <a href="https://cartographer3d.com/products/cartographer3d-cnc-stealthburner-mount">CNC product specifications</a>.</p>
+</blockquote>
+<p>For the bare-carriage operation, close the carriage/rail/belt portion of T1 independently; extruder hardware identification is required before the later CW2 core, rather than before this rail attachment.</p>
+<p>The <a href="https://docs.cartographer3d.com/cartographer-cnc-mount/installation">CNC installation figures</a> were visually inspected. They show <strong>four M3×8 SHCS</strong> to the rail, <strong>one M3×6 BHCS per belt clamp</strong>, <strong>two M2×10 BHCS/SHCS</strong> for the X switch and <strong>two M3×6 BHCS</strong> for a standard probe without extenders. The text warns that original carriage versions instead required <strong>M3×8 BHCS at the rail</strong>. Match the delivered countersinks/counterbores before selecting head style or length. Do not transfer stock plastic-carriage M3×30 bolts or printed clamp screws to the CNC body.</p>
+<h3 id="bare-cnc-carriage-and-belt-capture-perform-during-the-gantry-chapter">Bare CNC carriage and belt capture — perform during the gantry chapter</h3>
+<p>Parts for the illustrated modern revision: <strong>1 CNC carriage, 4 M3×8 SHCS, 2 supplied belt clamps and 2 M3×6 BHCS</strong>, the verified X rail block and the two routed 6 mm XY belts. The switch, probe, extenders and full toolhead are fitted later. Use hex drivers and calipers; no generic screw torque is specified.</p>
+<ol>
+<li>Support the gantry and position the rail block away from the rail ends. Clean the mating faces and present the CNC carriage with its two probe legs downward and its toolhead attachment bosses facing forward, matching the official exploded rail drawing.</li>
+<li>Start the <strong>four verified rail screws</strong> by hand. For the modern illustrated carriage these are M3×8 SHCS; use the early BHCS revision only when identified. Verify heads clear both belt paths, all screws engage the block without bottoming, and the carriage seats flush without rocking. The manufacturer suggests suitable threadlocker; keep it away from rail lubrication and use its own material/retention instructions. Retain evenly without forcing a misaligned part.</li>
+<li>Route the two belts through the carriage captures as shown in the official drawing and the gantry routing procedure. Preserve their separate upper/lower planes and the normal Voron return directions. Seat each belt's toothed return fully in its matching machined capture; no tail may sit under a rail screw or foul the opposite belt.</li>
+<li>Fit <strong>one supplied CNC clamp per capture</strong>, starting its confirmed clamp screw by hand. The modern drawing uses one M3×6 BHCS per clamp. Confirm each clamp lies flat and retains the belt without its screw bottoming. Do not substitute stock printed belt clamps or their longer screws. Leave tail length for the gantry procedure's tension/alignment checks before trimming.</li>
+<li>Move the supported carriage gently by hand across the conservative accessible X range and inspect belt engagement, rail-screw head clearance, tooth alignment and both belt planes. Stop for twisting, rubbing, a slipping capture or binding. Final belt tension and complete XY-envelope checks remain in the gantry chapter.</li>
+</ol>
+<p>Completion check: the bare CNC body is flush on the rail block, four correct rail screws are retained, two separate belt captures hold their tails, and manual X travel has no hardware or belt interference. Record actual carriage revision, belt width and screw head types. Later attach the physical X switch with its two confirmed M2×10 fasteners before closing wiring access.</p>
+<p><strong>KEEP a physical X switch</strong> on the carriage when its provision matches the source figure; it is separate from Z probing. Confirm Y switch and any Vitalii replacement mounting in the gantry chapter. <strong>OMIT the stock nozzle Z-pin and Omron probe from the planned Cartographer virtual Z-homing path</strong>; that omission becomes final only when the software generation and safe homing workflow in the software chapter are verified. It does not create permission for unconfigured homing.</p>
+<h2 id="t2-select-an-actual-uhf-cartridge-before-printing-it">T2 · Select an actual UHF cartridge before printing it</h2>
+<blockquote>
+<p><strong>Verification gate T2 — blocks hotend cartridge printing and assembly.</strong> The pinned official Voron <code>phaetus_rapido_v2/README.md</code> explicitly describes a <strong>High Flow</strong> mount. Its front/rear files are not proof of UHF compatibility. The purchased Fiber UHF must retain its UHF length, nozzle and cooling arrangement.</p>
+<p>Phaetus's exact <a href="https://github.com/Phaetus/Rapido-2F/tree/7401934e28d56844ba4f311e9d588b1e4d0510dd">Rapido-2F source at commit 7401934e28d56844ba4f311e9d588b1e4d0510dd</a> contains <code>Product Adaptor Models/voron 2.4-Rapido 2.zip</code>, including <code>voron 2.4-Rapido 2/uhf前.stl</code> and <code>voron 2.4-Rapido 2/uhf 后.stl</code> (front and rear). These are a manufacturer-supplied <strong>candidate</strong>, not a verified combined CW2/CNC/V4 installation. Confirm with the actual 2F CAD and delivered nozzle that they align the filament inlet, fan airflow, nozzle plane, CW2 attachments, SB shell and sensor keep-out. Obtain the exact supported combination or record a physical dry-fit comparison before using them. They are linked, not redistributed: the Phaetus README limits models to personal use.</p>
+</blockquote>
+<p>A binary-STL comparison of the candidate archive finds its UHF front extends approximately <strong>8.49 mm</strong> farther downward than its HF front in the archive's own coordinates; its two rear meshes have the same bounding dimensions, with different hashes. This explains why a UHF-specific front is needed. It does <strong>not</strong> establish cooling alignment or fit with the purchased nozzle. The CNC listing's <strong>8.5 mm probe extenders lower the probe</strong>; they do not turn an HF duct into a UHF cooling duct.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Exact printed path in pinned StealthBurner repo</th>
+<th align="right">Qty</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>STLs/Clockwork2/Direct_Drive/main_body.stl</code></td>
+<td align="right">1</td>
+<td>KEEP if CW2 confirmed</td>
+</tr>
+<tr>
+<td><code>STLs/Clockwork2/Direct_Drive/motor_plate.stl</code></td>
+<td align="right">1</td>
+<td>KEEP if CW2 confirmed</td>
+</tr>
+<tr>
+<td><code>STLs/Clockwork2/Direct_Drive/[a]_guidler_a.stl</code> / <code>[a]_guidler_b.stl</code></td>
+<td align="right">1 each</td>
+<td>KEEP if CW2 confirmed</td>
+</tr>
+<tr>
+<td><code>STLs/Clockwork2/Direct_Drive/[a]_latch.stl</code> / <code>[a]_latch_shuttle.stl</code></td>
+<td align="right">1 each</td>
+<td>KEEP if CW2 confirmed</td>
+</tr>
+<tr>
+<td><code>STLs/Stealthburner/[a]_stealthburner_main_body.stl</code></td>
+<td align="right">1</td>
+<td>Conditional until the UHF cartridge/shell fan paths clear</td>
+</tr>
+<tr>
+<td><code>STLs/Clockwork2/cable_door_for_pcb.stl</code>, <code>[a]_pcb_spacer.stl</code>, <code>chain_anchor_2hole.stl</code> or <code>chain_anchor_3hole.stl</code></td>
+<td align="right">Variant-dependent</td>
+<td>Unresolved: Nitehawk revision and umbilical mounting may replace these</td>
+</tr>
+<tr>
+<td><code>STLs/Stealthburner/Printheads/phaetus_rapido_v2/stealthburner_printhead_rapido_v2_front.stl</code> and <code>stealthburner_printhead_rapido_v2_rear_cw2.stl</code></td>
+<td align="right">0 in main path</td>
+<td>OMIT as unverified HF candidates</td>
+</tr>
+<tr>
+<td><code>STLs/Stealthburner/[o]_stealthburner_LED_carrier.stl</code>, <code>[c]_stealthburner_LED_diffuser.stl</code>, <code>[o]_stealthburner_LED_diffuser_mask.stl</code></td>
+<td align="right">1 each if installed</td>
+<td>Optional lighting / verify kit inclusion</td>
+</tr>
+</tbody>
+</table></div>
+<p>Voron print guidance is ABS, 0.2 mm layers, forced 0.4 mm extrusion width, 40% infill, four walls and five top/bottom layers (SB p. 4 / PDF index 3). Use the documented settings for applicable functional parts; LEDs require the indicated opaque/translucent material. Do not label unverified LDO printed-part inclusion as owned. Archive filenames have legacy character encoding: if an extractor produces garbled names, identify the UHF members by the source archive and record the extraction mapping rather than rename an HF file.</p>
+<h2 id="assemble-the-confirmed-clockwork-2-core">Assemble the confirmed Clockwork 2 core</h2>
+<p>This independent core can proceed after T1 confirms CW2 even while the UHF interface remains unresolved. Have 1 BMG-type drive assembly, 1 idler assembly, 1 spring/thumbscrew tension set, <strong>2 MR85 bearings</strong>, 1 NEMA14 motor and the six direct-drive printed parts.</p>
+<p>The core drawings call for <strong>1 M3×6 FHCS</strong>, <strong>4 M3×25 SHCS</strong> (two body bolts, one guidler pivot, one latch pivot), <strong>1 M3×16 SHCS</strong> for the two-piece guidler, <strong>1 M3×30 SHCS</strong>, <strong>2 M3×8 SHCS and 2 M3 washers</strong> for the motor. Heatset locations are illustrated in SB pp. 11–15 (indices 10–14); count those positions against the actual matched printed parts, with additional PCB positions governed by the actual Nitehawk mount. Cable-cover/anchor hardware is separate and conditional.</p>
+<ol>
+<li>Install heatsets in the six core parts according to those illustrations. Keep motor-plate inserts below the surface where shown on p. 12 and the guidler/shuttle inserts flush where shown on p. 15. Let each cool before fastening; verify no insert intrudes into a bearing pocket or moving joint.</li>
+<li>Join guidler A/B with its M3×16 screw, fit the idler shaft/bearing/gear in the orientation shown on p. 17, and fit its spring/thumbscrew. Apply light bearing grease to the idler's working bearing surface, not the filament-gripping teeth.</li>
+<li>Fit the two MR85 bearings to motor plate and main body. Bearings must slide on/off the drive shaft; fully seat their <strong>outer rings</strong> in the pockets without pressing through the inner ring. The p. 19–20 warning against a forced bearing fit applies here.</li>
+<li>Install the M3×6 flat-head anti-squish screw as shown on p. 20. Set the drive-gear grub screw against the shaft notch; initially leave drive position adjustable. Assemble the body with its two M3×25 bolts, align the gear teeth to a sample of 1.75 mm filament, then secure the drive gear (pp. 21–24 / indices 20–23). Verify the shaft does not touch the motor housing.</li>
+<li>Install the guidler and latch with the remaining two M3×25 pivots (pp. 25–27). They must move freely; tightening a pivot until it clamps the arm defeats the mechanism. Adjust anti-squish/tension only enough to allow the gears and filament path to work without binding.</li>
+<li>Fit the NEMA14 motor and the p. 28 M3×30 screw. Start the two M3×8 motor screws/washers loose; adjust mesh through the access hole, leaving faint gear play and full tooth overlap; then retain the motor (pp. 28–30 / indices 27–29).</li>
+</ol>
+<p><img alt="SB STOCK REFERENCE, printed p. 17 / PDF index 16: CW2 idler shaft, bearings and gear orientation" loading="lazy" src="../assets/sb-stock-p017.png"/></p>
+<p><img alt="SB STOCK REFERENCE, printed p. 29 / PDF index 28: two motor screws and access for mesh adjustment" loading="lazy" src="../assets/sb-stock-p029.png"/></p>
+<p>These retained CW2 diagrams apply only after CW2 identification. They do not depict or verify the custom UHF hotend, CNC carriage or V4 probe. © Voron Design, GPL-3.0; <a href="https://github.com/VoronDesign/Voron-Stealthburner/blob/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b/Manual/Assembly_Manual_SB.pdf">pinned manual</a>.</p>
+<p>Completion check: latch opens and closes, idler pivots freely, shaft has clearance, gears turn smoothly, and a sample filament follows the centered path. Do not connect the motor yet.</p>
+<h2 id="t3-install-the-exact-2f-uhf-hotend-and-cooling-cartridge">T3 · Install the exact 2F UHF hotend and cooling cartridge</h2>
+<blockquote>
+<p><strong>Verification gate T3 — blocks support-screw changes and hotend/cartridge installation.</strong> Read the delivered 2F label and instruction sheet: revision, voltage, heater power/current, PT1000, nozzle type/diameter and installed UHF adapter. The <a href="https://github.com/Phaetus/Rapido-2F/blob/7401934e28d56844ba4f311e9d588b1e4d0510dd/Instructions%20Sheet/Rapido%20Hotend%202%20Instruction%20Sheet.pdf">manual shipped in Phaetus's pinned Rapido-2F repo</a> is titled “Rapido Hotend 2,” ©2023 and covers several assemblies. It does not verify this unit's electrical ratings. Its internal support-screw specifications cannot be copied blindly to a revised 2F.</p>
+</blockquote>
+<p>Do not loosen the thin heatbreak/support screws merely to fit a guessed cartridge. The Phaetus manual warns against bending the thin heatbreak and calls for even tightening with a low torque tool when its matching titanium-screw version is assembled (printed p. 07 / PDF index 7). The hot nozzle burns; hot-tightening is essential to prevent leaks for the documented nozzle design but belongs <strong>after controlled heater commissioning</strong>, not this cold assembly stage.</p>
+<ol>
+<li>After T2/T3 close, remove only the top groove-mount adapter/collet where the confirmed cartridge requires four heatsink attachment screws. The Voron HF README describes two M2.5×5 adapter screws and four M2.5×8 heatsink screws; use that hardware only when the exact UHF mounting design and delivered heatsink confirm it.</li>
+<li>Dry-fit the exact UHF front and rear around the heatsink. Confirm the hotend's fastener heads, heater/sensor exits and support screws clear every boss. The official Rapido V2 reference figures place heater wires <strong>below</strong> the mounting boss and sensor wires <strong>above</strong> it. Apply that routing only if the exact 2F geometry agrees; do not strain its heater tab or sensor to mimic another revision. <a href="https://github.com/VoronDesign/Voron-Stealthburner/tree/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b/STLs/Stealthburner/Printheads/phaetus_rapido_v2/Rapido_V2_Assembly_Images">Pinned orientation figures</a>.</li>
+<li>Fasten the validated front/rear and heatsink using that cartridge's documented screws/inserts. The HF reference uses two M3×12 join screws and four M2.5×8 heatsink screws; these remain a comparison, not an automatically approved UHF stack. Verify straight cold filament passage; do not use a screw to force the heatbreak into alignment.</li>
+<li>Cut/seat PTFE only after the UHF cartridge and CW2 are dry-assembled. SB p. 43 (index 42) uses <strong>11 mm above the cartridge top</strong> for its CW2 baseline. Verify the actual path joins without a gap or compressed/bowed tube before final cutting; do not carry over a Revo cartridge's total tube length.</li>
+<li>Install the silicone sock matching the actual UHF block/nozzle. Fit the fan shell only after confirming the longer cartridge's outlets aim around the nozzle without touching the sock/block or obstructing heatsink airflow.</li>
+</ol>
+<p>Completion check: the hotend is rigid without heatbreak stress, fan airflow reaches the heatsink, part ducts and socket clear the UHF block, filament passage is straight, and actual nozzle geometry is recorded. Leave electrical load confirmation to the wiring chapter.</p>
+<h2 id="assemble-fans-lighting-and-attach-the-toolhead">Assemble fans, lighting and attach the toolhead</h2>
+<p>With a validated UHF shell/cartridge, follow the illustrated SB pp. 45–56 (indices 44–55): remove the built-in supports; add the optional lighting carrier/diffuser/mask before fans; route the lighting to the right side; clip the heatsink fan with wires at the top and airflow <strong>inward</strong>; then fit the blower. Confirm fan voltage before wiring. Trim the 5015 front/ears only if this delivered fan matches the documented design; the optional <code>STLs/Tools/SB_5015_Cutting_Tool_A.stl</code> and <code>_B.stl</code> are one each. The source drawing uses one M3×6 FHCS for the blower.</p>
+<p><img alt="SB STOCK REFERENCE, printed p. 53 / PDF index 52: heatsink-fan orientation and inward airflow" loading="lazy" src="../assets/sb-stock-p053.png"/></p>
+<p><img alt="SB STOCK REFERENCE, printed p. 55 / PDF index 54: standard 5015 front and mounting-ear preparation" loading="lazy" src="../assets/sb-stock-p055.png"/></p>
+<p>These fan diagrams show the standard SB reference assembly. Validate the UHF cartridge and exact fan first; the drawings establish fan preparation and orientation, not UHF duct clearance. © Voron Design, GPL-3.0; <a href="https://github.com/VoronDesign/Voron-Stealthburner/blob/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b/Manual/Assembly_Manual_SB.pdf">pinned manual</a>.</p>
+<p>After T1 and T3 close, retain CW2 to the confirmed CNC mount/cartridge interface. SB pp. 64–67 use two M3×8 for CW2, then two M3×25 and two M3×50 for the standard shell. These are <strong>standard reference fasteners</strong>: validate their engagement, shoulder clearance and bottoming in this CNC/UHF stack before use. Do not press a printed shell into position with a longer screw. Fit the correct Nitehawk board mount/door and cable strain relief from the wiring chapter before closing access.</p>
+<h2 id="t4-mount-and-measure-cartographer-v4">T4 · Mount and measure Cartographer V4</h2>
+<blockquote>
+<p><strong>Verification gate T4 — blocks final probe fastening and probing.</strong> Confirm this is the <strong>V4 AIO Standard</strong>, the carriage version, extender inclusion, screw engagement and coil keep-out. The carriage is sold as 6 mm, 6 mm with <strong>8.5 mm UHF extenders</strong>, or 9 mm with extenders; the purchased variant is unknown. The example installation figures show a standard probe, so the actual V4 CAD and dimensions must match before use. Recheck B1: embedded bed magnets remain incompatible with scan meshing.</p>
+</blockquote>
+<p><img alt="Original schematic of the nozzle/probe height check; not a dimensional toolhead assembly" loading="lazy" src="../assets/toolhead-probe-height.svg"/></p>
+<ol>
+<li>Mount the probe coil flat beneath the CNC carriage in the demonstrated orientation, using its two confirmed M3 holes. Standard illustrations specify two M3×6 BHCS without extenders; extender assemblies need their own confirmed longer screws. Check the mounting parts bear on the intended surfaces without bending the PCB.</li>
+<li>If the longer UHF nozzle leaves the coil too high, fit <strong>confirmed</strong> UHF extenders and hardware; measure again. Do not stack arbitrary washers or assume 8.5 mm extenders automatically produce the correct final height.</li>
+<li>Measure the coil underside relative to the <strong>actual installed nozzle tip</strong>. Current manufacturer hardware setup specifies <strong>2.6–3.0 mm above the nozzle tip plane</strong>, with the probe level. Use a gauge, then record measured X/Y offsets rather than the listing's nominal coordinates.</li>
+<li>Check the manufacturer's CAD keep-out above the coil against carriage, extenders, fastener heads and wires. Keep unintended metal out of that region. Sweep the toolhead manually across the conservative accessible envelope; the coil must never touch plate clips, side mounts, frame, brush or hotend wiring.</li>
+<li>Route the probe cable along the supported umbilical/Bowden route with strain relief, free bend clearance and no snag. Manufacturer warning: the supplied USB cable is <strong>not rated for cable chains</strong>. Select USB/CAN only in the wiring chapter after exact pins/power are verified; an original Nitehawk SB is not a CAN host. <a href="https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation">Cartographer hardware setup</a>.</li>
+</ol>
+<p>Nozzle cleaning must avoid sweeping the Cartographer coil over a metal brush. Use a documented silicone cleaning arrangement or manual cleaning during initial calibration; ownership/location of a silicone brush is unverified, so no automatic brush macro is enabled. Clean the nozzle before any later Touch workflow. The firmware generation, safe Z homing, QGL, scanning mesh and measured boundaries are established in the software chapter; do not use the older FAQ macros as configuration authority.</p>
+<p>Completion check: purchases 03/04/05 each have an identified variant and planned disposition; the probe is retained and level at the measured height, no metal violates keep-out, all belt clamps and switch mounts clear travel, and cable relief has full bend clearance. The bed/nozzle envelope is recorded with the finished UHF toolhead. Any open T1–T4 gate remains a block on its affected operation. Continue to the wiring chapter without powering the toolhead.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

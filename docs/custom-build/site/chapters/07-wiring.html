@@ -1,0 +1,166 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>07 — Wiring the modified printer · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="01-inventory.html">1. Inventory and evidence</a></li><li><a  href="02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a aria-current="page" href="07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="../reference/compatibility.html">Compatibility register</a></li><li><a  href="../reference/configuration.html">Non-deployable configuration examples</a></li><li><a  href="../reference/crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="../reference/hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="../reference/inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="../reference/printed-parts.html">Printed-parts matrix</a></li><li><a  href="../reference/questions.html">Unresolved questions and verification gates</a></li><li><a  href="../reference/sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#07-wiring-the-modified-printer">07 — Wiring the modified printer</a><ul>
+<li><a href="#e1-identify-boards-and-the-power-architecture-before-connecting-cables">E1 — Identify boards and the power architecture before connecting cables</a></li>
+<li><a href="#e2-resolve-the-rapido-electrical-load-before-connecting-he0">E2 — Resolve the Rapido electrical load before connecting HE0</a></li>
+<li><a href="#e3-verify-the-modified-bed-circuit-before-mains-work">E3 — Verify the modified bed circuit before mains work</a></li>
+<li><a href="#e4-choose-the-cartographer-interface-and-cable-before-connection">E4 — Choose the Cartographer interface and cable before connection</a></li>
+<li><a href="#source-and-figure-notes">Source and figure notes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="07-wiring-the-modified-printer">07 — Wiring the modified printer</h1>
+<p><strong>Readiness: conditional instructions; heater circuits remain blocked.</strong> Complete independent cable preparation while the gates below are open. No pinout in this chapter establishes what was shipped in purchase <strong>01</strong>.</p>
+<p><strong>Prerequisites:</strong> frame and gantry assembled and manually checked; modified bed and toolhead fitted; electronics compartment accessible; purchase <strong>03</strong> heater and PT1000 leads individually identified; purchase <strong>05</strong> probe identified as V4 Standard. <strong>Parts:</strong> one actual mainboard; one actual toolboard, its matching fan adapter and USB/power adapter; one host; six motion motors and one extruder motor; one PSU arrangement; one bed heater/sensor/fuse/earth harness; one toolhead cable; one probe cable. These kit component quantities describe the intended architecture, not verified box contents. Terminal, fuse, cable, bed-heater and adapter ownership is unconfirmed. <strong>Tools:</strong> multimeter, ferrule crimper, wire stripper, connector crimper appropriate to the actual contacts, PH2 driver and hex drivers. LDO specifies E0508 heater ferrules; verify conductor fit before selecting them.</p>
+<p><strong>KEEP:</strong> protective earth, separation of mains and low-voltage wiring, securely mounted electronics, individual motor labeling and strain relief. <strong>REPLACE:</strong> stock Octopus/toolhead/probe wiring with the verified board route below. <strong>OMIT:</strong> stock Omron probe, Klicky/TAP additions and stock nozzle Z-switch wiring in the selected Cartographer path. Keep omitted parts as surplus; do not install then remove them. <strong>ADD:</strong> Cartographer USB wiring and the measured PT1000 circuit.</p>
+<p>Base manual references are printed pp. 180–209 (zero-based PDF indices 179–208), a <strong>stock reference</strong>, not the pinout for this modified printer. The <a href="https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_d">LDO Rev D wiring guide</a> supersedes stock kit wiring only when the box and cables match it. Its toolboard discussion still links the original Nitehawk SB; the <a href="https://docs.ldomotors.com/en/Toolboard/nitehawk-sb-v2">SB V2 guide</a> governs a confirmed V2 board.</p>
+<h2 id="e1-identify-boards-and-the-power-architecture-before-connecting-cables">E1 — Identify boards and the power architecture before connecting cables</h2>
+<p>Record PCB silkscreen revision, MCU marking, matching fan adapter revision, PSU model/rated outputs, supply-voltage selectors, fuse markings and cable labels in the build manifest. Photograph each connector with its latch/key visible, without private order material. Resolve kit revision independently from Voron design revision.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Confirmed hardware only</th>
+<th>Firmware distinction</th>
+<th>Wiring evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leviathan V1.3</td>
+<td>STM32H743, 25 MHz; manufacturer USB example uses 128 KiB Katapult</td>
+<td>Pinned V1.3 manual printed pp. 5–9, indices 4–8</td>
+</tr>
+<tr>
+<td>Earlier Leviathan</td>
+<td>Do not apply V1.3 target or assume F446 until PCB is identified</td>
+<td>Obtain exact-revision manual and schematic</td>
+</tr>
+<tr>
+<td>Nitehawk SB V2.0.0</td>
+<td>STM32G0B1, 12 MHz, 8 KiB Katapult; USB PA11/PA12</td>
+<td>Pinned V2.0.0 schematic and V2 connector diagram</td>
+</tr>
+<tr>
+<td>Original Nitehawk SB</td>
+<td>RP2040, separate firmware/configuration; manufacturer Katapult instruction uses 16 KiB</td>
+<td>Original SB documentation and pinned original configuration</td>
+</tr>
+</tbody>
+</table></div>
+<p>The generic <code>voron2_leviathan.cfg</code> header and the Rev D webpage describe an F446, while the V1.3 manual describes H743. This is a documented source disagreement; <strong>do not flash from that generic header</strong>. Original SB and SB V2 fan adapter headers also differ. The V2 manufacturer FAQ says the old fan adapter cannot be reused.</p>
+<ol>
+<li>Mount electronics on their verified brackets; confirm no conductive PCB underside contacts a DIN rail or fastener. Prepare PSU input selection using its label/manual. The LDO note about 115/230 V selectors does not apply to its universal-input alternative.</li>
+<li>Label six motion-motor harnesses at both ends: A, B, front-left Z, rear-left Z, rear-right Z and front-right Z. Retain actual connector numbering in a separate record. Verify paired windings and the manufacturer's motor connector order with the power disconnected.</li>
+<li>Dry-route mains, bed-temperature, motor, host and toolhead harnesses with ducts open. Ensure screw terminals and connectors remain accessible. Check that the MRW support freedom is not restrained by a tight cable.</li>
+</ol>
+<p><strong>Completion check:</strong> every board, fuse, PSU input and output, connector, motor and cable has a known identity. Unknown revision blocks board-dependent connections and firmware selection, while cable labeling and independent mechanical work can proceed.</p>
+<h2 id="e2-resolve-the-rapido-electrical-load-before-connecting-he0">E2 — Resolve the Rapido electrical load before connecting HE0</h2>
+<p>Purchase <strong>03</strong> is reported as <strong>Rapido 2 Fiber UHF/PT1000</strong>, not an established heater rating. Obtain its exact revision/label, voltage, rated operating load, cold resistance/startup or peak-current information and heater lead specification from Phaetus or the actual package. The linked Phaetus Rapido-2F manual is titled Rapido Hotend2; it does not establish the exact purchased Fiber heater's startup load. Do not substitute Rapido HF, Plus or X specifications.</p>
+<p>The <a href="https://docs.ldomotors.com/en/Toolboard/nitehawk-sb-v2#electrical-specifications">Nitehawk SB V2 electrical table</a> specifies <strong>4.5 A maximum continuous hotend current</strong>, limited by the MOSFET. At 24 V this is 108 W electrically; that arithmetic is not a Rapido rating or permission to run a 108 W heater. Startup current, pulsed MOSFET capability, terminal/umbilical contacts, cable gauge/temperature, branch fuse and shared PSU headroom all require verification. The pinned V2 schematic labels the heater MOSFET AON7524; its part name alone does not rate the assembled board for a larger heater.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Circuit</th>
+<th>Confirmed manufacturer fact</th>
+<th>Required decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V2.0.0 HE0 → Rapido</td>
+<td>HE0 control PA7; 4.5 A continuous board limit</td>
+<td>Exact heater startup and operating current must fit the entire path</td>
+</tr>
+<tr>
+<td>V1.3 mainboard heater output</td>
+<td>V1.3 manual: 180 W/7.5 A maximum</td>
+<td>Not a preapproved alternate route; additional cable/fuse/PSU evidence and wiring review required</td>
+</tr>
+<tr>
+<td>Original SB HE0</td>
+<td>Different RP2040 pin mapping; separate documentation</td>
+<td>Reassess ratings for actual revision; V2 pins do not apply</td>
+</tr>
+<tr>
+<td>Bed-heater signal output</td>
+<td>Controls a rated SSR only for an AC heater design</td>
+<td>Never put mains on a DC heater terminal or probe connector</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Unresolved is a hard heater block.</strong> Leave the Rapido heater unplugged and insulated. Do not bypass a fuse or enlarge it to obtain a first heat-up. A software <code>max_power</code> setting limits average duty cycle and cannot establish safe instantaneous current. The <a href="https://docs.ldomotors.com/en/voron/voron2/kit-errata#rapido-hotend-considerations">historical LDO Rapido erratum</a> concerns swapping <strong>Octopus</strong> outputs; neither its wiring swap nor its PA1/PA2 assignments applies to this build.</p>
+<p>Once E2 is signed off with ratings and exact PCB revision:</p>
+<ol>
+<li>Prepare the heater ends using correctly sized ferrules and the board's documented terminal procedure; never clamp solder-tinned strands under a screw terminal. Do not invent terminal torque. The resistive heater itself is nonpolarized, but the PSU/adapter path is polarized.</li>
+<li>Connect the PT1000 to confirmed TH0, separate from heater leads. For <strong>V2.0.0 only</strong>, TH0 is a 2-pin JST-PH connector, ADC <strong>PB12</strong>, documented pull-up <strong>2200 Ω</strong>. It is a resistance sensor circuit, not a supply output. Use Klipper <code>sensor_type: PT1000</code>; do not retain a stock thermistor model.</li>
+<li>Connect extruder motor and fans to the matching toolboard/fan adapter. V2 fan voltage selection is modified by PCB traces/pads, rather than a universal jumper. Check the actual fan ratings; do not perform that PCB modification unless the exact manufacturer's procedure is required for the purchased fans.</li>
+<li>Install the toolboard-to-extruder-body and USB-adapter-to-earthed-frame grounding links described by LDO for the actual board revision. These static-discharge links do not replace protective earth to bed/frame/PSU.</li>
+</ol>
+<p><strong>Completion check:</strong> the heater-path record includes all current limits, cable/connector/fuse identity and startup evidence; PT1000 is individually labeled and cannot be confused with CT or HE0; connector covers close without pulling conductors.</p>
+<h2 id="e3-verify-the-modified-bed-circuit-before-mains-work">E3 — Verify the modified bed circuit before mains work</h2>
+<p>The stock LDO bed's prebonded heater, magnet layer, thermal sensor and fastening pattern do not establish the MRW bed's installed components. Purchase <strong>06</strong> heater options remain unknown. Do not detach and reuse a bonded stock heater or magnetic layer on the UltraFlat plate without explicit manufacturer instructions.</p>
+<p>LDO's manufacturer warning requires mains work by certified personnel trained in local regulations and safety standards. Keep the inlet unplugged during assembly. Software and a multimeter continuity check do not certify electrical safety.</p>
+<ol>
+<li>Confirm heater voltage/power/physical size, bonded mounting procedure, sensor model, leads, thermal fuse temperature/current/attachment method, SSR make/rating/derating/heatsink and inlet/branch fuses for the actual bed system. If any is missing, classify it as <strong>required but not confirmed owned</strong> and keep bed wiring and heating blocked.</li>
+<li>Have the qualified installer wire inlet, isolating switch, PSU, SSR and bed using the actual circuit and local requirements. Keep mains terminals covered; retain a separately identifiable protective-earth conductor. Follow terminal ratings and manufacturer's tightening instructions. The Leviathan's DC bed-output rating is not a mains rating.</li>
+<li>Connect a protective-earth lug directly to the MRW plate at its approved location with hardware providing reliable metal contact, strain relief and slack for thermal expansion. Do not rely on anodized Wings, kinematic points, magnets or a linear rail as the earth path. Ground PSU enclosure and conductive frame as specified by the qualified installer.</li>
+<li>Fit an independently acting thermal fuse in the heater power path according to heater/bed instructions. Verify its attachment and wiring; Klipper heater verification is an additional software safeguard, not a substitute.</li>
+<li>Route bed leads so that gantry/belts, kinematic motion and Z travel cannot rub or pinch them. Keep thermistor leads away from mains terminals. A stock Rev D bed-WAGO/thermistor splice arrangement is reusable only after connector ratings, approved wire sizes and MRW geometry have been verified.</li>
+</ol>
+<p><strong>Completion check:</strong> the bed circuit has a documented approved diagram, fuse and sensor identity, protective-earth connection and full travel strain-relief inspection. Bed power remains disconnected until the pre-power checklist passes.</p>
+<h2 id="e4-choose-the-cartographer-interface-and-cable-before-connection">E4 — Choose the Cartographer interface and cable before connection</h2>
+<p><strong>Proposed primary route: direct host USB to Cartographer V4 Standard</strong>, with its documented <strong>5 V USB power</strong>, after the actual USB firmware and cable have been identified. Retain the Nitehawk's independent host USB path. This avoids an unverified custom downstream adapter; it does not prove cable ownership or cable-chain suitability.</p>
+<p><img alt="Original schematic of the proposed electronics architecture; no connector orientation or physical layout is implied" loading="lazy" src="../assets/electronics-connectivity.svg"/></p>
+<p>The figure shows logical connections only. The Nitehawk XT30(2+2) combined power/data cable carries <strong>24 V and USB</strong>, not CAN. Its ordinary three-pin PROBE port supplies 24 V and must not be used as Cartographer USB power.</p>
+<p>The V2's downstream USB route is <strong>conditionally compatible</strong>, not automatically wired:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Logical signal</th>
+<th>Nitehawk V2.0.0 P8, schematic numbered pins</th>
+<th>Cartographer Standard USB documented signal order</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5 V VBUS</td>
+<td>Pin 1, via F1 <code>BSMD0603-075-6V</code></td>
+<td>Ground, Data+, Data−, 5 V in the manufacturer's illustrated view</td>
+</tr>
+<tr>
+<td>Data−</td>
+<td>Pin 2</td>
+<td>Match Data− by continuity and illustrated view</td>
+</tr>
+<tr>
+<td>Data+</td>
+<td>Pin 3</td>
+<td>Match Data+ by continuity and illustrated view</td>
+</tr>
+<tr>
+<td>Ground</td>
+<td>Pins 4 and 5</td>
+<td>Match ground; fifth Nitehawk contact needs a documented harness treatment</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>This table is a net list, not a left-to-right crimp recipe.</strong> The inspected V2 photograph reads GND, GND, D+, D−, 5 V from its illustrated side, whereas schematic numbering starts at VBUS. Plug-side views can reverse order. LDO calls P8 JST-ZH1.5 5P; Cartographer V4 Standard is advertised with a four-pin Molex Sherlock connector. The generic Cartographer Standard wiring figure is an older-format reference; match the actual V4 connector documentation rather than transferring its pictured contact positions. Verify exact connector/contact part numbers, probe pinout orientation, supplied cable and the downstream port's usable current/fuse behavior before fabricating or buying that harness. Do not assume the 5 V converter's total rating is the USB port rating. No such downstream port is established for original SB.</p>
+<ol>
+<li>For the primary direct USB route, check the keyed probe connector against <a href="https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation/wiring-diagrams">Cartographer wiring diagrams</a>. Never apply the toolboard's 24 V to USB VBUS.</li>
+<li>Keep the supplied Cartographer USB cable out of a drag chain unless its exact variant is documented as chain rated. Cartographer warns that its supplied cable is not chain rated. Route an approved umbilical beside the Bowden path with end strain relief and clearance throughout travel; provide a verified chain-rated replacement only if required by the actual route.</li>
+<li>The Nitehawk toolhead cable has a documented nominal 28 mm bend radius; retain at least that radius without tight bends at the connector. Tie down both ends and retain enough slack. Do not transfer this rating to the Cartographer cable.</li>
+<li>With power disconnected, verify each cable's end-to-end mapping, no shorts, keyed mating orientation and ground/shield treatment. Check cable sweep by manually moving supported mechanics through the measured envelope.</li>
+<li>Mate power/data connectors only with the printer powered off. LDO specifically prohibits hot-plugging the Micro-Fit end; Cartographer likewise prohibits powered connector changes.</li>
+</ol>
+<p><strong>CAN is a conditional alternate only if actual hardware requires it.</strong> Identify a supported CAN interface, V4 CAN firmware/bitrate, bus ends, termination state, actual CAN-port supply voltage and V4 CAN power input specification. The Leviathan V1.3 CAN connector diagram shows <strong>24 V</strong>, so USB's 5 V pinout cannot be copied to it. Do not connect to the Nitehawk USB connector as CAN. Follow the V4 switching and termination instructions after those facts are settled; neither CAN hardware nor cable is confirmed owned. Record the chosen route; do not enable both serial and CAN UUID in one MCU section.</p>
+<p><strong>Completion check:</strong> the chosen interface, firmware, cable identity, pin-to-pin mapping, supply voltage, rating and full travel routing have been recorded. Keep unknown cables disconnected. Continue to <a href="08-software.html">software preparation</a> without energizing heaters.</p>
+<h2 id="source-and-figure-notes">Source and figure notes</h2>
+<p>Manufacturer connector diagrams and schematics were downloaded and visually inspected, including V2 downstream USB F1/P8 and Leviathan V1.3 pin assignment/USB firmware target. Third-party images/PDFs are linked rather than redistributed because their independent reuse terms are not established. The local SVG is an original logical schematic, not an assembly drawing. Exact revisions, hashes and retrieval dates are recorded in <a href="../data/electronics-research.json">electronics research</a>.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

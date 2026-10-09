@@ -1,0 +1,2590 @@
+{
+  "schema_version": 1,
+  "retrieved_at": "2026-10-09",
+  "notes": "Repository commits are immutable pins. Mutable vendor documents are identified by retrieved byte hashes; link-only documents cannot be fully mirrored for offline reproducibility without reuse permission.",
+  "sources": [
+    {
+      "id": "mrw350",
+      "url": "https://mandalaroseworks.com/products/voron-350-ultraflat-bed",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "9e8f262530183978c7ac60105acf771c298ce0d12a79dcb513608070fe8ab76d",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "note": "355x355x9 nominal; standard or top embedded magbed; purchased variant unverified. M5x0.8 fuse/sensor holes.",
+      "hash_scope": "Exact retrieved file bytes: mrw350.html; not repository tree HTML",
+      "retrieved_content_url": "https://mandalaroseworks.com/products/voron-350-ultraflat-bed"
+    },
+    {
+      "id": "mrw-kinematic-product",
+      "url": "https://mandalaroseworks.com/products/matched-height-kinematic-kit",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "56eea44d0c76325687e3b44b89ca4d8c4874e720095e096b88bb7f775026108b",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "note": "Package list differs from PDF in M3 length and M2 head style. Excludes approximately 130mm center extrusion.",
+      "hash_scope": "Exact retrieved file bytes: kinematic.html; not repository tree HTML",
+      "retrieved_content_url": "https://mandalaroseworks.com/products/matched-height-kinematic-kit"
+    },
+    {
+      "id": "mrw-kinematic-pdf",
+      "url": "https://cdn.shopify.com/s/files/1/0608/5135/5901/files/Matched_Height_Kinematic_Installation_Instructions_-_Internally_Threaded_Balls.pdf?v=1657158885",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": "PDF metadata: created/modified 2022-04-08 20:40:58 UTC",
+      "sha256": "ff56419b66ec20d32bb5f6968667ccb22778ca8261e004428ba04d58198dcd8e",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "pdf_mapping": [
+        {
+          "pdf_index": 0,
+          "printed_page": null,
+          "label": "Unnumbered inventory and magnet warning",
+          "visually_inspected": false
+        },
+        {
+          "pdf_index": 1,
+          "printed_page": null,
+          "label": "Unnumbered exploded stacks and stock V2.4/Trident layouts",
+          "visually_inspected": true
+        }
+      ],
+      "hash_scope": "Exact retrieved file bytes: mrw-kinematic.pdf; not repository tree HTML",
+      "retrieved_content_url": "https://cdn.shopify.com/s/files/1/0608/5135/5901/files/Matched_Height_Kinematic_Installation_Instructions_-_Internally_Threaded_Balls.pdf?v=1657158885"
+    },
+    {
+      "id": "mrw-wings",
+      "url": "https://mandalaroseworks.com/products/voron-wings",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "f9699fda5c1fa4230c00c56b5733e018a3c2b54d209e3ac88beaf2e501c1187d",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "note": "Current set is two pieces; sizes 250/300/350. 4 M4 bolts+4 M4Tnuts; no screw length specified. Product linked photographs inspected privately, no redistribution.",
+      "hash_scope": "Exact retrieved file bytes: wings.html; not repository tree HTML",
+      "retrieved_content_url": "https://mandalaroseworks.com/products/voron-wings"
+    },
+    {
+      "id": "mrw-wings-variant-data",
+      "url": "https://mandalaroseworks.com/products/voron-wings.json",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "a7b010b342a64a5b833d7378b925c9ded76a88618822b52ba372e083c4fd7291",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "hash_scope": "Exact retrieved file bytes: wings.json; not repository tree HTML",
+      "retrieved_content_url": "https://mandalaroseworks.com/products/voron-wings.json"
+    },
+    {
+      "id": "mrw-beta-observations",
+      "url": "https://cdn.shopify.com/s/files/1/0608/5135/5901/files/My_observation_of_Mandala_Rose_Works_Voron_pre-production-kinematics.pdf?v=1639838120",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": "Pre-production tester observations; four unnumbered pages",
+      "sha256": "89c2b73cb03ebac432726586a0a5b857be93d1190f371a24e5f4267d8bad08e2",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "note": "Historical evidence only, not Wings or this final hardware; did not inherit its 15mm Z loss, heater choice, endstop changes or dimensions.",
+      "hash_scope": "Exact retrieved file bytes: mrw-beta.pdf; not repository tree HTML",
+      "retrieved_content_url": "https://cdn.shopify.com/s/files/1/0608/5135/5901/files/My_observation_of_Mandala_Rose_Works_Voron_pre-production-kinematics.pdf?v=1639838120"
+    },
+    {
+      "id": "west3d-rapido2f",
+      "url": "https://west3d.com/products/phaetus-rapido-2-fiber-hot-end-hotend-uhf-pt1000",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "5bb658f55d978e852ca9259156483decdcb258cc06cdb9ad1dc468228924cf94",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "note": "Current SKU PHA2167RAPBLU UHF Plus/PT1000; listing not proof of delivery.",
+      "hash_scope": "Exact retrieved file bytes: west3d-rapido.html; not repository tree HTML",
+      "retrieved_content_url": "https://west3d.com/products/phaetus-rapido-2-fiber-hot-end-hotend-uhf-pt1000"
+    },
+    {
+      "id": "stealthburner-repo",
+      "url": "https://github.com/VoronDesign/Voron-Stealthburner/tree/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "version": null,
+      "sha256": "1342dd0d72987781ee60bded4607019c290d6628473715916806f10318366dbb",
+      "license": "GPL-3.0 repository; preserve attribution",
+      "redistributed": false,
+      "hash_scope": "Exact retrieved file bytes: README.md; not repository tree HTML",
+      "retrieved_content_url": "https://raw.githubusercontent.com/VoronDesign/Voron-Stealthburner/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b/README.md"
+    },
+    {
+      "id": "stealthburner-manual",
+      "url": "https://github.com/VoronDesign/Voron-Stealthburner/blob/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b/Manual/Assembly_Manual_SB.pdf",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "version": "2023-07-07",
+      "sha256": "9cea9b533c114658a22c59d51c0766e6b2e51d5b4584277c873858b392e87cb4",
+      "license": "GPL-3.0 repository; preserve attribution",
+      "redistributed": false,
+      "pdf_mapping": [
+        {
+          "pdf_index": 10,
+          "printed_page": 11,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 11,
+          "printed_page": 12,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 12,
+          "printed_page": 13,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 13,
+          "printed_page": 14,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 14,
+          "printed_page": 15,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 15,
+          "printed_page": 16,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 16,
+          "printed_page": 17,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 18,
+          "printed_page": 19,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 19,
+          "printed_page": 20,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 21,
+          "printed_page": 22,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 22,
+          "printed_page": 23,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 24,
+          "printed_page": 25,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 25,
+          "printed_page": 26,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 27,
+          "printed_page": 28,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 28,
+          "printed_page": 29,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 30,
+          "printed_page": 31,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 31,
+          "printed_page": 32,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 32,
+          "printed_page": 33,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 33,
+          "printed_page": 34,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 40,
+          "printed_page": 41,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 41,
+          "printed_page": 42,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 52,
+          "printed_page": 53,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 53,
+          "printed_page": 54,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 54,
+          "printed_page": 55,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 55,
+          "printed_page": 56,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 66,
+          "printed_page": 67,
+          "label": "Assembly diagram",
+          "visually_inspected": true
+        }
+      ],
+      "note": "71 PDF pages; printed page=index+1. Additional page text read. Rendered diagrams retained scratch only.",
+      "hash_scope": "Exact retrieved file bytes: Assembly_Manual_SB.pdf; not repository tree HTML",
+      "retrieved_content_url": "https://raw.githubusercontent.com/VoronDesign/Voron-Stealthburner/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b/Manual/Assembly_Manual_SB.pdf"
+    },
+    {
+      "id": "stealthburner-rapido-v2",
+      "url": "https://github.com/VoronDesign/Voron-Stealthburner/blob/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b/STLs/Stealthburner/Printheads/phaetus_rapido_v2/README.md",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+      "version": null,
+      "sha256": "aafdc6020b3b3a3d94c42d78b70770e85b538f9baa25fdc3d3316b026bcedb23",
+      "license": "GPL-3.0 repository; preserve attribution",
+      "redistributed": false,
+      "note": "Explicit High Flow mount. Three linked heatsink/wire-routing figures privately inspected. No assertion that HF parts fit UHF.",
+      "hash_scope": "Exact retrieved file bytes: README.md; not repository tree HTML",
+      "retrieved_content_url": "https://raw.githubusercontent.com/VoronDesign/Voron-Stealthburner/8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b/STLs/Stealthburner/Printheads/phaetus_rapido_v2/README.md"
+    },
+    {
+      "id": "phaetus-rapido2f-repo",
+      "url": "https://github.com/Phaetus/Rapido-2F/tree/7401934e28d56844ba4f311e9d588b1e4d0510dd",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+      "version": null,
+      "sha256": "8c4d1a31bffe51d54a701fa47def2a76c812c414c979ba2c3fe195d5ebe0bfb1",
+      "license": "Models personal use only; commercial use prohibited; link only",
+      "redistributed": false,
+      "hash_scope": "Exact retrieved file bytes: README.md; not repository tree HTML",
+      "retrieved_content_url": "https://raw.githubusercontent.com/Phaetus/Rapido-2F/7401934e28d56844ba4f311e9d588b1e4d0510dd/README.md"
+    },
+    {
+      "id": "phaetus-rapido2f-manual",
+      "url": "https://github.com/Phaetus/Rapido-2F/blob/7401934e28d56844ba4f311e9d588b1e4d0510dd/Instructions%20Sheet/Rapido%20Hotend%202%20Instruction%20Sheet.pdf",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+      "version": "Rapido Hotend 2 Assembly Instruction, 2023",
+      "sha256": "1a89929f4760af5ec7a225a7bd71f0ffeee8edf5c300031147aa935fd03622aa",
+      "license": "Copyright 2023 Phaetus; all rights reserved; link only",
+      "redistributed": false,
+      "pdf_mapping": [
+        {
+          "pdf_index": 0,
+          "printed_page": null,
+          "label": "Cover"
+        },
+        {
+          "pdf_index": 7,
+          "printed_page": "07",
+          "label": "Heatbreak/support assembly",
+          "visually_inspected": true
+        },
+        {
+          "pdf_index": 10,
+          "printed_page": "10",
+          "label": "UHF nozzle assembly"
+        },
+        {
+          "pdf_index": 12,
+          "printed_page": "12",
+          "label": "Hot-tightening"
+        },
+        {
+          "pdf_index": 13,
+          "printed_page": "12",
+          "label": "Thermal grease; duplicated printed page 12"
+        },
+        {
+          "pdf_index": 14,
+          "printed_page": "13",
+          "label": "Copyright"
+        }
+      ],
+      "note": "15 pages; most pages printed=index except cover, duplicate printed12 at PDFidx13. Actual electrical rating and delivered 2F revision not established.",
+      "hash_scope": "Exact retrieved file bytes: Rapido Hotend 2 Instruction Sheet.pdf; not repository tree HTML",
+      "retrieved_content_url": "https://raw.githubusercontent.com/Phaetus/Rapido-2F/7401934e28d56844ba4f311e9d588b1e4d0510dd/Instructions%20Sheet/Rapido%20Hotend%202%20Instruction%20Sheet.pdf"
+    },
+    {
+      "id": "phaetus-rapido2f-cad",
+      "url": "https://github.com/Phaetus/Rapido-2F/blob/7401934e28d56844ba4f311e9d588b1e4d0510dd/Product%20Model/Rapido%202F.stp",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+      "version": null,
+      "sha256": "acf694696a8a783eaded95ad3df0229f18a88b23efecfbad00aa4400dd305e19",
+      "license": "Models personal use only; commercial use prohibited; link only",
+      "redistributed": false,
+      "note": "Downloaded actual product STEP; not rendered by CAD engine. Combined UHF toolhead dimensional validation unresolved.",
+      "hash_scope": "Exact retrieved file bytes: Rapido 2F.stp; not repository tree HTML",
+      "retrieved_content_url": "https://raw.githubusercontent.com/Phaetus/Rapido-2F/7401934e28d56844ba4f311e9d588b1e4d0510dd/Product%20Model/Rapido%202F.stp"
+    },
+    {
+      "id": "phaetus-rapido2f-adaptors",
+      "url": "https://github.com/Phaetus/Rapido-2F/blob/7401934e28d56844ba4f311e9d588b1e4d0510dd/Product%20Adaptor%20Models/voron%202.4-Rapido%202.zip",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+      "version": "Archive members dated 2023-12-11",
+      "sha256": "d4a42ab670dbc980ccad7212d991d45025ae0d115cc4c84cd795492fece812fe",
+      "license": "Models personal use only; commercial use prohibited; link only",
+      "redistributed": false,
+      "note": "Archive includes HF/UHF front and rear. Legacy unflagged GBK filename bytes may extract garbled. UHF front lower bound extends 8.49mm relative HF front; rear bounding spans match but hashes differ. No physical combined fit validation.",
+      "hash_scope": "Exact retrieved file bytes: voron 2.4-Rapido 2.zip; not repository tree HTML",
+      "retrieved_content_url": "https://raw.githubusercontent.com/Phaetus/Rapido-2F/7401934e28d56844ba4f311e9d588b1e4d0510dd/Product%20Adaptor%20Models/voron%202.4-Rapido%202.zip"
+    },
+    {
+      "id": "cartographer-cad-repo",
+      "url": "https://github.com/Cartographer3D/cartographer-probe/tree/bf01749f16f239b5310aaf03e96b18e9dfb9b832",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "bf01749f16f239b5310aaf03e96b18e9dfb9b832",
+      "version": null,
+      "sha256": "59060bdbc9b6a56894715eb7680b59c88c9c60342d3421fd78b58d38f215f24c",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "note": "Product page CAD link followed. V4 Standard STEP and 6mm/9mm CNC files exist; no reuse license found in repo.",
+      "hash_scope": "Exact retrieved file bytes: README.md; not repository tree HTML",
+      "retrieved_content_url": "https://raw.githubusercontent.com/Cartographer3D/cartographer-probe/bf01749f16f239b5310aaf03e96b18e9dfb9b832/README.md"
+    },
+    {
+      "id": "cartographer-v4-standard-cad",
+      "url": "https://github.com/Cartographer3D/cartographer-probe/blob/bf01749f16f239b5310aaf03e96b18e9dfb9b832/STEP/Cartographer%20Probes/V4/Cartographer%20V4%20-%20Standard.step",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "bf01749f16f239b5310aaf03e96b18e9dfb9b832",
+      "version": null,
+      "sha256": "7496da4afc02fd3bfe8eec6fcdee32f5b6c41682f26b159305d24595222e6111",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "hash_scope": "Exact retrieved file bytes: Cartographer V4 - Standard.step; not repository tree HTML",
+      "retrieved_content_url": "https://raw.githubusercontent.com/Cartographer3D/cartographer-probe/bf01749f16f239b5310aaf03e96b18e9dfb9b832/STEP/Cartographer%20Probes/V4/Cartographer%20V4%20-%20Standard.step"
+    },
+    {
+      "id": "cartographer-cnc-6mm-cad",
+      "url": "https://github.com/Cartographer3D/cartographer-probe/blob/bf01749f16f239b5310aaf03e96b18e9dfb9b832/STEP/Cartographer%20CNC%20Mount/6mm%20CNC.step",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": "bf01749f16f239b5310aaf03e96b18e9dfb9b832",
+      "version": null,
+      "sha256": "df1f4c5b05d26113d62ce4371d1b5f7afd2de1597a4be8457cbd8d3d4899d1dd",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "hash_scope": "Exact retrieved file bytes: 6mm CNC.step; not repository tree HTML",
+      "retrieved_content_url": "https://raw.githubusercontent.com/Cartographer3D/cartographer-probe/bf01749f16f239b5310aaf03e96b18e9dfb9b832/STEP/Cartographer%20CNC%20Mount/6mm%20CNC.step"
+    },
+    {
+      "id": "cartographer-cnc-product",
+      "url": "https://cartographer3d.com/products/cartographer3d-cnc-stealthburner-mount",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "fc8d3af0562f3d112d0523c30ad0ef8b25773794c01dca07acf5786df253565f",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "note": "6mm,6mm with8.5mm UHF extenders,9mm with extenders. 9mm incompatible MGN9. 6mm fits MGN9/MGN12 per maker. 1 carriage,2clamps+bolts,2M3x6BHCS advertised.",
+      "hash_scope": "Exact retrieved file bytes: cnc-product.html; not repository tree HTML",
+      "retrieved_content_url": "https://cartographer3d.com/products/cartographer3d-cnc-stealthburner-mount"
+    },
+    {
+      "id": "cartographer-cnc-install",
+      "url": "https://docs.cartographer3d.com/cartographer-cnc-mount/installation.md",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "4a2d87671d1826a3d1a3b6c560ddf12a2a10bd7918ef39cd878f4bc9483f7626",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "note": "Three installation figures rendered/viewed privately: 4M3x8SHCS rail,2M3x6BHCS clamp,2M2x10BHCS/SHCS switch,2M3x6BHCS standard probe. Text: early rail hardware uses M3x8BHCS; UHF can require extenders.",
+      "hash_scope": "Exact retrieved file bytes: cnc-install.md; not repository tree HTML",
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-cnc-mount/installation.md"
+    },
+    {
+      "id": "cartographer-hardware-setup",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation.md",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": null,
+      "sha256": "75b2ebbc88408e7d7d24d5d699989928caf54746ed7e3d1a03ea6c1dc6e891af",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "note": "2.6-3mm coil above nozzle; level; no metal above coil keepout; stock USB cable not chain-rated; direct USB advised; older CAN pin warnings not extrapolated to V4.",
+      "hash_scope": "Exact retrieved file bytes: probe-install.md; not repository tree HTML",
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation.md"
+    },
+    {
+      "id": "cartographer-faq",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/faq.md",
+      "retrieved_at": "2026-10-09T06:22:35+00:00",
+      "commit": null,
+      "version": "Page labels last update 2024-12-17; retrieved current",
+      "sha256": "bbe340924d1dfaa6f748ea77fd4b6eb7d5888c1136176a49a145b6617d8ab38b",
+      "license": "Unverified reuse terms; link only",
+      "redistributed": false,
+      "note": "Embedded magnet beds cause mesh errors; uniform magnetic sheets acceptable. Firmware/macros in dated FAQ not adopted as current software authority.",
+      "hash_scope": "Exact retrieved file bytes: carto-faq.md; not repository tree HTML",
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/faq.md"
+    },
+    {
+      "id": "E-LDO-WIRING",
+      "title": "LDO Rev D wiring guide",
+      "url": "https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_d",
+      "retrieved_at": "2026-10-09",
+      "version": "Wiki updated-at 2026-07-14T12:16:08.113Z",
+      "commit": null,
+      "sha256": "247da4a7cbffb34dda26bb2f81c85f30b5af9be1926a0336738ec1de7c6f0af6",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_d",
+      "license": "all rights reserved (LDO page metadata alr)"
+    },
+    {
+      "id": "E-LDO-ERRATA",
+      "title": "LDO historical Rapido/Octopus errata",
+      "url": "https://docs.ldomotors.com/en/voron/voron2/kit-errata",
+      "retrieved_at": "2026-10-09",
+      "version": "Wiki updated-at 2022-12-06T18:56:51.614Z",
+      "commit": null,
+      "sha256": "9c4c04f99113064a274a3b952d611ceb8d41c3466ad3e2f65d938fdef54879d4",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2/kit-errata",
+      "license": "all rights reserved (LDO page metadata alr)"
+    },
+    {
+      "id": "E-NHV2-DOC",
+      "title": "LDO Nitehawk SB V2 documentation",
+      "url": "https://docs.ldomotors.com/en/Toolboard/nitehawk-sb-v2",
+      "retrieved_at": "2026-10-09",
+      "version": "2026-07-10T05:45:15.178Z",
+      "commit": null,
+      "sha256": "1ad306dfd340b4fa21f50a21322ed87b035d6ed9ecceab3302773944f38609ee",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.ldomotors.com/en/Toolboard/nitehawk-sb-v2",
+      "license": "all rights reserved (LDO page metadata alr)"
+    },
+    {
+      "id": "E-NH-DOC",
+      "title": "LDO original Nitehawk SB documentation",
+      "url": "https://docs.ldomotors.com/en/Toolboard/nitehawk-sb",
+      "retrieved_at": "2026-10-09",
+      "version": "2025-10-09T07:39:02.074Z",
+      "commit": null,
+      "sha256": "7de961603b9d4d378a5711397637f50b917a846a55d25e08dada392a98409788",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.ldomotors.com/en/Toolboard/nitehawk-sb",
+      "license": "all rights reserved (LDO page metadata alr)"
+    },
+    {
+      "id": "E-NHV2-SCHEM",
+      "title": "Nitehawk SB V2.0.0 schematic",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB-V2/blob/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Hardware/Nitehawk-SB_V2.0.0/Nitehawk-SB_V2.0.0_Schematics.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "SB V2.0, 2025-11-06, sheet 1/1",
+      "commit": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "sha256": "011498814f027f7f4c4e7d6ea22e77a4462657032a6eb85d457db63ea2bc49ac",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "redistributed": false,
+      "reuse_terms": "no license file established in pinned repository tree; linked only, no reuse permission inferred",
+      "printed_pages": [],
+      "pdf_indices_zero_based": null,
+      "visual_inspection": {
+        "pdf_indices": [
+          0
+        ],
+        "areas": [
+          "downstream USB P8/F1 pin-to-net mapping and keyed connector diagram compared",
+          "heater Q1/P3 and 24V power path"
+        ],
+        "method": "PyMuPDF render plus original connector figure view_image; no geometry inferred from text alone"
+      },
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Nitehawk-SB-V2/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Hardware/Nitehawk-SB_V2.0.0/Nitehawk-SB_V2.0.0_Schematics.pdf",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree"
+    },
+    {
+      "id": "E-NHV2-PINOUT",
+      "title": "Nitehawk V2 pinout photograph",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB-V2/blob/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Images/nhsbv2_pcb_pinout.jpg",
+      "retrieved_at": "2026-10-09",
+      "version": "photograph labeled V2.0.0",
+      "commit": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "sha256": "f9f1a90ec87d71f4fd502738eb705afa2afd5555128a711d7aebe7ea58d681ce",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "redistributed": false,
+      "reuse_terms": "no license file established in pinned repository tree; linked only, no reuse permission inferred",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": {
+        "method": "view_image",
+        "checked": [
+          "P8 photographed orientation versus schematic numbering",
+          "PH2.0 TH0, XY endstop, PROBE",
+          "XT30 combined USB/power"
+        ]
+      },
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Nitehawk-SB-V2/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Images/nhsbv2_pcb_pinout.jpg",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree"
+    },
+    {
+      "id": "E-NHV2-FW",
+      "title": "Nitehawk V2 firmware target figure",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB-V2/blob/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Images/make_menuconfig.png",
+      "retrieved_at": "2026-10-09",
+      "version": "G0B1/12MHz/8KiB/USB PA11-PA12",
+      "commit": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "sha256": "a4ba1b675520a4f7907c521ab9e421ac09b6c01457ed62c2cc775b8cc3b939c1",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "redistributed": false,
+      "reuse_terms": "no license file established in pinned repository tree; linked only, no reuse permission inferred",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": {
+        "method": "view_image",
+        "checked": [
+          "MCU",
+          "clock",
+          "offset",
+          "USB pins"
+        ]
+      },
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Nitehawk-SB-V2/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Images/make_menuconfig.png",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree"
+    },
+    {
+      "id": "E-NHV2-CFG",
+      "title": "Nitehawk V2 configuration",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB-V2/blob/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Configs/nitehawk-sbv2.cfg",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "commit": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "sha256": "d9cf287e2cdde57841d1ddc8a30bf933231ad044607046c66a6f84a718eb7449",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "redistributed": false,
+      "reuse_terms": "no license file established in pinned repository tree; linked only, no reuse permission inferred",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Nitehawk-SB-V2/42ae497cfd627acde0f6ad81c8dd26f51efcbb48/Configs/nitehawk-sbv2.cfg",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree"
+    },
+    {
+      "id": "E-NH-CFG",
+      "title": "Original Nitehawk configuration",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB/blob/be93526b948d3339c755cb32116baef221ce1a8d/Firmware/Klipper%20Configs/nitehawk-sb.cfg",
+      "retrieved_at": "2026-10-09",
+      "version": "original RP2040 family",
+      "commit": "be93526b948d3339c755cb32116baef221ce1a8d",
+      "sha256": "f64090f4aed6f4467e98b7413538dc2ba24fa5b341839921197fb9afd31946c6",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "redistributed": false,
+      "reuse_terms": "no license file established in pinned repository tree; linked only, no reuse permission inferred",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Nitehawk-SB/be93526b948d3339c755cb32116baef221ce1a8d/Firmware/Klipper%20Configs/nitehawk-sb.cfg",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree"
+    },
+    {
+      "id": "E-NH-PINOUT",
+      "title": "Original Nitehawk pinout photograph",
+      "url": "https://docs.ldomotors.com/nitehawk/nhsb_pcb_pinout.png",
+      "retrieved_at": "2026-10-09",
+      "version": "photographed V1.4; not proof of actual board",
+      "commit": null,
+      "sha256": "8dc20dde15498621161751e8b4188bda7c11e0bd887d64c49a3b25620c94a4e6",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": {
+        "method": "view_image",
+        "checked": [
+          "original RP2040 gpio heater/sensor",
+          "XH versus V2 PH connector distinction",
+          "no downstream USB shown"
+        ]
+      },
+      "retrieved_content_url": "https://docs.ldomotors.com/nitehawk/nhsb_pcb_pinout.png",
+      "license": "all rights reserved (LDO page metadata alr)"
+    },
+    {
+      "id": "E-LEV-MANUAL",
+      "title": "Leviathan V1.3 manual",
+      "url": "https://github.com/MotorDynamicsLab/Leviathan/blob/878c3c4893ea353552c957f574509f9890e1e37a/Manual/Leviathan_V1.3_Manual.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "2025-07-09",
+      "commit": "878c3c4893ea353552c957f574509f9890e1e37a",
+      "sha256": "e64a191ec1c6f2f9d7dd744446acd592b5734a5cb23135e5b2e13d62768e1872",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "pdf_indices_zero_based": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        11
+      ],
+      "visual_inspection": {
+        "pdf_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          11
+        ],
+        "method": "PyMuPDF render; view_image pin assignment page and USB firmware page",
+        "checked": [
+          "STM32H743 25MHz",
+          "max heater output 180W/7.5A",
+          "DC bed max 240W/10A",
+          "CAN socket 24V orientation",
+          "128KiB USB firmware diagram"
+        ]
+      },
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Leviathan/878c3c4893ea353552c957f574509f9890e1e37a/Manual/Leviathan_V1.3_Manual.pdf",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-LEV-SCHEM",
+      "title": "Leviathan V1.3 schematic",
+      "url": "https://github.com/MotorDynamicsLab/Leviathan/blob/878c3c4893ea353552c957f574509f9890e1e37a/Schematic/Leviathan_V1.3.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "V1.3",
+      "commit": "878c3c4893ea353552c957f574509f9890e1e37a",
+      "sha256": "246807b76a461ac47fea54f6da296d5925a84ef4eee83c0dba50a6a1d0831563",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Leviathan/878c3c4893ea353552c957f574509f9890e1e37a/Schematic/Leviathan_V1.3.pdf",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-LEV-FW",
+      "title": "Leviathan V1.3 firmware target figure",
+      "url": "https://github.com/MotorDynamicsLab/Leviathan/blob/878c3c4893ea353552c957f574509f9890e1e37a/Media/klipper_usb_V1.3.jpg",
+      "retrieved_at": "2026-10-09",
+      "version": "H743/25MHz/128KiB/USB",
+      "commit": "878c3c4893ea353552c957f574509f9890e1e37a",
+      "sha256": "3e179b92cc9540b8cb3256396dca6a30816380bae6e7874802c330aacbcfbb10",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": {
+        "method": "view_image",
+        "checked": [
+          "revision-dependent USB target"
+        ]
+      },
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Leviathan/878c3c4893ea353552c957f574509f9890e1e37a/Media/klipper_usb_V1.3.jpg",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-LEV-CFG-CONFLICT",
+      "title": "Generic Leviathan cfg with older firmware header",
+      "url": "https://github.com/MotorDynamicsLab/Leviathan/blob/878c3c4893ea353552c957f574509f9890e1e37a/Klipper_config/voron2_leviathan.cfg",
+      "retrieved_at": "2026-10-09",
+      "version": "F446/12MHz/no-bootloader header conflicts with V1.3 manual",
+      "commit": "878c3c4893ea353552c957f574509f9890e1e37a",
+      "sha256": "6822cacc53b417fad39046b06a2c3cec91d8fbc5dc60f8f217e0226487e2932d",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/MotorDynamicsLab/Leviathan/878c3c4893ea353552c957f574509f9890e1e37a/Klipper_config/voron2_leviathan.cfg",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-LEV-GUIDE",
+      "title": "LDO Leviathan V1.3 guide",
+      "url": "https://www.ldomotion.com/guides/voron-leviathan-v1-3",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned live HTML; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "b0a32a8cbb8b7e60a0eb198fbdb15015816c5e00f55c29ea47deadf18dff6a7e",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://www.ldomotion.com/guides/voron-leviathan-v1-3",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-SETUP",
+      "title": "Cartographer new-plugin Klipper setup",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/klipper-setup.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "84486b6d9135d1540d692b4ff40fcb8974f9fe6e622994d4abc733b591093e63",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/klipper-setup.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-WIRING",
+      "title": "Cartographer USB/CAN wiring",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation/wiring-diagrams.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "2d38bd1d43965ca7df5e78c64de52016226d2805fe1fd3e3abf9ef36b92afac6",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation/wiring-diagrams.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-HARDWARE",
+      "title": "Cartographer hardware setup",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "75b2ebbc88408e7d7d24d5d699989928caf54746ed7e3d1a03ea6c1dc6e891af",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/probe-installation.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-FAQ",
+      "title": "Cartographer FAQ",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/faq.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "bbe340924d1dfaa6f748ea77fd4b6eb7d5888c1136176a49a145b6617d8ab38b",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/faq.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-SCAN-CAL",
+      "title": "Cartographer new-plugin scan calibration",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/scan-calibration.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "36e08faf1b109ee056648756614dd06d840e3beac7d1e3e79e6b8bfdebad2324",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/scan-calibration.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-TOUCH-CAL",
+      "title": "Cartographer Survey Touch calibration",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "064d46857e1f9a99ebe95031c9817b507b21b868df9243c63d4fb22c5eaf0d48",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-TOUCH",
+      "title": "Cartographer Touch feature limitations",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/features/touch.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "a7ff86f16be240919f797cc0549f0f44b2ebdc160dedac2d8fa798622623b08c",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/features/touch.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-FW-DOC",
+      "title": "Cartographer firmware selection",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/firmware.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "6c5b6d3521a2715e7e0abb34e6733792e29e79373040e4ab5b4129fdf5ed6154",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/firmware.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-MODES",
+      "title": "Cartographer Scan vs Touch explanatory page",
+      "url": "https://docs.cartographer3d.com/cartographer-probe/classic-vs-survey-touch.md",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned GitBook; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "9637b30082e39f4a2392621e8c66af0072f30e2b9108134f49fd1833ff2d84e6",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.cartographer3d.com/cartographer-probe/classic-vs-survey-touch.md",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "E-CARTO-PLUGIN",
+      "title": "New Cartographer plugin source",
+      "url": "https://github.com/Cartographer3D/cartographer3d-plugin/blob/06e016905cc3d209ceb543afd59a580bcabc44be/pyproject.toml",
+      "retrieved_at": "2026-10-09",
+      "version": "current-generation source snapshot; installed package unknown",
+      "commit": "06e016905cc3d209ceb543afd59a580bcabc44be",
+      "sha256": "2972e0e6236074a47ffcc1fa390a2b981ffde15c3096ae7f4ddd5acf0b82386e",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/Cartographer3D/cartographer3d-plugin/06e016905cc3d209ceb543afd59a580bcabc44be/pyproject.toml",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-CARTO-FW-BINARY",
+      "title": "Cartographer V4 Survey USB Full firmware candidate",
+      "url": "https://github.com/Cartographer3D/cartographer_firmware/blob/e5c2b17dbe04ec1f747af5d81b2215949a0a9f8e/firmware/v4/firmware/6.1.0/CartographerV4_6.1.0_USB_full_8kib_offset.bin",
+      "retrieved_at": "2026-10-09",
+      "version": "6.1.0; V4 USB Full, Katapult 8KiB-offset image; hashed not flashed",
+      "commit": "e5c2b17dbe04ec1f747af5d81b2215949a0a9f8e",
+      "sha256": "5e3352293fd0d1baf28ee87b9317cd740cd9b1b3e53401a8f992f883f97a83ef",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "redistributed": false,
+      "reuse_terms": "no license file established in pinned repository tree; linked only, no reuse permission inferred",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/Cartographer3D/cartographer_firmware/e5c2b17dbe04ec1f747af5d81b2215949a0a9f8e/firmware/v4/firmware/6.1.0/CartographerV4_6.1.0_USB_full_8kib_offset.bin",
+      "license": "unknown; no LICENSE/COPYING in pinned recursive tree"
+    },
+    {
+      "id": "E-KLIPPER-CONFIG",
+      "title": "Klipper configuration reference",
+      "url": "https://github.com/Klipper3d/klipper/blob/461c4e3722c3a897fba1c6b3f0780a5315043842/docs/Config_Reference.md",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "commit": "461c4e3722c3a897fba1c6b3f0780a5315043842",
+      "sha256": "30a0c4870aee68787932aeda3e28abcdca49a0a95def21659b6667380ebcf6d3",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/Klipper3d/klipper/461c4e3722c3a897fba1c6b3f0780a5315043842/docs/Config_Reference.md",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-KLIPPER-CHECKS",
+      "title": "Klipper configuration checks",
+      "url": "https://github.com/Klipper3d/klipper/blob/461c4e3722c3a897fba1c6b3f0780a5315043842/docs/Config_checks.md",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "commit": "461c4e3722c3a897fba1c6b3f0780a5315043842",
+      "sha256": "65618f7fbc29eb1d51adc1b80d74886955dda024fdc8717349f5fe616a11a440",
+      "hash_scope": "exact downloaded content bytes, not a rendered GitHub HTML page",
+      "redistributed": false,
+      "reuse_terms": "GPL-3.0 license file independently read at locked commit; retained source linked; no manufacturer figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://raw.githubusercontent.com/Klipper3d/klipper/461c4e3722c3a897fba1c6b3f0780a5315043842/docs/Config_checks.md",
+      "license": "GPL-3.0"
+    },
+    {
+      "id": "E-VORON-STARTUP",
+      "title": "Voron official startup documentation",
+      "url": "https://docs.vorondesign.com/build/startup/",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned HTML; retrieved-byte hash locked",
+      "commit": null,
+      "sha256": "1323dd42fde6d67523515a4854b9d75c9c41f97d65715d5c3b23b733c130bf74",
+      "hash_scope": "exact retrieved page bytes",
+      "redistributed": false,
+      "reuse_terms": "linked only; no external figures redistributed",
+      "printed_pages": null,
+      "pdf_indices_zero_based": null,
+      "visual_inspection": null,
+      "retrieved_content_url": "https://docs.vorondesign.com/build/startup/",
+      "license": "unknown; linked only"
+    },
+    {
+      "id": "vitalii-ab-product",
+      "url": "https://vitalii3d.com/products/double-shear-v2-4-ab-motors-mounts",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": null,
+      "sha256": "11a90907024828664e575194119bb96539e212d480b1ea9a6af39a208f0d2f78",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page",
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://vitalii3d.com/products/double-shear-v2-4-ab-motors-mounts"
+    },
+    {
+      "id": "vitalii-front-product",
+      "url": "https://vitalii3d.com/products/front-idlers-for-voron-printers",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": null,
+      "sha256": "04e1c2fba06293c2855f5550d7da79530d5f125f8b273ba66e82b9554c553b9f",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page",
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://vitalii3d.com/products/front-idlers-for-voron-printers"
+    },
+    {
+      "id": "vitalii-xy-product",
+      "url": "https://vitalii3d.com/products/live-idler-xy-joints-for-voron-printers-6mm-belts",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": "1.1",
+      "sha256": "3ac0f813b4fcbcd2d4dadb23f46ddfab5be1798008108713f8249e5be4b7faa1",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page",
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://vitalii3d.com/products/live-idler-xy-joints-for-voron-printers-6mm-belts"
+    },
+    {
+      "id": "vitalii-z-tension-product",
+      "url": "https://vitalii3d.com/products/z-tensioners-for-voron-v2-4",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": null,
+      "sha256": "619beb0cd584ca9134a90d3836cb4ea4457cc9b4433f24543cc8dfa3e83ab70d",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page",
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://vitalii3d.com/products/z-tensioners-for-voron-v2-4"
+    },
+    {
+      "id": "vitalii-z-joint-product",
+      "url": "https://vitalii3d.com/products/rigid-fixed-z-joints-for-voron",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": null,
+      "sha256": "1e35294a0127c2e48a5f3f1fc9c7f9992035b18926e134350d155d6b5dad5693",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page",
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://vitalii3d.com/products/rigid-fixed-z-joints-for-voron"
+    },
+    {
+      "id": "vitalii-z-clamp-product",
+      "url": "https://vitalii3d.com/products/voron-v2-cnc-belt-clamps",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": null,
+      "sha256": "a24f0cd01d6c0821278bb531adbbf618088850f0f76b828d4df1b2197b04972a",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page",
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://vitalii3d.com/products/voron-v2-cnc-belt-clamps"
+    },
+    {
+      "id": "west3d-titanium-product",
+      "url": "https://west3d.com/products/titanium-backers-for-voron-2-4-trident-3-pack",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": null,
+      "sha256": "68e05b9698245daea27da54bb52476bc5ad5c4dbfe8e1adcbbf6c2c8fad4b5fd",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page",
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://west3d.com/products/titanium-backers-for-voron-2-4-trident-3-pack"
+    },
+    {
+      "id": "vitalii-ab-assembly",
+      "url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/6mm_2.4_AB.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "6mm Belts, v2.4, rev 1.0",
+      "revision": null,
+      "sha256": "11fb2f2437c290ffaaf215450b0c4459cdf953fada6b8224af245d86b7315ea9",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "assembly_pdf",
+      "pdf_page_count": 10,
+      "pages": [
+        {
+          "pdf_index": 0,
+          "pdf_leaf": 1,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 1,
+          "pdf_leaf": 2,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 2,
+          "pdf_leaf": 3,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 3,
+          "pdf_leaf": 4,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 4,
+          "pdf_leaf": 5,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 5,
+          "pdf_leaf": 6,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 6,
+          "pdf_leaf": 7,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 7,
+          "pdf_leaf": 8,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 8,
+          "pdf_leaf": 9,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 9,
+          "pdf_leaf": 10,
+          "printed_page": null
+        }
+      ],
+      "diagram_inspection": {
+        "rendered": true,
+        "visually_inspected_pdf_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "renderer": "PyMuPDF",
+        "research_images_distributed": false
+      },
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/6mm_2.4_AB.pdf"
+    },
+    {
+      "id": "vitalii-front-assembly",
+      "url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/6mm_Front_Idlers_2.4.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "V2.4, rev 1.0",
+      "revision": null,
+      "sha256": "df27ef1a9c9f44bcce5f165a9798a6e7c6ef9a65a87cc76cc774959fa56c6df3",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "assembly_pdf",
+      "pdf_page_count": 9,
+      "pages": [
+        {
+          "pdf_index": 0,
+          "pdf_leaf": 1,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 1,
+          "pdf_leaf": 2,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 2,
+          "pdf_leaf": 3,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 3,
+          "pdf_leaf": 4,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 4,
+          "pdf_leaf": 5,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 5,
+          "pdf_leaf": 6,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 6,
+          "pdf_leaf": 7,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 7,
+          "pdf_leaf": 8,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 8,
+          "pdf_leaf": 9,
+          "printed_page": null
+        }
+      ],
+      "diagram_inspection": {
+        "rendered": true,
+        "visually_inspected_pdf_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "renderer": "PyMuPDF",
+        "research_images_distributed": false
+      },
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/6mm_Front_Idlers_2.4.pdf"
+    },
+    {
+      "id": "vitalii-xy-assembly",
+      "url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/6mm_LI_XY_Joints.pdf?v=1757048653e",
+      "retrieved_at": "2026-10-09",
+      "version": "6mm Belts, rev 1.1",
+      "revision": null,
+      "sha256": "dd19b507a20b20055ca00f1a10e069ee7f4855dc32641ea83ff61a8d82d29f79",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "assembly_pdf",
+      "pdf_page_count": 11,
+      "pages": [
+        {
+          "pdf_index": 0,
+          "pdf_leaf": 1,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 1,
+          "pdf_leaf": 2,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 2,
+          "pdf_leaf": 3,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 3,
+          "pdf_leaf": 4,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 4,
+          "pdf_leaf": 5,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 5,
+          "pdf_leaf": 6,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 6,
+          "pdf_leaf": 7,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 7,
+          "pdf_leaf": 8,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 8,
+          "pdf_leaf": 9,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 9,
+          "pdf_leaf": 10,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 10,
+          "pdf_leaf": 11,
+          "printed_page": null
+        }
+      ],
+      "diagram_inspection": {
+        "rendered": true,
+        "visually_inspected_pdf_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "renderer": "PyMuPDF",
+        "research_images_distributed": false
+      },
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/6mm_LI_XY_Joints.pdf?v=1757048653e"
+    },
+    {
+      "id": "vitalii-z-tension-assembly",
+      "url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/Z_Tensioners_Assembly_Instruction.pdf?v=1752685029",
+      "retrieved_at": "2026-10-09",
+      "version": "No revision/date printed",
+      "revision": null,
+      "sha256": "434a2afcff17f7b1a5e2160d030517e85880f41e81a4e52bc926ea9c0817a396",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "assembly_pdf",
+      "pdf_page_count": 6,
+      "pages": [
+        {
+          "pdf_index": 0,
+          "pdf_leaf": 1,
+          "printed_page": 1
+        },
+        {
+          "pdf_index": 1,
+          "pdf_leaf": 2,
+          "printed_page": 2
+        },
+        {
+          "pdf_index": 2,
+          "pdf_leaf": 3,
+          "printed_page": 3
+        },
+        {
+          "pdf_index": 3,
+          "pdf_leaf": 4,
+          "printed_page": 4
+        },
+        {
+          "pdf_index": 4,
+          "pdf_leaf": 5,
+          "printed_page": 4
+        },
+        {
+          "pdf_index": 5,
+          "pdf_leaf": 6,
+          "printed_page": 6
+        }
+      ],
+      "diagram_inspection": {
+        "rendered": true,
+        "visually_inspected_pdf_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "renderer": "PyMuPDF",
+        "research_images_distributed": false
+      },
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/Z_Tensioners_Assembly_Instruction.pdf?v=1752685029"
+    },
+    {
+      "id": "vitalii-xy-support-cad",
+      "url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/Live_Shaft_XY.zip?v=1779734631",
+      "retrieved_at": "2026-10-09",
+      "version": "query v=1779734631",
+      "revision": null,
+      "sha256": "c1ee66f5bbde0a9747757e92395c6c7f9e4ee95116d457c4fbbca7fa0d606a12",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "supporting_cad_archive",
+      "contents": [
+        "Live Shaft XY/",
+        "Live Shaft XY/Endstop_Bump_Deep.step",
+        "Live Shaft XY/2x_PCB_Spacer.step",
+        "Live Shaft XY/Endstop_PCB_Mount_heat_inserts.step",
+        "Live Shaft XY/Endstop_Bump.step"
+      ],
+      "inspection": {
+        "archive_listed": true,
+        "step_geometry_validated": false,
+        "stl_files_present": false,
+        "reason": "No STEP-capable CAD tool installed; archive has no STL or print/hardware specification."
+      },
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/Live_Shaft_XY.zip?v=1779734631"
+    },
+    {
+      "id": "backer-design-readme",
+      "url": "https://github.com/tanaes/whopping_Voron_mods/blob/62268ed817878e54d6a1186882060aa8368d4f0f/extrusion_backers/README.md",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": "62268ed817878e54d6a1186882060aa8368d4f0f",
+      "sha256": "0ce41c2a148157e7e80ef6e213cfd8c38c96c2d2b0ea4c364eaf48d9d01eccbb",
+      "license": {
+        "status": "verified",
+        "spdx": "GPL-3.0",
+        "license_url": "https://github.com/tanaes/whopping_Voron_mods/blob/62268ed817878e54d6a1186882060aa8368d4f0f/LICENSE",
+        "redistribution": "Link only used; no third-party assets copied."
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "repository_document",
+      "immutable_url": "https://raw.githubusercontent.com/tanaes/whopping_Voron_mods/62268ed817878e54d6a1186882060aa8368d4f0f/extrusion_backers/README.md",
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://raw.githubusercontent.com/tanaes/whopping_Voron_mods/62268ed817878e54d6a1186882060aa8368d4f0f/extrusion_backers/README.md"
+    },
+    {
+      "id": "backer-design-license",
+      "url": "https://raw.githubusercontent.com/tanaes/whopping_Voron_mods/62268ed817878e54d6a1186882060aa8368d4f0f/LICENSE",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": "62268ed817878e54d6a1186882060aa8368d4f0f",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "license": {
+        "status": "verified",
+        "spdx": "GPL-3.0",
+        "redistribution": "No external files copied into guide."
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "license",
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://raw.githubusercontent.com/tanaes/whopping_Voron_mods/62268ed817878e54d6a1186882060aa8368d4f0f/LICENSE"
+    },
+    {
+      "id": "motion-upstream-manual-reference",
+      "url": "https://raw.githubusercontent.com/VoronDesign/Voron-2/a192410e27ea345644ae5c4b29b4c9c40cbe1a73/Manual/Assembly_Manual_2.4r2.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "V2.4R2 assembly manual",
+      "revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "sha256": "5deae644239870a7d265b15bd0158bf05d7cb416680959b386f19498afcfa888",
+      "license": {
+        "status": "verified",
+        "spdx": "GPL-3.0",
+        "redistribution": "Original manual retained in upstream repository; research rendering not copied."
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "assembly_pdf",
+      "pdf_page_count": 263,
+      "pages_note": "All printed page numbers equal zero-based PDF index + 1. Separately checked by text and rendered representative pages.",
+      "diagram_inspection": {
+        "rendered": true,
+        "visually_inspected_pdf_indices": [
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          110,
+          114,
+          117,
+          118,
+          119,
+          120,
+          121,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135
+        ],
+        "renderer": "PyMuPDF",
+        "research_images_distributed": false
+      },
+      "hash_scope": "exact retrieved document bytes",
+      "retrieved_content_url": "https://raw.githubusercontent.com/VoronDesign/Voron-2/a192410e27ea345644ae5c4b29b4c9c40cbe1a73/Manual/Assembly_Manual_2.4r2.pdf"
+    },
+    {
+      "id": "ldo-home",
+      "url": "https://docs.ldomotors.com/en/voron/voron2",
+      "retrieved_at": "2026-10-09",
+      "version": "2025-05-14T06:49:38.579Z",
+      "sha256": "ebd07e0fe6129408ff5dfe4dd206014e3b091ebe60ab5528ab30198c948a83e4",
+      "kind": "manufacturer_documentation",
+      "license": {
+        "status": "all rights reserved per siteConfig contentLicense alr",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Current revision documentation, not proof of shipment",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2"
+    },
+    {
+      "id": "ldo-faq",
+      "url": "https://docs.ldomotors.com/en/voron/voron2/build-faq",
+      "retrieved_at": "2026-10-09",
+      "version": "2026-02-10T20:19:40.115Z",
+      "sha256": "1692e3a58780e9fcbba3a107f8db3526a414173906ce20ce848b7b27f8a483dd",
+      "kind": "manufacturer_documentation",
+      "license": {
+        "status": "all rights reserved per siteConfig contentLicense alr",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Current revision documentation, not proof of shipment",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2/build-faq"
+    },
+    {
+      "id": "ldo-printed-revd",
+      "url": "https://docs.ldomotors.com/en/voron/voron2/printed_part_guide_rev_d",
+      "retrieved_at": "2026-10-09",
+      "version": "2025-07-14T14:04:59.144Z",
+      "sha256": "f09c14951e6dc5fe9f12472dbdea1d0e5e27ad1d0d94a33910be4ba064d0e21e",
+      "kind": "manufacturer_documentation",
+      "license": {
+        "status": "all rights reserved per siteConfig contentLicense alr",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Current revision documentation, not proof of shipment",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2/printed_part_guide_rev_d"
+    },
+    {
+      "id": "ldo-bom-directory",
+      "url": "https://docs.ldomotors.com/en/voron/voron2/350_BOM/HOME",
+      "retrieved_at": "2026-10-09",
+      "version": "2026-09-21T08:35:34.645Z",
+      "sha256": "465268d46ab5c925b06915f33690a92caccec93d049fae9607309e762eea1064",
+      "kind": "manufacturer_documentation",
+      "license": {
+        "status": "all rights reserved per siteConfig contentLicense alr",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Current revision documentation, not proof of shipment",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2/350_BOM/HOME"
+    },
+    {
+      "id": "ldo-bom-revd",
+      "url": "https://docs.ldomotors.com/en/voron/voron2/350_BOM/Rev_D",
+      "retrieved_at": "2026-10-09",
+      "version": "2026-02-05T01:20:51.909Z",
+      "sha256": "76d56f74f2e40f3ae3ae3da0c508e338f381a683edcd73cf0bbb9387a41ea0e6",
+      "kind": "manufacturer_documentation",
+      "license": {
+        "status": "all rights reserved per siteConfig contentLicense alr",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Current revision documentation, not proof of shipment",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2/350_BOM/Rev_D"
+    },
+    {
+      "id": "upstream-voron2",
+      "url": "https://github.com/VoronDesign/Voron-2/tree/a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "retrieved_at": "2026-10-09",
+      "commit": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "branch": "Voron2.4",
+      "license": {
+        "status": "GPL-3.0",
+        "url": "https://github.com/VoronDesign/Voron-2/blob/a192410e27ea345644ae5c4b29b4c9c40cbe1a73/LICENSE",
+        "redistribution": "upstream retained"
+      },
+      "kind": "repository",
+      "hash_scope": "repository commit pin",
+      "retrieved_content_url": "https://github.com/VoronDesign/Voron-2/tree/a192410e27ea345644ae5c4b29b4c9c40cbe1a73"
+    },
+    {
+      "id": "upstream-voron2-manual",
+      "url": "https://github.com/VoronDesign/Voron-2/blob/a192410e27ea345644ae5c4b29b4c9c40cbe1a73/Manual/Assembly_Manual_2.4r2.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "2023-07-04 printed cover; PDF metadata modification 2023-07-18",
+      "commit": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "sha256": "5deae644239870a7d265b15bd0158bf05d7cb416680959b386f19498afcfa888",
+      "local_repository_path": "Manual/Assembly_Manual_2.4r2.pdf",
+      "kind": "assembly_pdf",
+      "pdf_page_count": 263,
+      "page_mapping": {
+        "printed_pages": "1..262; final back cover unnumbered",
+        "zero_based_index": "printed_page - 1; final index262 unnumbered"
+      },
+      "license": {
+        "status": "GPL-3.0",
+        "redistribution": "retained upstream; reference page PNGs rendered locally"
+      },
+      "diagram_inspection": {
+        "rendered": true,
+        "visually_inspected_pdf_indices": [
+          3,
+          12,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20,
+          24,
+          27,
+          28,
+          31,
+          32,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          238,
+          242,
+          244,
+          246,
+          256,
+          258
+        ],
+        "note": "Additional modified-motion reference pages inspected by motion researcher; see motion record."
+      },
+      "hash_scope": "exact source PDF bytes",
+      "retrieved_content_url": "https://github.com/VoronDesign/Voron-2/blob/a192410e27ea345644ae5c4b29b4c9c40cbe1a73/Manual/Assembly_Manual_2.4r2.pdf"
+    },
+    {
+      "id": "ldo-supplement-repository",
+      "url": "https://github.com/MotorDynamicsLab/LDOVoron2/tree/8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+      "retrieved_at": "2026-10-09",
+      "commit": "8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+      "kind": "repository",
+      "license": {
+        "status": "GPL-3.0",
+        "url": "https://github.com/MotorDynamicsLab/LDOVoron2/blob/8270e8cf6c7ba29a7fd11d143c287bd3af576934/LICENSE",
+        "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "redistribution": "link_only in this custom guide"
+      },
+      "hash_scope": "repository commit pin",
+      "retrieved_content_url": "https://github.com/MotorDynamicsLab/LDOVoron2/tree/8270e8cf6c7ba29a7fd11d143c287bd3af576934"
+    },
+    {
+      "id": "west3d-kit",
+      "url": "https://west3d.com/products/ldo-v2-4-kit-in-stock",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned listing snapshot",
+      "sha256": "cb2547b310e49dba41fc8e8404b0fa3c596ce9d62646ae32a1c40f81867f3c36",
+      "kind": "product_page",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Rev D+ variants, Leviathan and Nitehawk SB V2.0 listing; not shipped-box proof",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://west3d.com/products/ldo-v2-4-kit-in-stock"
+    },
+    {
+      "id": "E-LEV-REPO",
+      "url": "https://github.com/MotorDynamicsLab/Leviathan/tree/878c3c4893ea353552c957f574509f9890e1e37a",
+      "retrieved_at": "2026-10-09",
+      "commit": "878c3c4893ea353552c957f574509f9890e1e37a",
+      "kind": "repository",
+      "hash_scope": "repository commit pin",
+      "license": "GPL-3.0 independently checked; link only here",
+      "retrieved_content_url": "https://github.com/MotorDynamicsLab/Leviathan/tree/878c3c4893ea353552c957f574509f9890e1e37a"
+    },
+    {
+      "id": "E-NH-REPO",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB/tree/be93526b948d3339c755cb32116baef221ce1a8d",
+      "retrieved_at": "2026-10-09",
+      "commit": "be93526b948d3339c755cb32116baef221ce1a8d",
+      "kind": "repository",
+      "hash_scope": "repository commit pin",
+      "license": "No license found in pinned tree; reuse unresolved, link only",
+      "retrieved_content_url": "https://github.com/MotorDynamicsLab/Nitehawk-SB/tree/be93526b948d3339c755cb32116baef221ce1a8d"
+    },
+    {
+      "id": "E-NHV2-REPO",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB-V2/tree/42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "retrieved_at": "2026-10-09",
+      "commit": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "kind": "repository",
+      "hash_scope": "repository commit pin",
+      "license": "No license found in pinned tree; reuse unresolved, link only",
+      "retrieved_content_url": "https://github.com/MotorDynamicsLab/Nitehawk-SB-V2/tree/42ae497cfd627acde0f6ad81c8dd26f51efcbb48"
+    },
+    {
+      "id": "ldo-trident-supplement",
+      "url": "https://github.com/MotorDynamicsLab/LDOVoronTrident/tree/5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5",
+      "commit": "5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5",
+      "retrieved_at": "2026-10-09",
+      "kind": "repository",
+      "hash_scope": "repository commit pin",
+      "license": {
+        "status": "GPL-3.0 checked LICENSE",
+        "url": "https://github.com/MotorDynamicsLab/LDOVoronTrident/blob/5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5/LICENSE",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      },
+      "retrieved_content_url": "https://github.com/MotorDynamicsLab/LDOVoronTrident/tree/5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5"
+    },
+    {
+      "id": "voron-software-setup",
+      "url": "https://docs.vorondesign.com/build/software/",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned HTML snapshot",
+      "sha256": "25416adfce0dd344c1250dbcfe8b6930aad174723d0ab8458846f021bdf7b25f",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://docs.vorondesign.com/build/software/",
+      "license": "reuse unresolved; linked only"
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/bed-kinematic-stacks.svg",
+      "sha256": "dbe2e243d2c2feabbaad79a20f809a42185c8ad1c84d34d99a4fd583827247f0",
+      "creator": "Original unofficial guide diagram",
+      "license": "GPL-3.0 (guide repository license)",
+      "provenance": "Drawn from manufacturer-documented contact types / measured-height requirement; no traced vendor image",
+      "dimensional": false,
+      "redistributed_third_party_asset": false
+    },
+    {
+      "path": "assets/toolhead-probe-height.svg",
+      "sha256": "29abc0a4c8dce7da5d8e7ad8a4b7570f42121e551c801d39e03541248f9ea915",
+      "creator": "Original unofficial guide diagram",
+      "license": "GPL-3.0 (guide repository license)",
+      "provenance": "Drawn from manufacturer-documented contact types / measured-height requirement; no traced vendor image",
+      "dimensional": false,
+      "redistributed_third_party_asset": false
+    },
+    {
+      "path": "assets/electronics-connectivity.svg",
+      "sha256": "15cce0b150cf70ccf5e05fb3e5ca80ecf72e6487ec1ac34e79b30c040c68b724",
+      "creator": "Custom guide contributors",
+      "type": "original logical/process schematic, no dimensional or connector orientation authority",
+      "license": "GPL-3.0",
+      "third_party_pixels": false,
+      "sources_used_for_facts": [
+        "E-NHV2-DOC",
+        "E-CARTO-SETUP",
+        "E-CARTO-TOUCH"
+      ],
+      "provenance": "Original guide relationship schematic; no vendor image traced and no dimensional fit claimed."
+    },
+    {
+      "path": "assets/electronics-workflow.svg",
+      "sha256": "585b4ebd0e1e226a53f638ba4ba3c6817cdb6d58dc6ddd1e1073da5617b53776",
+      "creator": "Custom guide contributors",
+      "type": "original logical/process schematic, no dimensional or connector orientation authority",
+      "license": "GPL-3.0",
+      "third_party_pixels": false,
+      "sources_used_for_facts": [
+        "E-NHV2-DOC",
+        "E-CARTO-SETUP",
+        "E-CARTO-TOUCH"
+      ],
+      "provenance": "Original guide relationship schematic; no vendor image traced and no dimensional fit claimed."
+    },
+    {
+      "path": "assets/motion-backers.svg",
+      "sha256": "7d5f5ecb8d0664ae11834078476237a7381c22389d1f0085e2ca42c85b7c11fd",
+      "license": "GPL-3.0",
+      "provenance": "Original explanatory schematic authored for this guide; not a scale geometry model or reproduction of vendor illustration."
+    },
+    {
+      "path": "assets/motion-clamps.svg",
+      "sha256": "82883ef839b012d164c980863d67e477767dbd15414e93be44fab0acc69926d1",
+      "license": "GPL-3.0",
+      "provenance": "Original explanatory schematic authored for this guide; not a scale geometry model or reproduction of vendor illustration."
+    },
+    {
+      "path": "assets/motion-sequence.svg",
+      "sha256": "9af7e154af1f38dec3b73c125f2b1336963ef02c7240c594c3df4ccda9cedfd4",
+      "license": "GPL-3.0",
+      "provenance": "Original explanatory schematic authored for this guide; not a scale geometry model or reproduction of vendor illustration."
+    },
+    {
+      "path": "assets/sb-stock-p011.png",
+      "license": "GPL-3.0",
+      "source_id": "stealthburner-manual",
+      "printed_page": 11,
+      "pdf_index": 10,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "f6109ecb418f89da22757afaffb43a13037ac801b057617fc2bf5705c6194f69"
+    },
+    {
+      "path": "assets/sb-stock-p012.png",
+      "license": "GPL-3.0",
+      "source_id": "stealthburner-manual",
+      "printed_page": 12,
+      "pdf_index": 11,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "e212c8a73b5ab7740a941e30c229feca04294037654c2f171177d67267c0ce30"
+    },
+    {
+      "path": "assets/sb-stock-p015.png",
+      "license": "GPL-3.0",
+      "source_id": "stealthburner-manual",
+      "printed_page": 15,
+      "pdf_index": 14,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "9f269b66db0acd1800da341b1b3e104e841463a5d934de00b9da944b3bfb9a5f"
+    },
+    {
+      "path": "assets/sb-stock-p017.png",
+      "license": "GPL-3.0",
+      "source_id": "stealthburner-manual",
+      "printed_page": 17,
+      "pdf_index": 16,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "ed90958f0b83e2c314ce72e021cb7981557471582abf9c3d880da61bd4ba3410"
+    },
+    {
+      "path": "assets/sb-stock-p020.png",
+      "license": "GPL-3.0",
+      "source_id": "stealthburner-manual",
+      "printed_page": 20,
+      "pdf_index": 19,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "9b3044ffd845a69e267880c6380c54072e46d24b10e042ae5e7613cbde55e92c"
+    },
+    {
+      "path": "assets/sb-stock-p023.png",
+      "license": "GPL-3.0",
+      "source_id": "stealthburner-manual",
+      "printed_page": 23,
+      "pdf_index": 22,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "7ae0d89275cc5fa923e15ee332efb97b660cce88b3ec671249112ec1d285bef9"
+    },
+    {
+      "path": "assets/sb-stock-p029.png",
+      "license": "GPL-3.0",
+      "source_id": "stealthburner-manual",
+      "printed_page": 29,
+      "pdf_index": 28,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "7f4c6ef0c6ab1b52f5f0838a024472715291773006d5c9e98570dc14e8972a24"
+    },
+    {
+      "path": "assets/sb-stock-p043.png",
+      "license": "GPL-3.0",
+      "source_id": "stealthburner-manual",
+      "printed_page": 43,
+      "pdf_index": 42,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "2f72bf813b2c7aca217c859186fcd3485012ee0f2f0552359787319b358e303e"
+    },
+    {
+      "path": "assets/sb-stock-p053.png",
+      "license": "GPL-3.0",
+      "source_id": "stealthburner-manual",
+      "printed_page": 53,
+      "pdf_index": 52,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "40b82ad1cf0470ab043b5c86b629e4199163461d1cdc9df82fec25bcd7f9e2d9"
+    },
+    {
+      "path": "assets/sb-stock-p055.png",
+      "license": "GPL-3.0",
+      "source_id": "stealthburner-manual",
+      "printed_page": 55,
+      "pdf_index": 54,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "a0306414916e3e46f63dbd72ef5b1bbdbb1afc489e8635d81aca7c496a7f763e"
+    },
+    {
+      "path": "assets/sb-stock-p067.png",
+      "license": "GPL-3.0",
+      "source_id": "stealthburner-manual",
+      "printed_page": 67,
+      "pdf_index": 66,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "a68874d51bc7a0a59edeb4420eac024dc2b5fc2f11dc909c03050f2bbbf2410b"
+    },
+    {
+      "path": "assets/stock-p004.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 4,
+      "pdf_index": 3,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "9b81d10a61f828d7561f1a6482596d218d2edf8a775678a20113ebd11e1df90a"
+    },
+    {
+      "path": "assets/stock-p013.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 13,
+      "pdf_index": 12,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "a0b89aff0c500da194621f2b631f405da045cd2310d2a25a7d14c3ab377ac62d"
+    },
+    {
+      "path": "assets/stock-p014.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 14,
+      "pdf_index": 13,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "d75cf899bb9574615f5409f722840e841b317dddb27fab9fda390f26af583e48"
+    },
+    {
+      "path": "assets/stock-p015.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 15,
+      "pdf_index": 14,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "f46892b778b1827114d8b628ff222ba5145d1a0c6b058efb96a9e56748432a16"
+    },
+    {
+      "path": "assets/stock-p016.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 16,
+      "pdf_index": 15,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "991fcb2dd271fa4dae3ca7f30009857f18818e5caa604aa970bd9b76acadd382"
+    },
+    {
+      "path": "assets/stock-p017.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 17,
+      "pdf_index": 16,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "5b771734d3a7141a679e6ee7e8f50fc74ad2835c0066ee3bcbb2feb215d414b5"
+    },
+    {
+      "path": "assets/stock-p018.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 18,
+      "pdf_index": 17,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "393a51c4a38c22bd7c47c1d662dd0bf7a8855bec03cf26fa6d501e2ca146ab7f"
+    },
+    {
+      "path": "assets/stock-p019.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 19,
+      "pdf_index": 18,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "d9d2de9c6e427471ecff668712da767d2a9dd5a40a710cb4a8fd4f2fb1547652"
+    },
+    {
+      "path": "assets/stock-p021.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 21,
+      "pdf_index": 20,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "ed8311caa614c3731106ed75ae03f1d4c62794803f4469d08a1531e213870c03"
+    },
+    {
+      "path": "assets/stock-p024.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 24,
+      "pdf_index": 23,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "8adbe30e2f1ab85b5555e2c42f0656bae5d6a0e71776f0a0a5afa1a441ca3b91"
+    },
+    {
+      "path": "assets/stock-p025.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 25,
+      "pdf_index": 24,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "a95f0087c33e60c21b8778dc63c345a07273fa55e531e6cf19462ef59c117876"
+    },
+    {
+      "path": "assets/stock-p026.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 26,
+      "pdf_index": 25,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "ddcb292569781f7d816469c3aa5d09af5ca30b9166acf59ecaccf2d74ae9bdec"
+    },
+    {
+      "path": "assets/stock-p028.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 28,
+      "pdf_index": 27,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "51749a22947ca4cecd65280777ed3c401ded160b6b3810b3e0bbf60fc920097c"
+    },
+    {
+      "path": "assets/stock-p029.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 29,
+      "pdf_index": 28,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "d9517577ce83fb5abccfd0b86467d944f51c1c175fdf6f0d59178e34f27c3d31"
+    },
+    {
+      "path": "assets/stock-p031.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 31,
+      "pdf_index": 30,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "d1d1452c0897c028a2e1e2c43a839af3e4f3956b9cf5d700791ad3060f23c4e3"
+    },
+    {
+      "path": "assets/stock-p032.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 32,
+      "pdf_index": 31,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "3dc2c1e52cf87a73baee1595e6a14d938ad1bc8da3ceb42f24f3259aa7fd8436"
+    },
+    {
+      "path": "assets/stock-p033.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 33,
+      "pdf_index": 32,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "b220fa5fba25f462438ff0e1fa73aa099beb651be1fc66555dec94ebd8381d11"
+    },
+    {
+      "path": "assets/stock-p034.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 34,
+      "pdf_index": 33,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "ffc05954303d2c2a9e23ebdb9d512e62b07144c13880128de533a03692e6111e"
+    },
+    {
+      "path": "assets/stock-p035.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 35,
+      "pdf_index": 34,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "75fd6af1c43b924b825ae4535be9f0429cc208a310f612349e15f94b669fb540"
+    },
+    {
+      "path": "assets/stock-p036.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 36,
+      "pdf_index": 35,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "390286edf17e4db6f208e72e6837a32fd986dba39061778e700323b4c79670f5"
+    },
+    {
+      "path": "assets/stock-p037.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 37,
+      "pdf_index": 36,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "8d8c080edf448b4ac32d44010a5d533ac1d014ed14feef86112054133219abcf"
+    },
+    {
+      "path": "assets/stock-p038.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 38,
+      "pdf_index": 37,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "6d4cabaa393a2f88fab9448e7205b40c6ba9e77ef60e728381170d4601059758"
+    },
+    {
+      "path": "assets/stock-p039.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 39,
+      "pdf_index": 38,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "79467bfd94bfbc0f4a83f0d72edf017ef36db412d6fb187e81df9c66e446e56b"
+    },
+    {
+      "path": "assets/stock-p040.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 40,
+      "pdf_index": 39,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "be8218deddb645cb9c28645e348667c45978f743d89365f1ed5fdadd686916d2"
+    },
+    {
+      "path": "assets/stock-p041.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 41,
+      "pdf_index": 40,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "95c1954a833ac6eea237028dcddff984ad97f12a7ef508e87f1db3686a7c77a7"
+    },
+    {
+      "path": "assets/stock-p042.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 42,
+      "pdf_index": 41,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "46d9e15090cc669dbaa4c8f8fa62810c347f64d21840c7a1f7d3dc9868d4e471"
+    },
+    {
+      "path": "assets/stock-p043.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 43,
+      "pdf_index": 42,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "98a06088910e8daf29dc60fe80bbce4d96b0894e211f13d733f833bd5f8f9042"
+    },
+    {
+      "path": "assets/stock-p044.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 44,
+      "pdf_index": 43,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "4f87b2d71df4fe4aaa8424adb076dead0dfa3d80a9d7cc4ea113fef887acc9cd"
+    },
+    {
+      "path": "assets/stock-p045.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 45,
+      "pdf_index": 44,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "41d171a926993624a6c1bd2122ff5a4867cdffef6a227746e0ad4e058b3cddab"
+    },
+    {
+      "path": "assets/stock-p046.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 46,
+      "pdf_index": 45,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "8e2183068daf384ebf23c71b6dbf4a05012b0c48443105b2c1621460b026d1b0"
+    },
+    {
+      "path": "assets/stock-p047.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 47,
+      "pdf_index": 46,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "fa3aa2a8ce65e07efe6b99e39e1b764eaee216b9d245dd7f9a3f724c19f1c120"
+    },
+    {
+      "path": "assets/stock-p085.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 85,
+      "pdf_index": 84,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "0ddec3e443a874754bca1f927aeb51cc79212a66dc32154d6879022588168187"
+    },
+    {
+      "path": "assets/stock-p086.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 86,
+      "pdf_index": 85,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "3eae5862f1e20abbc79dede9650b1e3d3ec4f25ac6a1c3aa76c928431d39b8e5"
+    },
+    {
+      "path": "assets/stock-p087.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 87,
+      "pdf_index": 86,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "0d360d29886a6c9e1b35c1da6ad603fa443768175f8d4edc9813179ecabf87ba"
+    },
+    {
+      "path": "assets/stock-p088.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 88,
+      "pdf_index": 87,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "a70799deee60e0ae27f026d169732573f3b81f3fbdb36726efc5c1c6b7eae633"
+    },
+    {
+      "path": "assets/stock-p089.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 89,
+      "pdf_index": 88,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "44a0326010e2c8e02ff72d802f98f2693dd3cc1f1aa6f6171cddd2c5b3ada037"
+    },
+    {
+      "path": "assets/stock-p090.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 90,
+      "pdf_index": 89,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "aa8dbafc14322a10682b477bd072c83c1847ef3cca38877442887043f2b777a4"
+    },
+    {
+      "path": "assets/stock-p091.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 91,
+      "pdf_index": 90,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "1e2f02b7e2050243c7f93f960d184c0a174888d1b8853e4b4694546870cd33fa"
+    },
+    {
+      "path": "assets/stock-p092.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 92,
+      "pdf_index": 91,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "343da6036ef21b811b86869246091d0ec87b80f7d8e817ad4378c735fac8bf6b"
+    },
+    {
+      "path": "assets/stock-p093.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 93,
+      "pdf_index": 92,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "274e69de261999cfa295e779b2df39270d18c2277d6cfceae9a8da509274790c"
+    },
+    {
+      "path": "assets/stock-p094.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 94,
+      "pdf_index": 93,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "4998194b44f7bec3d67d4442d89099718639c08060614a5dbb804ee72210463e"
+    },
+    {
+      "path": "assets/stock-p095.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 95,
+      "pdf_index": 94,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "3742cb21e77e12bba9a934569668370c5c12fec9386b6ee71c0ec6b3ac98fc55"
+    },
+    {
+      "path": "assets/stock-p101.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 101,
+      "pdf_index": 100,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "2b291cc636bf6e90f707402d77ada114f55803fa924b6f2d7640815f9a4a0a86"
+    },
+    {
+      "path": "assets/stock-p102.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 102,
+      "pdf_index": 101,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "2c06827a82d5dc11771e8413ba39df6fc4de2174828f7d843db90b3bb2e042ad"
+    },
+    {
+      "path": "assets/stock-p103.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 103,
+      "pdf_index": 102,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "d2837e3905ed96e7dbfb59c4a48ed2cf45674b99d445c269179c93a5979db378"
+    },
+    {
+      "path": "assets/stock-p104.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 104,
+      "pdf_index": 103,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "533a87a1caedeaf87f537aa1616e98b4f3602da46fe4e5c80e1fe116c65def12"
+    },
+    {
+      "path": "assets/stock-p105.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 105,
+      "pdf_index": 104,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "f4486cdfb6a740565ef191b7a21a10d040075e5bae0a7968c70911163eac461f"
+    },
+    {
+      "path": "assets/stock-p106.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 106,
+      "pdf_index": 105,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "99393235dbe2c8701a1648cad182e1a5d56cf417a605522b3883af492f495624"
+    },
+    {
+      "path": "assets/stock-p118.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 118,
+      "pdf_index": 117,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "504c3cb8161be6460eaea7b48031449da96e95c6a01a5bf7205ed746afc3da97"
+    },
+    {
+      "path": "assets/stock-p119.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 119,
+      "pdf_index": 118,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "d3052eacf09ee4c910bfb0bcef9ab96a7ee356f0c63d8446727fa5176e760a76"
+    },
+    {
+      "path": "assets/stock-p122.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 122,
+      "pdf_index": 121,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "e89b16fd3c29338ae05ede52ae2b852339cabd4959e12900a5a21964d35d6e66"
+    },
+    {
+      "path": "assets/stock-p125.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 125,
+      "pdf_index": 124,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "be3a85f27ef531fdf1457fb331adbc8e5699d79d4cc0006db31537972b184b60"
+    },
+    {
+      "path": "assets/stock-p126.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 126,
+      "pdf_index": 125,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "fa8c4f346a473ffe0bcd75c41bba2c75167791d97ab10a0504d49280d1325aa8"
+    },
+    {
+      "path": "assets/stock-p127.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 127,
+      "pdf_index": 126,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "944f05d591e5b203f6b29fbb5bb9089bcd870f61ca578b8f6684b253e0efcdf9"
+    },
+    {
+      "path": "assets/stock-p142.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 142,
+      "pdf_index": 141,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "45f9f7186638f47cbdee131a6fc105ee7843046f121488f8417085888eef8c80"
+    },
+    {
+      "path": "assets/stock-p194.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 194,
+      "pdf_index": 193,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "cd4e8757c7419964b410acc9f8c5858f2ee68ae4ff66c8890f42da416b6c9802"
+    },
+    {
+      "path": "assets/stock-p211.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 211,
+      "pdf_index": 210,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "e046a02bf592f281c0a8812f06dce1910ab84f3cdd71c1757dcf65310d57a3ef"
+    },
+    {
+      "path": "assets/stock-p217.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 217,
+      "pdf_index": 216,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "2da4df915f0bc42b9b8e5bf1dd525c766b6b98ea03f674a3110bebc9ddd65b0b"
+    },
+    {
+      "path": "assets/stock-p233.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 233,
+      "pdf_index": 232,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "f50522cd4dd63c5b6213b9bde0bb8b3fc3b32e41fb434907e03fdb913d48a804"
+    },
+    {
+      "path": "assets/stock-p239.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 239,
+      "pdf_index": 238,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "c69af33524ba76986e1ba48e14b76ff617b78fea9856f66c42926ed17e30d298"
+    },
+    {
+      "path": "assets/stock-p241.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 241,
+      "pdf_index": 240,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "5a16296c1830494c617672a82e86afd3780f5ba57035688da94a560cb8d8d145"
+    },
+    {
+      "path": "assets/stock-p243.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 243,
+      "pdf_index": 242,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "d40ee417bd7d63c33f487ec679dcbd674061a29d7b378acca79ba4a2d72fb76c"
+    },
+    {
+      "path": "assets/stock-p245.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 245,
+      "pdf_index": 244,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "9fd9b0ec8188e83cf6e9ac7369e550e6d50c474577024486cc79b77515e64a6f"
+    },
+    {
+      "path": "assets/stock-p247.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 247,
+      "pdf_index": 246,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "b82d880820b29372a30b2afd742138e9386b8fde65542b9aeeb5e209c6d9c4e6"
+    },
+    {
+      "path": "assets/stock-p257.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 257,
+      "pdf_index": 256,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "8ba01ea2ae488bc5027de946c590ba0587f5eecdba03319e06769c0aca8d55e7"
+    },
+    {
+      "path": "assets/stock-p259.png",
+      "license": "GPL-3.0",
+      "source_id": "upstream-voron2-manual",
+      "printed_page": 259,
+      "pdf_index": 258,
+      "provenance": "Unmodified rendered STOCK reference page; does not depict custom upgrades.",
+      "sha256": "0c5f0dc794f19f222fa7965c1efdd064a1dccb478abf42b8699d8cb5eda29218"
+    }
+  ]
+}

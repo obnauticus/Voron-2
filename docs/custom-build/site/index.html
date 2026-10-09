@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LDO Voron 2.4R2 — integrated custom assembly guide · Custom LDO Voron</title><link rel="stylesheet" href="style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a aria-current="page" href="index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="chapters/01-inventory.html">1. Inventory and evidence</a></li><li><a  href="chapters/02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="chapters/03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="chapters/04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="chapters/05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="chapters/06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="chapters/07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="chapters/08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="chapters/09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="chapters/10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="reference/compatibility.html">Compatibility register</a></li><li><a  href="reference/configuration.html">Non-deployable configuration examples</a></li><li><a  href="reference/crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="reference/hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="reference/inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="reference/printed-parts.html">Printed-parts matrix</a></li><li><a  href="reference/questions.html">Unresolved questions and verification gates</a></li><li><a  href="reference/sources.html">Source lock and illustration provenance</a></li><li><a  href="README.html">Build, check, browse and export</a></li><li><a  href="ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#ldo-voron-24r2-integrated-custom-assembly-guide">LDO Voron 2.4R2 — integrated custom assembly guide</a><ul>
+<li><a href="#build-in-this-order">Build in this order</a></li>
+<li><a href="#gates-are-part-of-the-procedure">Gates are part of the procedure</a></li>
+<li><a href="#build-records">Build records</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="ldo-voron-24r2-integrated-custom-assembly-guide">LDO Voron 2.4R2 — integrated custom assembly guide</h1>
+<p><strong>Unofficial derivative, prepared 2026-10-09. Readiness: documentation complete
+with hardware verification gates; not a physically validated machine configuration.</strong></p>
+<p>This is the chronological build path for the fourteen reported purchases. Start
+here and follow the chapters in order. The target is provisionally 350-class,
+Voron design <strong>2.4R2</strong>, LDO kit <strong>Rev D-family, unverified</strong>. The current West3D
+D+ listing is a research lead. It does not establish the size, batch, electronics,
+or options in the purchased kit.</p>
+<p>The <a href="https://github.com/VoronDesign/Voron-2/blob/a192410e27ea345644ae5c4b29b4c9c40cbe1a73/Manual/Assembly_Manual_2.4r2.pdf">original Voron assembly manual</a>
+remains authoritative for unchanged mechanical details. This guide replaces its
+affected steps before assembly. Source figures are labeled <strong>STOCK REFERENCE</strong>;
+they do not depict the CNC upgrades. Vendor instructions stay linked where their
+redistribution license is unknown. Local original schematics describe relationships,
+not unverified dimensions or manufacturing geometry.</p>
+<h2 id="build-in-this-order">Build in this order</h2>
+<ol>
+<li><a href="chapters/01-inventory.html">Inventory and evidence</a>: identify the kit and allocate purchases.</li>
+<li><a href="chapters/02-preparation.html">Printed parts and preparation</a>: print retained parts and resolve interfaces.</li>
+<li><a href="chapters/03-frame-z.html">Frame, Z rails, deck and Z drives</a>.</li>
+<li><a href="chapters/04-motion.html">Modified gantry, titanium backers, Z supports and belts</a>.</li>
+<li><a href="chapters/05-bed.html">MRW bed, kinematics and Wings</a>.</li>
+<li><a href="chapters/06-toolhead.html">Rapido 2 Fiber UHF, StealthBurner, CNC carriage and Cartographer</a>.</li>
+<li><a href="chapters/07-wiring.html">Electronics and cable routing</a>.</li>
+<li><a href="chapters/08-software.html">Software and configuration preparation</a>.</li>
+<li><a href="chapters/09-commissioning.html">Pre-power, first start and calibration</a>.</li>
+<li><a href="chapters/10-panels-first-print.html">Enclosure, filament path and first print</a>.</li>
+</ol>
+<h2 id="gates-are-part-of-the-procedure">Gates are part of the procedure</h2>
+<p><strong>STOP at a gate before its affected step.</strong> Continue independent chapters when
+their prerequisites are satisfied. Closing a gate requires the named receipt
+detail, board marking, manufacturer instruction, measurement, or physical check;
+an assumption does not close it. No actual installed quantities or measurements
+have been supplied. All allocations are plans, not claims of completed assembly.</p>
+<p>The most consequential decisions are the bed's magnet arrangement, UHF duct and
+mount geometry, clamp overlaps and rigid-joint alignment, actual PCB revisions,
+and hotend startup load versus the complete electrical path. A blocked heater
+gate prohibits heater commissioning even if other software checks pass.</p>
+<h2 id="build-records">Build records</h2>
+<ul>
+<li><a href="reference/inventory.html">All fourteen purchase dispositions</a> and <a href="data/build-manifest.json">machine manifest</a>.</li>
+<li><a href="reference/compatibility.html">Compatibility decisions</a>.</li>
+<li><a href="reference/printed-parts.html">Printed-parts matrix</a>.</li>
+<li><a href="reference/hardware.html">Hardware and missing requirements</a>.</li>
+<li><a href="reference/crosswalk.html">Every stock manual page mapped to this path</a>.</li>
+<li><a href="reference/questions.html">Unresolved questions and closure evidence</a>.</li>
+<li><a href="reference/sources.html">Pinned sources and illustration provenance</a>, <a href="data/sources.lock.json">source lockfile</a>.</li>
+<li><a href="reference/configuration.html">Non-deployable configuration examples</a>.</li>
+<li><a href="README.html">Build commands and publication</a>, <a href="VALIDATION.html">actual validation results</a>.</li>
+</ul>
+<p>Upstream design and manual: Voron Design contributors, GPL-3.0. Original custom
+Markdown, diagrams and tooling: GPL-3.0, modified 2026-10-09. See <a href="ATTRIBUTION.html">attribution and
+reuse terms</a>. This documentation carries no warranty. Static
+documentation checks do not validate physical fit, electrical safety, firmware,
+or the completed printer.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="print.html">Complete print edition</a></footer></main></div></body></html>

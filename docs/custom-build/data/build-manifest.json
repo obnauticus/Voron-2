@@ -1,0 +1,613 @@
+{
+  "schema_version": 1,
+  "guide_revision": "2026-10-09",
+  "readiness": {
+    "documentation": "usable with immediate verification gates",
+    "physical_machine_verified": false,
+    "ready_to_commission_heaters": false,
+    "ready_to_deploy_configuration": false
+  },
+  "identity": {
+    "voron_design_revision": "2.4R2",
+    "upstream_branch": "Voron2.4",
+    "upstream_commit": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "size_mm": {
+      "value": 350,
+      "status": "provisional, purchased MRW350 bed lead"
+    },
+    "ldo_kit_revision": {
+      "value": "Rev D-family",
+      "status": "unverified; D+ current listing is not shipment evidence"
+    },
+    "kit_batch": null,
+    "board_revisions": {
+      "mainboard": null,
+      "toolboard": null
+    }
+  },
+  "workspace_evidence": {
+    "searched_at": "2026-10-09",
+    "relevant_receipts_photos_packing_lists_configs_found": false,
+    "email_or_prior_conversations_accessed": false,
+    "notes": "Filename and bounded technical-content searches; no private document imported"
+  },
+  "purchases": [
+    {
+      "id": "01",
+      "name": "LDO Voron V2.4R2 kit",
+      "product_url": "https://west3d.com/products/ldo-v2-4-kit-in-stock",
+      "purchase": {
+        "reported_units": 1,
+        "unit": "kit",
+        "evidence_status": "user-reported purchase; receipt not supplied",
+        "technical_variant": "350 provisional; LDO Rev D-family unverified; serial/batch and PCB revisions unknown",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": null,
+        "piece_unit": "principal assembly/piece",
+        "contents_verified_from_shipped_package": false
+      },
+      "allocation": {
+        "planned_installed_pieces": 1,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": null,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": [
+          "stock upgraded subassemblies; exact piece count after carton audit"
+        ]
+      },
+      "disposition": "KEEP frame, rails, four lower Z reduction drives and compatible electronics/CW2/SB; replace upgraded functions",
+      "replaced_stock_functions": [
+        "stock A/B plastic frames",
+        "stock front idlers/XY joints/Z joints/upper Z tensioners",
+        "stock bed/hotend/carriage/probe/Z endstop"
+      ],
+      "unresolved_fields": [
+        "I1",
+        "E1",
+        "F1",
+        "F2"
+      ],
+      "guide_location": "chapters/01-inventory.md",
+      "exact_hardware": {
+        "size_mm": null,
+        "ldo_revision": null,
+        "serial_batch": null,
+        "leviathan_pcb_revision": null,
+        "nitehawk_pcb_revision": null,
+        "psu_model": null,
+        "kit_hotend": null,
+        "kit_options": null
+      }
+    },
+    {
+      "id": "02",
+      "name": "Titanium Backers three-pack",
+      "product_url": "https://west3d.com/products/titanium-backers-for-voron-2-4-trident-3-pack",
+      "purchase": {
+        "reported_units": 1,
+        "unit": "pack",
+        "evidence_status": "user-reported purchase; receipt not supplied",
+        "technical_variant": "Ordered length/size unknown",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": 3,
+        "piece_unit": "principal assembly/piece",
+        "contents_verified_from_shipped_package": false
+      },
+      "allocation": {
+        "planned_installed_pieces": 3,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": 0,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": []
+      },
+      "disposition": "ADD opposite X/Y rails before closing gantry",
+      "replaced_stock_functions": [],
+      "unresolved_fields": [
+        "M3"
+      ],
+      "guide_location": "chapters/04-motion.md"
+    },
+    {
+      "id": "03",
+      "name": "Phaetus Rapido 2 Fiber UHF / PT1000",
+      "product_url": "https://west3d.com/products/phaetus-rapido-2-fiber-hot-end-hotend-uhf-pt1000",
+      "purchase": {
+        "reported_units": 1,
+        "unit": "hotend",
+        "evidence_status": "user-reported purchase; receipt not supplied",
+        "technical_variant": "UHF/PT1000 reported; revision/voltage/heater/nozzle unknown",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": 1,
+        "piece_unit": "principal assembly/piece",
+        "contents_verified_from_shipped_package": false
+      },
+      "allocation": {
+        "planned_installed_pieces": 1,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": 0,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": [
+          "kit hotend, do not install"
+        ]
+      },
+      "disposition": "REPLACE stock kit hotend with exact Fiber UHF after geometry and load gates",
+      "replaced_stock_functions": [
+        "kit hotend"
+      ],
+      "unresolved_fields": [
+        "T2",
+        "T3",
+        "E2"
+      ],
+      "guide_location": "chapters/06-toolhead.md"
+    },
+    {
+      "id": "04",
+      "name": "Cartographer CNC StealthBurner/toolhead mount",
+      "product_url": "https://cartographer3d.com/products/cartographer3d-cnc-stealthburner-mount",
+      "purchase": {
+        "reported_units": 1,
+        "unit": "mount assembly",
+        "evidence_status": "user-reported purchase; receipt not supplied",
+        "technical_variant": "Belt-width and extender inclusion unverified",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": null,
+        "piece_unit": "principal assembly/piece",
+        "contents_verified_from_shipped_package": false
+      },
+      "allocation": {
+        "planned_installed_pieces": 1,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": null,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": [
+          "stock carriage/probe retention hardware"
+        ]
+      },
+      "disposition": "REPLACE stock carriage; belt variant and UHF extenders must match",
+      "replaced_stock_functions": [
+        "stock printed MGN12 X carriage"
+      ],
+      "unresolved_fields": [
+        "T1",
+        "T2",
+        "T4",
+        "M1",
+        "M5",
+        "M10"
+      ],
+      "guide_location": "chapters/06-toolhead.md"
+    },
+    {
+      "id": "05",
+      "name": "Cartographer V4 AIO Standard",
+      "product_url": "https://cartographer3d.com/products/cartographer-v4-aio-standard",
+      "purchase": {
+        "reported_units": 1,
+        "unit": "probe",
+        "evidence_status": "user-reported purchase; receipt not supplied",
+        "technical_variant": "USB/CAN-capable; actual firmware generation and interface unknown",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": 1,
+        "piece_unit": "principal assembly/piece",
+        "contents_verified_from_shipped_package": false
+      },
+      "allocation": {
+        "planned_installed_pieces": 1,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": 0,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": [
+          "unused kit Z sensing hardware"
+        ]
+      },
+      "disposition": "REPLACE stock Z sensing and homing path; USB route provisional only",
+      "replaced_stock_functions": [
+        "Omron inductive probe",
+        "stock nozzle Z endstop",
+        "Klicky/TAP alternatives"
+      ],
+      "unresolved_fields": [
+        "T4",
+        "E4",
+        "E5",
+        "E7"
+      ],
+      "guide_location": "chapters/08-software.md"
+    },
+    {
+      "id": "06",
+      "name": "MRW Voron 350 UltraFlat bed",
+      "product_url": "https://mandalaroseworks.com/products/voron-350-ultraflat-bed",
+      "purchase": {
+        "reported_units": 1,
+        "unit": "plate",
+        "evidence_status": "user-reported purchase; receipt not supplied",
+        "technical_variant": "350 reported; standard vs embedded magnets/heater option unknown",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": 1,
+        "piece_unit": "principal assembly/piece",
+        "contents_verified_from_shipped_package": false
+      },
+      "allocation": {
+        "planned_installed_pieces": 1,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": 0,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": [
+          "stock plate/heater/magnet remain bonded"
+        ]
+      },
+      "disposition": "REPLACE whole stock LDO bed assembly, no bonded-pad reuse assumed",
+      "replaced_stock_functions": [
+        "stock LDO plate assembly"
+      ],
+      "unresolved_fields": [
+        "B1",
+        "B3",
+        "B4",
+        "E3",
+        "E7"
+      ],
+      "guide_location": "chapters/05-bed.md"
+    },
+    {
+      "id": "07",
+      "name": "MRW Matched Height Kinematic Kit",
+      "product_url": "https://mandalaroseworks.com/products/matched-height-kinematic-kit",
+      "purchase": {
+        "reported_units": 1,
+        "unit": "set",
+        "evidence_status": "user-reported purchase; receipt not supplied",
+        "technical_variant": "Three support points documented; verify supplied hardware and seats",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": 3,
+        "piece_unit": "support point",
+        "contents_verified_from_shipped_package": false
+      },
+      "allocation": {
+        "planned_installed_pieces": 3,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": 0,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": [
+          "stock thumb nuts/spacers; quantity audit pending"
+        ]
+      },
+      "disposition": "ADD three matched support points integrated with Wings and bed",
+      "replaced_stock_functions": [
+        "stock four rigid screw/spacer bed supports"
+      ],
+      "unresolved_fields": [
+        "B2",
+        "B3"
+      ],
+      "guide_location": "chapters/05-bed.md"
+    },
+    {
+      "id": "08",
+      "name": "MRW Voron Wings (purchase notation 2x)",
+      "product_url": "https://mandalaroseworks.com/products/voron-wings",
+      "purchase": {
+        "reported_units": 2,
+        "unit": "unreconciled purchase units",
+        "evidence_status": "user-reported purchase; receipt not supplied",
+        "technical_variant": "A current retail set is two wings; purchase notation does not prove number of sets",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": null,
+        "piece_unit": "principal assembly/piece",
+        "contents_verified_from_shipped_package": false,
+        "interpretations": [
+          {
+            "interpretation": "2 individual wings",
+            "pieces": 2,
+            "planned_surplus": 0
+          },
+          {
+            "interpretation": "2 sets of 2 wings",
+            "pieces": 4,
+            "planned_surplus": 2
+          }
+        ]
+      },
+      "allocation": {
+        "planned_installed_pieces": 2,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": null,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": [
+          "0 if two pieces delivered; 2 if two full two-piece sets delivered"
+        ]
+      },
+      "disposition": "ADD one installed pair; reconcile 2 pieces vs 2 sets before recording surplus",
+      "replaced_stock_functions": [
+        "stock bed support layout"
+      ],
+      "unresolved_fields": [
+        "B2",
+        "B3"
+      ],
+      "guide_location": "chapters/05-bed.md"
+    },
+    {
+      "id": "09",
+      "name": "Vitalii3D Double Shear v2.4 AB Motors Mounts",
+      "product_url": "https://vitalii3d.com/products/double-shear-v2-4-ab-motors-mounts",
+      "purchase": {
+        "reported_units": 1,
+        "unit": "set",
+        "evidence_status": "user-provided order verification",
+        "technical_variant": "Black/Red; ABEC7 hybrid ceramic; actual part revision unverified",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": 2,
+        "piece_unit": "principal assembly/piece",
+        "contents_verified_from_shipped_package": false
+      },
+      "allocation": {
+        "planned_installed_pieces": 2,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": 0,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": [
+          "stock unused bearing/fastener quantities pending carton audit"
+        ]
+      },
+      "disposition": "REPLACE two stock A/B drives; verify shafts truly engage support bearings",
+      "replaced_stock_functions": [
+        "plastic A/B drive frames"
+      ],
+      "unresolved_fields": [
+        "M1",
+        "M4",
+        "M5"
+      ],
+      "guide_location": "chapters/04-motion.md"
+    },
+    {
+      "id": "10",
+      "name": "Vitalii3D CNC Z Belt Clamps four-piece set",
+      "product_url": "https://vitalii3d.com/products/voron-v2-cnc-belt-clamps",
+      "purchase": {
+        "reported_units": 1,
+        "unit": "set",
+        "evidence_status": "user-provided order verification",
+        "technical_variant": "Black; product lists 2 top M5+M5 and 2 bottom M5+M3",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": 4,
+        "piece_unit": "principal assembly/piece",
+        "contents_verified_from_shipped_package": false
+      },
+      "allocation": {
+        "planned_installed_pieces": 2,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": 2,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": [
+          "two purchased bottom clamps, integrated rigid joints take their function"
+        ]
+      },
+      "disposition": "REPLACE rear upper captures with top pair conditionally; bottom pair surplus",
+      "replaced_stock_functions": [
+        "rear stock upper belt clips"
+      ],
+      "unresolved_fields": [
+        "M8"
+      ],
+      "guide_location": "chapters/04-motion.md"
+    },
+    {
+      "id": "11",
+      "name": "Vitalii3D Front Idlers for v2.4",
+      "product_url": "https://vitalii3d.com/products/front-idlers-for-voron-printers",
+      "purchase": {
+        "reported_units": 1,
+        "unit": "set",
+        "evidence_status": "user-provided order verification",
+        "technical_variant": "Black/Black; ABEC7 hybrid ceramic; shipped revision and clamps unknown",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": 2,
+        "piece_unit": "principal assembly/piece",
+        "contents_verified_from_shipped_package": false,
+        "additional_suballocation": {
+          "clamps_pieces_per_set_claimed_by_listing": 4,
+          "pdf_calls_clamps": "add-on",
+          "planned_installed_clamps": 2,
+          "planned_surplus_clamps": 2,
+          "actual_contents": null,
+          "gate": "M8"
+        }
+      },
+      "allocation": {
+        "planned_installed_pieces": 2,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": 0,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": [
+          "two of four supplied clamps if four present and proposed fit verified"
+        ]
+      },
+      "disposition": "REPLACE front-idler pair; supplied clamps tracked as separate package suballocation",
+      "replaced_stock_functions": [
+        "plastic front-idler bodies/tensioners"
+      ],
+      "unresolved_fields": [
+        "M1",
+        "M5",
+        "M8"
+      ],
+      "guide_location": "chapters/04-motion.md"
+    },
+    {
+      "id": "12",
+      "name": "Vitalii3D Z Tensioners for v2.4",
+      "product_url": "https://vitalii3d.com/products/z-tensioners-for-voron-v2-4",
+      "purchase": {
+        "reported_units": 1,
+        "unit": "set",
+        "evidence_status": "user-provided order verification",
+        "technical_variant": "Black/Orange; product set four preassembled; fit actual frame hardware",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": 4,
+        "piece_unit": "principal assembly/piece",
+        "contents_verified_from_shipped_package": false
+      },
+      "allocation": {
+        "planned_installed_pieces": 4,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": 0,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": [
+          "stock upper printed tensioner/idler hardware"
+        ]
+      },
+      "disposition": "REPLACE upper 9mm Z idlers, retain lower 6mm loop tensioning latch",
+      "replaced_stock_functions": [
+        "four stock upper Z idler/tensioner assemblies"
+      ],
+      "unresolved_fields": [
+        "M1",
+        "M2"
+      ],
+      "guide_location": "chapters/04-motion.md"
+    },
+    {
+      "id": "13",
+      "name": "Vitalii3D Rigid Fixed Z Joints",
+      "product_url": "https://vitalii3d.com/products/rigid-fixed-z-joints-for-voron",
+      "purchase": {
+        "reported_units": 1,
+        "unit": "set",
+        "evidence_status": "user-provided order verification",
+        "technical_variant": "Black; four-piece manufacturer set; actual screw assignment unresolved",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": 4,
+        "piece_unit": "principal assembly/piece",
+        "contents_verified_from_shipped_package": false
+      },
+      "allocation": {
+        "planned_installed_pieces": 4,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": 0,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": [
+          "stock joints/stock lower clips; #10 bottom pair redundant"
+        ]
+      },
+      "disposition": "REPLACE complete Z joints and all lower belt captures; square before powered Z",
+      "replaced_stock_functions": [
+        "four complete stock joints",
+        "four bottom belt clamps"
+      ],
+      "unresolved_fields": [
+        "M7",
+        "M8",
+        "M9"
+      ],
+      "guide_location": "chapters/04-motion.md"
+    },
+    {
+      "id": "14",
+      "name": "Vitalii3D Live Idler XY Joints 6mm",
+      "product_url": "https://vitalii3d.com/products/live-idler-xy-joints-for-voron-printers-6mm-belts",
+      "purchase": {
+        "reported_units": 1,
+        "unit": "set",
+        "evidence_status": "user-provided order verification",
+        "technical_variant": "Black/Black; ABEC7 hybrid ceramic; 6mm purchased; current PDF revision1.1",
+        "physical_package_audit": "not performed",
+        "private_documents_committed": false
+      },
+      "package": {
+        "pieces_per_reported_unit": 2,
+        "piece_unit": "principal assembly/piece",
+        "contents_verified_from_shipped_package": false
+      },
+      "allocation": {
+        "planned_installed_pieces": 2,
+        "actual_installed_pieces": null,
+        "planned_surplus_pieces": 0,
+        "actual_surplus_pieces": null,
+        "status": "conditional plan; no physical assembly evidence",
+        "surplus_notes": [
+          "unused stock XY parts"
+        ]
+      },
+      "disposition": "REPLACE two XY joints; resolve bearing screw length and endstop mount",
+      "replaced_stock_functions": [
+        "stock XY-joint halves/idle stacks",
+        "stock endstop PCB mounting interface"
+      ],
+      "unresolved_fields": [
+        "M1",
+        "M5",
+        "M6",
+        "M10"
+      ],
+      "guide_location": "chapters/04-motion.md"
+    }
+  ],
+  "main_path": {
+    "xy_belt_mm": 6,
+    "z_open_belt_mm": 9,
+    "z_reduction_loop_mm": 6,
+    "motion_hardware_status": "conditional on gates",
+    "probe": "Cartographer V4 AIO Standard",
+    "z_homing": "Cartographer scan virtual endstop after gates",
+    "stock_probe_paths": "OMIT Omron/Klicky/TAP/nozzle Z endstop and contradictory macros",
+    "toolhead": "StealthBurner/Clockwork2 baseline; exact Fiber UHF integration gated",
+    "clamp_plan": "four rigid lower captures; two #10 tops rear; two #11 clamps front, after M8",
+    "active_stock_alternatives": []
+  }
+}

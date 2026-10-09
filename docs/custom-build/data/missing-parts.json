@@ -1,0 +1,91 @@
+[
+  {
+    "item": "Compatible new bed heater, sensor, thermal fuse, magnetic sheet/buildsurface if plain plate",
+    "status": "required-but-not-confirmed-owned",
+    "gate": "B4"
+  },
+  {
+    "item": "Dedicated PElead, appropriate M5attachment terminal/hardware and bed cable strainrelief",
+    "status": "required-but-not-confirmed-owned",
+    "gate": "B4"
+  },
+  {
+    "item": "Thirdseat ~130mm extrusion or manufacturer-supported Wings layout support",
+    "status": "conditional-required-but-not-confirmed-owned",
+    "gate": "B3"
+  },
+  {
+    "item": "2F UHF validated printed cartridge/frontrear and matching shell",
+    "status": "required-but-not-confirmed-owned",
+    "gate": "T2"
+  },
+  {
+    "item": "CNC8.5mm UHF extenders and suitable fasteners",
+    "status": "conditional-required-but-not-confirmed-owned",
+    "gate": "T4"
+  },
+  {
+    "item": "Exact boardrevision mounts and umbilical cable relief",
+    "status": "required-but-not-confirmed-owned",
+    "gate": "T1"
+  },
+  {
+    "item": "Silicone nozzle brush/location",
+    "status": "optional-not-confirmed-owned; manual initial cleaning permitted",
+    "gate": "T4"
+  },
+  {
+    "item": "Approved MRW-compatible bed heater and magnetic/spring-steel surface",
+    "classification": "required but not confirmed owned",
+    "quantity": null,
+    "gate": "E3"
+  },
+  {
+    "item": "Correct thermal fuse, attachment materials and approved bed PE lug/hardware",
+    "classification": "required but not confirmed owned",
+    "quantity": null,
+    "gate": "E3"
+  },
+  {
+    "item": "Rated SSR/heatsink, inlet/branch fuses and approved mains harness appropriate to actual bed",
+    "classification": "required but not confirmed owned",
+    "quantity": null,
+    "gate": "E3"
+  },
+  {
+    "item": "Approved direct host USB-to-Cartographer V4 Standard cable/strain relief",
+    "classification": "required but not confirmed owned",
+    "quantity": 1,
+    "gate": "E4"
+  },
+  {
+    "item": "Exact downstream USB P8-to-Sherlock cable if that route is chosen",
+    "classification": "conditional requirement; not confirmed owned",
+    "quantity": 1,
+    "gate": "E4"
+  },
+  {
+    "item": "Heater ferrules/connector contacts fitting actual wires and board",
+    "classification": "required but not confirmed owned",
+    "quantity": null,
+    "gate": "E2"
+  },
+  {
+    "item": "Nitehawk static discharge links and revision-correct fan adapter",
+    "classification": "kit contents to verify; not confirmed owned",
+    "quantity": null,
+    "gate": "E1"
+  },
+  {
+    "item": "CAN interface and approved cable/termination if USB is not chosen",
+    "classification": "conditional alternate; not purchased evidence",
+    "quantity": null,
+    "gate": "E4"
+  },
+  {
+    "item": "Nozzle brush/purge bucket",
+    "classification": "optional convenience, omitted from primary path",
+    "quantity": 0,
+    "gate": null
+  }
+]

@@ -1,0 +1,360 @@
+{
+  "sources": [
+    {
+      "id": "ldo-home",
+      "url": "https://docs.ldomotors.com/en/voron/voron2",
+      "retrieved_at": "2026-10-09",
+      "version": "2025-05-14T06:49:38.579Z",
+      "sha256": "ebd07e0fe6129408ff5dfe4dd206014e3b091ebe60ab5528ab30198c948a83e4",
+      "kind": "manufacturer_documentation",
+      "license": {
+        "status": "all rights reserved per siteConfig contentLicense alr",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Current revision documentation, not proof of shipment",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2"
+    },
+    {
+      "id": "ldo-faq",
+      "url": "https://docs.ldomotors.com/en/voron/voron2/build-faq",
+      "retrieved_at": "2026-10-09",
+      "version": "2026-02-10T20:19:40.115Z",
+      "sha256": "1692e3a58780e9fcbba3a107f8db3526a414173906ce20ce848b7b27f8a483dd",
+      "kind": "manufacturer_documentation",
+      "license": {
+        "status": "all rights reserved per siteConfig contentLicense alr",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Current revision documentation, not proof of shipment",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2/build-faq"
+    },
+    {
+      "id": "ldo-printed-revd",
+      "url": "https://docs.ldomotors.com/en/voron/voron2/printed_part_guide_rev_d",
+      "retrieved_at": "2026-10-09",
+      "version": "2025-07-14T14:04:59.144Z",
+      "sha256": "f09c14951e6dc5fe9f12472dbdea1d0e5e27ad1d0d94a33910be4ba064d0e21e",
+      "kind": "manufacturer_documentation",
+      "license": {
+        "status": "all rights reserved per siteConfig contentLicense alr",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Current revision documentation, not proof of shipment",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2/printed_part_guide_rev_d"
+    },
+    {
+      "id": "ldo-bom-directory",
+      "url": "https://docs.ldomotors.com/en/voron/voron2/350_BOM/HOME",
+      "retrieved_at": "2026-10-09",
+      "version": "2026-09-21T08:35:34.645Z",
+      "sha256": "465268d46ab5c925b06915f33690a92caccec93d049fae9607309e762eea1064",
+      "kind": "manufacturer_documentation",
+      "license": {
+        "status": "all rights reserved per siteConfig contentLicense alr",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Current revision documentation, not proof of shipment",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2/350_BOM/HOME"
+    },
+    {
+      "id": "ldo-bom-revd",
+      "url": "https://docs.ldomotors.com/en/voron/voron2/350_BOM/Rev_D",
+      "retrieved_at": "2026-10-09",
+      "version": "2026-02-05T01:20:51.909Z",
+      "sha256": "76d56f74f2e40f3ae3ae3da0c508e338f381a683edcd73cf0bbb9387a41ea0e6",
+      "kind": "manufacturer_documentation",
+      "license": {
+        "status": "all rights reserved per siteConfig contentLicense alr",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Current revision documentation, not proof of shipment",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://docs.ldomotors.com/en/voron/voron2/350_BOM/Rev_D"
+    },
+    {
+      "id": "upstream-voron2",
+      "url": "https://github.com/VoronDesign/Voron-2/tree/a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "retrieved_at": "2026-10-09",
+      "commit": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "branch": "Voron2.4",
+      "license": {
+        "status": "GPL-3.0",
+        "url": "https://github.com/VoronDesign/Voron-2/blob/a192410e27ea345644ae5c4b29b4c9c40cbe1a73/LICENSE",
+        "redistribution": "upstream retained"
+      },
+      "kind": "repository",
+      "hash_scope": "repository commit pin",
+      "retrieved_content_url": "https://github.com/VoronDesign/Voron-2/tree/a192410e27ea345644ae5c4b29b4c9c40cbe1a73"
+    },
+    {
+      "id": "upstream-voron2-manual",
+      "url": "https://github.com/VoronDesign/Voron-2/blob/a192410e27ea345644ae5c4b29b4c9c40cbe1a73/Manual/Assembly_Manual_2.4r2.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "2023-07-04 printed cover; PDF metadata modification 2023-07-18",
+      "commit": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "sha256": "5deae644239870a7d265b15bd0158bf05d7cb416680959b386f19498afcfa888",
+      "local_repository_path": "Manual/Assembly_Manual_2.4r2.pdf",
+      "kind": "assembly_pdf",
+      "pdf_page_count": 263,
+      "page_mapping": {
+        "printed_pages": "1..262; final back cover unnumbered",
+        "zero_based_index": "printed_page - 1; final index262 unnumbered"
+      },
+      "license": {
+        "status": "GPL-3.0",
+        "redistribution": "retained upstream; reference page PNGs rendered locally"
+      },
+      "diagram_inspection": {
+        "rendered": true,
+        "visually_inspected_pdf_indices": [
+          3,
+          12,
+          14,
+          15,
+          16,
+          17,
+          18,
+          20,
+          24,
+          27,
+          28,
+          31,
+          32,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          238,
+          242,
+          244,
+          246,
+          256,
+          258
+        ],
+        "note": "Additional modified-motion reference pages inspected by motion researcher; see motion record."
+      },
+      "hash_scope": "exact source PDF bytes",
+      "retrieved_content_url": "https://github.com/VoronDesign/Voron-2/blob/a192410e27ea345644ae5c4b29b4c9c40cbe1a73/Manual/Assembly_Manual_2.4r2.pdf"
+    },
+    {
+      "id": "ldo-supplement-repository",
+      "url": "https://github.com/MotorDynamicsLab/LDOVoron2/tree/8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+      "retrieved_at": "2026-10-09",
+      "commit": "8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+      "kind": "repository",
+      "license": {
+        "status": "GPL-3.0",
+        "url": "https://github.com/MotorDynamicsLab/LDOVoron2/blob/8270e8cf6c7ba29a7fd11d143c287bd3af576934/LICENSE",
+        "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "redistribution": "link_only in this custom guide"
+      },
+      "hash_scope": "repository commit pin",
+      "retrieved_content_url": "https://github.com/MotorDynamicsLab/LDOVoron2/tree/8270e8cf6c7ba29a7fd11d143c287bd3af576934"
+    },
+    {
+      "id": "west3d-kit",
+      "url": "https://west3d.com/products/ldo-v2-4-kit-in-stock",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned listing snapshot",
+      "sha256": "cb2547b310e49dba41fc8e8404b0fa3c596ce9d62646ae32a1c40f81867f3c36",
+      "kind": "product_page",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Rev D+ variants, Leviathan and Nitehawk SB V2.0 listing; not shipped-box proof",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://west3d.com/products/ldo-v2-4-kit-in-stock"
+    },
+    {
+      "id": "E-LEV-REPO",
+      "url": "https://github.com/MotorDynamicsLab/Leviathan/tree/878c3c4893ea353552c957f574509f9890e1e37a",
+      "retrieved_at": "2026-10-09",
+      "commit": "878c3c4893ea353552c957f574509f9890e1e37a",
+      "kind": "repository",
+      "hash_scope": "repository commit pin",
+      "license": "GPL-3.0 independently checked; link only here"
+    },
+    {
+      "id": "E-NH-REPO",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB/tree/be93526b948d3339c755cb32116baef221ce1a8d",
+      "retrieved_at": "2026-10-09",
+      "commit": "be93526b948d3339c755cb32116baef221ce1a8d",
+      "kind": "repository",
+      "hash_scope": "repository commit pin",
+      "license": "No license found in pinned tree; reuse unresolved, link only"
+    },
+    {
+      "id": "E-NHV2-REPO",
+      "url": "https://github.com/MotorDynamicsLab/Nitehawk-SB-V2/tree/42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "retrieved_at": "2026-10-09",
+      "commit": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "kind": "repository",
+      "hash_scope": "repository commit pin",
+      "license": "No license found in pinned tree; reuse unresolved, link only"
+    },
+    {
+      "id": "ldo-trident-supplement",
+      "url": "https://github.com/MotorDynamicsLab/LDOVoronTrident/tree/5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5",
+      "commit": "5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5",
+      "retrieved_at": "2026-10-09",
+      "kind": "repository",
+      "hash_scope": "repository commit pin",
+      "license": {
+        "status": "GPL-3.0 checked LICENSE",
+        "url": "https://github.com/MotorDynamicsLab/LDOVoronTrident/blob/5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5/LICENSE",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      }
+    },
+    {
+      "id": "voron-software-setup",
+      "url": "https://docs.vorondesign.com/build/software/",
+      "retrieved_at": "2026-10-09",
+      "version": "unversioned HTML snapshot",
+      "sha256": "25416adfce0dd344c1250dbcfe8b6930aad174723d0ab8458846f021bdf7b25f",
+      "hash_scope": "exact retrieved HTML bytes",
+      "retrieved_content_url": "https://docs.vorondesign.com/build/software/",
+      "license": "reuse unresolved; linked only"
+    }
+  ],
+  "gates": [
+    {
+      "id": "I1",
+      "evidence_needed": "Actual kit label/packing list; measure all extrusion lengths and identify kit size, LDO revision/batch, options. Do not commit private receipt.",
+      "blocks": "Size-dependent printing, belts and assembly",
+      "purchase_ids": [
+        "01",
+        "06"
+      ],
+      "location": "chapters/01-inventory.md"
+    },
+    {
+      "id": "P1",
+      "evidence_needed": "Resolve filenames/interface before printing any UHF hotend, endstop or PCB mount; count LDO supplied parts.",
+      "blocks": "Affected printed part preparation",
+      "purchase_ids": [
+        "01",
+        "03",
+        "04",
+        "14"
+      ],
+      "location": "chapters/02-preparation.md"
+    },
+    {
+      "id": "F1",
+      "evidence_needed": "Verified Wings/kinematic three-point layout, frame attachments and cable route; do not fix bed supports at stock spacing. Verify fixed deck/DIN holes align with resolved support positions before closing deck; obtain documented replacement layout if not.",
+      "blocks": "Bed support fastening, final deck/DIN installation and passthrough location",
+      "purchase_ids": [
+        "06",
+        "07",
+        "08"
+      ],
+      "location": "chapters/03-frame-z.md"
+    },
+    {
+      "id": "F2",
+      "evidence_needed": "Measure shipped deck thickness; resolve FAQ 4mm vs RevD BOM 3mm discrepancy and select clips.",
+      "blocks": "Deck clip selection and mounting",
+      "purchase_ids": [
+        "01"
+      ],
+      "location": "chapters/03-frame-z.md"
+    },
+    {
+      "id": "P2",
+      "evidence_needed": "Panel thickness, skirt size, actual inlet/display/fan voltage and supplied mounts.",
+      "blocks": "Electronics enclosure closure and display wiring",
+      "purchase_ids": [
+        "01"
+      ],
+      "location": "chapters/10-panels-first-print.md"
+    }
+  ],
+  "printed_parts": [
+    {
+      "filename": "STLs/Leviathan_bracket_set.stl",
+      "quantity": null,
+      "source": "E-LEV-REPO",
+      "source_revision": "878c3c4893ea353552c957f574509f9890e1e37a",
+      "status": "unresolved board-dependent",
+      "guidance": "One bracket set if actual Leviathan matches; RevD BOM claims left/right included; confirm E1"
+    },
+    {
+      "filename": "STLs/usb_adapter_mount_partial_cover.stl",
+      "quantity": 1,
+      "source": "E-NHV2-REPO",
+      "source_revision": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+      "status": "required after E1/T1",
+      "guidance": "V2 adapter partial cover if exact docs/revision confirmed E1; kit inclusion unverified"
+    },
+    {
+      "filename": "STLs/cw2_captive_pcb_cover.stl",
+      "quantity": 1,
+      "source": "E-NH-REPO",
+      "source_revision": "be93526b948d3339c755cb32116baef221ce1a8d",
+      "status": "required after E1/T1",
+      "guidance": "Reused original source part linked by V2 docs; verify actual board/clearance E1/T1"
+    },
+    {
+      "filename": "STLs/cw2_chain_anchor_tilted.stl",
+      "quantity": null,
+      "source": "E-NH-REPO",
+      "source_revision": "be93526b948d3339c755cb32116baef221ce1a8d",
+      "status": "unresolved board-dependent",
+      "guidance": "One if confirmed cable-chain route; USB umbilical/backer/probe cable rating E4/M3 may require different relief"
+    },
+    {
+      "filename": "STLs/usb_adapter_mount.stl",
+      "quantity": null,
+      "source": "E-NH-REPO",
+      "source_revision": "be93526b948d3339c755cb32116baef221ce1a8d",
+      "status": "unresolved board-dependent",
+      "guidance": "One only for original SB adapter after E1; do not install original/V2 alternate mounts together"
+    },
+    {
+      "filename": "STLs/bed_wago_mount.stl",
+      "quantity": 1,
+      "status": "included by LDO",
+      "source": "ldo-trident-supplement",
+      "source_revision": "5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5",
+      "guidance": "RevD includes one; verify actual connector, MRW mounting/strain relief and ratings E3"
+    },
+    {
+      "filename": "STLs/BTT Pi TFT4.3 Mount/[a]_faceplate.stl",
+      "quantity": null,
+      "status": "unresolved",
+      "source": "ldo-trident-supplement",
+      "source_revision": "5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5",
+      "guidance": "One for matching actual LDO/BTT4.3 display E1/P2"
+    },
+    {
+      "filename": "STLs/BTT Pi TFT4.3 Mount/mount.stl",
+      "quantity": null,
+      "status": "unresolved",
+      "source": "ldo-trident-supplement",
+      "source_revision": "5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5",
+      "guidance": "One standard mount OR thick mount, not both; verify actual panel/display E1/P2"
+    },
+    {
+      "filename": "STLs/BTT Pi TFT4.3 Mount/mount_thick.stl",
+      "quantity": null,
+      "status": "unresolved",
+      "source": "ldo-trident-supplement",
+      "source_revision": "5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5",
+      "guidance": "One thick-panel variant if matching actual panel; do not install both alternatives"
+    }
+  ]
+}

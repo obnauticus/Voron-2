@@ -1,0 +1,128 @@
+[
+  {
+    "system": "Frame / rails / lower Z drives",
+    "parts_quantities": "Kit 01: quantities in chapter 03",
+    "verification": "I1 carton audit; 6 mm XY / 9 mm Z / 6 mm reduction loops identified separately",
+    "ownership": "Kit-reported; actual contents unverified",
+    "gates": "I1 M1 F1 F2"
+  },
+  {
+    "system": "Titanium backers",
+    "parts_quantities": "02 listing: 22 M3x8 FHCS + 10 M3x6 FHCS; approximately 30 M3 T-nuts separately",
+    "verification": "Count actual occupied holes; verify counterbores, nut/extrusion fit and clearance",
+    "ownership": "Extra nuts required but not confirmed owned",
+    "gates": "M3"
+  },
+  {
+    "system": "Double-shear A/B pair",
+    "parts_quantities": "09: 14 F695; 12 M5 1 mm shims; 2 M5 10 mm sleeves; 6 M3 20 mm sleeves; 8 M3x8 FHCS; 6 M3x35 SHCS; 4 ultra-flat M3x4; 6 cup shims",
+    "verification": "PDF bearing count conflict; actual motor shaft engagement and motor fasteners unresolved",
+    "ownership": "Purchased set; contents unverified",
+    "gates": "M1 M4 M5"
+  },
+  {
+    "system": "Front-idler pair",
+    "parts_quantities": "11: 4 F695; 4 M5 1 mm shims; 2 M5 10 mm sleeves; 4 M3x5 FHCS; 4 M3x45 SHCS; 8 M3x6 BHCS",
+    "verification": "Extrusion screws/T-nuts and clamp supply differ between live page and PDF",
+    "ownership": "Purchased set; contents unverified",
+    "gates": "M1 M5 M8"
+  },
+  {
+    "system": "Live-idler XY pair",
+    "parts_quantities": "14: 8 F695; 4 M5 1 mm shims; 4 M5 8 mm sleeves; 2 M3 20 mm sleeves; 4 springs; 4 M3x8 FHCS; 2 M3x30 FHCS; 6 M5x10 FHCS; 8 M3x8 BHCS",
+    "verification": "Eight retention screws: PDF M3x3 vs M3x4 conflict; endstop CAD export/hardware unresolved",
+    "ownership": "Purchased set; contents and retention length unverified",
+    "gates": "M1 M5 M6"
+  },
+  {
+    "system": "Rigid Z joints",
+    "parts_quantities": "13 listing: four joints; 16 M3x8 + 4 M3x14 + 4 M5x14",
+    "verification": "Assembly drawing, head styles and screw assignments unconfirmed",
+    "ownership": "Purchased set; no separate lower clamps installed",
+    "gates": "M7 M8 M9"
+  },
+  {
+    "system": "Upper Z tensioners",
+    "parts_quantities": "12: four preassembled units; listing 8 M5x25; PDF internal contents in chapter 04",
+    "verification": "Frame M5x16/T-nuts and left/right assignment need exact revision instructions",
+    "ownership": "Purchased set; attachment hardware unverified",
+    "gates": "M2"
+  },
+  {
+    "system": "Upper Z clamp allocation",
+    "parts_quantities": "10: two top clamps at rear; 11: two front clamps, conditional",
+    "verification": "Four integrated lower captures from 13; 10 bottom pair and two of 11 clamps surplus if fit/contents confirmed",
+    "ownership": "Purchased; no physical fit validation",
+    "gates": "M8"
+  },
+  {
+    "system": "Bed supports",
+    "parts_quantities": "07: three different contacts; 08: one installed pair of Wings",
+    "verification": "Resolve 2x packaging; third-seat ~130 mm extrusion excluded; bolt lengths and support map",
+    "ownership": "Third support / attachments conditional requirement, not confirmed owned",
+    "gates": "B2 B3 F1"
+  },
+  {
+    "system": "Bed thermal system",
+    "parts_quantities": "06: one MRW350 plate, purchased options unknown",
+    "verification": "New approved heater, sensor, independent thermal fuse, surface, PE lug and strain relief",
+    "ownership": "Required but not confirmed owned; stock LDO bonded assembly left intact",
+    "gates": "B1 B4 E3"
+  },
+  {
+    "system": "CW2 / StealthBurner",
+    "parts_quantities": "Kit 01 baseline conditional; 03 exact UHF hotend",
+    "verification": "Core hardware in chapter 06; UHF cartridge / duct / shell geometry must match",
+    "ownership": "Validated UHF printed cartridge required but not confirmed owned",
+    "gates": "T1 T2 T3"
+  },
+  {
+    "system": "CNC carriage / probe",
+    "parts_quantities": "04: one carriage; 05: one V4 Standard",
+    "verification": "4 M3x8 rail screws (head by revision); 2 M3x6 clamp screws; X switch 2 M2x10; standard probe 2 M3x6",
+    "ownership": "8.5 mm UHF extenders and longer screws conditional requirement, not confirmed owned",
+    "gates": "T1 T4"
+  },
+  {
+    "system": "Heater output / PT1000",
+    "parts_quantities": "V2.0.0 only: HE0 PA7, 4.5 A continuous; TH0 PB12, 2200 ohm pull-up",
+    "verification": "Exact 03 cold/startup load versus MOSFET, contacts, wiring, fuse and shared PSU headroom",
+    "ownership": "Rated ferrules / contacts required but not confirmed owned",
+    "gates": "E1 E2"
+  },
+  {
+    "system": "Primary USB route",
+    "parts_quantities": "Nitehawk USB + 24 V umbilical; 05 direct host USB proposed",
+    "verification": "V4 USB requires 5 V; PROBE 24 V prohibited; verify cable rating and connector orientation",
+    "ownership": "Approved direct USB cable / strain relief required but not confirmed owned",
+    "gates": "E4"
+  },
+  {
+    "system": "Downstream USB alternate",
+    "parts_quantities": "Nitehawk V2 P8 JST-ZH1.5 5P to V4 four-pin Molex Sherlock",
+    "verification": "Schematic pins 1 VBUS, 2 D-, 3 D+, 4/5 GND; plug-side view reversals, fifth contact and port load need verification",
+    "ownership": "Conditional alternate harness; not claimed purchased",
+    "gates": "E4"
+  },
+  {
+    "system": "CAN alternate",
+    "parts_quantities": "Only after actual port, firmware, power and cable/termination identification",
+    "verification": "Leviathan CAN supply 24 V differs USB 5 V; Nitehawk uplinks use USB",
+    "ownership": "Conditional alternate; no CAN adapter purchase claimed",
+    "gates": "E4 E5"
+  },
+  {
+    "system": "Mains / protective earth",
+    "parts_quantities": "Actual kit inlet, PSU and SSR arrangement plus MRW circuit",
+    "verification": "Isolation, fuse/SSR/heatsink ratings, dedicated PE, covered terminals, approved circuit",
+    "ownership": "Rated parts required but not confirmed owned; manufacturer requires qualified installer",
+    "gates": "E1 E3"
+  },
+  {
+    "system": "Nozzle cleaning",
+    "parts_quantities": "No automatic brush macros active",
+    "verification": "Kit brass brush may be present; keep Cartographer coil away from metal brush",
+    "ownership": "Manual cleaning primary; silicone brush optional and not confirmed owned",
+    "gates": "T4 E7"
+  }
+]

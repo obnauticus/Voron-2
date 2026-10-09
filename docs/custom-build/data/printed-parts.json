@@ -1,0 +1,1877 @@
+[
+  {
+    "filename": "STLs/Clockwork2/Direct_Drive/main_body.stl",
+    "quantity": 1,
+    "status": "required if CW2 confirmed",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": "T1",
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Clockwork2/Direct_Drive/motor_plate.stl",
+    "quantity": 1,
+    "status": "required if CW2 confirmed",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": "T1",
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Clockwork2/Direct_Drive/[a]_guidler_a.stl",
+    "quantity": 1,
+    "status": "required if CW2 confirmed",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": "T1",
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Clockwork2/Direct_Drive/[a]_guidler_b.stl",
+    "quantity": 1,
+    "status": "required if CW2 confirmed",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": "T1",
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Clockwork2/Direct_Drive/[a]_latch.stl",
+    "quantity": 1,
+    "status": "required if CW2 confirmed",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": "T1",
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Clockwork2/Direct_Drive/[a]_latch_shuttle.stl",
+    "quantity": 1,
+    "status": "required if CW2 confirmed",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": "T1",
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Stealthburner/[a]_stealthburner_main_body.stl",
+    "quantity": 1,
+    "status": "conditional UHF fit",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": "T2",
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Stealthburner/Printheads/phaetus_rapido_v2/stealthburner_printhead_rapido_v2_front.stl",
+    "quantity": 0,
+    "status": "omit; HF mount not verified for purchased UHF",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": "T2",
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Stealthburner/Printheads/phaetus_rapido_v2/stealthburner_printhead_rapido_v2_rear_cw2.stl",
+    "quantity": 0,
+    "status": "omit; HF mount not verified for purchased UHF",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": "T2",
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Clockwork2/cable_door_for_pcb.stl",
+    "quantity": null,
+    "status": "unresolved board/umbilical variant",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": "T1",
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Clockwork2/[a]_pcb_spacer.stl",
+    "quantity": null,
+    "status": "unresolved board/umbilical variant",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": "T1",
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Clockwork2/chain_anchor_2hole.stl",
+    "quantity": null,
+    "status": "unresolved board/umbilical variant",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": "T1",
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Clockwork2/chain_anchor_3hole.stl",
+    "quantity": null,
+    "status": "unresolved board/umbilical variant",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": "T1",
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Stealthburner/[o]_stealthburner_LED_carrier.stl",
+    "quantity": 1,
+    "status": "optional lighting",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": null,
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Stealthburner/[c]_stealthburner_LED_diffuser.stl",
+    "quantity": 1,
+    "status": "optional lighting",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": null,
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Stealthburner/[o]_stealthburner_LED_diffuser_mask.stl",
+    "quantity": 1,
+    "status": "optional lighting",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": null,
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Tools/SB_5015_Cutting_Tool_A.stl",
+    "quantity": 1,
+    "status": "optional fan tool",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": null,
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Tools/SB_5015_Cutting_Tool_B.stl",
+    "quantity": 1,
+    "status": "optional fan tool",
+    "source": "stealthburner-repo",
+    "commit": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "gate": null,
+    "included_by_ldo": "unverified",
+    "source_revision": "8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "voron 2.4-Rapido 2/uhf前.stl",
+    "quantity": 1,
+    "status": "unresolved exact combined UHF fit",
+    "source": "phaetus-rapido2f-adaptors",
+    "commit": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+    "gate": "T2",
+    "included_by_ldo": "unverified",
+    "source_revision": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "voron 2.4-Rapido 2/uhf 后.stl",
+    "quantity": 1,
+    "status": "unresolved exact combined UHF fit",
+    "source": "phaetus-rapido2f-adaptors",
+    "commit": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+    "gate": "T2",
+    "included_by_ldo": "unverified",
+    "source_revision": "7401934e28d56844ba4f311e9d588b1e4d0510dd",
+    "guidance": "Use documented source guidance; verify the actual interface before printing."
+  },
+  {
+    "filename": "STLs/Gantry/AB_Drive_Units/a_drive_frame_upper.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/AB_Drive_Units/a_drive_frame_lower.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/AB_Drive_Units/b_drive_frame_upper.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/AB_Drive_Units/b_drive_frame_lower.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/Front_Idlers/front_idler_left_upper.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/Front_Idlers/front_idler_left_lower.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/Front_Idlers/front_idler_right_upper.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/Front_Idlers/front_idler_right_lower.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/Front_Idlers/[a]_tensioner_left.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/Front_Idlers/[a]_tensioner_right.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/X_Axis/XY_Joints/xy_joint_left_upper_MGN12.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/X_Axis/XY_Joints/xy_joint_left_lower_MGN12.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/X_Axis/XY_Joints/xy_joint_right_upper_MGN12.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/X_Axis/XY_Joints/xy_joint_right_lower_MGN12.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Z_Idlers/z_tensioner_bracket_a_x2.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 2,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Z_Idlers/z_tensioner_bracket_b_x2.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 2,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Z_Idlers/[a]_z_tensioner_9mm_x4.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 4,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/Z_Joints/z_joint_upper_x4.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 4,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/Z_Joints/z_joint_lower_x4.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 4,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/Z_Joints/z_joint_upper_hall_effect.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 1,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/[a]_z_belt_clip_lower_x4.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 4,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Purchased CNC replacement from outset.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Purchased CNC replacement from outset."
+  },
+  {
+    "filename": "STLs/Gantry/[a]_z_belt_clip_upper_x4.stl",
+    "status": "replaced_omit",
+    "print_quantity": 0,
+    "stock_quantity": 4,
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "notes": "Metal replacement from the outset; upper stock clip omitted only after M8 confirms four CNC upper interfaces.",
+    "quantity": 0,
+    "source": "upstream-voron2",
+    "guidance": "Metal replacement from the outset; upper stock clip omitted only after M8 confirms four CNC upper interfaces."
+  },
+  {
+    "filename": "Live Shaft XY/Endstop_PCB_Mount_heat_inserts.step",
+    "status": "unresolved",
+    "print_quantity": null,
+    "source_revision": "Live_Shaft_XY.zip query v=1779734631; hash in sources",
+    "source": "vitalii-xy-support-cad",
+    "format": "STEP, not STL",
+    "notes": "Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established.",
+    "quantity": null,
+    "guidance": "Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established."
+  },
+  {
+    "filename": "Live Shaft XY/2x_PCB_Spacer.step",
+    "status": "unresolved",
+    "print_quantity": null,
+    "source_revision": "Live_Shaft_XY.zip query v=1779734631; hash in sources",
+    "source": "vitalii-xy-support-cad",
+    "format": "STEP, not STL",
+    "notes": "Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established.",
+    "quantity": null,
+    "guidance": "Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established."
+  },
+  {
+    "filename": "Live Shaft XY/Endstop_Bump.step",
+    "status": "unresolved",
+    "print_quantity": null,
+    "source_revision": "Live_Shaft_XY.zip query v=1779734631; hash in sources",
+    "source": "vitalii-xy-support-cad",
+    "format": "STEP, not STL",
+    "notes": "Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established.",
+    "quantity": null,
+    "guidance": "Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established."
+  },
+  {
+    "filename": "Live Shaft XY/Endstop_Bump_Deep.step",
+    "status": "unresolved",
+    "print_quantity": null,
+    "source_revision": "Live_Shaft_XY.zip query v=1779734631; hash in sources",
+    "source": "vitalii-xy-support-cad",
+    "format": "STEP, not STL",
+    "notes": "Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established.",
+    "quantity": null,
+    "guidance": "Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established."
+  },
+  {
+    "filename": "extrusion_backers/STLs/XY_cable_chain_bridge-3hole-3mm_backer.stl",
+    "status": "unresolved",
+    "print_quantity": null,
+    "source_revision": "62268ed817878e54d6a1186882060aa8368d4f0f",
+    "source": "backer-design-readme",
+    "notes": "Candidate only if actual cable-chain routing requires it; 3mm name does not verify 3.2mm backer fit.",
+    "quantity": null,
+    "guidance": "Candidate only if actual cable-chain routing requires it; 3mm name does not verify 3.2mm backer fit."
+  },
+  {
+    "filename": "extrusion_backers/STLs/XY_cable_chain_bridge-Igus-3mm_backer.stl",
+    "status": "unresolved",
+    "print_quantity": null,
+    "source_revision": "62268ed817878e54d6a1186882060aa8368d4f0f",
+    "source": "backer-design-readme",
+    "notes": "Candidate only if actual cable-chain routing requires it; 3mm name does not verify 3.2mm backer fit.",
+    "quantity": null,
+    "guidance": "Candidate only if actual cable-chain routing requires it; 3mm name does not verify 3.2mm backer fit."
+  },
+  {
+    "filename": "STLs/Leviathan_bracket_set.stl",
+    "quantity": null,
+    "source": "E-LEV-REPO",
+    "source_revision": "878c3c4893ea353552c957f574509f9890e1e37a",
+    "status": "unresolved board-dependent",
+    "guidance": "One bracket set if actual Leviathan matches; RevD BOM claims left/right included; confirm E1"
+  },
+  {
+    "filename": "STLs/usb_adapter_mount_partial_cover.stl",
+    "quantity": 1,
+    "source": "E-NHV2-REPO",
+    "source_revision": "42ae497cfd627acde0f6ad81c8dd26f51efcbb48",
+    "status": "required after E1/T1",
+    "guidance": "V2 adapter partial cover if exact docs/revision confirmed E1; kit inclusion unverified"
+  },
+  {
+    "filename": "STLs/cw2_captive_pcb_cover.stl",
+    "quantity": 1,
+    "source": "E-NH-REPO",
+    "source_revision": "be93526b948d3339c755cb32116baef221ce1a8d",
+    "status": "required after E1/T1",
+    "guidance": "Reused original source part linked by V2 docs; verify actual board/clearance E1/T1"
+  },
+  {
+    "filename": "STLs/cw2_chain_anchor_tilted.stl",
+    "quantity": null,
+    "source": "E-NH-REPO",
+    "source_revision": "be93526b948d3339c755cb32116baef221ce1a8d",
+    "status": "unresolved board-dependent",
+    "guidance": "One if confirmed cable-chain route; USB umbilical/backer/probe cable rating E4/M3 may require different relief"
+  },
+  {
+    "filename": "STLs/usb_adapter_mount.stl",
+    "quantity": null,
+    "source": "E-NH-REPO",
+    "source_revision": "be93526b948d3339c755cb32116baef221ce1a8d",
+    "status": "unresolved board-dependent",
+    "guidance": "One only for original SB adapter after E1; do not install original/V2 alternate mounts together"
+  },
+  {
+    "filename": "STLs/bed_wago_mount.stl",
+    "quantity": 1,
+    "status": "included by LDO",
+    "source": "ldo-trident-supplement",
+    "source_revision": "5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5",
+    "guidance": "RevD includes one; verify actual connector, MRW mounting/strain relief and ratings E3"
+  },
+  {
+    "filename": "STLs/BTT Pi TFT4.3 Mount/[a]_faceplate.stl",
+    "quantity": null,
+    "status": "unresolved",
+    "source": "ldo-trident-supplement",
+    "source_revision": "5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5",
+    "guidance": "One for matching actual LDO/BTT4.3 display E1/P2"
+  },
+  {
+    "filename": "STLs/BTT Pi TFT4.3 Mount/mount.stl",
+    "quantity": null,
+    "status": "unresolved",
+    "source": "ldo-trident-supplement",
+    "source_revision": "5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5",
+    "guidance": "One standard mount OR thick mount, not both; verify actual panel/display E1/P2"
+  },
+  {
+    "filename": "STLs/BTT Pi TFT4.3 Mount/mount_thick.stl",
+    "quantity": null,
+    "status": "unresolved",
+    "source": "ldo-trident-supplement",
+    "source_revision": "5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5",
+    "guidance": "One thick-panel variant if matching actual panel; do not install both alternatives"
+  },
+  {
+    "filename": "STLs/Electronics_Bay/Controller_Mounts/BIGDIPPER_bracket_set.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Provisional Leviathan replaces alternate controller and separate 5V PSU mounts."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/Controller_Mounts/BTT_MOT_EXP_bracket.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Provisional Leviathan replaces alternate controller and separate 5V PSU mounts."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/Controller_Mounts/Duet2_Duet3Mini5_bracket_set.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Provisional Leviathan replaces alternate controller and separate 5V PSU mounts."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/Controller_Mounts/GTR_bracket_set.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Provisional Leviathan replaces alternate controller and separate 5V PSU mounts."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/Controller_Mounts/Octopus_bracket_set.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Provisional Leviathan replaces alternate controller and separate 5V PSU mounts."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/Controller_Mounts/S6_bracket_set.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Provisional Leviathan replaces alternate controller and separate 5V PSU mounts."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/Controller_Mounts/SKR_Pro_bracket_set.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Provisional Leviathan replaces alternate controller and separate 5V PSU mounts."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/Controller_Mounts/SKR_bracket_inline_set.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Provisional Leviathan replaces alternate controller and separate 5V PSU mounts."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/Controller_Mounts/Spider_bracket_set.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Provisional Leviathan replaces alternate controller and separate 5V PSU mounts."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/Other_PS_Mounts/UHP_200_Mount_x2.stl",
+    "quantity": null,
+    "stock_quantity": 2,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Match actual PSU/host board revision before selecting E1."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/Other_PS_Mounts/UHP_350_Mount_x2.stl",
+    "quantity": null,
+    "stock_quantity": 2,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Match actual PSU/host board revision before selecting E1."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/PSU_stabilizer_50mm.stl",
+    "quantity": null,
+    "stock_quantity": 1,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Match actual PSU/host board revision before selecting E1."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/lrs_200_psu_bracket_x2.stl",
+    "quantity": null,
+    "stock_quantity": 2,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Two brackets if actual LRS-200-24 confirmed; no PSU substitution assumed."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/pcb_din_clip_x3.stl",
+    "quantity": 4,
+    "stock_quantity": 3,
+    "status": "included by LDO",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Rev D BOM claims four clips; verify delivered count and actual board brackets E1. File name x3 is stock count."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/raspberrypi_bracket.stl",
+    "quantity": null,
+    "stock_quantity": 1,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Match actual PSU/host board revision before selecting E1."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/rs25_psu_bracket.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Provisional Leviathan replaces alternate controller and separate 5V PSU mounts."
+  },
+  {
+    "filename": "STLs/Electronics_Bay/wago_221-415_mount_3by5.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Exhaust_Filter/[a]_exhaust_fan_grill.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Stock exhaust-fan assembly omitted; its fan ownership is not confirmed. LDO cover closes opening."
+  },
+  {
+    "filename": "STLs/Exhaust_Filter/[a]_exhaust_filter_mount_x2.stl",
+    "quantity": 0,
+    "stock_quantity": 2,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Stock exhaust-fan assembly omitted; its fan ownership is not confirmed. LDO cover closes opening."
+  },
+  {
+    "filename": "STLs/Exhaust_Filter/[a]_filter_access_cover.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Stock exhaust-fan assembly omitted; its fan ownership is not confirmed. LDO cover closes opening."
+  },
+  {
+    "filename": "STLs/Exhaust_Filter/exhaust_filter_grill.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Exhaust_Filter/exhaust_filter_housing.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Stock exhaust-fan assembly omitted; its fan ownership is not confirmed. LDO cover closes opening."
+  },
+  {
+    "filename": "STLs/Gantry/AB_Drive_Units/[a]_cable_cover.stl",
+    "quantity": null,
+    "stock_quantity": 1,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Confirm retained chain/USB umbilical/backer clearance at M3/M6/E4 before selecting."
+  },
+  {
+    "filename": "STLs/Gantry/AB_Drive_Units/[a]_z_chain_retainer_bracket_x2.stl",
+    "quantity": null,
+    "stock_quantity": 2,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Confirm retained chain/USB umbilical/backer clearance at M3/M6/E4 before selecting."
+  },
+  {
+    "filename": "STLs/Gantry/X_Axis/XY_Joints/[a]_endstop_pod_D2F_switch.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "CNC carriage/live joints replace stock geometry, endstop and probe supports."
+  },
+  {
+    "filename": "STLs/Gantry/X_Axis/XY_Joints/[a]_endstop_pod_hall_effect.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "CNC carriage/live joints replace stock geometry, endstop and probe supports."
+  },
+  {
+    "filename": "STLs/Gantry/X_Axis/XY_Joints/[a]_xy_joint_cable_bridge_2hole.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "CNC carriage/live joints replace stock geometry, endstop and probe supports."
+  },
+  {
+    "filename": "STLs/Gantry/X_Axis/XY_Joints/[a]_xy_joint_cable_bridge_3hole.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "CNC carriage/live joints replace stock geometry, endstop and probe supports."
+  },
+  {
+    "filename": "STLs/Gantry/X_Axis/X_Carriage/pinda_adapter.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "CNC carriage/live joints replace stock geometry, endstop and probe supports."
+  },
+  {
+    "filename": "STLs/Gantry/X_Axis/X_Carriage/probe_retainer_bracket.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "CNC carriage/live joints replace stock geometry, endstop and probe supports."
+  },
+  {
+    "filename": "STLs/Gantry/X_Axis/X_Carriage/probe_retainer_bracket_9mm.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "CNC carriage/live joints replace stock geometry, endstop and probe supports."
+  },
+  {
+    "filename": "STLs/Gantry/X_Axis/X_Carriage/x_frame_V2TR_MGN12_left.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "CNC carriage/live joints replace stock geometry, endstop and probe supports."
+  },
+  {
+    "filename": "STLs/Gantry/X_Axis/X_Carriage/x_frame_V2TR_MGN12_right.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "CNC carriage/live joints replace stock geometry, endstop and probe supports."
+  },
+  {
+    "filename": "STLs/Gantry/z_chain_bottom_anchor.stl",
+    "quantity": null,
+    "stock_quantity": 1,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Confirm retained chain/USB umbilical/backer clearance at M3/M6/E4 before selecting."
+  },
+  {
+    "filename": "STLs/Gantry/z_chain_guide.stl",
+    "quantity": null,
+    "stock_quantity": 1,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Confirm retained chain/USB umbilical/backer clearance at M3/M6/E4 before selecting."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/Front_Doors/door_hinge_x6.stl",
+    "quantity": 6,
+    "stock_quantity": 6,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/Front_Doors/handle_a_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/Front_Doors/handle_b_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/Front_Doors/latch_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/bottom_panel_clip_x4.stl",
+    "quantity": 4,
+    "stock_quantity": 4,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/bottom_panel_hinge_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/corner_panel_clip_4mm_x8.stl",
+    "quantity": null,
+    "stock_quantity": 8,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Choose one clip-thickness family after actual panel measurement F2/P2; filename gives count for chosen family."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/corner_panel_clip_6mm_x8.stl",
+    "quantity": null,
+    "stock_quantity": 8,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Choose one clip-thickness family after actual panel measurement F2/P2; filename gives count for chosen family."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/deck_support_3mm_x8.stl",
+    "quantity": null,
+    "stock_quantity": 8,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Choose one clip-thickness family after actual panel measurement F2/P2; filename gives count for chosen family."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/deck_support_4mm_x8.stl",
+    "quantity": null,
+    "stock_quantity": 8,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Choose one clip-thickness family after actual panel measurement F2/P2; filename gives count for chosen family."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/midspan_panel_clip_4mm_x7.stl",
+    "quantity": null,
+    "stock_quantity": 7,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Choose one clip-thickness family after actual panel measurement F2/P2; filename gives count for chosen family."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/midspan_panel_clip_6mm_x8.stl",
+    "quantity": null,
+    "stock_quantity": 8,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Choose one clip-thickness family after actual panel measurement F2/P2; filename gives count for chosen family."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/z_belt_cover_a_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Panel_Mounting/z_belt_cover_b_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Skirts/250/front_skirt_a_250.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Wrong size for provisional 350 target; revisit only if I1 changes it."
+  },
+  {
+    "filename": "STLs/Skirts/250/front_skirt_b_250.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Wrong size for provisional 350 target; revisit only if I1 changes it."
+  },
+  {
+    "filename": "STLs/Skirts/250/rear_center_skirt_250.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Wrong size for provisional 350 target; revisit only if I1 changes it."
+  },
+  {
+    "filename": "STLs/Skirts/250/side_skirt_a_250_x2.stl",
+    "quantity": 0,
+    "stock_quantity": 2,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Wrong size for provisional 350 target; revisit only if I1 changes it."
+  },
+  {
+    "filename": "STLs/Skirts/250/side_skirt_b_250_x2.stl",
+    "quantity": 0,
+    "stock_quantity": 2,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Wrong size for provisional 350 target; revisit only if I1 changes it."
+  },
+  {
+    "filename": "STLs/Skirts/300/front_skirt_a_300.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Wrong size for provisional 350 target; revisit only if I1 changes it."
+  },
+  {
+    "filename": "STLs/Skirts/300/front_skirt_b_300.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Wrong size for provisional 350 target; revisit only if I1 changes it."
+  },
+  {
+    "filename": "STLs/Skirts/300/rear_center_skirt_300.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Wrong size for provisional 350 target; revisit only if I1 changes it."
+  },
+  {
+    "filename": "STLs/Skirts/300/side_skirt_a_300_x2.stl",
+    "quantity": 0,
+    "stock_quantity": 2,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Wrong size for provisional 350 target; revisit only if I1 changes it."
+  },
+  {
+    "filename": "STLs/Skirts/300/side_skirt_b_300_x2.stl",
+    "quantity": 0,
+    "stock_quantity": 2,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Wrong size for provisional 350 target; revisit only if I1 changes it."
+  },
+  {
+    "filename": "STLs/Skirts/350/front_skirt_a_350.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Skirts/350/front_skirt_b_350.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Skirts/350/rear_center_skirt_350.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Skirts/350/side_skirt_a_350_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Skirts/350/side_skirt_b_350_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Skirts/[a]_belt_guard_a_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Skirts/[a]_belt_guard_b_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Skirts/[a]_btt_knob_light_shield.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Not the provisional LDO D-family display/inlet path; verify actual options E1/P2."
+  },
+  {
+    "filename": "STLs/Skirts/[a]_fan_grill_a_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Skirts/[a]_fan_grill_b_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Skirts/[a]_fan_grill_open_optional_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "optional",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Alternative open grille; not an additional installed pair."
+  },
+  {
+    "filename": "STLs/Skirts/[a]_fan_grill_retainer_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Skirts/[a]_keystone_blank_insert.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Skirts/[a]_mini12864_case_front_insert.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Not the provisional LDO D-family display/inlet path; verify actual options E1/P2."
+  },
+  {
+    "filename": "STLs/Skirts/[a]_mini12864_case_hinge.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Not the provisional LDO D-family display/inlet path; verify actual options E1/P2."
+  },
+  {
+    "filename": "STLs/Skirts/keystone_panel.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Skirts/mini12864_case_front.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Not the provisional LDO D-family display/inlet path; verify actual options E1/P2."
+  },
+  {
+    "filename": "STLs/Skirts/mini12864_case_rear.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Not the provisional LDO D-family display/inlet path; verify actual options E1/P2."
+  },
+  {
+    "filename": "STLs/Skirts/power_inlet_IECGS_1.2mm.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Not the provisional LDO D-family display/inlet path; verify actual options E1/P2."
+  },
+  {
+    "filename": "STLs/Skirts/power_inlet_IECGS_1mm.stl",
+    "quantity": null,
+    "stock_quantity": 1,
+    "status": "unresolved",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Required if actual inlet is LDO 1.0mm; verify E1/P2 before print."
+  },
+  {
+    "filename": "STLs/Skirts/power_inlet_filtered.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Not the provisional LDO D-family display/inlet path; verify actual options E1/P2."
+  },
+  {
+    "filename": "STLs/Skirts/side_fan_support_x2.STL",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Spool_Management/bowden_retainer.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Spool_Management/spool_holder.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/Frame_Brackets/dual_ramps_bracket_frame.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/Frame_Brackets/duet_duex_bracket_frame_x2.stl",
+    "quantity": 0,
+    "stock_quantity": 2,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/Frame_Brackets/lrs_bracket_frame.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/Frame_Brackets/mks_gen_1.4_bracket_frame_x2.stl",
+    "quantity": 0,
+    "stock_quantity": 2,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/Frame_Brackets/mks_gen_L_bracket_frame_x2.stl",
+    "quantity": 0,
+    "stock_quantity": 2,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/Frame_Brackets/raspberry_pi_bracket.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/Frame_Brackets/rs_25_psu_bracket_frame.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/Frame_Brackets/rs_35_bracket_frame.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/Frame_Brackets/skr_1.3_bracket_frame.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/Frame_Brackets/skr_mini_e3_bracket_frame.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/MGN9_X/[a]_belt_clamp_MGN9_x2.stl",
+    "quantity": 0,
+    "stock_quantity": 2,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/MGN9_X/x_carriage_frame_left_MGN9.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/MGN9_X/x_carriage_frame_right_MGN9.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/MGN9_X/x_carriage_pivot_block_MGN9.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/MGN9_X/xy_joint_left_lower_MGN9.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/MGN9_X/xy_joint_left_upper_MGN9.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/MGN9_X/xy_joint_right_lower_MGN9.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/MGN9_X/xy_joint_right_upper_MGN9.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/ZipChain/XY/zipchain2_xy_end.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/ZipChain/XY/zipchain2_xy_link_a.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/ZipChain/XY/zipchain2_xy_link_b.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/ZipChain/Z/zipchain2_z_end.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/ZipChain/Z/zipchain2_z_link_a.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/ZipChain/Z/zipchain2_z_link_b.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/ZipChain/Z/zipchain2_z_link_b_locking.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/[a]_stopgap_80T_hubbed_gear.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Superceded_Parts/[a]_z_tensioner_x4_6mm.stl",
+    "quantity": 0,
+    "stock_quantity": 4,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Superseded upstream alternative; not the R2 main path."
+  },
+  {
+    "filename": "STLs/Test_Prints/Filament_Card.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "optional",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Calibration or assembly aid; not an installed machine part."
+  },
+  {
+    "filename": "STLs/Test_Prints/Filament_Card_Caddy_25.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "optional",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Calibration or assembly aid; not an installed machine part."
+  },
+  {
+    "filename": "STLs/Test_Prints/Heatset_Practice.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "optional",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Calibration or assembly aid; not an installed machine part."
+  },
+  {
+    "filename": "STLs/Test_Prints/Thread_Test_1_x1_Rev1.STL",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "optional",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Calibration or assembly aid; not an installed machine part."
+  },
+  {
+    "filename": "STLs/Test_Prints/Thread_Test_2_x1_Rev1.STL",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "optional",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Calibration or assembly aid; not an installed machine part."
+  },
+  {
+    "filename": "STLs/Test_Prints/Thread_Test_3_x1_Rev1.STL",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "optional",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Calibration or assembly aid; not an installed machine part."
+  },
+  {
+    "filename": "STLs/Test_Prints/Voron_Design_Cube_v7.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "optional",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Calibration or assembly aid; not an installed machine part."
+  },
+  {
+    "filename": "STLs/Tools/MGN12_rail_guide_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "optional",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Calibration or assembly aid; not an installed machine part."
+  },
+  {
+    "filename": "STLs/Tools/MGN9_rail_guide_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "optional",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Calibration or assembly aid; not an installed machine part."
+  },
+  {
+    "filename": "STLs/Tools/bed_hole_marking_template_x1_Rev2.STL",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "optional",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Calibration or assembly aid; not an installed machine part."
+  },
+  {
+    "filename": "STLs/Tools/bottom_panel_template.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "optional",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Calibration or assembly aid; not an installed machine part."
+  },
+  {
+    "filename": "STLs/Tools/pulley_jig.stl",
+    "quantity": 1,
+    "stock_quantity": 1,
+    "status": "optional",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "Calibration or assembly aid; not an installed machine part."
+  },
+  {
+    "filename": "STLs/Z_Drive/[a]_belt_tensioner_a_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Z_Drive/[a]_belt_tensioner_b_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Z_Drive/[a]_z_drive_baseplate_a_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Z_Drive/[a]_z_drive_baseplate_b_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Z_Drive/z_drive_main_a_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Z_Drive/z_drive_main_b_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Z_Drive/z_drive_retainer_a_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Z_Drive/z_drive_retainer_b_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Z_Drive/z_motor_mount_a_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Z_Drive/z_motor_mount_b_x2.stl",
+    "quantity": 2,
+    "stock_quantity": 2,
+    "status": "required",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "KEEP; upstream filename count and retained manual assembly. ABS guidance p4."
+  },
+  {
+    "filename": "STLs/Z_Endstop/nozzle_probe.stl",
+    "quantity": 0,
+    "stock_quantity": 1,
+    "status": "replaced/omit",
+    "source": "upstream-voron2",
+    "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+    "guidance": "CNC tensioners or Cartographer replace this function."
+  },
+  {
+    "filename": "STLs/nozzle_probe_ldo.stl",
+    "quantity": 0,
+    "status": "replaced/omit",
+    "source": "ldo-supplement-repository",
+    "source_revision": "8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+    "guidance": "Cartographer Z homing omits kit nozzle Z endstop; keep supplied piece as surplus."
+  },
+  {
+    "filename": "STLs/led_fan_pcb_spacer_x2.stl",
+    "quantity": 2,
+    "status": "included by LDO",
+    "source": "ldo-supplement-repository",
+    "source_revision": "8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+    "guidance": "Two in Rev D BOM; verify carton and PCB fit."
+  },
+  {
+    "filename": "STLs/cw2_offset_chain_anchor.stl",
+    "quantity": null,
+    "status": "unresolved",
+    "source": "ldo-supplement-repository",
+    "source_revision": "8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+    "guidance": "LDO original two-hole chain anchor; verify actual Nitehawk/routing/backer fit."
+  },
+  {
+    "filename": "STLs/exhaust_cover.stl",
+    "quantity": 1,
+    "status": "required",
+    "source": "ldo-supplement-repository",
+    "source_revision": "8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+    "guidance": "Seal unused exhaust with stock grill; no extra filter modification added."
+  },
+  {
+    "filename": "STLs/handlebar_spacer_x4.stl",
+    "quantity": 4,
+    "status": "optional",
+    "source": "ldo-supplement-repository",
+    "source_revision": "8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+    "guidance": "If actual included handles installed; M5x14 + hammerhead per LDO supplement."
+  },
+  {
+    "filename": "STLs/z_rail_stop_x4.stl",
+    "quantity": 4,
+    "status": "optional",
+    "source": "ldo-supplement-repository",
+    "source_revision": "8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+    "guidance": "Captive-rail safety aid; temporary stops needed while handling."
+  },
+  {
+    "filename": "STLs/ldo_bestagon_insert.stl",
+    "quantity": 1,
+    "status": "optional",
+    "source": "ldo-supplement-repository",
+    "source_revision": "8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+    "guidance": "Decorative kit insert only."
+  },
+  {
+    "filename": "STLs/z_belt_cover_a_led.stl",
+    "quantity": 2,
+    "status": "optional",
+    "source": "ldo-supplement-repository",
+    "source_revision": "8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+    "guidance": "Alternative A cover if LED wires route through Z motor opening; not added to stock covers."
+  },
+  {
+    "filename": "STLs/Purge Bucket/brush_holder_sheet_stop.stl",
+    "quantity": 0,
+    "status": "replaced/omit",
+    "source": "ldo-supplement-repository",
+    "source_revision": "8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+    "guidance": "No automatic brass brush route across Cartographer coil; manual initial cleaning."
+  },
+  {
+    "filename": "STLs/Purge Bucket/individual_sheet_stop.stl",
+    "quantity": null,
+    "status": "unresolved",
+    "source": "ldo-supplement-repository",
+    "source_revision": "8270e8cf6c7ba29a7fd11d143c287bd3af576934",
+    "guidance": "MRW surface/Wings/probe envelope must determine sheet retention, B1/B5/T4."
+  }
+]

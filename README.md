@@ -1,4 +1,18 @@
 # Voron 2.4
+
+## Unofficial integrated LDO custom build guide
+
+**[Start the illustrated custom guide](docs/custom-build/index.md)** ·
+[Generated static HTML](docs/custom-build/site/index.html) ·
+[Printable PDF](docs/custom-build/site/custom-build-guide.pdf) ·
+[Build and validation instructions](docs/custom-build/README.md)
+
+This fork adds a chronological guide for a provisional 350-class LDO kit with
+the fourteen reported purchases integrated from the outset. Hardware revision,
+fit and electrical verification gates remain open; this is not a physically
+validated printer configuration. The original Voron manual, CAD, STLs, license
+and attribution remain intact. No upstream pull request is implied.
+
 **[CLICK HERE TO DOWNLOAD](https://voron.zip/done/V2.zip)**
 
 The above link includes the stealthburner toolhead files which are compatible with several of the printers in the Voron lineup. 

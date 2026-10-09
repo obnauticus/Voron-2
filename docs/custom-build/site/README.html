@@ -1,0 +1,80 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Build, check, browse and export · Custom LDO Voron</title><link rel="stylesheet" href="style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="chapters/01-inventory.html">1. Inventory and evidence</a></li><li><a  href="chapters/02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="chapters/03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="chapters/04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="chapters/05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="chapters/06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="chapters/07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="chapters/08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="chapters/09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="chapters/10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="reference/compatibility.html">Compatibility register</a></li><li><a  href="reference/configuration.html">Non-deployable configuration examples</a></li><li><a  href="reference/crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="reference/hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="reference/inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="reference/printed-parts.html">Printed-parts matrix</a></li><li><a  href="reference/questions.html">Unresolved questions and verification gates</a></li><li><a  href="reference/sources.html">Source lock and illustration provenance</a></li><li><a aria-current="page" href="README.html">Build, check, browse and export</a></li><li><a  href="ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#build-check-browse-and-export">Build, check, browse and export</a><ul>
+<li><a href="#reproducible-commands">Reproducible commands</a></li>
+<li><a href="#pdf-export-and-visual-checks">PDF export and visual checks</a></li>
+<li><a href="#github-publication">GitHub publication</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="build-check-browse-and-export">Build, check, browse and export</h1>
+<p>Read <a href="index.html">the guide entry point</a>. The output is a portable static site with
+local illustrations, a responsive navigation menu and a complete print edition.
+It needs no server, CDN, account or network to browse after building. Manufacturer
+manuals linked for uncertain reuse permission still require access to their source.</p>
+<h2 id="reproducible-commands">Reproducible commands</h2>
+<p>From repository root with Python 3.10 or newer (validated with 3.10.12):</p>
+<pre><code class="language-sh">python3 -m venv docs/custom-build/.venv
+docs/custom-build/.venv/bin/pip install -r docs/custom-build/requirements.txt
+docs/custom-build/.venv/bin/python docs/custom-build/tools/build.py
+docs/custom-build/.venv/bin/python docs/custom-build/tools/check.py
+</code></pre>
+<p>Open <code>docs/custom-build/site/index.html</code> in a browser, or serve it locally:</p>
+<pre><code class="language-sh">python3 -m http.server 8000 --directory docs/custom-build/site
+</code></pre>
+<p>The data/source Markdown are authoritative. To edit a purchase allocation,
+change <code>data/build-manifest.json</code> and the corresponding chapter; update the
+reference tables with <code>python3 docs/custom-build/tools/reference.py</code>, rebuild
+and check. Research records retain the evidence behind the lockfile and gates.
+Do not refresh a dependency or source commit without reviewing the resulting
+changed geometry, instructions and licenses.</p>
+<h2 id="pdf-export-and-visual-checks">PDF export and visual checks</h2>
+<p>The base dependency set builds/checks HTML. PDF export and browser QA additionally
+use Playwright 1.57.0 and an installed Chrome; no browser download is implicit.</p>
+<pre><code class="language-sh">docs/custom-build/.venv/bin/pip install playwright==1.57.0
+docs/custom-build/.venv/bin/python docs/custom-build/tools/export_pdf.py
+docs/custom-build/.venv/bin/python docs/custom-build/tools/browser_check.py
+</code></pre>
+<p>The PDF is <code>site/custom-build-guide.pdf</code>. The export uses print CSS, local fonts
+and local images. If Chrome cannot run in the environment, the command fails
+explicitly; report export unavailable instead of claiming success. Regenerating
+the upstream reference PNGs also needs PyMuPDF 1.27.2.2:</p>
+<pre><code class="language-sh">docs/custom-build/.venv/bin/pip install PyMuPDF==1.27.2.2
+docs/custom-build/.venv/bin/python docs/custom-build/tools/render_stock.py
+</code></pre>
+<p>To regenerate the separately licensed StealthBurner figures too, supply the
+pinned manual downloaded from the source lockfile:
+<code>python3 docs/custom-build/tools/render_stock.py --stealthburner-manual PATH</code>.
+Without that option the committed StealthBurner figures are retained.</p>
+<p>See <a href="VALIDATION.html">VALIDATION</a> for the actual versions, command outcomes and
+visual review performed for this revision. Rebuilding unchanged content does
+not mean a physical printer was assembled or tested.</p>
+<h2 id="github-publication">GitHub publication</h2>
+<p>The actual parent fork is <a href="https://github.com/obnauticus/Voron-2">obnauticus/Voron-2</a>,
+branch <code>Voron2.4</code>, preserving upstream history. The custom guide and generated
+HTML/PDF are committed in that branch. No upstream pull request is part of this
+project. GitHub Pages publishes the committed output from <code>Voron2.4</code> and <code>/docs</code>;
+<code>docs/index.html</code> points to the complete site and <code>docs/.nojekyll</code> preserves it
+as static output. Run the documented build, PDF export and checks <strong>before each
+push</strong>; this publication mode does not run the custom checker remotely.
+Its actual deployment state and URL are recorded in the validation report only
+after verified. Do not change repository visibility or account domain settings.</p>
+<p>The current GitHub authorization rejected an active Actions workflow because
+it lacks <code>workflow</code> scope. An optional pinned workflow is retained as
+<code>tools/custom-guide.yml.example</code>, outside the active workflow directory.
+If that grant is available later, install it in <code>.github/workflows/</code> and select
+GitHub Actions publishing in Pages settings. It installs the pinned dependencies,
+builds/checks the committed PDF and HTML, then deploys. For source-branch Pages
+configuration, see <a href="https://docs.github.com/en/rest/pages/pages">GitHub's Pages API documentation</a>.</p>
+<p>For a local derivative without an authenticated fork, the remaining publication
+procedure would be: fork <code>VoronDesign/Voron-2</code> in the intended account, set that
+fork as <code>origin</code>, verify <code>upstream</code> points to VoronDesign, push <code>Voron2.4</code>, then
+enable Pages if desired. This session's actual state supersedes that fallback.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="print.html">Complete print edition</a></footer></main></div></body></html>

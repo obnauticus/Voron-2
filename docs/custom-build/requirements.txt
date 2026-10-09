@@ -1,0 +1,7 @@
+Markdown==3.3.7
+beautifulsoup4==4.12.2
+soupsieve==2.3.1
+
+# Only needed to regenerate stock manual figures, not to build/check the site:
+# PyMuPDF==1.27.2.2
+# Browser QA/PDF export: playwright==1.57.0 + installed Chrome

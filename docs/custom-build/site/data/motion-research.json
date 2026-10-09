@@ -1,0 +1,1235 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-10-09",
+  "scope": "Motion subassemblies; purchase verification is reported separately in root manifest.",
+  "readiness": "Documentation usable for independent preparation; affected attachments and commissioning blocked at unresolved gates. No physical validation.",
+  "sources": [
+    {
+      "id": "vitalii-ab-product",
+      "url": "https://vitalii3d.com/products/double-shear-v2-4-ab-motors-mounts",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": null,
+      "sha256": "11a90907024828664e575194119bb96539e212d480b1ea9a6af39a208f0d2f78",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page"
+    },
+    {
+      "id": "vitalii-front-product",
+      "url": "https://vitalii3d.com/products/front-idlers-for-voron-printers",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": null,
+      "sha256": "04e1c2fba06293c2855f5550d7da79530d5f125f8b273ba66e82b9554c553b9f",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page"
+    },
+    {
+      "id": "vitalii-xy-product",
+      "url": "https://vitalii3d.com/products/live-idler-xy-joints-for-voron-printers-6mm-belts",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": "1.1",
+      "sha256": "3ac0f813b4fcbcd2d4dadb23f46ddfab5be1798008108713f8249e5be4b7faa1",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page"
+    },
+    {
+      "id": "vitalii-z-tension-product",
+      "url": "https://vitalii3d.com/products/z-tensioners-for-voron-v2-4",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": null,
+      "sha256": "619beb0cd584ca9134a90d3836cb4ea4457cc9b4433f24543cc8dfa3e83ab70d",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page"
+    },
+    {
+      "id": "vitalii-z-joint-product",
+      "url": "https://vitalii3d.com/products/rigid-fixed-z-joints-for-voron",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": null,
+      "sha256": "1e35294a0127c2e48a5f3f1fc9c7f9992035b18926e134350d155d6b5dad5693",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page"
+    },
+    {
+      "id": "vitalii-z-clamp-product",
+      "url": "https://vitalii3d.com/products/voron-v2-cnc-belt-clamps",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": null,
+      "sha256": "a24f0cd01d6c0821278bb531adbbf618088850f0f76b828d4df1b2197b04972a",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page"
+    },
+    {
+      "id": "west3d-titanium-product",
+      "url": "https://west3d.com/products/titanium-backers-for-voron-2-4-trident-3-pack",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": null,
+      "sha256": "68e05b9698245daea27da54bb52476bc5ad5c4dbfe8e1adcbbf6c2c8fad4b5fd",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "product_page"
+    },
+    {
+      "id": "vitalii-ab-assembly",
+      "url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/6mm_2.4_AB.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "6mm Belts, v2.4, rev 1.0",
+      "revision": null,
+      "sha256": "11fb2f2437c290ffaaf215450b0c4459cdf953fada6b8224af245d86b7315ea9",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "assembly_pdf",
+      "pdf_page_count": 10,
+      "pages": [
+        {
+          "pdf_index": 0,
+          "pdf_leaf": 1,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 1,
+          "pdf_leaf": 2,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 2,
+          "pdf_leaf": 3,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 3,
+          "pdf_leaf": 4,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 4,
+          "pdf_leaf": 5,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 5,
+          "pdf_leaf": 6,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 6,
+          "pdf_leaf": 7,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 7,
+          "pdf_leaf": 8,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 8,
+          "pdf_leaf": 9,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 9,
+          "pdf_leaf": 10,
+          "printed_page": null
+        }
+      ],
+      "diagram_inspection": {
+        "rendered": true,
+        "visually_inspected_pdf_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "renderer": "PyMuPDF",
+        "research_images_distributed": false
+      }
+    },
+    {
+      "id": "vitalii-front-assembly",
+      "url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/6mm_Front_Idlers_2.4.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "V2.4, rev 1.0",
+      "revision": null,
+      "sha256": "df27ef1a9c9f44bcce5f165a9798a6e7c6ef9a65a87cc76cc774959fa56c6df3",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "assembly_pdf",
+      "pdf_page_count": 9,
+      "pages": [
+        {
+          "pdf_index": 0,
+          "pdf_leaf": 1,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 1,
+          "pdf_leaf": 2,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 2,
+          "pdf_leaf": 3,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 3,
+          "pdf_leaf": 4,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 4,
+          "pdf_leaf": 5,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 5,
+          "pdf_leaf": 6,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 6,
+          "pdf_leaf": 7,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 7,
+          "pdf_leaf": 8,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 8,
+          "pdf_leaf": 9,
+          "printed_page": null
+        }
+      ],
+      "diagram_inspection": {
+        "rendered": true,
+        "visually_inspected_pdf_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "renderer": "PyMuPDF",
+        "research_images_distributed": false
+      }
+    },
+    {
+      "id": "vitalii-xy-assembly",
+      "url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/6mm_LI_XY_Joints.pdf?v=1757048653e",
+      "retrieved_at": "2026-10-09",
+      "version": "6mm Belts, rev 1.1",
+      "revision": null,
+      "sha256": "dd19b507a20b20055ca00f1a10e069ee7f4855dc32641ea83ff61a8d82d29f79",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "assembly_pdf",
+      "pdf_page_count": 11,
+      "pages": [
+        {
+          "pdf_index": 0,
+          "pdf_leaf": 1,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 1,
+          "pdf_leaf": 2,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 2,
+          "pdf_leaf": 3,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 3,
+          "pdf_leaf": 4,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 4,
+          "pdf_leaf": 5,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 5,
+          "pdf_leaf": 6,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 6,
+          "pdf_leaf": 7,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 7,
+          "pdf_leaf": 8,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 8,
+          "pdf_leaf": 9,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 9,
+          "pdf_leaf": 10,
+          "printed_page": null
+        },
+        {
+          "pdf_index": 10,
+          "pdf_leaf": 11,
+          "printed_page": null
+        }
+      ],
+      "diagram_inspection": {
+        "rendered": true,
+        "visually_inspected_pdf_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "renderer": "PyMuPDF",
+        "research_images_distributed": false
+      }
+    },
+    {
+      "id": "vitalii-z-tension-assembly",
+      "url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/Z_Tensioners_Assembly_Instruction.pdf?v=1752685029",
+      "retrieved_at": "2026-10-09",
+      "version": "No revision/date printed",
+      "revision": null,
+      "sha256": "434a2afcff17f7b1a5e2160d030517e85880f41e81a4e52bc926ea9c0817a396",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "assembly_pdf",
+      "pdf_page_count": 6,
+      "pages": [
+        {
+          "pdf_index": 0,
+          "pdf_leaf": 1,
+          "printed_page": 1
+        },
+        {
+          "pdf_index": 1,
+          "pdf_leaf": 2,
+          "printed_page": 2
+        },
+        {
+          "pdf_index": 2,
+          "pdf_leaf": 3,
+          "printed_page": 3
+        },
+        {
+          "pdf_index": 3,
+          "pdf_leaf": 4,
+          "printed_page": 4
+        },
+        {
+          "pdf_index": 4,
+          "pdf_leaf": 5,
+          "printed_page": 4
+        },
+        {
+          "pdf_index": 5,
+          "pdf_leaf": 6,
+          "printed_page": 6
+        }
+      ],
+      "diagram_inspection": {
+        "rendered": true,
+        "visually_inspected_pdf_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "renderer": "PyMuPDF",
+        "research_images_distributed": false
+      }
+    },
+    {
+      "id": "vitalii-xy-support-cad",
+      "url": "https://cdn.shopify.com/s/files/1/0680/6224/9145/files/Live_Shaft_XY.zip?v=1779734631",
+      "retrieved_at": "2026-10-09",
+      "version": "query v=1779734631",
+      "revision": null,
+      "sha256": "c1ee66f5bbde0a9747757e92395c6c7f9e4ee95116d457c4fbbca7fa0d606a12",
+      "license": {
+        "status": "unresolved",
+        "redistribution": "link_only"
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "supporting_cad_archive",
+      "contents": [
+        "Live Shaft XY/",
+        "Live Shaft XY/Endstop_Bump_Deep.step",
+        "Live Shaft XY/2x_PCB_Spacer.step",
+        "Live Shaft XY/Endstop_PCB_Mount_heat_inserts.step",
+        "Live Shaft XY/Endstop_Bump.step"
+      ],
+      "inspection": {
+        "archive_listed": true,
+        "step_geometry_validated": false,
+        "stl_files_present": false,
+        "reason": "No STEP-capable CAD tool installed; archive has no STL or print/hardware specification."
+      }
+    },
+    {
+      "id": "backer-design-readme",
+      "url": "https://github.com/tanaes/whopping_Voron_mods/blob/62268ed817878e54d6a1186882060aa8368d4f0f/extrusion_backers/README.md",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": "62268ed817878e54d6a1186882060aa8368d4f0f",
+      "sha256": "0ce41c2a148157e7e80ef6e213cfd8c38c96c2d2b0ea4c364eaf48d9d01eccbb",
+      "license": {
+        "status": "verified",
+        "spdx": "GPL-3.0",
+        "license_url": "https://github.com/tanaes/whopping_Voron_mods/blob/62268ed817878e54d6a1186882060aa8368d4f0f/LICENSE",
+        "redistribution": "Link only used; no third-party assets copied."
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "repository_document",
+      "immutable_url": "https://raw.githubusercontent.com/tanaes/whopping_Voron_mods/62268ed817878e54d6a1186882060aa8368d4f0f/extrusion_backers/README.md"
+    },
+    {
+      "id": "backer-design-license",
+      "url": "https://raw.githubusercontent.com/tanaes/whopping_Voron_mods/62268ed817878e54d6a1186882060aa8368d4f0f/LICENSE",
+      "retrieved_at": "2026-10-09",
+      "version": null,
+      "revision": "62268ed817878e54d6a1186882060aa8368d4f0f",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "license": {
+        "status": "verified",
+        "spdx": "GPL-3.0",
+        "redistribution": "No external files copied into guide."
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "license"
+    },
+    {
+      "id": "motion-upstream-manual-reference",
+      "url": "https://raw.githubusercontent.com/VoronDesign/Voron-2/a192410e27ea345644ae5c4b29b4c9c40cbe1a73/Manual/Assembly_Manual_2.4r2.pdf",
+      "retrieved_at": "2026-10-09",
+      "version": "V2.4R2 assembly manual",
+      "revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "sha256": "5deae644239870a7d265b15bd0158bf05d7cb416680959b386f19498afcfa888",
+      "license": {
+        "status": "verified",
+        "spdx": "GPL-3.0",
+        "redistribution": "Original manual retained in upstream repository; research rendering not copied."
+      },
+      "evidence_boundary": "Source documents current product; not proof of hardware shipped.",
+      "kind": "assembly_pdf",
+      "pdf_page_count": 263,
+      "pages_note": "All printed page numbers equal zero-based PDF index + 1. Separately checked by text and rendered representative pages.",
+      "diagram_inspection": {
+        "rendered": true,
+        "visually_inspected_pdf_indices": [
+          82,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          110,
+          114,
+          117,
+          118,
+          119,
+          120,
+          121,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135
+        ],
+        "renderer": "PyMuPDF",
+        "research_images_distributed": false
+      }
+    }
+  ],
+  "inventory_dispositions": {
+    "02": {
+      "purchased_sets": 1,
+      "pieces_per_set": 3,
+      "planned_installed_pieces": 3,
+      "actual_installed_pieces": null,
+      "planned_surplus_pieces": 0,
+      "variant": null,
+      "unresolved": [
+        "Ordered build-size variant and actual length",
+        "T-nut count and availability",
+        "Cable routing clearance"
+      ],
+      "package_listing_hardware": {
+        "M3x8_FHCS": 22,
+        "M3x6_FHCS": 10,
+        "M3_T_nut_supplied": 0
+      },
+      "additional_requirements": [
+        {
+          "item": "M3 extrusion T-nuts",
+          "quantity": null,
+          "quantity_note": "Approximately 30 per listing; exact occupied-hole count must be measured.",
+          "ownership": "required_but_not_confirmed_owned"
+        }
+      ]
+    },
+    "09": {
+      "purchased_sets": 1,
+      "pieces_per_set": 2,
+      "piece_meaning": "two assembled drives, four machined plates",
+      "planned_installed_pieces": 2,
+      "actual_installed_pieces": null,
+      "planned_surplus_pieces": 0,
+      "variant": "Black / Red; ABEC7 hybrid ceramic bearing purchase option",
+      "revision_shipped": null,
+      "revision_documented": "1.0, 6mm",
+      "assembly_pair_requirements": {
+        "plates": 4,
+        "threaded_pins": 4,
+        "M5_1mm_shims": 12,
+        "F695_bearings": 14,
+        "ultra_flat_M3x4": 4,
+        "M3x35_SHCS": 6,
+        "M3x8_FHCS": 8,
+        "M5_10mm_sleeves": 2,
+        "M3_20mm_sleeves": 6,
+        "M3_cup_shims": 6
+      },
+      "conflict": "PDF table lists 7 bearings; diagram requires 7 per drive; live listing offers 14. Confirm actual package.",
+      "unresolved": [
+        "Motor exposed shaft length and support-bearing engagement",
+        "CNC motor screw lengths",
+        "Numeric pulley height and combined belt-plane fit"
+      ]
+    },
+    "10": {
+      "purchased_sets": 1,
+      "pieces_per_set": 4,
+      "piece_breakdown": {
+        "M5_plus_M5_top": 2,
+        "M5_plus_M3_bottom": 2
+      },
+      "planned_installed_pieces": 2,
+      "actual_installed_pieces": null,
+      "planned_surplus_pieces": 2,
+      "disposition": "Conditional: two tops at rear AB upper interfaces; two bottoms surplus because rigid joints replace lower capture.",
+      "unresolved": [
+        "Upper clamp interface fit and 9mm tooth width",
+        "Mounting fasteners"
+      ]
+    },
+    "11": {
+      "purchased_sets": 1,
+      "pieces_per_set": 2,
+      "piece_meaning": "two assembled front idlers, separate package clamps are subcomponents",
+      "planned_installed_pieces": 2,
+      "actual_installed_pieces": null,
+      "planned_surplus_pieces": 0,
+      "variant": "Black / Black; ABEC7 hybrid ceramic bearing purchase option",
+      "revision_shipped": null,
+      "revision_documented": "1.0",
+      "clamp_subcomponents": {
+        "listing_count": 4,
+        "actual_package_count": null,
+        "planned_installed": 2,
+        "planned_surplus": 2,
+        "status": "conditional pending contents/upper-interface fit"
+      },
+      "assembly_pair_requirements_pdf": {
+        "Part_A": 2,
+        "Part_B": 2,
+        "fork": 2,
+        "siding": 2,
+        "F695": 4,
+        "threaded_pin": 2,
+        "M5_1mm_shim": 4,
+        "M5_10mm_sleeve": 2,
+        "M3x5_FHCS": 4,
+        "M3x45_SHCS": 4,
+        "M3x6_BHCS": 8
+      },
+      "conflicts": [
+        "Store extrusion screw/T-nut counts differ from PDF",
+        "PDF clamps labelled add-on; live listing says included"
+      ],
+      "unresolved": [
+        "Extrusion attachment revision",
+        "Upper clamps inclusion and fit"
+      ]
+    },
+    "12": {
+      "purchased_sets": 1,
+      "pieces_per_set": 4,
+      "planned_installed_pieces": 4,
+      "actual_installed_pieces": null,
+      "planned_surplus_pieces": 0,
+      "variant": "Black / Orange",
+      "revision_shipped": null,
+      "revision_documented": null,
+      "belt_width_mm": 9,
+      "package_listing_hardware": {
+        "preassembled_tensioner": 4,
+        "M5x25_BHCS": 8
+      },
+      "internal_pdf_contents": {
+        "tensioning_block": 4,
+        "left_fixed_block": 2,
+        "right_fixed_block": 2,
+        "9mm_GT2_idler": 4,
+        "20mm_threaded_pin": 4,
+        "M5_0_8mm_shim": 8,
+        "M3x6_BHCS": 8,
+        "M5x16_BHCS": 4,
+        "M5x25_BHCS": 8
+      },
+      "unresolved": [
+        "Fixed-block frame attachment orientation and screw/T-nut engagement"
+      ]
+    },
+    "13": {
+      "purchased_sets": 1,
+      "pieces_per_set": 4,
+      "planned_installed_pieces": 4,
+      "actual_installed_pieces": null,
+      "planned_surplus_pieces": 0,
+      "variant": "Black",
+      "package_listing_hardware": {
+        "rigid_joint": 4,
+        "M3x8": 16,
+        "M3x14": 4,
+        "M5x14": 4
+      },
+      "replaced_stock": [
+        "complete four stock Z joints",
+        "four lower belt-clamp functions"
+      ],
+      "unresolved": [
+        "Revision-matched assembly drawing",
+        "Screw-to-hole assignment and head types",
+        "Actual rail/carriage orientation and fit",
+        "Full-travel binding check"
+      ]
+    },
+    "14": {
+      "purchased_sets": 1,
+      "pieces_per_set": 2,
+      "piece_meaning": "two assembled live-idler joints from four plates",
+      "planned_installed_pieces": 2,
+      "actual_installed_pieces": null,
+      "planned_surplus_pieces": 0,
+      "variant": "6mm; Black / Black; ABEC7 hybrid ceramic bearing purchase option",
+      "revision_shipped": null,
+      "revision_documented": "1.1",
+      "assembly_pair_requirements_pdf": {
+        "plates": 4,
+        "press_fit_toothed_idler_shaft": 2,
+        "threaded_pin": 2,
+        "F695": 8,
+        "M5_1mm_shim": 4,
+        "M3_20mm_sleeve": 2,
+        "M5_8mm_sleeve": 4,
+        "M3x8_FHCS": 4,
+        "M3x30_FHCS": 2,
+        "ultra_low_retention_screw": 8,
+        "M5x10_FHCS": 6,
+        "M3x8_BHCS": 8,
+        "spring": 4
+      },
+      "conflicts": [
+        "PDF inventory retention screws M3x3, procedure M3x4",
+        "Store counts differ from PDF"
+      ],
+      "unresolved": [
+        "Retention screw length",
+        "LDO PCB fit and replacement endstop mount",
+        "Supporting CAD export and hardware/print instructions",
+        "Combined carriage belt-plane and travel geometry"
+      ]
+    }
+  },
+  "compatibility": [
+    {
+      "combination": "Independent 6mm XY / 9mm Z paths",
+      "status": "conditionally_compatible",
+      "hardware_revision": "AB PDF1.0; XY PDF1.1; Z tensioner unversioned; actual kit unverified",
+      "sources": [
+        "vitalii-ab-assembly",
+        "vitalii-xy-assembly",
+        "vitalii-z-tension-product",
+        "motion-upstream-manual-reference"
+      ],
+      "gates": [
+        "M1"
+      ],
+      "physical_validation": false
+    },
+    {
+      "combination": "A/B double-shear mounts and purchased LDO motor shafts",
+      "status": "unresolved",
+      "hardware_revision": "Actual motors unknown; AB document1.0",
+      "sources": [
+        "vitalii-ab-assembly",
+        "vitalii-ab-product"
+      ],
+      "gates": [
+        "M4"
+      ],
+      "physical_validation": false
+    },
+    {
+      "combination": "A/B, front, live XY, backers and CNC carriage belt geometry",
+      "status": "unresolved",
+      "hardware_revision": "AB1.0/front1.0/XY1.1 documents; carriage variant unknown",
+      "sources": [
+        "vitalii-ab-assembly",
+        "vitalii-front-assembly",
+        "vitalii-xy-assembly",
+        "backer-design-readme"
+      ],
+      "gates": [
+        "M5",
+        "M10"
+      ],
+      "physical_validation": false
+    },
+    {
+      "combination": "Rigid joints plus separate bottom CNC clamps at same interface",
+      "status": "incompatible",
+      "hardware_revision": "Rigid-joint product unversioned; CNC clamp product unversioned",
+      "sources": [
+        "vitalii-z-joint-product",
+        "vitalii-z-clamp-product"
+      ],
+      "gates": [
+        "M7",
+        "M8"
+      ],
+      "reason": "Rigid product replaces entire joint and lower clamp; two separately purchased bottom pieces surplus.",
+      "physical_validation": false
+    },
+    {
+      "combination": "Two #10 rear top clamps and two #11 front upper clamps",
+      "status": "conditionally_compatible",
+      "hardware_revision": "Actual clamp geometry/packages unknown",
+      "sources": [
+        "vitalii-z-clamp-product",
+        "vitalii-front-product",
+        "vitalii-ab-product"
+      ],
+      "gates": [
+        "M8"
+      ],
+      "physical_validation": false
+    },
+    {
+      "combination": "Backers and single-front-MGN12 X / underside-MGN9 Y",
+      "status": "conditionally_compatible",
+      "hardware_revision": "Base R2 rail arrangement; ordered backers unknown",
+      "sources": [
+        "backer-design-readme",
+        "west3d-titanium-product",
+        "motion-upstream-manual-reference"
+      ],
+      "gates": [
+        "M3"
+      ],
+      "physical_validation": false
+    },
+    {
+      "combination": "Rigid joints and actual four Z rail carriages",
+      "status": "unresolved",
+      "hardware_revision": "Product unversioned; actual rail carriage revision unverified",
+      "sources": [
+        "vitalii-z-joint-product"
+      ],
+      "gates": [
+        "M7",
+        "M9"
+      ],
+      "physical_validation": false
+    },
+    {
+      "combination": "Live XY and actual LDO endstop PCB",
+      "status": "unresolved",
+      "hardware_revision": "XY PDF1.1; actual PCB unverified",
+      "sources": [
+        "vitalii-xy-support-cad",
+        "vitalii-xy-assembly"
+      ],
+      "gates": [
+        "M6"
+      ],
+      "physical_validation": false
+    }
+  ],
+  "gates": [
+    {
+      "id": "M1",
+      "evidence_needed": "Identify revisions, actual bag counts and independent 6mm XY / 9mm Z widths.",
+      "blocks": "Assembly of affected CNC subassembly",
+      "purchase_ids": [
+        "02",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "location": "chapters/04-motion.md"
+    },
+    {
+      "id": "M2",
+      "evidence_needed": "Obtain frame mounting drawing/fasteners and verify Z-idler alignment and top driver access.",
+      "blocks": "Z tensioner mounting",
+      "purchase_ids": [
+        "12"
+      ],
+      "location": "chapters/04-motion.md"
+    },
+    {
+      "id": "M3",
+      "evidence_needed": "Check backer build-size variant, measured lengths/holes/thickness, T-nuts and routing clearance.",
+      "blocks": "Backer mounting and closing gantry ends",
+      "purchase_ids": [
+        "02"
+      ],
+      "location": "chapters/04-motion.md"
+    },
+    {
+      "id": "M4",
+      "evidence_needed": "Measure actual A/B shaft; prove support-race engagement, pulley plane and approved motor screws.",
+      "blocks": "Motor mounting and belt loading",
+      "purchase_ids": [
+        "01",
+        "09"
+      ],
+      "location": "chapters/04-motion.md"
+    },
+    {
+      "id": "M5",
+      "evidence_needed": "Confirm CNC/extrusion and rail mount screws, orientation and combined belt planes with backers.",
+      "blocks": "Final CNC gantry attachment",
+      "purchase_ids": [
+        "02",
+        "09",
+        "11",
+        "14"
+      ],
+      "location": "chapters/04-motion.md"
+    },
+    {
+      "id": "M6",
+      "evidence_needed": "Identify actual X/Y PCB; obtain matching printable export, inserts/screws and bump trigger fit.",
+      "blocks": "Endstop mounting and XY homing",
+      "purchase_ids": [
+        "01",
+        "14"
+      ],
+      "location": "chapters/04-motion.md"
+    },
+    {
+      "id": "M7",
+      "evidence_needed": "Obtain rigid-joint installation drawing, orientation, screw-to-hole assignment and approved rail fit.",
+      "blocks": "Rigid-joint fastening and cutting Z belts",
+      "purchase_ids": [
+        "13"
+      ],
+      "location": "chapters/04-motion.md"
+    },
+    {
+      "id": "M8",
+      "evidence_needed": "Count clamps and prove proposed front/rear top allocation by hole/tooth width and screw fit.",
+      "blocks": "Z belt capture",
+      "purchase_ids": [
+        "09",
+        "10",
+        "11",
+        "13"
+      ],
+      "location": "chapters/04-motion.md"
+    },
+    {
+      "id": "M9",
+      "evidence_needed": "Supported hand inspection through safe Z travel for binding, carriage lift and belt tracking.",
+      "blocks": "Powered Z and quad gantry leveling",
+      "purchase_ids": [
+        "13"
+      ],
+      "location": "chapters/04-motion.md"
+    },
+    {
+      "id": "M10",
+      "evidence_needed": "Full hand XYZ travel check with final carriage/toolhead/bed/cables and measured safe envelope.",
+      "blocks": "Powered XY and software travel limits",
+      "purchase_ids": [
+        "02",
+        "04",
+        "09",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "location": "chapters/04-motion.md"
+    }
+  ],
+  "printed_parts": [
+    {
+      "filename": "STLs/Gantry/AB_Drive_Units/a_drive_frame_upper.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/AB_Drive_Units/a_drive_frame_lower.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/AB_Drive_Units/b_drive_frame_upper.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/AB_Drive_Units/b_drive_frame_lower.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/Front_Idlers/front_idler_left_upper.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/Front_Idlers/front_idler_left_lower.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/Front_Idlers/front_idler_right_upper.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/Front_Idlers/front_idler_right_lower.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/Front_Idlers/[a]_tensioner_left.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/Front_Idlers/[a]_tensioner_right.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/X_Axis/XY_Joints/xy_joint_left_upper_MGN12.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/X_Axis/XY_Joints/xy_joint_left_lower_MGN12.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/X_Axis/XY_Joints/xy_joint_right_upper_MGN12.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/X_Axis/XY_Joints/xy_joint_right_lower_MGN12.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Z_Idlers/z_tensioner_bracket_a_x2.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 2,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Z_Idlers/z_tensioner_bracket_b_x2.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 2,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Z_Idlers/[a]_z_tensioner_9mm_x4.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 4,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/Z_Joints/z_joint_upper_x4.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 4,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/Z_Joints/z_joint_lower_x4.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 4,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/Z_Joints/z_joint_upper_hall_effect.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 1,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/[a]_z_belt_clip_lower_x4.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 4,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Purchased CNC replacement from outset."
+    },
+    {
+      "filename": "STLs/Gantry/[a]_z_belt_clip_upper_x4.stl",
+      "status": "replaced_omit",
+      "print_quantity": 0,
+      "stock_quantity": 4,
+      "source_revision": "a192410e27ea345644ae5c4b29b4c9c40cbe1a73",
+      "notes": "Metal replacement from the outset; upper stock clip omitted only after M8 confirms four CNC upper interfaces."
+    },
+    {
+      "filename": "Live Shaft XY/Endstop_PCB_Mount_heat_inserts.step",
+      "status": "unresolved",
+      "print_quantity": null,
+      "source_revision": "Live_Shaft_XY.zip query v=1779734631; hash in sources",
+      "source": "vitalii-xy-support-cad",
+      "format": "STEP, not STL",
+      "notes": "Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established."
+    },
+    {
+      "filename": "Live Shaft XY/2x_PCB_Spacer.step",
+      "status": "unresolved",
+      "print_quantity": null,
+      "source_revision": "Live_Shaft_XY.zip query v=1779734631; hash in sources",
+      "source": "vitalii-xy-support-cad",
+      "format": "STEP, not STL",
+      "notes": "Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established."
+    },
+    {
+      "filename": "Live Shaft XY/Endstop_Bump.step",
+      "status": "unresolved",
+      "print_quantity": null,
+      "source_revision": "Live_Shaft_XY.zip query v=1779734631; hash in sources",
+      "source": "vitalii-xy-support-cad",
+      "format": "STEP, not STL",
+      "notes": "Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established."
+    },
+    {
+      "filename": "Live Shaft XY/Endstop_Bump_Deep.step",
+      "status": "unresolved",
+      "print_quantity": null,
+      "source_revision": "Live_Shaft_XY.zip query v=1779734631; hash in sources",
+      "source": "vitalii-xy-support-cad",
+      "format": "STEP, not STL",
+      "notes": "Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established."
+    },
+    {
+      "filename": "extrusion_backers/STLs/XY_cable_chain_bridge-3hole-3mm_backer.stl",
+      "status": "unresolved",
+      "print_quantity": null,
+      "source_revision": "62268ed817878e54d6a1186882060aa8368d4f0f",
+      "source": "backer-design-readme",
+      "notes": "Candidate only if actual cable-chain routing requires it; 3mm name does not verify 3.2mm backer fit."
+    },
+    {
+      "filename": "extrusion_backers/STLs/XY_cable_chain_bridge-Igus-3mm_backer.stl",
+      "status": "unresolved",
+      "print_quantity": null,
+      "source_revision": "62268ed817878e54d6a1186882060aa8368d4f0f",
+      "source": "backer-design-readme",
+      "notes": "Candidate only if actual cable-chain routing requires it; 3mm name does not verify 3.2mm backer fit."
+    }
+  ],
+  "source_conflicts": [
+    {
+      "id": "ab-bearing-count",
+      "source": "vitalii-ab-assembly",
+      "location": "PDF leaf2/index1",
+      "conflict": "7 bearings in table vs 7 per drive in diagrams; store lists 14 optional."
+    },
+    {
+      "id": "xy-retention-length",
+      "source": "vitalii-xy-assembly",
+      "location": "PDF leaf2/index1 vs leaves3,8/indices2,7",
+      "conflict": "M3x3 inventory vs M3x4 procedure; do not choose by guessing."
+    },
+    {
+      "id": "front-mount-hardware",
+      "source": "vitalii-front-assembly",
+      "location": "PDF leaf2/index1 vs product contents",
+      "conflict": "Different extrusion screws/T-nut counts; package revision required."
+    }
+  ],
+  "original_assets": [
+    {
+      "path": "assets/motion-backers.svg",
+      "sha256": "7d5f5ecb8d0664ae11834078476237a7381c22389d1f0085e2ca42c85b7c11fd",
+      "license": "GPL-3.0",
+      "provenance": "Original explanatory schematic authored for this guide; not a scale geometry model or reproduction of vendor illustration."
+    },
+    {
+      "path": "assets/motion-clamps.svg",
+      "sha256": "82883ef839b012d164c980863d67e477767dbd15414e93be44fab0acc69926d1",
+      "license": "GPL-3.0",
+      "provenance": "Original explanatory schematic authored for this guide; not a scale geometry model or reproduction of vendor illustration."
+    },
+    {
+      "path": "assets/motion-sequence.svg",
+      "sha256": "9af7e154af1f38dec3b73c125f2b1336963ef02c7240c594c3df4ccda9cedfd4",
+      "license": "GPL-3.0",
+      "provenance": "Original explanatory schematic authored for this guide; not a scale geometry model or reproduction of vendor illustration."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>08 — Software preparation and the probing workflow · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="01-inventory.html">1. Inventory and evidence</a></li><li><a  href="02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="07-wiring.html">07 — Wiring the modified printer</a></li><li><a aria-current="page" href="08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="../reference/compatibility.html">Compatibility register</a></li><li><a  href="../reference/configuration.html">Non-deployable configuration examples</a></li><li><a  href="../reference/crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="../reference/hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="../reference/inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="../reference/printed-parts.html">Printed-parts matrix</a></li><li><a  href="../reference/questions.html">Unresolved questions and verification gates</a></li><li><a  href="../reference/sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#08-software-preparation-and-the-probing-workflow">08 — Software preparation and the probing workflow</a><ul>
+<li><a href="#e5-select-one-boarddriverfirmware-generation">E5 — Select one board/driver/firmware generation</a></li>
+<li><a href="#e7-probing-geometry-and-bed-compatibility-before-z-homing">E7 — Probing geometry and bed compatibility before Z homing</a></li>
+<li><a href="#selected-workflow-after-commissioning-gates-pass">Selected workflow after commissioning gates pass</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="08-software-preparation-and-the-probing-workflow">08 — Software preparation and the probing workflow</h1>
+<p><strong>Prerequisites:</strong> E1 PCB identification, E4 interface/cable verification and an approved unheated initial configuration; E2/E3 are still required before heaters are enabled. <strong>Parts:</strong> one identified host, one identified mainboard, one identified toolboard and purchase <strong>05</strong> Cartographer V4 Standard. <strong>Tools:</strong> host terminal, version-control tools, editor and Klipper/Moonraker interface. Record versions locally; never publish credentials or private host addresses.</p>
+<p><strong>KEEP:</strong> CoreXY kinematics, four independently mapped Z motors, physical X/Y endstops where their replacement mounts are proven, and Klipper heater verification. <strong>REPLACE:</strong> stock Z endstop with the Cartographer virtual endstop after E5/E7. <strong>OMIT:</strong> Omron, Klicky, TAP and nozzle-switch macros/configuration in this selected path. <strong>ADD:</strong> matching Cartographer driver and separate measured probe/motion configuration.</p>
+<h2 id="e5-select-one-boarddriverfirmware-generation">E5 — Select one board/driver/firmware generation</h2>
+<p>The <a href="../config/cartographer-v4-survey-usb.cfg.example">commented examples</a> are review worksheets, not a <code>printer.cfg</code>. Every line is commented, required measurements are explicit placeholders, and none includes a motor movement or heater macro that can run. Do not rename an example and treat it as deployable.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Proposed documentation baseline</th>
+<th>Evidence boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Klipper host and main/toolboard firmware</td>
+<td><code>Klipper3d/klipper</code> source snapshot <code>461c4e3722c3a897fba1c6b3f0780a5315043842</code></td>
+<td>Host/MCU builds must match; installed version unknown</td>
+</tr>
+<tr>
+<td>Leviathan V1.3 only</td>
+<td>H743, 25 MHz, USB; manufacturer Katapult target 128 KiB</td>
+<td>Factory firmware/bootloader unverified; generic F446 header conflicts</td>
+</tr>
+<tr>
+<td>Nitehawk SB V2.0.0 only</td>
+<td>G0B1, 12 MHz, 8 KiB Katapult, USB PA11/PA12</td>
+<td>Separate from original SB firmware and pins</td>
+</tr>
+<tr>
+<td>Original SB only</td>
+<td>RP2040, USB, manufacturer's 16 KiB Katapult offset</td>
+<td>Conditional original-board worksheet only; not active beside V2</td>
+</tr>
+<tr>
+<td>Cartographer V4 Survey candidate</td>
+<td>V4 <strong>6.1.0 USB Full</strong>, 8 KiB-offset binary in firmware source <code>e5c2b17dbe04ec1f747af5d81b2215949a0a9f8e</code></td>
+<td>Actual installed firmware/host performance unknown</td>
+</tr>
+<tr>
+<td>New Cartographer host driver</td>
+<td><code>cartographer3d-plugin</code> snapshot <code>06e016905cc3d209ceb543afd59a580bcabc44be</code></td>
+<td>Current-generation documentation family; exact candidate combination not tested on this printer</td>
+</tr>
+</tbody>
+</table></div>
+<p>This is a pinned research baseline, not an assertion that those snapshots have been jointly hardware-tested. Confirm a released compatible plugin/firmware pair for the actual hardware with the vendor before probing; record the selected plugin version/commit and firmware filename/hash in the machine manifest. Review release changes before updating. The locked V4 USB firmware binary's SHA-256 is in the research file; it was hashed, <strong>not flashed</strong>.</p>
+<p>The current <a href="https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/klipper-setup">Cartographer Klipper setup</a> uses the new plugin and <code>[cartographer]</code>. The <strong>original-plugin</strong> archive uses a different <code>[scanner]</code> workflow; still older classic pages can use <code>[cartographer]</code> with different behavior. A section name alone does not prove generation compatibility. Remove legacy includes, old scanner/cartographer calibration blocks in <code>SAVE_CONFIG</code>, and duplicate updater sections before choosing the new Survey workflow. Preserve a private backup first. Avoid copying archived <code>CARTOGRAPHER_CALIBRATE</code>/<code>CARTO_TOUCH</code> macros into the new configuration.</p>
+<ol>
+<li>Prepare the host using <a href="https://docs.vorondesign.com/build/software/">Voron software setup</a> and the actual host/OS instructions. Inspect the kit's existing configuration first if it later becomes available. Save an inventory of active includes, devices and versions before changing it.</li>
+<li>Compare the exact board target and bootloader to the manufacturer's diagrams. If an update is required, follow the identified board's manufacturer procedure. <strong>No flashing is part of documentation validation.</strong> A V1.3 H743 must not receive F446 firmware; an original SB must not receive V2 G0B1 firmware.</li>
+<li>Use <a href="../config/leviathan-v1.3-usb.cfg.example">Leviathan worksheet</a> plus exactly one of <a href="../config/nitehawk-sb-v2-pt1000.cfg.example">V2 toolboard worksheet</a> or <a href="../config/nitehawk-sb-original-pt1000.cfg.example">original SB worksheet</a>, only after the matching PCB is confirmed. Record actual USB device paths after supervised first-start; never invent them.</li>
+<li>Install the matching vendor driver using its reviewed installation procedure at the chosen version. The vendor's installer resolves a released package; a pinned documentation checkout alone does not pin the installed Python package. Record that package version, dependencies and source commit after installation. Do not run arbitrary moving-branch shell pipelines as a substitute for review.</li>
+<li>Audit the final merged configuration: only one <code>[mcu nhk]</code>, one <code>[extruder]</code> heater/sensor definition, one authoritative endstop per axis, one <code>[cartographer]</code>, one Z virtual-endstop definition and no active stock probe macro. LDO's partial toolboard configuration assumes it overrides mainboard extruder/endstop fields; manually verify the merged values rather than relying on include order to conceal contradictory settings.</li>
+<li>Keep device IDs, sensor limits, run currents, motor direction, offsets, travel boundaries, QGL positions, mesh bounds, rotation distance, PID constants and tuning results unset until confirmed or measured. Retain Klipper's <code>[verify_heater]</code> behavior; do not weaken it to hide heater faults.</li>
+</ol>
+<p><strong>Completion check:</strong> the source-lock record and installed versions agree; each MCU path maps to the physically identified board; firmware family, bootloader and interface match; a reviewed configuration exists with heaters disabled/disconnected until E2/E3 and the first-start checklist permit them.</p>
+<h2 id="e7-probing-geometry-and-bed-compatibility-before-z-homing">E7 — Probing geometry and bed compatibility before Z homing</h2>
+<p>Purchase <strong>06</strong> magnetic variant remains unknown. Cartographer's <a href="https://docs.cartographer3d.com/cartographer-probe/faq">official FAQ</a> identifies embedded-magnet beds as incompatible with normal scanning. A uniform magnetic sheet is a different arrangement. <strong>An embedded-magnet UltraFlat variant blocks this guide's scan Z-home, QGL and mesh path.</strong> Do not assume nozzle touch eliminates electromagnetic effects or use touch mesh as a workaround; current <a href="https://docs.cartographer3d.com/cartographer-probe/features/touch">Touch documentation</a> explicitly marks touch mesh unimplemented. Preserve the purchased bed and register the unresolved interaction rather than silently replacing it.</p>
+<p>Before any Cartographer motion, establish the bed's magnet arrangement and installed spring-steel sheet, probe height/keepout from chapter 06, measured nozzle-to-coil X/Y offsets, nozzle and coil reachable rectangles, safe Z clearance and the physical center reference point. Never set 175,175 merely because the provisional plate is 350 class. A point is valid only if <strong>both nozzle and coil</strong> remain over the usable surface as required by the procedure.</p>
+<p>Configure Z with <code>probe:z_virtual_endstop</code>, <code>homing_retract_dist: 0</code>, and a verified central safe-home position after E5/E7. Establish QGL gantry coordinates and probing points from the actual four Z support locations and measured usable surface; do not reuse a vendor's stock 350 coordinates blindly. Mesh limits refer to probe coordinates, so apply measured offsets and travel limits consistently. See <a href="https://www.klipper3d.org/Config_Reference.html#quad_gantry_level">Klipper configuration reference</a>.</p>
+<h2 id="selected-workflow-after-commissioning-gates-pass">Selected workflow after commissioning gates pass</h2>
+<p><img alt="Original schematic showing the gated scan and Survey Touch workflow" loading="lazy" src="../assets/electronics-workflow.svg"/></p>
+<p>The selected current-generation workflow separates scanning from nozzle touch. Ordinary Z homing, QGL and bed mesh use the calibrated scan model. Survey Touch establishes nozzle contact <strong>after</strong> leveling, with a clean nozzle below 150 °C. Keep the bed mechanically seated and the same sheet fitted through calibration and printing. The commands below are instructions for a future supervised physical procedure, not actions run during this project.</p>
+<ol>
+<li>After the individual motor/endstop/travel checks in <a href="09-commissioning.html">commissioning</a>, home X and Y separately and verify their direction and stop behavior. Run the vendor's <strong>new plugin</strong> scan-calibration sequence at the measured zero-reference point: <code>CARTOGRAPHER_SCAN_CALIBRATE</code>, carefully approach using the specified feeler-gauge procedure, and save the measured model. The manufacturer's procedure targets 0.1 mm and warns to retain a visible gap; do not automatically lower from an unknown Z position.</li>
+<li>Verify scan Z homing with immediate-stop access, then run QGL at conservative verified clearance and points. The four rigid Z joints must already be squared and free from binding. Recheck scan Z homing after QGL; do not command repeated leveling to force a mechanically skewed gantry.</li>
+<li>Remove filament residue from the nozzle and debris from the sheet manually while stationary. Use the hotend maker's temperature and handling instructions only after E2 is closed; cool the nozzle below <strong>150 °C</strong> before Survey Touch. No automatic brush/purge bucket is confirmed purchased, so no cleaning coordinates or brushing macro is enabled.</li>
+<li>Calibrate Survey Touch using <code>CARTOGRAPHER_TOUCH_CALIBRATE</code> only with rigid toolhead/bed/gantry and a clean nozzle/sheet. Observe contact and keep immediate-stop access. Save the measured touch model. If contact does not occur where expected, stop and investigate mechanical noise/rigidity rather than blindly increasing thresholds.</li>
+<li>For a normal start after all calibrations: fit the recorded sheet, clean nozzle, bring bed to the validated condition and nozzle to a verified non-oozing temperature below 150 °C; scan-home; QGL; scan-home Z again; generate the bounded scan mesh; perform <code>CARTOGRAPHER_TOUCH_HOME</code> after leveling and just before final print heat-up; heat to the approved print temperatures; begin a supervised first layer. If the exact selected release changes required order, update this workflow and its lock together before use.</li>
+</ol>
+<p><strong>Completion check:</strong> scan and touch models are measured for the actual geometry/firmware and no contradictory Omron/Klicky/TAP/nozzle-switch configuration remains. Record new offsets or sheet changes as calibration changes, not as fixed values in this public guide. Proceed to <a href="09-commissioning.html">commissioning and first print</a>.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

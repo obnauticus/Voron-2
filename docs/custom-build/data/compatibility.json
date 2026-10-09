@@ -1,0 +1,442 @@
+[
+  {
+    "id": "bed-system",
+    "status": "conditionally compatible",
+    "hardware_revision": "MRW350 standard/magbed unverified; matched-height kit delivered revision and 350 Wings unverified",
+    "evidence": [
+      "mrw350",
+      "mrw-kinematic-product",
+      "mrw-wings"
+    ],
+    "reason": "Manufacturer designed Wings for Ultraflat+matched-height. Physical support map, third-seat attachment and fasteners unresolved.",
+    "gates": [
+      "B1",
+      "B2",
+      "B3",
+      "B5"
+    ],
+    "combination": "bed-system",
+    "sources": [
+      "mrw350",
+      "mrw-kinematic-product",
+      "mrw-wings"
+    ]
+  },
+  {
+    "id": "embedded-magnet-bed-cartographer-scan",
+    "status": "incompatible",
+    "hardware_revision": "MRW embedded top Magbed if delivered, Cartographer V4 scan",
+    "evidence": [
+      "mrw350",
+      "cartographer-faq"
+    ],
+    "reason": "Manufacturer states embedded magnets cause mesh issues. Actual purchased bed variant unknown.",
+    "gates": [
+      "B1",
+      "T4"
+    ],
+    "combination": "embedded-magnet-bed-cartographer-scan",
+    "sources": [
+      "mrw350",
+      "cartographer-faq"
+    ]
+  },
+  {
+    "id": "plain-bed-uniform-sheet-cartographer",
+    "status": "conditionally compatible",
+    "hardware_revision": "MRW plain350 if delivered, uniform magnetic sheet, Cartographer V4",
+    "evidence": [
+      "cartographer-faq"
+    ],
+    "reason": "Manufacturer accepts uniform magnetic sheets; installed surface and repeatable probing not physically validated.",
+    "gates": [
+      "B1",
+      "B5",
+      "T4"
+    ],
+    "combination": "plain-bed-uniform-sheet-cartographer",
+    "sources": [
+      "cartographer-faq"
+    ]
+  },
+  {
+    "id": "cnc6mm-mgn12-liveidler6mm",
+    "status": "conditionally compatible",
+    "hardware_revision": "Cartographer CNC6mm purchased variant unknown, provisional V2.4R2 MGN12, Vitalii live-idler6mm purchase verified",
+    "evidence": [
+      "cartographer-cnc-product",
+      "cartographer-cnc-6mm-cad"
+    ],
+    "reason": "Nominal rail/belt compatibility advertised; complete mixed gantry/shaft/clearance validation remains unresolved.",
+    "gates": [
+      "T1"
+    ],
+    "combination": "cnc6mm-mgn12-liveidler6mm",
+    "sources": [
+      "cartographer-cnc-product",
+      "cartographer-cnc-6mm-cad"
+    ]
+  },
+  {
+    "id": "cnc9mm-mgn9",
+    "status": "incompatible",
+    "hardware_revision": "Cartographer CNC9mm with MGN9",
+    "evidence": [
+      "cartographer-cnc-product"
+    ],
+    "reason": "Explicit manufacturer exclusion; not selected main build path.",
+    "gates": [
+      "T1"
+    ],
+    "combination": "cnc9mm-mgn9",
+    "sources": [
+      "cartographer-cnc-product"
+    ]
+  },
+  {
+    "id": "rapido2fuhf-sb-cw2-cnc-v4",
+    "status": "unresolved",
+    "hardware_revision": "Purchased Rapido2F UHFPT1000 actual revision unknown, CW2 if confirmed, CNC variant/extenders unknown, V4Standard",
+    "evidence": [
+      "phaetus-rapido2f-adaptors",
+      "stealthburner-rapido-v2",
+      "cartographer-cnc-install",
+      "cartographer-v4-standard-cad"
+    ],
+    "reason": "Exact manufacturer UHF candidate exists but no verified combined duct, fan shell, CW2, nozzle/coil/extender fit. HF STL excluded.",
+    "gates": [
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "B5"
+    ],
+    "combination": "rapido2fuhf-sb-cw2-cnc-v4",
+    "sources": [
+      "phaetus-rapido2f-adaptors",
+      "stealthburner-rapido-v2",
+      "cartographer-cnc-install",
+      "cartographer-v4-standard-cad"
+    ]
+  },
+  {
+    "id": "hotend-load-temperature-input",
+    "status": "unresolved",
+    "hardware_revision": "Rapido2F heater revision, Leviathan/Nitehawk revision unknown",
+    "evidence": [
+      "phaetus-rapido2f-manual",
+      "west3d-rapido2f"
+    ],
+    "reason": "Purchased title confirms reported PT1000/UHF only; load/startup current and board route must be resolved by electronics research. No heat commissioned.",
+    "gates": [
+      "T3"
+    ],
+    "combination": "hotend-load-temperature-input",
+    "sources": [
+      "phaetus-rapido2f-manual",
+      "west3d-rapido2f"
+    ]
+  },
+  {
+    "id": "F-USB-NH",
+    "hardware_revision": "Nitehawk SB V2.0.0 → Cartographer V4 Standard USB",
+    "status": "conditionally compatible",
+    "evidence": [
+      "E-NHV2-DOC",
+      "E-NHV2-SCHEM",
+      "E-NHV2-PINOUT",
+      "E-CARTO-WIRING"
+    ],
+    "finding": "Manufacturer provides downstream USB device capability, 5V P8/F1 path and signals; exact 5-to-4 pin harness/power rating not confirmed. Direct host USB is proposed primary.",
+    "gate": "E4",
+    "physically_tested": false,
+    "combination": "F-USB-NH",
+    "sources": [
+      "E-NHV2-DOC",
+      "E-NHV2-SCHEM",
+      "E-NHV2-PINOUT",
+      "E-CARTO-WIRING"
+    ],
+    "gates": [
+      "E4"
+    ],
+    "reason": "Manufacturer provides downstream USB device capability, 5V P8/F1 path and signals; exact 5-to-4 pin harness/power rating not confirmed. Direct host USB is proposed primary."
+  },
+  {
+    "id": "F-ORIGINAL-NH-USB",
+    "hardware_revision": "Original Nitehawk SB family → downstream USB assumption",
+    "status": "incompatible",
+    "evidence": [
+      "E-NH-DOC",
+      "E-NH-PINOUT"
+    ],
+    "finding": "V2 downstream-USB hardware and pin map cannot be applied to original SB; use independently verified direct host USB.",
+    "gate": "E1",
+    "physically_tested": false,
+    "combination": "F-ORIGINAL-NH-USB",
+    "sources": [
+      "E-NH-DOC",
+      "E-NH-PINOUT"
+    ],
+    "gates": [
+      "E1"
+    ],
+    "reason": "V2 downstream-USB hardware and pin map cannot be applied to original SB; use independently verified direct host USB."
+  },
+  {
+    "id": "F-NH-CAN",
+    "hardware_revision": "Original SB and SB V2",
+    "status": "incompatible",
+    "evidence": [
+      "E-NH-DOC",
+      "E-NHV2-DOC"
+    ],
+    "finding": "Nitehawk protocol is USB, not CAN. Combined power/data connector is not a CAN port.",
+    "gate": "E4",
+    "physically_tested": false,
+    "combination": "F-NH-CAN",
+    "sources": [
+      "E-NH-DOC",
+      "E-NHV2-DOC"
+    ],
+    "gates": [
+      "E4"
+    ],
+    "reason": "Nitehawk protocol is USB, not CAN. Combined power/data connector is not a CAN port."
+  },
+  {
+    "id": "G-HEATER",
+    "hardware_revision": "Reported Rapido2 Fiber UHF PT1000, actual revision unknown → NH SB V2.0.0",
+    "status": "unresolved",
+    "evidence": [
+      "E-NHV2-DOC",
+      "E-NHV2-SCHEM",
+      "E-LDO-ERRATA"
+    ],
+    "finding": "4.5A maximum continuous HE0 limit is known, purchased heater startup/load and complete current path are not; no heater enable permitted. Historical Octopus swap does not apply.",
+    "gate": "E2",
+    "physically_tested": false,
+    "combination": "G-HEATER",
+    "sources": [
+      "E-NHV2-DOC",
+      "E-NHV2-SCHEM",
+      "E-LDO-ERRATA"
+    ],
+    "gates": [
+      "E2"
+    ],
+    "reason": "4.5A maximum continuous HE0 limit is known, purchased heater startup/load and complete current path are not; no heater enable permitted. Historical Octopus swap does not apply."
+  },
+  {
+    "id": "G-PT1000",
+    "hardware_revision": "Reported Rapido2 Fiber PT1000 → confirmed NH V2.0.0 TH0",
+    "status": "conditionally compatible",
+    "evidence": [
+      "E-NHV2-DOC",
+      "E-NHV2-CFG",
+      "E-KLIPPER-CONFIG"
+    ],
+    "finding": "Documented PB12 ADC/2200 ohm pullup can be configured as PT1000; actual sensor, connector and cold readings must be verified.",
+    "gate": "E1",
+    "physically_tested": false,
+    "combination": "G-PT1000",
+    "sources": [
+      "E-NHV2-DOC",
+      "E-NHV2-CFG",
+      "E-KLIPPER-CONFIG"
+    ],
+    "gates": [
+      "E1"
+    ],
+    "reason": "Documented PB12 ADC/2200 ohm pullup can be configured as PT1000; actual sensor, connector and cold readings must be verified."
+  },
+  {
+    "id": "F-LEV-FIRMWARE",
+    "hardware_revision": "Leviathan V1.3 H743 versus older generic F446 cfg",
+    "status": "incompatible",
+    "evidence": [
+      "E-LEV-MANUAL",
+      "E-LEV-FW",
+      "E-LEV-CFG-CONFLICT"
+    ],
+    "finding": "Generic F446/12MHz/no-bootloader firmware header does not apply to V1.3 H743/25MHz/128KiB manufacturer USB diagram.",
+    "gate": "E1",
+    "physically_tested": false,
+    "combination": "F-LEV-FIRMWARE",
+    "sources": [
+      "E-LEV-MANUAL",
+      "E-LEV-FW",
+      "E-LEV-CFG-CONFLICT"
+    ],
+    "gates": [
+      "E1"
+    ],
+    "reason": "Generic F446/12MHz/no-bootloader firmware header does not apply to V1.3 H743/25MHz/128KiB manufacturer USB diagram."
+  },
+  {
+    "id": "H-GENERATION",
+    "hardware_revision": "Cartographer V4 Standard Survey6.1.0/new plugin candidate",
+    "status": "conditionally compatible",
+    "evidence": [
+      "E-CARTO-SETUP",
+      "E-CARTO-FW-DOC",
+      "E-CARTO-PLUGIN",
+      "E-CARTO-FW-BINARY"
+    ],
+    "finding": "Current documentation family matches Survey/new-plugin workflow; actual installed version/interface and exact released pair require validation, no physical test. Classic/original-plugin [scanner] workflow remains omitted.",
+    "gate": "E5",
+    "physically_tested": false,
+    "combination": "H-GENERATION",
+    "sources": [
+      "E-CARTO-SETUP",
+      "E-CARTO-FW-DOC",
+      "E-CARTO-PLUGIN",
+      "E-CARTO-FW-BINARY"
+    ],
+    "gates": [
+      "E5"
+    ],
+    "reason": "Current documentation family matches Survey/new-plugin workflow; actual installed version/interface and exact released pair require validation, no physical test. Classic/original-plugin [scanner] workflow remains omitted."
+  },
+  {
+    "id": "H-EMBEDDED-MAGNETS",
+    "hardware_revision": "MRW350 unknown magnet variant → Cartographer V4 scan",
+    "status": "unresolved",
+    "evidence": [
+      "E-CARTO-FAQ",
+      "E-CARTO-TOUCH"
+    ],
+    "finding": "If MRW plate has embedded magnets, current scan path is incompatible. Touch mesh is marked unimplemented and is not a workaround. Uniform magnetic sheet differs; actual bed variant unknown.",
+    "gate": "E7",
+    "physically_tested": false,
+    "combination": "H-EMBEDDED-MAGNETS",
+    "sources": [
+      "E-CARTO-FAQ",
+      "E-CARTO-TOUCH"
+    ],
+    "gates": [
+      "E7"
+    ],
+    "reason": "If MRW plate has embedded magnets, current scan path is incompatible. Touch mesh is marked unimplemented and is not a workaround. Uniform magnetic sheet differs; actual bed variant unknown."
+  },
+  {
+    "combination": "Independent 6mm XY / 9mm Z paths",
+    "status": "conditionally compatible",
+    "hardware_revision": "AB PDF1.0; XY PDF1.1; Z tensioner unversioned; actual kit unverified",
+    "sources": [
+      "vitalii-ab-assembly",
+      "vitalii-xy-assembly",
+      "vitalii-z-tension-product",
+      "motion-upstream-manual-reference"
+    ],
+    "gates": [
+      "M1"
+    ],
+    "physical_validation": false,
+    "reason": "See the cited chapter and gate for the physical evidence still required."
+  },
+  {
+    "combination": "A/B double-shear mounts and purchased LDO motor shafts",
+    "status": "unresolved",
+    "hardware_revision": "Actual motors unknown; AB document1.0",
+    "sources": [
+      "vitalii-ab-assembly",
+      "vitalii-ab-product"
+    ],
+    "gates": [
+      "M4"
+    ],
+    "physical_validation": false,
+    "reason": "See the cited chapter and gate for the physical evidence still required."
+  },
+  {
+    "combination": "A/B, front, live XY, backers and CNC carriage belt geometry",
+    "status": "unresolved",
+    "hardware_revision": "AB1.0/front1.0/XY1.1 documents; carriage variant unknown",
+    "sources": [
+      "vitalii-ab-assembly",
+      "vitalii-front-assembly",
+      "vitalii-xy-assembly",
+      "backer-design-readme"
+    ],
+    "gates": [
+      "M5",
+      "M10"
+    ],
+    "physical_validation": false,
+    "reason": "See the cited chapter and gate for the physical evidence still required."
+  },
+  {
+    "combination": "Rigid joints plus separate bottom CNC clamps at same interface",
+    "status": "incompatible",
+    "hardware_revision": "Rigid-joint product unversioned; CNC clamp product unversioned",
+    "sources": [
+      "vitalii-z-joint-product",
+      "vitalii-z-clamp-product"
+    ],
+    "gates": [
+      "M7",
+      "M8"
+    ],
+    "reason": "Rigid product replaces entire joint and lower clamp; two separately purchased bottom pieces surplus.",
+    "physical_validation": false
+  },
+  {
+    "combination": "Two #10 rear top clamps and two #11 front upper clamps",
+    "status": "conditionally compatible",
+    "hardware_revision": "Actual clamp geometry/packages unknown",
+    "sources": [
+      "vitalii-z-clamp-product",
+      "vitalii-front-product",
+      "vitalii-ab-product"
+    ],
+    "gates": [
+      "M8"
+    ],
+    "physical_validation": false,
+    "reason": "See the cited chapter and gate for the physical evidence still required."
+  },
+  {
+    "combination": "Backers and single-front-MGN12 X / underside-MGN9 Y",
+    "status": "conditionally compatible",
+    "hardware_revision": "Base R2 rail arrangement; ordered backers unknown",
+    "sources": [
+      "backer-design-readme",
+      "west3d-titanium-product",
+      "motion-upstream-manual-reference"
+    ],
+    "gates": [
+      "M3"
+    ],
+    "physical_validation": false,
+    "reason": "See the cited chapter and gate for the physical evidence still required."
+  },
+  {
+    "combination": "Rigid joints and actual four Z rail carriages",
+    "status": "unresolved",
+    "hardware_revision": "Product unversioned; actual rail carriage revision unverified",
+    "sources": [
+      "vitalii-z-joint-product"
+    ],
+    "gates": [
+      "M7",
+      "M9"
+    ],
+    "physical_validation": false,
+    "reason": "See the cited chapter and gate for the physical evidence still required."
+  },
+  {
+    "combination": "Live XY and actual LDO endstop PCB",
+    "status": "unresolved",
+    "hardware_revision": "XY PDF1.1; actual PCB unverified",
+    "sources": [
+      "vitalii-xy-support-cad",
+      "vitalii-xy-assembly"
+    ],
+    "gates": [
+      "M6"
+    ],
+    "physical_validation": false,
+    "reason": "See the cited chapter and gate for the physical evidence still required."
+  }
+]

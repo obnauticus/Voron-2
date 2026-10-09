@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Non-deployable configuration examples · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="../chapters/01-inventory.html">1. Inventory and evidence</a></li><li><a  href="../chapters/02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="../chapters/03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="../chapters/04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="../chapters/05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="../chapters/06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="../chapters/07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="../chapters/08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="../chapters/09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="../chapters/10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="compatibility.html">Compatibility register</a></li><li><a aria-current="page" href="configuration.html">Non-deployable configuration examples</a></li><li><a  href="crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="printed-parts.html">Printed-parts matrix</a></li><li><a  href="questions.html">Unresolved questions and verification gates</a></li><li><a  href="sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#non-deployable-configuration-examples">Non-deployable configuration examples</a></li>
+</ul>
+</div>
+</details><h1 id="non-deployable-configuration-examples">Non-deployable configuration examples</h1>
+<p>Every line is commented. Examples document a specific candidate hardware/firmware generation and deliberately omit unknown IDs, offsets, PID and travel values. They cannot be used as printer.cfg. A board-revision gate comes before selecting a sample; an electrical gate comes before connecting or heating.</p>
+<ul>
+<li><a href="../config/cartographer-v4-survey-usb.cfg.example">cartographer-v4-survey-usb.cfg.example</a> — read its target and prerequisites before selecting.</li>
+<li><a href="../config/leviathan-v1.3-usb.cfg.example">leviathan-v1.3-usb.cfg.example</a> — read its target and prerequisites before selecting.</li>
+<li><a href="../config/nitehawk-sb-original-pt1000.cfg.example">nitehawk-sb-original-pt1000.cfg.example</a> — read its target and prerequisites before selecting.</li>
+<li><a href="../config/nitehawk-sb-v2-pt1000.cfg.example">nitehawk-sb-v2-pt1000.cfg.example</a> — read its target and prerequisites before selecting.</li>
+</ul>
+<p>Do not mix original SB RP2040 pins with SB V2 STM32G0 pins, old Cartographer Classic directives with the new Survey plugin, or F446 firmware headers with Leviathan V1.3 H743. Follow <a href="../chapters/08-software.html">software</a> after its gates.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

@@ -1,0 +1,89 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Validation results · Custom LDO Voron</title><link rel="stylesheet" href="style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="chapters/01-inventory.html">1. Inventory and evidence</a></li><li><a  href="chapters/02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="chapters/03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="chapters/04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="chapters/05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="chapters/06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="chapters/07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="chapters/08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="chapters/09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="chapters/10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="reference/compatibility.html">Compatibility register</a></li><li><a  href="reference/configuration.html">Non-deployable configuration examples</a></li><li><a  href="reference/crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="reference/hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="reference/inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="reference/printed-parts.html">Printed-parts matrix</a></li><li><a  href="reference/questions.html">Unresolved questions and verification gates</a></li><li><a  href="reference/sources.html">Source lock and illustration provenance</a></li><li><a  href="README.html">Build, check, browse and export</a></li><li><a  href="ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a aria-current="page" href="VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#validation-results">Validation results</a><ul>
+<li><a href="#actual-local-results">Actual local results</a></li>
+<li><a href="#versions-and-corrected-failures">Versions and corrected failures</a></li>
+<li><a href="#publication">Publication</a></li>
+<li><a href="#limits-of-these-results">Limits of these results</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="validation-results">Validation results</h1>
+<p>Reviewed on October 9, 2026. This is a completed, illustrated documentation
+project with hardware verification gates. It is <strong>not a physically validated
+or heater-ready printer configuration</strong>. No firmware, motion, heating or
+physical assembly was performed.</p>
+<h2 id="actual-local-results">Actual local results</h2>
+<ul>
+<li><code>python3 docs/custom-build/tools/reference.py</code>: passed; generated records for
+  all <strong>14 purchases</strong>, <strong>79 sources</strong>, <strong>31 open gates</strong>, <strong>23 compatibility
+  interactions</strong>, <strong>200 printed-parts rows</strong>, and <strong>84 licensed local assets</strong>.</li>
+<li><code>python3 docs/custom-build/tools/build.py</code>: passed; <strong>22 navigable pages</strong> and
+  a complete print edition, with local assets, responsive layout and print CSS.</li>
+<li><code>python3 docs/custom-build/tools/check.py</code>: passed with <strong>zero errors</strong>;
+  <strong>1,259 local links</strong>, <strong>93 image references</strong>, all <strong>263 upstream PDF indices</strong>
+  covered once, purchase dispositions and omitted stock parts checked, exact
+  source filenames checked against pinned repository/archive inventories,
+  asset hashes/licenses checked, and all four configuration examples confirmed
+  entirely commented. Four deliberately invalid inventory/allocation/readiness/
+  configuration inputs were rejected. Export metadata checks the PDF hash and
+  its HTML, stylesheet and local-illustration input hash.</li>
+<li><code>python3 docs/custom-build/tools/browser_check.py</code>: passed; eight representative
+  pages at <strong>1440 × 1000</strong> and <strong>390 × 844</strong>, <strong>16 viewport checks, zero failures</strong>.
+  Images loaded and the document body had no horizontal overflow. Desktop and
+  mobile screenshots were inspected, including the motion and toolhead chapters.</li>
+<li><code>python3 docs/custom-build/tools/export_pdf.py</code>: passed using installed Chrome;
+  exported an A4 PDF from the complete local print edition. Representative pages
+  were visually inspected: contents, bed, toolhead, wiring and printed-parts
+  tables. The PDF opens, every page has text, and images are required to decode
+  before export. The current file and input hashes are in
+  <a href="pdf-export.json">the export record</a>.</li>
+<li>Three independent documentation reviews examined motion, bed/toolhead and
+  electrical/software safety interactions. Remaining physical dependencies are
+  explicit gates before their affected steps. Final review corrected bed dry-fit
+  and toolhead-return ordering, and requires X/Y homing before commanded axis moves.</li>
+<li>Original upstream manual, CAD, STLs and license were retained. Private order
+  documents, payment information, addresses and account credentials are excluded.</li>
+</ul>
+<h2 id="versions-and-corrected-failures">Versions and corrected failures</h2>
+<p>Python <strong>3.10.12</strong>, Python-Markdown <strong>3.3.7</strong>, Beautiful Soup <strong>4.12.2</strong>, Soup Sieve
+<strong>2.3.1</strong>, Playwright <strong>1.57.0</strong>, PyMuPDF <strong>1.27.2.2</strong>, and Chrome
+<strong>145.0.7632.45</strong> were used. The base dependency versions are pinned in
+<code>requirements.txt</code>; browser/export dependencies are documented separately.</p>
+<p>Initial static validation found two missing original-SVG provenance fields;
+the source normalizer was corrected. Initial browser review found mobile
+overflow in the toolhead page; wrapping was corrected and all 16 checks passed
+on rerun. Adding the report exposed an output-artifact link mapping error;
+the builder now maps source Markdown's <code>site/</code> links correctly into HTML.
+The restricted sandbox prevented Chrome startup; approved browser
+execution outside that sandbox completed both browser review and PDF export.
+These failures are recorded rather than treated as passing runs.</p>
+<h2 id="publication">Publication</h2>
+<p>The actual new fork is <a href="https://github.com/obnauticus/Voron-2">obnauticus/Voron-2</a>,
+branch <code>Voron2.4</code>, derived from upstream commit
+<code>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</code>.
+Remote guide push and Pages deployment are pending at this local-report stage;
+the publication record will be updated only after verification.</p>
+<p>The initial guide push was rejected because the existing OAuth grant lacks
+permission to create an active Actions workflow. The workflow is retained as
+an inactive example; publication uses the checked committed <code>/docs</code> output.
+No broader authorization grant or account-domain change was requested.</p>
+<h2 id="limits-of-these-results">Limits of these results</h2>
+<p>Static links, screenshots, PDF layout and consistency checks do not prove
+physical assembly compatibility, electrical ratings, protective-earth safety,
+probe performance or print quality. The delivered kit size/batch/PCB revisions,
+Wings package and support map, double-shear shaft engagement, UHF duct/cartridge
+geometry, heater startup load and complete electrical path remain unverified.
+An embedded-magnet MRW bed is manufacturer-incompatible with the selected
+Cartographer scan path; identify the delivered bed before that path proceeds.
+All <strong>31 hardware/evidence gates remain open</strong>. Complete independent assembly
+work, but stop before each blocked operation. All configuration examples remain
+non-deployable until their hardware and measured values are resolved.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="print.html">Complete print edition</a></footer></main></div></body></html>

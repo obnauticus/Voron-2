@@ -1,0 +1,141 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Purchase disposition — all fourteen entries · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="../chapters/01-inventory.html">1. Inventory and evidence</a></li><li><a  href="../chapters/02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="../chapters/03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="../chapters/04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="../chapters/05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="../chapters/06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="../chapters/07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="../chapters/08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="../chapters/09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="../chapters/10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="compatibility.html">Compatibility register</a></li><li><a  href="configuration.html">Non-deployable configuration examples</a></li><li><a  href="crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="hardware.html">Hardware, wiring and missing requirements</a></li><li><a aria-current="page" href="inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="printed-parts.html">Printed-parts matrix</a></li><li><a  href="questions.html">Unresolved questions and verification gates</a></li><li><a  href="sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#purchase-disposition-all-fourteen-entries">Purchase disposition — all fourteen entries</a></li>
+</ul>
+</div>
+</details><h1 id="purchase-disposition-all-fourteen-entries">Purchase disposition — all fourteen entries</h1>
+<p>Every installed count below is a <strong>conditional plan</strong>. Actual installation and package contents are unset. User-provided purchase verification is independent of installation compatibility.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>ID / purchase</th>
+<th>Evidence / variant</th>
+<th>Units / package pieces</th>
+<th>Planned installed / surplus</th>
+<th>Disposition and gate</th>
+<th>Build location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>01</strong> LDO Voron V2.4R2 kit</td>
+<td>user-reported purchase; receipt not supplied; 350 provisional; LDO Rev D-family unverified; serial/batch and PCB revisions unknown</td>
+<td>1 kit; Unverified / unset pieces/unit</td>
+<td>1 / Unverified / unset; stock upgraded subassemblies; exact piece count after carton audit</td>
+<td>KEEP frame, rails, four lower Z reduction drives and compatible electronics/CW2/SB; replace upgraded functions; I1 E1 F1 F2</td>
+<td><a href="../chapters/01-inventory.html">Procedure</a></td>
+</tr>
+<tr>
+<td><strong>02</strong> Titanium Backers three-pack</td>
+<td>user-reported purchase; receipt not supplied; Ordered length/size unknown</td>
+<td>1 pack; 3 pieces/unit</td>
+<td>3 / 0;</td>
+<td>ADD opposite X/Y rails before closing gantry; M3</td>
+<td><a href="../chapters/04-motion.html">Procedure</a></td>
+</tr>
+<tr>
+<td><strong>03</strong> Phaetus Rapido 2 Fiber UHF / PT1000</td>
+<td>user-reported purchase; receipt not supplied; UHF/PT1000 reported; revision/voltage/heater/nozzle unknown</td>
+<td>1 hotend; 1 pieces/unit</td>
+<td>1 / 0; kit hotend, do not install</td>
+<td>REPLACE stock kit hotend with exact Fiber UHF after geometry and load gates; T2 T3 E2</td>
+<td><a href="../chapters/06-toolhead.html">Procedure</a></td>
+</tr>
+<tr>
+<td><strong>04</strong> Cartographer CNC StealthBurner/toolhead mount</td>
+<td>user-reported purchase; receipt not supplied; Belt-width and extender inclusion unverified</td>
+<td>1 mount assembly; Unverified / unset pieces/unit</td>
+<td>1 / Unverified / unset; stock carriage/probe retention hardware</td>
+<td>REPLACE stock carriage; belt variant and UHF extenders must match; T1 T2 T4 M1 M5 M10</td>
+<td><a href="../chapters/06-toolhead.html">Procedure</a></td>
+</tr>
+<tr>
+<td><strong>05</strong> Cartographer V4 AIO Standard</td>
+<td>user-reported purchase; receipt not supplied; USB/CAN-capable; actual firmware generation and interface unknown</td>
+<td>1 probe; 1 pieces/unit</td>
+<td>1 / 0; unused kit Z sensing hardware</td>
+<td>REPLACE stock Z sensing and homing path; USB route provisional only; T4 E4 E5 E7</td>
+<td><a href="../chapters/08-software.html">Procedure</a></td>
+</tr>
+<tr>
+<td><strong>06</strong> MRW Voron 350 UltraFlat bed</td>
+<td>user-reported purchase; receipt not supplied; 350 reported; standard vs embedded magnets/heater option unknown</td>
+<td>1 plate; 1 pieces/unit</td>
+<td>1 / 0; stock plate/heater/magnet remain bonded</td>
+<td>REPLACE whole stock LDO bed assembly, no bonded-pad reuse assumed; B1 B3 B4 E3 E7</td>
+<td><a href="../chapters/05-bed.html">Procedure</a></td>
+</tr>
+<tr>
+<td><strong>07</strong> MRW Matched Height Kinematic Kit</td>
+<td>user-reported purchase; receipt not supplied; Three support points documented; verify supplied hardware and seats</td>
+<td>1 set; 3 pieces/unit</td>
+<td>3 / 0; stock thumb nuts/spacers; quantity audit pending</td>
+<td>ADD three matched support points integrated with Wings and bed; B2 B3</td>
+<td><a href="../chapters/05-bed.html">Procedure</a></td>
+</tr>
+<tr>
+<td><strong>08</strong> MRW Voron Wings (purchase notation 2x)</td>
+<td>user-reported purchase; receipt not supplied; A current retail set is two wings; purchase notation does not prove number of sets</td>
+<td>2 unreconciled purchase units; Unverified / unset pieces/unit</td>
+<td>2 / Unverified / unset; 0 if two pieces delivered; 2 if two full two-piece sets delivered</td>
+<td>ADD one installed pair; reconcile 2 pieces vs 2 sets before recording surplus; B2 B3</td>
+<td><a href="../chapters/05-bed.html">Procedure</a></td>
+</tr>
+<tr>
+<td><strong>09</strong> Vitalii3D Double Shear v2.4 AB Motors Mounts</td>
+<td>user-provided order verification; Black/Red; ABEC7 hybrid ceramic; actual part revision unverified</td>
+<td>1 set; 2 pieces/unit</td>
+<td>2 / 0; stock unused bearing/fastener quantities pending carton audit</td>
+<td>REPLACE two stock A/B drives; verify shafts truly engage support bearings; M1 M4 M5</td>
+<td><a href="../chapters/04-motion.html">Procedure</a></td>
+</tr>
+<tr>
+<td><strong>10</strong> Vitalii3D CNC Z Belt Clamps four-piece set</td>
+<td>user-provided order verification; Black; product lists 2 top M5+M5 and 2 bottom M5+M3</td>
+<td>1 set; 4 pieces/unit</td>
+<td>2 / 2; two purchased bottom clamps, integrated rigid joints take their function</td>
+<td>REPLACE rear upper captures with top pair conditionally; bottom pair surplus; M8</td>
+<td><a href="../chapters/04-motion.html">Procedure</a></td>
+</tr>
+<tr>
+<td><strong>11</strong> Vitalii3D Front Idlers for v2.4</td>
+<td>user-provided order verification; Black/Black; ABEC7 hybrid ceramic; shipped revision and clamps unknown</td>
+<td>1 set; 2 pieces/unit</td>
+<td>2 / 0; two of four supplied clamps if four present and proposed fit verified</td>
+<td>REPLACE front-idler pair; supplied clamps tracked as separate package suballocation; M1 M5 M8</td>
+<td><a href="../chapters/04-motion.html">Procedure</a></td>
+</tr>
+<tr>
+<td><strong>12</strong> Vitalii3D Z Tensioners for v2.4</td>
+<td>user-provided order verification; Black/Orange; product set four preassembled; fit actual frame hardware</td>
+<td>1 set; 4 pieces/unit</td>
+<td>4 / 0; stock upper printed tensioner/idler hardware</td>
+<td>REPLACE upper 9mm Z idlers, retain lower 6mm loop tensioning latch; M1 M2</td>
+<td><a href="../chapters/04-motion.html">Procedure</a></td>
+</tr>
+<tr>
+<td><strong>13</strong> Vitalii3D Rigid Fixed Z Joints</td>
+<td>user-provided order verification; Black; four-piece manufacturer set; actual screw assignment unresolved</td>
+<td>1 set; 4 pieces/unit</td>
+<td>4 / 0; stock joints/stock lower clips; #10 bottom pair redundant</td>
+<td>REPLACE complete Z joints and all lower belt captures; square before powered Z; M7 M8 M9</td>
+<td><a href="../chapters/04-motion.html">Procedure</a></td>
+</tr>
+<tr>
+<td><strong>14</strong> Vitalii3D Live Idler XY Joints 6mm</td>
+<td>user-provided order verification; Black/Black; ABEC7 hybrid ceramic; 6mm purchased; current PDF revision1.1</td>
+<td>1 set; 2 pieces/unit</td>
+<td>2 / 0; unused stock XY parts</td>
+<td>REPLACE two XY joints; resolve bearing screw length and endstop mount; M1 M5 M6 M10</td>
+<td><a href="../chapters/04-motion.html">Procedure</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>Wings remain <code>2x</code> with two possible interpretations (two pieces or two two-piece sets). #10 is two top and two bottom clamps: bottoms surplus under the rigid-joint plan. #11 may include four extra clamps; plan two front uppers and two surplus after package/fit verification M8. The original LDO bonded bed remains intact as surplus. See <a href="../data/build-manifest.json">machine-readable manifest</a>.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 470" role="img" aria-labelledby="title desc">
+<title id="title">Backer placement opposite the rail</title><desc id="desc">Original cross-section schematic not to scale. Y rail is under the gantry extrusion with titanium backer on top using the documented M3x8 flat-head screws. X has a front MGN12 rail and a rear backer using M3x6 flat-head screws. Confirm the actual rail geometry first; mounting a single-front-rail X backer on top is not the specified arrangement.</desc>
+<metadata>Original custom-guide schematic, GPL-3.0; factual placement from tanaes/whopping_Voron_mods pinned README. Does not depict detailed manufactured geometry.</metadata>
+<rect width="980" height="470" fill="#f7fafc"/>
+<g font-family="Arial,sans-serif" fill="#17324c">
+<text x="28" y="36" font-size="23" font-weight="bold">Backers belong opposite their rails</text><text x="28" y="65" font-size="15">Original non-dimensional cross-section schematic • verify the actual rail arrangement</text>
+<g stroke="#4c6174" stroke-width="3">
+<rect x="150" y="150" width="150" height="150" fill="#d6dee5"/><rect x="150" y="129" width="150" height="16" fill="#997bab"/>
+<rect x="170" y="305" width="110" height="25" fill="#5f899d"/>
+<rect x="600" y="150" width="150" height="150" fill="#d6dee5"/><rect x="580" y="150" width="15" height="150" fill="#997bab"/>
+<rect x="755" y="170" width="25" height="110" fill="#5f899d"/>
+</g>
+<g font-size="18">
+<text x="180" y="235">Y extrusion</text><text x="620" y="235">X extrusion</text>
+<text x="98" y="107">Top: titanium backer</text><text x="119" y="370">Underside: MGN9 rail</text>
+<text x="512" y="115">Rear: titanium backer</text><text x="728" y="334">Front: MGN12 rail</text>
+</g>
+<g font-size="17" text-anchor="middle"><text x="225" y="405">Documented Y screws: M3x8 FHCS</text><text x="675" y="405">Documented X screws: M3x6 FHCS</text></g>
+<text x="28" y="450" font-size="16" fill="#873c15">Ordered size, actual holes, thickness, nuts and all CNC/chain clearances still require measurement.</text>
+</g></svg>

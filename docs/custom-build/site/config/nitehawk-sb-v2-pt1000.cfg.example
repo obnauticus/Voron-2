@@ -1,0 +1,62 @@
+# NON-DEPLOYABLE REVIEW WORKSHEET. EVERY LINE IS COMMENTED INTENTIONALLY.
+# Target: physically confirmed Nitehawk SB V2.0.0, Clockwork2 if confirmed.
+# STM32G0B1, 12MHz crystal, 8KiB Katapult, USB on PA11/PA12.
+# Source: MotorDynamicsLab/Nitehawk-SB-V2
+# commit 42ae497cfd627acde0f6ad81c8dd26f51efcbb48
+# Configs/nitehawk-sbv2.cfg; schematic V2.0.0 dated 2025-11-06.
+# Prerequisites: E1 exact PCB; E2 heater startup/full path ratings; E6 motion.
+# The HE0 4.5A continuous limit does not establish safe Rapido2 Fiber startup.
+# No max_power workaround is provided. Leave heater physically unplugged.
+#
+# [mcu nhk]
+# serial: <MEASURE_ACTUAL_NITEHAWK_V2_USB_DEVICE_PATH>
+# restart_method: command
+#
+# [extruder]
+# step_pin: nhk:PB8
+# dir_pin: <VERIFY_SIGN_FOR_nhk:PB9>
+# enable_pin: !nhk:PC14
+# heater_pin: nhk:PA7
+# sensor_pin: nhk:PB12
+# sensor_type: PT1000
+# pullup_resistor: 2200
+# rotation_distance: <MEASURE_EXTRUDER>
+# gear_ratio: <VERIFY_ACTUAL_CLOCKWORK2_GEARS>
+# microsteps: <APPROVED_MATCHING_DRIVER_VALUE>
+# nozzle_diameter: <IDENTIFY_INCLUDED_RAPIDO2_FIBER_NOZZLE>
+# filament_diameter: <VERIFY_INTENDED_FILAMENT>
+# min_temp: <APPROVED_SENSOR_AND_HEATER_LIMIT>
+# max_temp: <APPROVED_HOTEND_SENSOR_NOZZLE_AND_MATERIAL_LIMIT>
+# control: <VALIDATED_CONTROL_METHOD>
+# No PID or power settings until E2 and controlled heat test are complete.
+#
+# [tmc2209 extruder]
+# uart_pin: nhk:PB7
+# tx_pin: nhk:PB6
+# sense_resistor: 0.100
+# run_current: <VERIFY_ACTUAL_MOTOR_AND_THERMAL_LIMIT>
+# Manufacturer advises below 0.7A for a 1A motor absent added dissipation.
+#
+# [fan]
+# pin: nhk:PA15
+# tachometer_pin: nhk:PD2
+# Enable tachometer only if the installed fan actually supports it.
+#
+# [heater_fan hotend_fan]
+# pin: nhk:PD0
+# tachometer_pin: nhk:PD1
+# heater: extruder
+# heater_temp: <APPROVED_HEATSINK_COOLING_TRIGGER>
+# Check actual 5V/24V PCB configuration and fan rating before connection.
+#
+# Physical XY endstops can remain on the mainboard if verified replacement
+# mounts/cables require that route. Otherwise confirm the actual V2 port:
+# [stepper_x]
+# endstop_pin: <VERIFY_PULLUP_POLARITY_FOR_nhk:PB0>
+# [stepper_y]
+# endstop_pin: <VERIFY_PULLUP_POLARITY_FOR_nhk:PB1>
+# Do not enable both mainboard and toolboard assignments for one endstop.
+# PROBE PC15 is 24V sensor power, not Cartographer USB.
+#
+# [verify_heater extruder]
+# Preserve Klipper defaults; never widen them to hide an unsafe heater path.

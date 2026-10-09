@@ -1,0 +1,266 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hardware, wiring and missing requirements · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="../chapters/01-inventory.html">1. Inventory and evidence</a></li><li><a  href="../chapters/02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="../chapters/03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="../chapters/04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="../chapters/05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="../chapters/06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="../chapters/07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="../chapters/08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="../chapters/09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="../chapters/10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="compatibility.html">Compatibility register</a></li><li><a  href="configuration.html">Non-deployable configuration examples</a></li><li><a  href="crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a aria-current="page" href="hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="printed-parts.html">Printed-parts matrix</a></li><li><a  href="questions.html">Unresolved questions and verification gates</a></li><li><a  href="sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#hardware-wiring-and-missing-requirements">Hardware, wiring and missing requirements</a><ul>
+<li><a href="#additional-requirements-and-optional-conveniences">Additional requirements and optional conveniences</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="hardware-wiring-and-missing-requirements">Hardware, wiring and missing requirements</h1>
+<p>Purchase inventory stays separate from additional requirements. Package titles are not a delivered-content audit. Exact verified stacks, orientations and warnings are in the phase chapters; unknown fasteners, connector views and ratings block the affected operation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>System</th>
+<th>Parts / quantities</th>
+<th>Verification</th>
+<th>Ownership</th>
+<th>Gates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frame / rails / lower Z drives</td>
+<td>Kit 01: quantities in chapter 03</td>
+<td>I1 carton audit; 6 mm XY / 9 mm Z / 6 mm reduction loops identified separately</td>
+<td>Kit-reported; actual contents unverified</td>
+<td>I1 M1 F1 F2</td>
+</tr>
+<tr>
+<td>Titanium backers</td>
+<td>02 listing: 22 M3x8 FHCS + 10 M3x6 FHCS; approximately 30 M3 T-nuts separately</td>
+<td>Count actual occupied holes; verify counterbores, nut/extrusion fit and clearance</td>
+<td>Extra nuts required but not confirmed owned</td>
+<td>M3</td>
+</tr>
+<tr>
+<td>Double-shear A/B pair</td>
+<td>09: 14 F695; 12 M5 1 mm shims; 2 M5 10 mm sleeves; 6 M3 20 mm sleeves; 8 M3x8 FHCS; 6 M3x35 SHCS; 4 ultra-flat M3x4; 6 cup shims</td>
+<td>PDF bearing count conflict; actual motor shaft engagement and motor fasteners unresolved</td>
+<td>Purchased set; contents unverified</td>
+<td>M1 M4 M5</td>
+</tr>
+<tr>
+<td>Front-idler pair</td>
+<td>11: 4 F695; 4 M5 1 mm shims; 2 M5 10 mm sleeves; 4 M3x5 FHCS; 4 M3x45 SHCS; 8 M3x6 BHCS</td>
+<td>Extrusion screws/T-nuts and clamp supply differ between live page and PDF</td>
+<td>Purchased set; contents unverified</td>
+<td>M1 M5 M8</td>
+</tr>
+<tr>
+<td>Live-idler XY pair</td>
+<td>14: 8 F695; 4 M5 1 mm shims; 4 M5 8 mm sleeves; 2 M3 20 mm sleeves; 4 springs; 4 M3x8 FHCS; 2 M3x30 FHCS; 6 M5x10 FHCS; 8 M3x8 BHCS</td>
+<td>Eight retention screws: PDF M3x3 vs M3x4 conflict; endstop CAD export/hardware unresolved</td>
+<td>Purchased set; contents and retention length unverified</td>
+<td>M1 M5 M6</td>
+</tr>
+<tr>
+<td>Rigid Z joints</td>
+<td>13 listing: four joints; 16 M3x8 + 4 M3x14 + 4 M5x14</td>
+<td>Assembly drawing, head styles and screw assignments unconfirmed</td>
+<td>Purchased set; no separate lower clamps installed</td>
+<td>M7 M8 M9</td>
+</tr>
+<tr>
+<td>Upper Z tensioners</td>
+<td>12: four preassembled units; listing 8 M5x25; PDF internal contents in chapter 04</td>
+<td>Frame M5x16/T-nuts and left/right assignment need exact revision instructions</td>
+<td>Purchased set; attachment hardware unverified</td>
+<td>M2</td>
+</tr>
+<tr>
+<td>Upper Z clamp allocation</td>
+<td>10: two top clamps at rear; 11: two front clamps, conditional</td>
+<td>Four integrated lower captures from 13; 10 bottom pair and two of 11 clamps surplus if fit/contents confirmed</td>
+<td>Purchased; no physical fit validation</td>
+<td>M8</td>
+</tr>
+<tr>
+<td>Bed supports</td>
+<td>07: three different contacts; 08: one installed pair of Wings</td>
+<td>Resolve 2x packaging; third-seat ~130 mm extrusion excluded; bolt lengths and support map</td>
+<td>Third support / attachments conditional requirement, not confirmed owned</td>
+<td>B2 B3 F1</td>
+</tr>
+<tr>
+<td>Bed thermal system</td>
+<td>06: one MRW350 plate, purchased options unknown</td>
+<td>New approved heater, sensor, independent thermal fuse, surface, PE lug and strain relief</td>
+<td>Required but not confirmed owned; stock LDO bonded assembly left intact</td>
+<td>B1 B4 E3</td>
+</tr>
+<tr>
+<td>CW2 / StealthBurner</td>
+<td>Kit 01 baseline conditional; 03 exact UHF hotend</td>
+<td>Core hardware in chapter 06; UHF cartridge / duct / shell geometry must match</td>
+<td>Validated UHF printed cartridge required but not confirmed owned</td>
+<td>T1 T2 T3</td>
+</tr>
+<tr>
+<td>CNC carriage / probe</td>
+<td>04: one carriage; 05: one V4 Standard</td>
+<td>4 M3x8 rail screws (head by revision); 2 M3x6 clamp screws; X switch 2 M2x10; standard probe 2 M3x6</td>
+<td>8.5 mm UHF extenders and longer screws conditional requirement, not confirmed owned</td>
+<td>T1 T4</td>
+</tr>
+<tr>
+<td>Heater output / PT1000</td>
+<td>V2.0.0 only: HE0 PA7, 4.5 A continuous; TH0 PB12, 2200 ohm pull-up</td>
+<td>Exact 03 cold/startup load versus MOSFET, contacts, wiring, fuse and shared PSU headroom</td>
+<td>Rated ferrules / contacts required but not confirmed owned</td>
+<td>E1 E2</td>
+</tr>
+<tr>
+<td>Primary USB route</td>
+<td>Nitehawk USB + 24 V umbilical; 05 direct host USB proposed</td>
+<td>V4 USB requires 5 V; PROBE 24 V prohibited; verify cable rating and connector orientation</td>
+<td>Approved direct USB cable / strain relief required but not confirmed owned</td>
+<td>E4</td>
+</tr>
+<tr>
+<td>Downstream USB alternate</td>
+<td>Nitehawk V2 P8 JST-ZH1.5 5P to V4 four-pin Molex Sherlock</td>
+<td>Schematic pins 1 VBUS, 2 D-, 3 D+, 4/5 GND; plug-side view reversals, fifth contact and port load need verification</td>
+<td>Conditional alternate harness; not claimed purchased</td>
+<td>E4</td>
+</tr>
+<tr>
+<td>CAN alternate</td>
+<td>Only after actual port, firmware, power and cable/termination identification</td>
+<td>Leviathan CAN supply 24 V differs USB 5 V; Nitehawk uplinks use USB</td>
+<td>Conditional alternate; no CAN adapter purchase claimed</td>
+<td>E4 E5</td>
+</tr>
+<tr>
+<td>Mains / protective earth</td>
+<td>Actual kit inlet, PSU and SSR arrangement plus MRW circuit</td>
+<td>Isolation, fuse/SSR/heatsink ratings, dedicated PE, covered terminals, approved circuit</td>
+<td>Rated parts required but not confirmed owned; manufacturer requires qualified installer</td>
+<td>E1 E3</td>
+</tr>
+<tr>
+<td>Nozzle cleaning</td>
+<td>No automatic brush macros active</td>
+<td>Kit brass brush may be present; keep Cartographer coil away from metal brush</td>
+<td>Manual cleaning primary; silicone brush optional and not confirmed owned</td>
+<td>T4 E7</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="additional-requirements-and-optional-conveniences">Additional requirements and optional conveniences</h2>
+<p>Required but not confirmed owned means inventory or acquire only after its interface gate is resolved. Optional alternates are not active main-path requirements and do not add to the fourteen reported purchases.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Quantity</th>
+<th>Classification</th>
+<th>Gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Compatible new bed heater, sensor, thermal fuse, magnetic sheet/buildsurface if plain plate</td>
+<td>Unverified / unset</td>
+<td>required-but-not-confirmed-owned</td>
+<td>B4</td>
+</tr>
+<tr>
+<td>Dedicated PElead, appropriate M5attachment terminal/hardware and bed cable strainrelief</td>
+<td>Unverified / unset</td>
+<td>required-but-not-confirmed-owned</td>
+<td>B4</td>
+</tr>
+<tr>
+<td>Thirdseat ~130mm extrusion or manufacturer-supported Wings layout support</td>
+<td>Unverified / unset</td>
+<td>conditional-required-but-not-confirmed-owned</td>
+<td>B3</td>
+</tr>
+<tr>
+<td>2F UHF validated printed cartridge/frontrear and matching shell</td>
+<td>Unverified / unset</td>
+<td>required-but-not-confirmed-owned</td>
+<td>T2</td>
+</tr>
+<tr>
+<td>CNC8.5mm UHF extenders and suitable fasteners</td>
+<td>Unverified / unset</td>
+<td>conditional-required-but-not-confirmed-owned</td>
+<td>T4</td>
+</tr>
+<tr>
+<td>Exact boardrevision mounts and umbilical cable relief</td>
+<td>Unverified / unset</td>
+<td>required-but-not-confirmed-owned</td>
+<td>T1</td>
+</tr>
+<tr>
+<td>Silicone nozzle brush/location</td>
+<td>Unverified / unset</td>
+<td>optional-not-confirmed-owned; manual initial cleaning permitted</td>
+<td>T4</td>
+</tr>
+<tr>
+<td>Approved MRW-compatible bed heater and magnetic/spring-steel surface</td>
+<td>Unverified / unset</td>
+<td>required but not confirmed owned</td>
+<td>E3</td>
+</tr>
+<tr>
+<td>Correct thermal fuse, attachment materials and approved bed PE lug/hardware</td>
+<td>Unverified / unset</td>
+<td>required but not confirmed owned</td>
+<td>E3</td>
+</tr>
+<tr>
+<td>Rated SSR/heatsink, inlet/branch fuses and approved mains harness appropriate to actual bed</td>
+<td>Unverified / unset</td>
+<td>required but not confirmed owned</td>
+<td>E3</td>
+</tr>
+<tr>
+<td>Approved direct host USB-to-Cartographer V4 Standard cable/strain relief</td>
+<td>1</td>
+<td>required but not confirmed owned</td>
+<td>E4</td>
+</tr>
+<tr>
+<td>Exact downstream USB P8-to-Sherlock cable if that route is chosen</td>
+<td>1</td>
+<td>conditional requirement; not confirmed owned</td>
+<td>E4</td>
+</tr>
+<tr>
+<td>Heater ferrules/connector contacts fitting actual wires and board</td>
+<td>Unverified / unset</td>
+<td>required but not confirmed owned</td>
+<td>E2</td>
+</tr>
+<tr>
+<td>Nitehawk static discharge links and revision-correct fan adapter</td>
+<td>Unverified / unset</td>
+<td>kit contents to verify; not confirmed owned</td>
+<td>E1</td>
+</tr>
+<tr>
+<td>CAN interface and approved cable/termination if USB is not chosen</td>
+<td>Unverified / unset</td>
+<td>conditional alternate; not purchased evidence</td>
+<td>E4</td>
+</tr>
+<tr>
+<td>Nozzle brush/purge bucket</td>
+<td>0</td>
+<td>optional convenience, omitted from primary path</td>
+<td>Unverified / unset</td>
+</tr>
+</tbody>
+</table></div>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

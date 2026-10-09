@@ -1,0 +1,122 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10. Enclosure, filament path and first print · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="01-inventory.html">1. Inventory and evidence</a></li><li><a  href="02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a aria-current="page" href="10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="../reference/compatibility.html">Compatibility register</a></li><li><a  href="../reference/configuration.html">Non-deployable configuration examples</a></li><li><a  href="../reference/crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="../reference/hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="../reference/inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="../reference/printed-parts.html">Printed-parts matrix</a></li><li><a  href="../reference/questions.html">Unresolved questions and verification gates</a></li><li><a  href="../reference/sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#10-enclosure-filament-path-and-first-print">10. Enclosure, filament path and first print</a><ul>
+<li><a href="#enclose-only-after-cable-and-motion-checks">Enclose only after cable and motion checks</a><ul>
+<li><a href="#p2-panel-inlet-and-display-fit-before-closing-the-electronics-bay">P2 — panel, inlet and display fit before closing the electronics bay</a></li>
+</ul>
+</li>
+<li><a href="#filament-path-keep">Filament path — KEEP</a></li>
+<li><a href="#controlled-first-print-after-the-commissioning-checklist">Controlled first print after the commissioning checklist</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="10-enclosure-filament-path-and-first-print">10. Enclosure, filament path and first print</h1>
+<p><strong>Prerequisites:</strong> mechanical travel checks complete; all electrical, probing,
+heater and calibration gates in chapters 7–9 closed for the operations below.
+Never treat completion of this chapter as a waiver for an open gate.
+<strong>Tools:</strong> hex drivers, scissors, ruler, calipers and appropriate adhesive.
+<strong>Parts:</strong> one each back/top/bottom panel, two side panels and two doors; retained
+350 skirts (front A/B one each, side A/B two each, rear centre one), panel clips
+selected by actual thickness, six stock hinges, two each handle A/handle B/latch,
+1 mm foam and VHB tape, two 60×20 bay fans if confirmed in the kit, four belt
+covers, one spool holder, one Bowden retainer, PTFE tube, screws/nuts in the
+specific retained figures. LDO-provided options still require a carton audit.</p>
+<h2 id="enclose-only-after-cable-and-motion-checks">Enclose only after cable and motion checks</h2>
+<p><strong>KEEP</strong> retained skirts and panel mounting pp211–213,217–219,222–249.
+<strong>REPLACE</strong> display/inlet instructions with the actual LDO electronics branch.
+<strong>OMIT</strong> stock mini12864/EXP cabling when the verified kit uses the LDO DSI
+touchscreen; do not build both display systems.</p>
+<h3 id="p2-panel-inlet-and-display-fit-before-closing-the-electronics-bay">P2 — panel, inlet and display fit before closing the electronics bay</h3>
+<p>Measure the actual deck/bottom/side/top thickness and inlet body. Confirm skirt
+size, bay-fan voltage, touchscreen type and mount before installing. The provisional
+LDO BOM and supplement disagree on deck thickness, and the display may be a
+purchased kit option. Select the matching parts instead of adapting by force.</p>
+<ol>
+<li>Clear built-in skirt supports and install the pictured inserts, pp211–213.
+   Fit the two bay fans in the retained side supports with airflow arranged to
+   ventilate the electronics bay. Fit the retained front and side skirt pieces
+   with the M3x8/appropriate M3 nuts in pp217–230. The drawings distinguish the
+   frame nuts from print inserts; do not screw into an extrusion slot without
+   its nut. Preserve service access to the inlet and fuse.</li>
+<li>Fit the LDO combined inlet skirt only after its dimension/clearance check
+   in wiring. Fit the confirmed touchscreen mount, or leave that display area
+   safely blank until the kit option is identified. Close all unused openings
+   exposing mains; do not operate with a reachable uninsulated terminal.</li>
+<li>Apply VHB to the bottom-panel clips/hinges, p232, then use M3x8 SHCS in the
+   retained bottom-panel fittings, p233. Ensure opening the panel does not
+   pull a PE conductor, strain a connector, or contact a live terminal.</li>
+<li>Fit the four belt covers with the confirmed M3 hardware, pp234–236. If LED
+   wires use the Z-motor opening, the LDO <code>z_belt_cover_a_led.stl</code> is a conditional
+   alternative. Keep wires clear of moving belts. The CNC upper tensioners need
+   access from above; do not permanently block their adjustment.</li>
+</ol>
+<p><img alt="STOCK REFERENCE: back-panel mounting, p239/index238" loading="lazy" src="../assets/stock-p239.png"/>
+<img alt="STOCK REFERENCE: top-panel mounting, p243/index242" loading="lazy" src="../assets/stock-p243.png"/></p>
+<ol start="5">
+<li>Apply 1 mm foam at back/side/top panel-frame contact areas, pp239–244. Use
+   the matching corner/midspan clips with M3x8 SHCS and M3 hammerhead nuts,
+   as the figures show. Confirm each nut has rotated into capture. Check that
+   panel edges do not touch backers, rear belts or electronics wiring.</li>
+<li>Prepare the two sets of stock door handles/latches with their magnets,
+   p245. Test magnet polarity <strong>before</strong> gluing. Fit three hinges per door and
+   the shown M3x8/hammerhead/VHB interfaces, pp247–249. If the actual kit supplied
+   LDO alternate metal/printed hinge hardware, use its matched supplement and
+   matrix instead; do not mix stock hinge lengths into it.</li>
+<li><strong>OMIT</strong> stock exhaust-fan assembly pp250–256 from the primary path: the
+   Rev D supplement says its fan is not included. Close the opening using the
+   documented LDO <code>exhaust_cover.stl</code> with stock <code>exhaust_filter_grill.stl</code>
+   after verifying the provided fasteners. No additional filter modification
+   is installed by this guide. Keep the chosen filament entry unobstructed.</li>
+</ol>
+<p>Completion: panels secure and removable, electronics guarded, bay ventilation
+clear, upper tensioners serviceable, full manual travel still clears all panels.</p>
+<h2 id="filament-path-keep">Filament path — KEEP</h2>
+<ol>
+<li>Assemble the stock spool holder and its M3x8/hammerhead attachments, p257.
+   Mount it where the spool clears panels and cannot pull the printer over.</li>
+<li>Fit the Bowden retainer with its M5x16 BHCS/M5 T-nut and the PTFE route,
+   p259. With an omitted exhaust housing, confirm a compatible inlet/retainer
+   route before fixing the tube; the old exhaust BSPP holder is not automatically
+   present. Keep the tube outside all belt loops and without a sharp toolhead bend.</li>
+<li>Manually sweep the toolhead with the tube and spool in place. Confirm CW2
+   latch access, filament insertion, cable bend room and the full safe envelope.</li>
+</ol>
+<p><img alt="STOCK REFERENCE: spool holder p257/index256" loading="lazy" src="../assets/stock-p257.png"/>
+<img alt="STOCK REFERENCE: Bowden retainer p259/index258" loading="lazy" src="../assets/stock-p259.png"/></p>
+<h2 id="controlled-first-print-after-the-commissioning-checklist">Controlled first print after the commissioning checklist</h2>
+<ol>
+<li>Review every open gate in <a href="../reference/questions.html">the register</a>. An open
+   heater, movement or probe gate prohibits a print. Confirm the actual successful
+   checks and tuned values are recorded privately or as technical measurements.</li>
+<li>After the final enclosure/routing changes, repeat conservative travel checks
+   and the scan/QGL/mesh sequence in chapters 8–9. Perform temperature-specific
+   probe calibration/compensation only as the selected current driver documents.
+   Do not reuse a cold bare-bed calibration as an assumed heat-soaked result.</li>
+<li>Use a small simple first model such as the retained
+   <code>STLs/Test_Prints/Voron_Design_Cube_v7.stl</code>. Set the slicer to the measured safe
+   XY/Z envelope, actual nozzle diameter, filament and verified temperature limits.
+   Do not copy the upstream legacy slicer profile onto this UHF build.</li>
+<li>Begin with conservative speed/acceleration and watch the complete first layer.
+   Stop if the nozzle contacts the surface, filament does not feed, temperature
+   becomes implausible, belt rub appears or a cable stretches. Correct the cause
+   before resuming. Do not leave the first controlled print unattended.</li>
+<li>After cooling, inspect the cube, first-layer consistency and all cable/mount
+   clearances. Record measured results. Tune extrusion, pressure advance and
+   input shaping later using the selected Klipper/Voron procedure; no results
+   or ready-to-run values are supplied by this documentation project.</li>
+</ol>
+<p>Completion: one observed first print within measured boundaries, no open blocking
+gates and a recorded calibration baseline. This is a builder completion check,
+not a claim that this project performed a print or electrical certification.</p>
+<p>Sources: original manual pp210–260; <a href="https://docs.ldomotors.com/en/voron/voron2/printed_part_guide_rev_d">LDO printed supplement</a>;
+<a href="https://docs.ldomotors.com/en/voron/voron2/build-faq">LDO build FAQ</a>;
+<a href="https://docs.vorondesign.com/build/startup/">Voron initial checks</a>;
+<a href="https://www.klipper3d.org/Config_Reference.html">Klipper configuration reference</a>.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

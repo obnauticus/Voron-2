@@ -1,0 +1,63 @@
+# NON-DEPLOYABLE REVIEW WORKSHEET. EVERY LINE COMMENTED INTENTIONALLY.
+# Target: Cartographer V4 AIO Standard, USB route, NEW cartographer3d-plugin.
+# Research candidate: V4 Survey 6.1.0 USB Full, 8KiB-offset firmware file.
+# Firmware commit e5c2b17dbe04ec1f747af5d81b2215949a0a9f8e.
+# Plugin research snapshot 06e016905cc3d209ceb543afd59a580bcabc44be.
+# Confirm actual compatible released package/firmware pair and record it;
+# this source pair was not physically tested on the purchased printer.
+# E4 cable/5V mapping; E5 generations; E6 motion; E7 bed/magnet/geometry gates.
+# Do not use original-plugin [scanner] or archived classic macros alongside.
+#
+# [mcu cartographer]
+# serial: <MEASURE_ACTUAL_CARTOGRAPHER_V4_USB_DEVICE_PATH>
+# restart_method: command
+# For a separately approved CAN route, remove serial/restart_method and use
+# the actual measured canbus_uuid; do not enable both interfaces.
+#
+# [cartographer]
+# mcu: cartographer
+# x_offset: <MEASURE_NOZZLE_TO_COIL_X>
+# y_offset: <MEASURE_NOZZLE_TO_COIL_Y>
+# verbose: no
+# Put MCU/cartographer definitions before references to probe pins.
+#
+# [stepper_z]
+# endstop_pin: probe:z_virtual_endstop
+# homing_retract_dist: 0
+# position_min: <MEASURE_APPROVED_MINIMUM>
+# position_max: <MEASURE_ACTUAL_BED_AND_UHF_CLEARANCE_LIMIT>
+# No position_endstop or stock Omron/Klicky/TAP/nozzle-switch definition.
+#
+# [safe_z_home]
+# home_xy_position: <MEASURE_SAFE_CENTRAL_NOZZLE_X>, <MEASURE_SAFE_CENTRAL_NOZZLE_Y>
+# z_hop: <MEASURE_SAFE_INITIAL_CLEARANCE>
+# z_hop_speed: <VALIDATED_CONSERVATIVE_VALUE>
+# Do not assume 175,175 from the provisional 350-class plate.
+#
+# [bed_mesh]
+# zero_reference_position: <MEASURE_CENTRAL_REFERENCE_X>, <MEASURE_CENTRAL_REFERENCE_Y>
+# mesh_min: <MEASURE_PROBE_COORDINATE_MIN_X>, <MEASURE_PROBE_COORDINATE_MIN_Y>
+# mesh_max: <MEASURE_PROBE_COORDINATE_MAX_X>, <MEASURE_PROBE_COORDINATE_MAX_Y>
+# horizontal_move_z: <MEASURE_SAFE_SCAN_CLEARANCE>
+# speed: <VALIDATED_CONSERVATIVE_SCAN_SPEED>
+# probe_count: <VALIDATED_SCAN_GRID_X>, <VALIDATED_SCAN_GRID_Y>
+# mesh_pps: 0,0
+# No embedded-magnet MRW bed approval: E7 blocks scanning if present.
+# Touch mesh is marked unimplemented in current docs, not a fallback.
+#
+# [temperature_sensor cartographer]
+# sensor_type: temperature_mcu
+# sensor_mcu: cartographer
+# min_temp: <VERIFY_VENDOR_AND_ENVIRONMENT_LIMIT>
+# max_temp: <VERIFY_ACTUAL_PROBE_LIMIT>
+#
+# Use the Nitehawk accelerometer by default only after its exact PCB map is
+# checked. Do not declare two [adxl345] blocks with conflicting CS pins.
+# If choosing V4 ADXL instead, the vendor V4 pin is cartographer:PA0;
+# V3 PA3 is NOT the V4 selection.
+#
+# Future supervised workflow, not executable macros:
+# scan calibration -> scan Z home -> QGL -> scan Z home -> bounded scan mesh
+# -> clean nozzle below 150C -> calibrated CARTOGRAPHER_TOUCH_HOME -> print.
+# No calibration coefficients, touch thresholds, device IDs, offsets, PID,
+# safe travel boundaries or tuning results are fabricated here.

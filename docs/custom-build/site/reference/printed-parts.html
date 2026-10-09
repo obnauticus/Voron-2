@@ -1,0 +1,1428 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Printed-parts matrix · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="../chapters/01-inventory.html">1. Inventory and evidence</a></li><li><a  href="../chapters/02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="../chapters/03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="../chapters/04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="../chapters/05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="../chapters/06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="../chapters/07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="../chapters/08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="../chapters/09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="../chapters/10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="compatibility.html">Compatibility register</a></li><li><a  href="configuration.html">Non-deployable configuration examples</a></li><li><a  href="crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="inventory.html">Purchase disposition — all fourteen entries</a></li><li><a aria-current="page" href="printed-parts.html">Printed-parts matrix</a></li><li><a  href="questions.html">Unresolved questions and verification gates</a></li><li><a  href="sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#printed-parts-matrix">Printed-parts matrix</a></li>
+</ul>
+</div>
+</details><h1 id="printed-parts-matrix">Printed-parts matrix</h1>
+<p>The filenames are exact source members. Current upstream files, including unused sizes and alternatives, are accounted for. Quantity is the planned print/installed-piece count, not number of files. <code>null</code> means resolve first; a suffix quantity only applies if that alternative is selected. Included-by-LDO means the supplier BOM says it is provided, not that this carton was counted.</p>
+<p>Upstream functional-print guidance: ABS, 0.2 mm layers, forced 0.4 mm extrusion width, 40% infill, 4 walls, and 5 top/bottom layers (manual p4). Honor part-specific translucent/opaque guidance for LEDs and any verified vendor instructions. STEP members are not print-ready STLs. No standard HF cartridge is activated for the UHF purchase.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Exact filename</th>
+<th>Planned qty</th>
+<th>Disposition</th>
+<th>Pinned source revision</th>
+<th>Guidance / gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>STLs/Clockwork2/Direct_Drive/main_body.stl</code></td>
+<td>1</td>
+<td>required if CW2 confirmed</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Clockwork2/Direct_Drive/motor_plate.stl</code></td>
+<td>1</td>
+<td>required if CW2 confirmed</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Clockwork2/Direct_Drive/[a]_guidler_a.stl</code></td>
+<td>1</td>
+<td>required if CW2 confirmed</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Clockwork2/Direct_Drive/[a]_guidler_b.stl</code></td>
+<td>1</td>
+<td>required if CW2 confirmed</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Clockwork2/Direct_Drive/[a]_latch.stl</code></td>
+<td>1</td>
+<td>required if CW2 confirmed</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Clockwork2/Direct_Drive/[a]_latch_shuttle.stl</code></td>
+<td>1</td>
+<td>required if CW2 confirmed</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Stealthburner/[a]_stealthburner_main_body.stl</code></td>
+<td>1</td>
+<td>conditional UHF fit</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Stealthburner/Printheads/phaetus_rapido_v2/stealthburner_printhead_rapido_v2_front.stl</code></td>
+<td>0</td>
+<td>omit; HF mount not verified for purchased UHF</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Stealthburner/Printheads/phaetus_rapido_v2/stealthburner_printhead_rapido_v2_rear_cw2.stl</code></td>
+<td>0</td>
+<td>omit; HF mount not verified for purchased UHF</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Clockwork2/cable_door_for_pcb.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved board/umbilical variant</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Clockwork2/[a]_pcb_spacer.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved board/umbilical variant</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Clockwork2/chain_anchor_2hole.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved board/umbilical variant</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Clockwork2/chain_anchor_3hole.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved board/umbilical variant</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Stealthburner/[o]_stealthburner_LED_carrier.stl</code></td>
+<td>1</td>
+<td>optional lighting</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Stealthburner/[c]_stealthburner_LED_diffuser.stl</code></td>
+<td>1</td>
+<td>optional lighting</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Stealthburner/[o]_stealthburner_LED_diffuser_mask.stl</code></td>
+<td>1</td>
+<td>optional lighting</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Tools/SB_5015_Cutting_Tool_A.stl</code></td>
+<td>1</td>
+<td>optional fan tool</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Tools/SB_5015_Cutting_Tool_B.stl</code></td>
+<td>1</td>
+<td>optional fan tool</td>
+<td>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>voron 2.4-Rapido 2/uhf前.stl</code></td>
+<td>1</td>
+<td>unresolved exact combined UHF fit</td>
+<td>7401934e28d56844ba4f311e9d588b1e4d0510dd</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>voron 2.4-Rapido 2/uhf 后.stl</code></td>
+<td>1</td>
+<td>unresolved exact combined UHF fit</td>
+<td>7401934e28d56844ba4f311e9d588b1e4d0510dd</td>
+<td>Use documented source guidance; verify the actual interface before printing.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/AB_Drive_Units/a_drive_frame_upper.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/AB_Drive_Units/a_drive_frame_lower.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/AB_Drive_Units/b_drive_frame_upper.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/AB_Drive_Units/b_drive_frame_lower.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/Front_Idlers/front_idler_left_upper.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/Front_Idlers/front_idler_left_lower.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/Front_Idlers/front_idler_right_upper.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/Front_Idlers/front_idler_right_lower.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/Front_Idlers/[a]_tensioner_left.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/Front_Idlers/[a]_tensioner_right.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/X_Axis/XY_Joints/xy_joint_left_upper_MGN12.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/X_Axis/XY_Joints/xy_joint_left_lower_MGN12.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/X_Axis/XY_Joints/xy_joint_right_upper_MGN12.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/X_Axis/XY_Joints/xy_joint_right_lower_MGN12.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Idlers/z_tensioner_bracket_a_x2.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Idlers/z_tensioner_bracket_b_x2.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Idlers/[a]_z_tensioner_9mm_x4.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/Z_Joints/z_joint_upper_x4.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/Z_Joints/z_joint_lower_x4.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/Z_Joints/z_joint_upper_hall_effect.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/[a]_z_belt_clip_lower_x4.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Purchased CNC replacement from outset.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/[a]_z_belt_clip_upper_x4.stl</code></td>
+<td>0</td>
+<td>replaced_omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Metal replacement from the outset; upper stock clip omitted only after M8 confirms four CNC upper interfaces.</td>
+</tr>
+<tr>
+<td><code>Live Shaft XY/Endstop_PCB_Mount_heat_inserts.step</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>Live_Shaft_XY.zip query v=1779734631; hash in sources</td>
+<td>Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established.</td>
+</tr>
+<tr>
+<td><code>Live Shaft XY/2x_PCB_Spacer.step</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>Live_Shaft_XY.zip query v=1779734631; hash in sources</td>
+<td>Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established.</td>
+</tr>
+<tr>
+<td><code>Live Shaft XY/Endstop_Bump.step</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>Live_Shaft_XY.zip query v=1779734631; hash in sources</td>
+<td>Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established.</td>
+</tr>
+<tr>
+<td><code>Live Shaft XY/Endstop_Bump_Deep.step</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>Live_Shaft_XY.zip query v=1779734631; hash in sources</td>
+<td>Select/export after actual PCB and bump fit; no manufacturer print settings, insert/screw spec or reuse permission established.</td>
+</tr>
+<tr>
+<td><code>extrusion_backers/STLs/XY_cable_chain_bridge-3hole-3mm_backer.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>62268ed817878e54d6a1186882060aa8368d4f0f</td>
+<td>Candidate only if actual cable-chain routing requires it; 3mm name does not verify 3.2mm backer fit.</td>
+</tr>
+<tr>
+<td><code>extrusion_backers/STLs/XY_cable_chain_bridge-Igus-3mm_backer.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>62268ed817878e54d6a1186882060aa8368d4f0f</td>
+<td>Candidate only if actual cable-chain routing requires it; 3mm name does not verify 3.2mm backer fit.</td>
+</tr>
+<tr>
+<td><code>STLs/Leviathan_bracket_set.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved board-dependent</td>
+<td>878c3c4893ea353552c957f574509f9890e1e37a</td>
+<td>One bracket set if actual Leviathan matches; RevD BOM claims left/right included; confirm E1</td>
+</tr>
+<tr>
+<td><code>STLs/usb_adapter_mount_partial_cover.stl</code></td>
+<td>1</td>
+<td>required after E1/T1</td>
+<td>42ae497cfd627acde0f6ad81c8dd26f51efcbb48</td>
+<td>V2 adapter partial cover if exact docs/revision confirmed E1; kit inclusion unverified</td>
+</tr>
+<tr>
+<td><code>STLs/cw2_captive_pcb_cover.stl</code></td>
+<td>1</td>
+<td>required after E1/T1</td>
+<td>be93526b948d3339c755cb32116baef221ce1a8d</td>
+<td>Reused original source part linked by V2 docs; verify actual board/clearance E1/T1</td>
+</tr>
+<tr>
+<td><code>STLs/cw2_chain_anchor_tilted.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved board-dependent</td>
+<td>be93526b948d3339c755cb32116baef221ce1a8d</td>
+<td>One if confirmed cable-chain route; USB umbilical/backer/probe cable rating E4/M3 may require different relief</td>
+</tr>
+<tr>
+<td><code>STLs/usb_adapter_mount.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved board-dependent</td>
+<td>be93526b948d3339c755cb32116baef221ce1a8d</td>
+<td>One only for original SB adapter after E1; do not install original/V2 alternate mounts together</td>
+</tr>
+<tr>
+<td><code>STLs/bed_wago_mount.stl</code></td>
+<td>1</td>
+<td>included by LDO</td>
+<td>5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5</td>
+<td>RevD includes one; verify actual connector, MRW mounting/strain relief and ratings E3</td>
+</tr>
+<tr>
+<td><code>STLs/BTT Pi TFT4.3 Mount/[a]_faceplate.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5</td>
+<td>One for matching actual LDO/BTT4.3 display E1/P2</td>
+</tr>
+<tr>
+<td><code>STLs/BTT Pi TFT4.3 Mount/mount.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5</td>
+<td>One standard mount OR thick mount, not both; verify actual panel/display E1/P2</td>
+</tr>
+<tr>
+<td><code>STLs/BTT Pi TFT4.3 Mount/mount_thick.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>5b0496a5ae8d0d6a3f782dfa7e06eb9e1c102ba5</td>
+<td>One thick-panel variant if matching actual panel; do not install both alternatives</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/Controller_Mounts/BIGDIPPER_bracket_set.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Provisional Leviathan replaces alternate controller and separate 5V PSU mounts.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/Controller_Mounts/BTT_MOT_EXP_bracket.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Provisional Leviathan replaces alternate controller and separate 5V PSU mounts.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/Controller_Mounts/Duet2_Duet3Mini5_bracket_set.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Provisional Leviathan replaces alternate controller and separate 5V PSU mounts.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/Controller_Mounts/GTR_bracket_set.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Provisional Leviathan replaces alternate controller and separate 5V PSU mounts.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/Controller_Mounts/Octopus_bracket_set.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Provisional Leviathan replaces alternate controller and separate 5V PSU mounts.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/Controller_Mounts/S6_bracket_set.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Provisional Leviathan replaces alternate controller and separate 5V PSU mounts.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/Controller_Mounts/SKR_Pro_bracket_set.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Provisional Leviathan replaces alternate controller and separate 5V PSU mounts.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/Controller_Mounts/SKR_bracket_inline_set.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Provisional Leviathan replaces alternate controller and separate 5V PSU mounts.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/Controller_Mounts/Spider_bracket_set.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Provisional Leviathan replaces alternate controller and separate 5V PSU mounts.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/Other_PS_Mounts/UHP_200_Mount_x2.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Match actual PSU/host board revision before selecting E1.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/Other_PS_Mounts/UHP_350_Mount_x2.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Match actual PSU/host board revision before selecting E1.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/PSU_stabilizer_50mm.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Match actual PSU/host board revision before selecting E1.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/lrs_200_psu_bracket_x2.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Two brackets if actual LRS-200-24 confirmed; no PSU substitution assumed.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/pcb_din_clip_x3.stl</code></td>
+<td>4</td>
+<td>included by LDO</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Rev D BOM claims four clips; verify delivered count and actual board brackets E1. File name x3 is stock count.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/raspberrypi_bracket.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Match actual PSU/host board revision before selecting E1.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/rs25_psu_bracket.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Provisional Leviathan replaces alternate controller and separate 5V PSU mounts.</td>
+</tr>
+<tr>
+<td><code>STLs/Electronics_Bay/wago_221-415_mount_3by5.stl</code></td>
+<td>1</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Exhaust_Filter/[a]_exhaust_fan_grill.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Stock exhaust-fan assembly omitted; its fan ownership is not confirmed. LDO cover closes opening.</td>
+</tr>
+<tr>
+<td><code>STLs/Exhaust_Filter/[a]_exhaust_filter_mount_x2.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Stock exhaust-fan assembly omitted; its fan ownership is not confirmed. LDO cover closes opening.</td>
+</tr>
+<tr>
+<td><code>STLs/Exhaust_Filter/[a]_filter_access_cover.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Stock exhaust-fan assembly omitted; its fan ownership is not confirmed. LDO cover closes opening.</td>
+</tr>
+<tr>
+<td><code>STLs/Exhaust_Filter/exhaust_filter_grill.stl</code></td>
+<td>1</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Exhaust_Filter/exhaust_filter_housing.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Stock exhaust-fan assembly omitted; its fan ownership is not confirmed. LDO cover closes opening.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/AB_Drive_Units/[a]_cable_cover.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Confirm retained chain/USB umbilical/backer clearance at M3/M6/E4 before selecting.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/AB_Drive_Units/[a]_z_chain_retainer_bracket_x2.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Confirm retained chain/USB umbilical/backer clearance at M3/M6/E4 before selecting.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/X_Axis/XY_Joints/[a]_endstop_pod_D2F_switch.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>CNC carriage/live joints replace stock geometry, endstop and probe supports.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/X_Axis/XY_Joints/[a]_endstop_pod_hall_effect.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>CNC carriage/live joints replace stock geometry, endstop and probe supports.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/X_Axis/XY_Joints/[a]_xy_joint_cable_bridge_2hole.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>CNC carriage/live joints replace stock geometry, endstop and probe supports.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/X_Axis/XY_Joints/[a]_xy_joint_cable_bridge_3hole.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>CNC carriage/live joints replace stock geometry, endstop and probe supports.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/X_Axis/X_Carriage/pinda_adapter.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>CNC carriage/live joints replace stock geometry, endstop and probe supports.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/X_Axis/X_Carriage/probe_retainer_bracket.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>CNC carriage/live joints replace stock geometry, endstop and probe supports.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/X_Axis/X_Carriage/probe_retainer_bracket_9mm.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>CNC carriage/live joints replace stock geometry, endstop and probe supports.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/X_Axis/X_Carriage/x_frame_V2TR_MGN12_left.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>CNC carriage/live joints replace stock geometry, endstop and probe supports.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/X_Axis/X_Carriage/x_frame_V2TR_MGN12_right.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>CNC carriage/live joints replace stock geometry, endstop and probe supports.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/z_chain_bottom_anchor.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Confirm retained chain/USB umbilical/backer clearance at M3/M6/E4 before selecting.</td>
+</tr>
+<tr>
+<td><code>STLs/Gantry/z_chain_guide.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Confirm retained chain/USB umbilical/backer clearance at M3/M6/E4 before selecting.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/Front_Doors/door_hinge_x6.stl</code></td>
+<td>6</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/Front_Doors/handle_a_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/Front_Doors/handle_b_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/Front_Doors/latch_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/bottom_panel_clip_x4.stl</code></td>
+<td>4</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/bottom_panel_hinge_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/corner_panel_clip_4mm_x8.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Choose one clip-thickness family after actual panel measurement F2/P2; filename gives count for chosen family.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/corner_panel_clip_6mm_x8.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Choose one clip-thickness family after actual panel measurement F2/P2; filename gives count for chosen family.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/deck_support_3mm_x8.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Choose one clip-thickness family after actual panel measurement F2/P2; filename gives count for chosen family.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/deck_support_4mm_x8.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Choose one clip-thickness family after actual panel measurement F2/P2; filename gives count for chosen family.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/midspan_panel_clip_4mm_x7.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Choose one clip-thickness family after actual panel measurement F2/P2; filename gives count for chosen family.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/midspan_panel_clip_6mm_x8.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Choose one clip-thickness family after actual panel measurement F2/P2; filename gives count for chosen family.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/z_belt_cover_a_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Panel_Mounting/z_belt_cover_b_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/250/front_skirt_a_250.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Wrong size for provisional 350 target; revisit only if I1 changes it.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/250/front_skirt_b_250.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Wrong size for provisional 350 target; revisit only if I1 changes it.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/250/rear_center_skirt_250.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Wrong size for provisional 350 target; revisit only if I1 changes it.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/250/side_skirt_a_250_x2.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Wrong size for provisional 350 target; revisit only if I1 changes it.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/250/side_skirt_b_250_x2.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Wrong size for provisional 350 target; revisit only if I1 changes it.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/300/front_skirt_a_300.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Wrong size for provisional 350 target; revisit only if I1 changes it.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/300/front_skirt_b_300.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Wrong size for provisional 350 target; revisit only if I1 changes it.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/300/rear_center_skirt_300.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Wrong size for provisional 350 target; revisit only if I1 changes it.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/300/side_skirt_a_300_x2.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Wrong size for provisional 350 target; revisit only if I1 changes it.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/300/side_skirt_b_300_x2.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Wrong size for provisional 350 target; revisit only if I1 changes it.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/350/front_skirt_a_350.stl</code></td>
+<td>1</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/350/front_skirt_b_350.stl</code></td>
+<td>1</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/350/rear_center_skirt_350.stl</code></td>
+<td>1</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/350/side_skirt_a_350_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/350/side_skirt_b_350_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/[a]_belt_guard_a_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/[a]_belt_guard_b_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/[a]_btt_knob_light_shield.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Not the provisional LDO D-family display/inlet path; verify actual options E1/P2.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/[a]_fan_grill_a_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/[a]_fan_grill_b_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/[a]_fan_grill_open_optional_x2.stl</code></td>
+<td>2</td>
+<td>optional</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Alternative open grille; not an additional installed pair.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/[a]_fan_grill_retainer_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/[a]_keystone_blank_insert.stl</code></td>
+<td>1</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/[a]_mini12864_case_front_insert.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Not the provisional LDO D-family display/inlet path; verify actual options E1/P2.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/[a]_mini12864_case_hinge.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Not the provisional LDO D-family display/inlet path; verify actual options E1/P2.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/keystone_panel.stl</code></td>
+<td>1</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/mini12864_case_front.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Not the provisional LDO D-family display/inlet path; verify actual options E1/P2.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/mini12864_case_rear.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Not the provisional LDO D-family display/inlet path; verify actual options E1/P2.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/power_inlet_IECGS_1.2mm.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Not the provisional LDO D-family display/inlet path; verify actual options E1/P2.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/power_inlet_IECGS_1mm.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Required if actual inlet is LDO 1.0mm; verify E1/P2 before print.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/power_inlet_filtered.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Not the provisional LDO D-family display/inlet path; verify actual options E1/P2.</td>
+</tr>
+<tr>
+<td><code>STLs/Skirts/side_fan_support_x2.STL</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Spool_Management/bowden_retainer.stl</code></td>
+<td>1</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Spool_Management/spool_holder.stl</code></td>
+<td>1</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/Frame_Brackets/dual_ramps_bracket_frame.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/Frame_Brackets/duet_duex_bracket_frame_x2.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/Frame_Brackets/lrs_bracket_frame.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/Frame_Brackets/mks_gen_1.4_bracket_frame_x2.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/Frame_Brackets/mks_gen_L_bracket_frame_x2.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/Frame_Brackets/raspberry_pi_bracket.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/Frame_Brackets/rs_25_psu_bracket_frame.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/Frame_Brackets/rs_35_bracket_frame.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/Frame_Brackets/skr_1.3_bracket_frame.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/Frame_Brackets/skr_mini_e3_bracket_frame.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/MGN9_X/[a]_belt_clamp_MGN9_x2.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/MGN9_X/x_carriage_frame_left_MGN9.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/MGN9_X/x_carriage_frame_right_MGN9.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/MGN9_X/x_carriage_pivot_block_MGN9.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/MGN9_X/xy_joint_left_lower_MGN9.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/MGN9_X/xy_joint_left_upper_MGN9.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/MGN9_X/xy_joint_right_lower_MGN9.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/MGN9_X/xy_joint_right_upper_MGN9.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/ZipChain/XY/zipchain2_xy_end.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/ZipChain/XY/zipchain2_xy_link_a.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/ZipChain/XY/zipchain2_xy_link_b.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/ZipChain/Z/zipchain2_z_end.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/ZipChain/Z/zipchain2_z_link_a.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/ZipChain/Z/zipchain2_z_link_b.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/ZipChain/Z/zipchain2_z_link_b_locking.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/[a]_stopgap_80T_hubbed_gear.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Superceded_Parts/[a]_z_tensioner_x4_6mm.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Superseded upstream alternative; not the R2 main path.</td>
+</tr>
+<tr>
+<td><code>STLs/Test_Prints/Filament_Card.stl</code></td>
+<td>1</td>
+<td>optional</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Calibration or assembly aid; not an installed machine part.</td>
+</tr>
+<tr>
+<td><code>STLs/Test_Prints/Filament_Card_Caddy_25.stl</code></td>
+<td>1</td>
+<td>optional</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Calibration or assembly aid; not an installed machine part.</td>
+</tr>
+<tr>
+<td><code>STLs/Test_Prints/Heatset_Practice.stl</code></td>
+<td>1</td>
+<td>optional</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Calibration or assembly aid; not an installed machine part.</td>
+</tr>
+<tr>
+<td><code>STLs/Test_Prints/Thread_Test_1_x1_Rev1.STL</code></td>
+<td>1</td>
+<td>optional</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Calibration or assembly aid; not an installed machine part.</td>
+</tr>
+<tr>
+<td><code>STLs/Test_Prints/Thread_Test_2_x1_Rev1.STL</code></td>
+<td>1</td>
+<td>optional</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Calibration or assembly aid; not an installed machine part.</td>
+</tr>
+<tr>
+<td><code>STLs/Test_Prints/Thread_Test_3_x1_Rev1.STL</code></td>
+<td>1</td>
+<td>optional</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Calibration or assembly aid; not an installed machine part.</td>
+</tr>
+<tr>
+<td><code>STLs/Test_Prints/Voron_Design_Cube_v7.stl</code></td>
+<td>1</td>
+<td>optional</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Calibration or assembly aid; not an installed machine part.</td>
+</tr>
+<tr>
+<td><code>STLs/Tools/MGN12_rail_guide_x2.stl</code></td>
+<td>2</td>
+<td>optional</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Calibration or assembly aid; not an installed machine part.</td>
+</tr>
+<tr>
+<td><code>STLs/Tools/MGN9_rail_guide_x2.stl</code></td>
+<td>2</td>
+<td>optional</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Calibration or assembly aid; not an installed machine part.</td>
+</tr>
+<tr>
+<td><code>STLs/Tools/bed_hole_marking_template_x1_Rev2.STL</code></td>
+<td>1</td>
+<td>optional</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Calibration or assembly aid; not an installed machine part.</td>
+</tr>
+<tr>
+<td><code>STLs/Tools/bottom_panel_template.stl</code></td>
+<td>1</td>
+<td>optional</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Calibration or assembly aid; not an installed machine part.</td>
+</tr>
+<tr>
+<td><code>STLs/Tools/pulley_jig.stl</code></td>
+<td>1</td>
+<td>optional</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>Calibration or assembly aid; not an installed machine part.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Drive/[a]_belt_tensioner_a_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Drive/[a]_belt_tensioner_b_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Drive/[a]_z_drive_baseplate_a_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Drive/[a]_z_drive_baseplate_b_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Drive/z_drive_main_a_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Drive/z_drive_main_b_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Drive/z_drive_retainer_a_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Drive/z_drive_retainer_b_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Drive/z_motor_mount_a_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Drive/z_motor_mount_b_x2.stl</code></td>
+<td>2</td>
+<td>required</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>KEEP; upstream filename count and retained manual assembly. ABS guidance p4.</td>
+</tr>
+<tr>
+<td><code>STLs/Z_Endstop/nozzle_probe.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</td>
+<td>CNC tensioners or Cartographer replace this function.</td>
+</tr>
+<tr>
+<td><code>STLs/nozzle_probe_ldo.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>8270e8cf6c7ba29a7fd11d143c287bd3af576934</td>
+<td>Cartographer Z homing omits kit nozzle Z endstop; keep supplied piece as surplus.</td>
+</tr>
+<tr>
+<td><code>STLs/led_fan_pcb_spacer_x2.stl</code></td>
+<td>2</td>
+<td>included by LDO</td>
+<td>8270e8cf6c7ba29a7fd11d143c287bd3af576934</td>
+<td>Two in Rev D BOM; verify carton and PCB fit.</td>
+</tr>
+<tr>
+<td><code>STLs/cw2_offset_chain_anchor.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>8270e8cf6c7ba29a7fd11d143c287bd3af576934</td>
+<td>LDO original two-hole chain anchor; verify actual Nitehawk/routing/backer fit.</td>
+</tr>
+<tr>
+<td><code>STLs/exhaust_cover.stl</code></td>
+<td>1</td>
+<td>required</td>
+<td>8270e8cf6c7ba29a7fd11d143c287bd3af576934</td>
+<td>Seal unused exhaust with stock grill; no extra filter modification added.</td>
+</tr>
+<tr>
+<td><code>STLs/handlebar_spacer_x4.stl</code></td>
+<td>4</td>
+<td>optional</td>
+<td>8270e8cf6c7ba29a7fd11d143c287bd3af576934</td>
+<td>If actual included handles installed; M5x14 + hammerhead per LDO supplement.</td>
+</tr>
+<tr>
+<td><code>STLs/z_rail_stop_x4.stl</code></td>
+<td>4</td>
+<td>optional</td>
+<td>8270e8cf6c7ba29a7fd11d143c287bd3af576934</td>
+<td>Captive-rail safety aid; temporary stops needed while handling.</td>
+</tr>
+<tr>
+<td><code>STLs/ldo_bestagon_insert.stl</code></td>
+<td>1</td>
+<td>optional</td>
+<td>8270e8cf6c7ba29a7fd11d143c287bd3af576934</td>
+<td>Decorative kit insert only.</td>
+</tr>
+<tr>
+<td><code>STLs/z_belt_cover_a_led.stl</code></td>
+<td>2</td>
+<td>optional</td>
+<td>8270e8cf6c7ba29a7fd11d143c287bd3af576934</td>
+<td>Alternative A cover if LED wires route through Z motor opening; not added to stock covers.</td>
+</tr>
+<tr>
+<td><code>STLs/Purge Bucket/brush_holder_sheet_stop.stl</code></td>
+<td>0</td>
+<td>replaced/omit</td>
+<td>8270e8cf6c7ba29a7fd11d143c287bd3af576934</td>
+<td>No automatic brass brush route across Cartographer coil; manual initial cleaning.</td>
+</tr>
+<tr>
+<td><code>STLs/Purge Bucket/individual_sheet_stop.stl</code></td>
+<td>Unverified / unset</td>
+<td>unresolved</td>
+<td>8270e8cf6c7ba29a7fd11d143c287bd3af576934</td>
+<td>MRW surface/Wings/probe envelope must determine sheet retention, B1/B5/T4.</td>
+</tr>
+</tbody>
+</table></div>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>

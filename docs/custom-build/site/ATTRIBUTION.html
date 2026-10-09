@@ -1,0 +1,66 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Attribution and asset licenses · Custom LDO Voron</title><link rel="stylesheet" href="style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a  href="chapters/01-inventory.html">1. Inventory and evidence</a></li><li><a  href="chapters/02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="chapters/03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="chapters/04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="chapters/05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="chapters/06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="chapters/07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="chapters/08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="chapters/09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="chapters/10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="reference/compatibility.html">Compatibility register</a></li><li><a  href="reference/configuration.html">Non-deployable configuration examples</a></li><li><a  href="reference/crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="reference/hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="reference/inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="reference/printed-parts.html">Printed-parts matrix</a></li><li><a  href="reference/questions.html">Unresolved questions and verification gates</a></li><li><a  href="reference/sources.html">Source lock and illustration provenance</a></li><li><a  href="README.html">Build, check, browse and export</a></li><li><a aria-current="page" href="ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#attribution-and-asset-licenses">Attribution and asset licenses</a></li>
+</ul>
+</div>
+</details><h1 id="attribution-and-asset-licenses">Attribution and asset licenses</h1>
+<p>This is an <strong>unofficial custom guide</strong>, modified 2026-10-09 for the reported
+purchases. Voron Design, LDO, Phaetus, Cartographer, Mandala Rose Works and
+Vitalii3D have not reviewed or endorsed the combined assembly.</p>
+<p>The upstream repository remains intact at base commit
+<code>a192410e27ea345644ae5c4b29b4c9c40cbe1a73</code>, branch <code>Voron2.4</code>. Its original
+CAD, STLs, PDF, README attribution and GPL-3.0 LICENSE are preserved.
+There was no editable Markdown/InDesign manual source in the inspected tree;
+the custom source is maintained Markdown rather than a modified extracted PDF.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Local asset family</th>
+<th>Author/source</th>
+<th>Reuse basis and limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>stock-pNNN.png</code></td>
+<td>Voron Design project, retained <code>Manual/Assembly_Manual_2.4r2.pdf</code></td>
+<td>Rendered unmodified reference pages from the GPL-3.0 repository, cited by printed page and zero-based PDF index; original attribution appears in each page. They show STOCK hardware, not the custom CNC assembly.</td>
+</tr>
+<tr>
+<td><code>sb-stock-pNNN.png</code></td>
+<td>Voron Design project, separate StealthBurner commit <code>8bcb9c246fac19d8ac03931ef97fa07c5e5f0f2b</code>, manual version 2023-07-07</td>
+<td>Separately checked GPL-3.0 repository source, rendered stock CW2/SB reference pages. These figures do not establish UHF compatibility.</td>
+</tr>
+<tr>
+<td><code>motion-*.svg</code>, <code>bed-*.svg</code>, <code>toolhead-*.svg</code>, <code>electronics-*.svg</code></td>
+<td>Original custom documentation schematics, 2026</td>
+<td>GPL-3.0; labeled non-dimensional relationships or conditional plans. They are not manufacturing drawings or proof of fit.</td>
+</tr>
+<tr>
+<td>Custom Markdown, Python tooling, stylesheet and generated HTML/PDF</td>
+<td>Custom guide derivative, 2026</td>
+<td>GPL-3.0 with upstream attribution; no warranty. Maintained source included in this repository.</td>
+</tr>
+<tr>
+<td>Store photos, Vitalii/MRW/Phaetus PDF diagrams, LDO web images</td>
+<td>Their respective manufacturers</td>
+<td>No blanket permission inferred. Source PDFs/images remain linked, not redistributed, where reuse terms are unknown or reserved. Private research scratch copies are not committed.</td>
+</tr>
+</tbody>
+</table></div>
+<p>LDO documentation's retrieved page metadata marks its content license <code>alr</code>
+(all rights reserved). Its repositories have separately checked licenses.
+Repository licenses are recorded per source in <a href="data/sources.lock.json">the lockfile</a>;
+they do not extend to other websites. File hashes and each local illustration's
+provenance are recorded there as well. New assets must be reviewed individually.</p>
+<p>The installed upstream LICENSE is at repository root. The built site includes
+an identical <code>LICENSE.txt</code>. The complete corresponding custom source is this
+directory. Static checks do not certify physical safety, hardware compatibility
+or fitness for a particular purpose.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="print.html">Complete print edition</a></footer></main></div></body></html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 600" role="img" aria-labelledby="title desc">
+<title id="title">Conditional allocation of purchased Z belt clamps</title><desc id="desc">Original allocation diagram, not a verified assembly drawing. Proposed rear upper positions use the two top clamps from purchase 10, front upper positions use two clamps from the front-idler package 11, and all four lower functions use rigid joints from purchase 13. The two bottom clamps from purchase 10 are surplus. Two front-idler package clamps are surplus if four are supplied and this fit is confirmed.</desc>
+<metadata>Original custom-guide schematic, GPL-3.0. Conditional allocation; physical interface geometry has not been verified.</metadata>
+<rect width="1040" height="600" fill="#f7fafc"/>
+<g font-family="Arial,sans-serif" fill="#17324c">
+<text x="28" y="36" font-size="22" font-weight="bold">Four upper captures + four integrated lower captures</text><text x="28" y="65" font-size="16" fill="#873c15">CONDITIONAL ALLOCATION • not a physical assembly or belt-routing drawing • Gate M8 required</text>
+<rect x="235" y="133" width="570" height="300" fill="none" stroke="#4c6174" stroke-width="12"/>
+<text x="480" y="115" font-size="18">REAR</text><text x="480" y="467" font-size="18">FRONT</text>
+<g fill="#c8def2" stroke="#48769e" stroke-width="2"><rect x="105" y="140" width="285" height="86" rx="8"/><rect x="650" y="140" width="285" height="86" rx="8"/></g>
+<g fill="#d8ecdb" stroke="#54895b" stroke-width="2"><rect x="105" y="342" width="285" height="86" rx="8"/><rect x="650" y="342" width="285" height="86" rx="8"/></g>
+<g font-size="16" text-anchor="middle">
+<text x="248" y="169">#10 top clamp (M5 + M5)</text><text x="248" y="194">#13 lower capture / joint</text>
+<text x="792" y="169">#10 top clamp (M5 + M5)</text><text x="792" y="194">#13 lower capture / joint</text>
+<text x="248" y="371">#11 front-package upper clamp</text><text x="248" y="397">#13 lower capture / joint</text>
+<text x="792" y="371">#11 front-package upper clamp</text><text x="792" y="397">#13 lower capture / joint</text>
+</g>
+<text x="405" y="275" font-size="18">Gantry, schematic top view</text><text x="407" y="301" font-size="16">No hole or tooth geometry shown</text>
+<text x="28" y="510" font-size="17" fill="#873c15">Surplus: #10 bottom clamps × 2 (rigid joints replace that function).</text>
+<text x="28" y="540" font-size="17" fill="#873c15">Conditional surplus: #11 clamps × 2, only if four shipped and the proposed allocation fits.</text>
+<text x="28" y="575" font-size="15">Check 9 mm tooth width, hole spacing, screw engagement and package contents before capturing belts.</text>
+</g></svg>

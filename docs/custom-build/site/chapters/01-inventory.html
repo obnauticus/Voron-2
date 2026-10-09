@@ -1,0 +1,66 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1. Inventory and evidence · Custom LDO Voron</title><link rel="stylesheet" href="../style.css"></head>
+<body><a class="skip" href="#content">Skip navigation</a><header><a href="../index.html">LDO VORON / CUSTOM BUILD</a><span>Unofficial · provisional 350 · gates open</span></header>
+<div class="layout"><aside><details open><summary>Build chapters & records</summary><nav aria-label="Guide"><ol><li><a  href="../index.html">LDO Voron 2.4R2 — integrated custom assembly guide</a></li><li><a aria-current="page" href="01-inventory.html">1. Inventory and evidence</a></li><li><a  href="02-preparation.html">2. Printed parts and preparation</a></li><li><a  href="03-frame-z.html">3. Frame, Z rails, deck and Z reduction drives</a></li><li><a  href="04-motion.html">04 — Modified Z suspension, gantry and belts</a></li><li><a  href="05-bed.html">05 · UltraFlat bed, kinematic supports and Wings</a></li><li><a  href="06-toolhead.html">06 · Rapido 2 Fiber UHF, StealthBurner and Cartographer</a></li><li><a  href="07-wiring.html">07 — Wiring the modified printer</a></li><li><a  href="08-software.html">08 — Software preparation and the probing workflow</a></li><li><a  href="09-commissioning.html">09 — Pre-power, first start, calibration and first print</a></li><li><a  href="10-panels-first-print.html">10. Enclosure, filament path and first print</a></li><li><a  href="../reference/compatibility.html">Compatibility register</a></li><li><a  href="../reference/configuration.html">Non-deployable configuration examples</a></li><li><a  href="../reference/crosswalk.html">Stock-to-custom page and step crosswalk</a></li><li><a  href="../reference/hardware.html">Hardware, wiring and missing requirements</a></li><li><a  href="../reference/inventory.html">Purchase disposition — all fourteen entries</a></li><li><a  href="../reference/printed-parts.html">Printed-parts matrix</a></li><li><a  href="../reference/questions.html">Unresolved questions and verification gates</a></li><li><a  href="../reference/sources.html">Source lock and illustration provenance</a></li><li><a  href="../README.html">Build, check, browse and export</a></li><li><a  href="../ATTRIBUTION.html">Attribution and asset licenses</a></li><li><a  href="../VALIDATION.html">Validation results</a></li></ol></nav></details></aside>
+<main id="content"><div class="readiness">Hardware checks remain open. A built guide does not certify a built printer.</div>
+<details class="page-toc"><summary>On this page</summary><div class="toc">
+<ul>
+<li><a href="#1-inventory-and-evidence">1. Inventory and evidence</a><ul>
+<li><a href="#i1-verify-the-build-target-before-size-dependent-preparation">I1 — verify the build target before size-dependent preparation</a></li>
+<li><a href="#label-bins-before-assembly">Label bins before assembly</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</details><h1 id="1-inventory-and-evidence">1. Inventory and evidence</h1>
+<p><strong>Prerequisites:</strong> unopened or safely disconnected kit and all upgrade packages.
+<strong>Tools:</strong> ruler/calipers, camera for private inspection, labels and bins. No power.
+<strong>Parts:</strong> one LDO kit (01), one three-pack of backers (02), one each of purchases
+03–07, Wings notation <code>2x</code> (08), and one purchased set/item each of 09–14.
+Use the <a href="../data/build-manifest.json">manifest</a> for unit distinctions.</p>
+<h2 id="i1-verify-the-build-target-before-size-dependent-preparation">I1 — verify the build target before size-dependent preparation</h2>
+<p>No order documents, photos, packing lists or relevant printer configurations
+were found in the workspace filename/content search. This project did not access
+email or past conversations. The six Vitalii selections are purchase evidence
+provided by the user; the underlying private receipt is not redistributed.</p>
+<ol>
+<li>Lay out the extrusions and measure them against the 350 BOM lead: ten
+   A=470 mm, four B=530 mm, two C=450 mm, D=430 mm and E=340 mm. The
+   <a href="https://docs.ldomotors.com/en/voron/voron2/350_BOM/HOME">LDO 350 BOM directory</a>
+   maps kit serial/batch to its BOM. Select the matching batch using the actual
+   label; do not infer a serial from the order date.</li>
+<li>Record the actual size, LDO revision and batch separately from design 2.4R2.
+   If dimensions differ, stop printing 350 skirts and sizing belts. Retain the
+   purchased MRW350 bed and resolve its fit before changing the target.</li>
+<li>Identify rail labels, A/B motor model and shaft projection, X/Y belt width,
+   Z belt width, PSU model, mains region, heater/fuse labels, and host options.</li>
+<li>Read the mainboard and toolboard silkscreen on both sides while disconnected.
+   Do not use a current product listing to pick firmware or pinouts. Photograph
+   the boards privately and transcribe only technical model/revision fields.</li>
+<li>Count each CNC package separately. Match the product-linked manual revision
+   to the shipped part, and resolve conflicting package/fastener lists at the
+   gate in <a href="04-motion.html">motion</a> before assembling those joints.</li>
+<li>Identify backer lengths; bed standard versus embedded magnets; heater and
+   magnetic-sheet options; Wings pieces versus sets; Rapido revision/UHF/PT1000
+   labels; CNC carriage 6/9 mm and UHF-extender contents; Cartographer firmware
+   generation/interface. Leave unverified fields <code>null</code>.</li>
+</ol>
+<h2 id="label-bins-before-assembly">Label bins before assembly</h2>
+<p><strong>KEEP</strong> the kit frame, rails, four stock Z reduction drives, compatible motion
+belts, host/electronics and CW2/SB components after their revision gates.
+<strong>REPLACE</strong> printed A/B drives, front idlers, live XY joints, Z upper idlers,
+stock rigid-interface Z joint pieces, stock bed assembly, hotend and carriage.
+<strong>OMIT</strong> the stock Omron/Klicky/TAP probe path, Hall endstop magnets, stock nozzle
+Z endstop and their macros for the Cartographer homing path described later.
+Keep unused kit parts in a labeled surplus bin; do not discard them.</p>
+<p><strong>ADD</strong> only requirements documented in the <a href="../reference/hardware.html">hardware matrix</a>.
+An extra requirement is not a claimed purchase. Do not peel a bonded heater or
+magnetic sheet off the supplied LDO bed for reuse on the MRW plate.</p>
+<p>Completion: all fourteen IDs accounted for, package discrepancies recorded,
+and no assumed PCB revision or private purchase data entered into Git. Unknown
+details remain tracked in <a href="../reference/questions.html">the questions register</a>.</p>
+<p>Sources: <a href="https://west3d.com/products/ldo-v2-4-kit-in-stock">West3D kit listing</a>,
+<a href="https://docs.ldomotors.com/en/voron/voron2/350_BOM/HOME">LDO batch BOM</a>,
+<a href="https://docs.ldomotors.com/en/voron/voron2/350_BOM/Rev_D">Rev D BOM lead</a>.</p>
+<footer>Modified 2026-10-09 · Voron Design attribution retained · <a href="../ATTRIBUTION.html">GPL-3.0 & sources</a> · <a href="../print.html">Complete print edition</a></footer></main></div></body></html>
